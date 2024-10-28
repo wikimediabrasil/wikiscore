@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-25 12:30+0000\n"
+"POT-Creation-Date: 2024-10-28 12:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -263,74 +263,74 @@ msgctxt "compare-reevaluate"
 msgid "Reevaluate"
 msgstr "Преоцени"
 
-#: contests/templates/contest.html:4 contests/templates/edits.html:63
-#: contests/templates/edits.txt:2
+#: contests/templates/contest.html:4 contests/templates/edits.html:78
+#: contests/templates/edits.txt:1
 msgctxt "edits-title"
 msgid "Title"
 msgstr "Наслов"
 
-#: contests/templates/contest.html:28
+#: contests/templates/contest.html:31
 msgctxt "login-graph"
 msgid "Graphic scoreboard"
 msgstr "Графичка бодовна табла"
 
-#: contests/templates/contest.html:30
+#: contests/templates/contest.html:33
 msgctxt "login-manage"
 msgid "Manage contest"
 msgstr "Управување со натпревар"
 
-#: contests/templates/contest.html:36 contests/templates/home.html:7
+#: contests/templates/contest.html:39 contests/templates/home.html:7
 msgctxt "main-title"
 msgid "WikiScore"
 msgstr "ВикиБодување"
 
-#: contests/templates/contest.html:41
+#: contests/templates/contest.html:44
 msgctxt "counter-allpages"
 msgid "Listed articles"
 msgstr "Наведени статии"
 
-#: contests/templates/contest.html:45
+#: contests/templates/contest.html:48
 msgctxt "counter-alledited"
 msgid "Edited articles"
 msgstr "Уредени статии"
 
-#: contests/templates/contest.html:49
+#: contests/templates/contest.html:52
 msgctxt "counter-allcreated"
 msgid "Created articles"
 msgstr "Создадени статии"
 
-#: contests/templates/contest.html:55
+#: contests/templates/contest.html:58
 msgctxt "counter-allenrolled"
 msgid "Enrolled users"
 msgstr "Запишани корисници"
 
-#: contests/templates/contest.html:59
+#: contests/templates/contest.html:62
 msgctxt "counter-allvalidated"
 msgid "Validated edits"
 msgstr "Проверени уредувања"
 
-#: contests/templates/contest.html:63
+#: contests/templates/contest.html:66
 msgctxt "counter-allbytes"
 msgid "Bytes added"
 msgstr "Додадени бајти"
 
-#: contests/templates/contest.html:74
+#: contests/templates/contest.html:77
 msgctxt "counter-most-edited"
 msgid "Most edited article"
 msgstr "Најуредувана статија"
 
-#: contests/templates/contest.html:82
+#: contests/templates/contest.html:85
 #, python-format
 msgctxt "counter-editions"
 msgid "%(1)s edits"
 msgstr "%(1)s уредувања"
 
-#: contests/templates/contest.html:90
+#: contests/templates/contest.html:93
 msgctxt "counter-biggest-delta"
 msgid "Most expanded article"
 msgstr "Најпроширена статија"
 
-#: contests/templates/contest.html:98 contests/templates/contest.html:114
+#: contests/templates/contest.html:101 contests/templates/contest.html:117
 #: contests/templates/triage.html:422 contests/templates/triage.html:427
 #: contests/templates/triage.html:439
 #, python-format
@@ -338,42 +338,42 @@ msgctxt "triage-bytes"
 msgid "%(1)s bytes"
 msgstr "%(1)s бајти"
 
-#: contests/templates/contest.html:106
+#: contests/templates/contest.html:109
 msgctxt "counter-biggest-edition"
 msgid "Biggest edition"
 msgstr "Најголемо уредување"
 
-#: contests/templates/contest.html:150 contests/templates/contest.html:161
+#: contests/templates/contest.html:153 contests/templates/contest.html:164
 msgctxt "login-alledits"
 msgid "Edits per day"
 msgstr "Уредувања на ден"
 
-#: contests/templates/contest.html:168
+#: contests/templates/contest.html:171
 msgctxt "login-validedits"
 msgid "Validated edits per day"
 msgstr "Проверени уредувања на ден"
 
-#: contests/templates/contest.html:188
+#: contests/templates/contest.html:191
 msgctxt "login-newevents"
 msgid "Created articles and enrolled participants per day"
 msgstr "Создадени статии и запишани учесници дневно"
 
-#: contests/templates/contest.html:199
+#: contests/templates/contest.html:202
 msgctxt "login-newpages"
 msgid "New articles per day"
 msgstr "Нови статии на ден"
 
-#: contests/templates/contest.html:206
+#: contests/templates/contest.html:209
 msgctxt "login-newparticipants"
 msgid "Enrolled participants per day"
 msgstr "Запишани учесници дневно"
 
-#: contests/templates/contest.html:226 contests/templates/contest.html:237
+#: contests/templates/contest.html:229 contests/templates/contest.html:240
 msgctxt "login-newbytes"
 msgid "KBytes added per day"
 msgstr "Килобајти додадени на ден"
 
-#: contests/templates/contest.html:244
+#: contests/templates/contest.html:247
 msgctxt "login-validbytes"
 msgid "KBytes validated per day"
 msgstr "Килобајти проверени на ден"
@@ -475,7 +475,7 @@ msgid ""
 "Edits successfully reset! A new database update will be performed shortly."
 msgstr "Уредувањата се успешно поништени! Наскоро базата ќе биде подновена."
 
-#: contests/templates/edits.html:46
+#: contests/templates/edits.html:61
 msgctxt "edits-about"
 msgid ""
 "This page lists all edits made by contest participants. To access edits made"
@@ -485,79 +485,79 @@ msgstr ""
 "ги добиете уредувањата направени од сите корисници, преземете ја CSV-"
 "податотеката."
 
-#: contests/templates/edits.html:51
+#: contests/templates/edits.html:66
 msgctxt "edits-csv"
 msgid "Download"
 msgstr "Преземи"
 
-#: contests/templates/edits.html:62 contests/templates/edits.txt:2
+#: contests/templates/edits.html:77 contests/templates/edits.txt:1
 msgctxt "edits-diff"
 msgid "Edit diff"
 msgstr "Разл. во уред."
 
-#: contests/templates/edits.html:64 contests/templates/edits.txt:2
+#: contests/templates/edits.html:79 contests/templates/edits.txt:1
 msgctxt "edits-timestamp"
 msgid "Edit timestamp"
 msgstr "Уреди датум и време"
 
-#: contests/templates/edits.html:65 contests/templates/edits.txt:2
+#: contests/templates/edits.html:80 contests/templates/edits.txt:1
 msgctxt "edits-user"
 msgid "User"
 msgstr "Корисник"
 
-#: contests/templates/edits.html:66 contests/templates/edits.txt:2
+#: contests/templates/edits.html:81 contests/templates/edits.txt:1
 msgctxt "edits-attached"
 msgid "Account attach date"
 msgstr "Датум на приврзување на сметката"
 
-#: contests/templates/edits.html:67 contests/templates/edits.txt:2
-#: contests/templates/modify.html:208
+#: contests/templates/edits.html:82 contests/templates/edits.txt:1
+#: contests/templates/modify.html:209
 msgctxt "edits-bytes"
 msgid "Bytes"
 msgstr "Бајти"
 
-#: contests/templates/edits.html:68 contests/templates/edits.txt:2
+#: contests/templates/edits.html:83 contests/templates/edits.txt:1
 msgctxt "edits-newpage"
 msgid "New article"
 msgstr "Нова статија"
 
-#: contests/templates/edits.html:69 contests/templates/edits.txt:2
+#: contests/templates/edits.html:84 contests/templates/edits.txt:1
 msgctxt "edits-valid"
 msgid "Valid edit"
 msgstr "Важечко уредување"
 
-#: contests/templates/edits.html:70 contests/templates/edits.txt:2
+#: contests/templates/edits.html:85 contests/templates/edits.txt:1
 msgctxt "edits-withimage"
 msgid "With image"
 msgstr "Со слика"
 
-#: contests/templates/edits.html:71 contests/templates/edits.txt:2
+#: contests/templates/edits.html:86 contests/templates/edits.txt:1
 msgctxt "edits-reverted"
 msgid "Reverted edit"
 msgstr "Отповикано уредување"
 
-#: contests/templates/edits.html:72 contests/templates/edits.txt:2
-#: contests/templates/modify.html:193 contests/templates/modify.html:210
+#: contests/templates/edits.html:87 contests/templates/edits.txt:1
+#: contests/templates/modify.html:194 contests/templates/modify.html:211
 msgctxt "edits-evaluator"
 msgid "Evaluator"
 msgstr "Оценувач"
 
-#: contests/templates/edits.html:73 contests/templates/edits.txt:2
+#: contests/templates/edits.html:88 contests/templates/edits.txt:1
 msgctxt "edits-evaltimestamp"
 msgid "Evaluation timestamp"
 msgstr "Датум и време на оценката"
 
-#: contests/templates/edits.html:74 contests/templates/edits.txt:2
+#: contests/templates/edits.html:89 contests/templates/edits.txt:1
 msgctxt "edits-comment"
 msgid "Evaluator's comment"
 msgstr "Коментар на оценувачот"
 
-#: contests/templates/edits.txt:2
+#: contests/templates/edits.txt:1
 msgctxt "edits-curid"
 msgid "Article CurID"
 msgstr "CurID на статијата"
 
-#: contests/templates/edits.txt:2
+#: contests/templates/edits.txt:1
 msgctxt "edits-enrolled"
 msgid "Enrolled user"
 msgstr "Запишан корисник"
@@ -976,36 +976,41 @@ msgctxt "login-cancel"
 msgid "Cancel"
 msgstr "Откажи"
 
-#: contests/templates/modify.html:29
+#: contests/templates/modify.html:24
+msgctxt "modify-success"
+msgid "Modification successfully done!"
+msgstr "Измената е успешно направена!"
+
+#: contests/templates/modify.html:32
 msgctxt "modify-consult"
 msgid "Check evaluation"
 msgstr "Провери оценка"
 
-#: contests/templates/modify.html:39
+#: contests/templates/modify.html:42
 msgctxt "modify-diff"
 msgid "Diff"
 msgstr "Разл"
 
-#: contests/templates/modify.html:45
+#: contests/templates/modify.html:48
 msgctxt "modify-load"
 msgid "Load edit"
 msgstr "Вчитај уредување"
 
-#: contests/templates/modify.html:54
+#: contests/templates/modify.html:58
 msgctxt "modify-reavaluate"
 msgid "Reevaluate"
 msgstr "Преоцени"
 
-#: contests/templates/modify.html:58 contests/templates/modify.html:206
+#: contests/templates/modify.html:62 contests/templates/modify.html:207
 #: contests/templates/triage.html:142
 msgctxt "isvalid"
 msgid "Valid edit?"
 msgstr "Важечко уредување?"
 
-#: contests/templates/modify.html:68 contests/templates/modify.html:101
+#: contests/templates/modify.html:70 contests/templates/modify.html:101
 #: contests/templates/modify.html:166 contests/templates/modify.html:167
 #: contests/templates/modify.html:168 contests/templates/modify.html:170
-#: contests/templates/modify.html:198 contests/templates/modify.html:215
+#: contests/templates/modify.html:199 contests/templates/modify.html:216
 #: contests/templates/triage.html:110 contests/templates/triage.html:119
 #: contests/templates/triage.html:152 contests/templates/triage.html:186
 msgctxt "yes"
@@ -1015,14 +1020,14 @@ msgstr "Да"
 #: contests/templates/modify.html:78 contests/templates/modify.html:109
 #: contests/templates/modify.html:166 contests/templates/modify.html:167
 #: contests/templates/modify.html:168 contests/templates/modify.html:170
-#: contests/templates/modify.html:198 contests/templates/modify.html:215
+#: contests/templates/modify.html:199 contests/templates/modify.html:216
 #: contests/templates/triage.html:113 contests/templates/triage.html:122
 #: contests/templates/triage.html:162 contests/templates/triage.html:194
 msgctxt "no"
 msgid "No"
 msgstr "Не"
 
-#: contests/templates/modify.html:81 contests/templates/modify.html:207
+#: contests/templates/modify.html:81 contests/templates/modify.html:208
 #: contests/templates/triage.html:166 contests/templates/triage.html:178
 msgctxt "withimage"
 msgid "With image?"
@@ -1108,40 +1113,35 @@ msgctxt "modify-label-comment"
 msgid "Evaluator's comment:"
 msgstr "Коментар на оценувачот:"
 
-#: contests/templates/modify.html:181 contests/templates/modify.html:184
+#: contests/templates/modify.html:182 contests/templates/modify.html:185
 msgctxt "modify-showdiff"
 msgid "Edit diff"
 msgstr "Разл. во уред."
 
-#: contests/templates/modify.html:192
+#: contests/templates/modify.html:193
 msgctxt "modify-qualified"
 msgid "Qualified?"
 msgstr "Qualified?"
 
-#: contests/templates/modify.html:194 contests/templates/modify.html:211
+#: contests/templates/modify.html:195 contests/templates/modify.html:212
 msgctxt "modify-timestamp"
 msgid "Timestamp"
 msgstr "Timestamp"
 
-#: contests/templates/modify.html:199
+#: contests/templates/modify.html:200
 msgctxt "modify-automatic"
 msgid "Automatic"
 msgstr "Automatic"
 
-#: contests/templates/modify.html:209 contests/templates/triage.html:204
+#: contests/templates/modify.html:210 contests/templates/triage.html:204
 msgctxt "triage-observation"
 msgid "Observation"
 msgstr "Набљудување"
 
-#: contests/templates/modify.html:226
+#: contests/templates/modify.html:227
 msgctxt "modify-notfound"
 msgid "Edit not found in the database!"
 msgstr "Уредувањето не е пронајдено во базата!"
-
-#: contests/templates/modify.html:229
-msgctxt "modify-success"
-msgid "Modification successfully done!"
-msgstr "Измената е успешно направена!"
 
 #: contests/templates/triage.html:65 contests/templates/triage.html:344
 msgctxt "triage-counter"

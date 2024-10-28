@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-25 12:30+0000\n"
+"POT-Creation-Date: 2024-10-28 12:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -303,25 +303,25 @@ msgctxt "compare-reevaluate"
 msgid "Reevaluate"
 msgstr "Reevaluate"
 
-#: contests/templates/contest.html:4 contests/templates/edits.html:63
-#: contests/templates/edits.txt:2
+#: contests/templates/contest.html:4 contests/templates/edits.html:78
+#: contests/templates/edits.txt:1
 msgctxt "edits-title"
 msgid "Title"
 msgstr ""
 "Table column label with the name of the article/page of the corresponding "
 "issue"
 
-#: contests/templates/contest.html:28
+#: contests/templates/contest.html:31
 msgctxt "login-graph"
 msgid "Graphic scoreboard"
 msgstr "Graphic scoreboard"
 
-#: contests/templates/contest.html:30
+#: contests/templates/contest.html:33
 msgctxt "login-manage"
 msgid "Manage contest"
 msgstr "Manage contest"
 
-#: contests/templates/contest.html:36 contests/templates/home.html:7
+#: contests/templates/contest.html:39 contests/templates/home.html:7
 msgctxt "main-title"
 msgid "WikiScore"
 msgstr ""
@@ -330,51 +330,51 @@ msgstr ""
 " Otherwise, translate the separate concepts ([[:wikt:wiki|wiki]] + "
 "[[:wikt:score#Noun|score]]) and join the words."
 
-#: contests/templates/contest.html:41
+#: contests/templates/contest.html:44
 msgctxt "counter-allpages"
 msgid "Listed articles"
 msgstr ""
 "Label where the number of articles listed for the contest is displayed."
 
-#: contests/templates/contest.html:45
+#: contests/templates/contest.html:48
 msgctxt "counter-alledited"
 msgid "Edited articles"
 msgstr ""
 "Label where the number of articles edited in the contest is displayed."
 
-#: contests/templates/contest.html:49
+#: contests/templates/contest.html:52
 msgctxt "counter-allcreated"
 msgid "Created articles"
 msgstr ""
 "Label where the number of articles created during the contest is displayed."
 
-#: contests/templates/contest.html:55
+#: contests/templates/contest.html:58
 msgctxt "counter-allenrolled"
 msgid "Enrolled users"
 msgstr ""
 "Label where the number of participants registered for the contest is "
 "displayed."
 
-#: contests/templates/contest.html:59
+#: contests/templates/contest.html:62
 msgctxt "counter-allvalidated"
 msgid "Validated edits"
 msgstr ""
 "Label where the number of editions validated in the contest is displayed."
 
-#: contests/templates/contest.html:63
+#: contests/templates/contest.html:66
 msgctxt "counter-allbytes"
 msgid "Bytes added"
 msgstr ""
 "Label where the number of bytes added during the contest is displayed."
 
-#: contests/templates/contest.html:74
+#: contests/templates/contest.html:77
 msgctxt "counter-most-edited"
 msgid "Most edited article"
 msgstr ""
 "Label where the name of the most edited article during the contest is "
 "displayed."
 
-#: contests/templates/contest.html:82
+#: contests/templates/contest.html:85
 #, python-format
 msgctxt "counter-editions"
 msgid "%(1)s edits"
@@ -384,14 +384,14 @@ msgstr ""
 "Parameters:\n"
 "* %(1)s: number of edits"
 
-#: contests/templates/contest.html:90
+#: contests/templates/contest.html:93
 msgctxt "counter-biggest-delta"
 msgid "Most expanded article"
 msgstr ""
 "Label where the name of the most expanded article (in number of bytes) "
 "during the contest is displayed."
 
-#: contests/templates/contest.html:98 contests/templates/contest.html:114
+#: contests/templates/contest.html:101 contests/templates/contest.html:117
 #: contests/templates/triage.html:422 contests/templates/triage.html:427
 #: contests/templates/triage.html:439
 #, python-format
@@ -403,44 +403,44 @@ msgstr ""
 "Parameters:\n"
 "* %(1)s: number of bytes"
 
-#: contests/templates/contest.html:106
+#: contests/templates/contest.html:109
 msgctxt "counter-biggest-edition"
 msgid "Biggest edition"
 msgstr ""
 "Label where the name of the article containing the largest edit made (in "
 "number of bytes) during the contest is displayed."
 
-#: contests/templates/contest.html:150 contests/templates/contest.html:161
+#: contests/templates/contest.html:153 contests/templates/contest.html:164
 msgctxt "login-alledits"
 msgid "Edits per day"
 msgstr "Edits per day"
 
-#: contests/templates/contest.html:168
+#: contests/templates/contest.html:171
 msgctxt "login-validedits"
 msgid "Validated edits per day"
 msgstr "Validated edits per day"
 
-#: contests/templates/contest.html:188
+#: contests/templates/contest.html:191
 msgctxt "login-newevents"
 msgid "Created articles and enrolled participants per day"
 msgstr "Created articles and enrolled participants per day"
 
-#: contests/templates/contest.html:199
+#: contests/templates/contest.html:202
 msgctxt "login-newpages"
 msgid "New articles per day"
 msgstr "New articles per day"
 
-#: contests/templates/contest.html:206
+#: contests/templates/contest.html:209
 msgctxt "login-newparticipants"
 msgid "Enrolled participants per day"
 msgstr "Enrolled participants per day"
 
-#: contests/templates/contest.html:226 contests/templates/contest.html:237
+#: contests/templates/contest.html:229 contests/templates/contest.html:240
 msgctxt "login-newbytes"
 msgid "KBytes added per day"
 msgstr "KBytes added per day"
 
-#: contests/templates/contest.html:244
+#: contests/templates/contest.html:247
 msgctxt "login-validbytes"
 msgid "KBytes validated per day"
 msgstr "KBytes validated per day"
@@ -542,7 +542,7 @@ msgid ""
 msgstr ""
 "Message displayed when a evaluation deletion request has been completed."
 
-#: contests/templates/edits.html:46
+#: contests/templates/edits.html:61
 msgctxt "edits-about"
 msgid ""
 "This page lists all edits made by contest participants. To access edits made"
@@ -551,12 +551,12 @@ msgstr ""
 "This page lists all edits made by contest participants. To access edits made"
 " by all users, download the CSV file."
 
-#: contests/templates/edits.html:51
+#: contests/templates/edits.html:66
 msgctxt "edits-csv"
 msgid "Download"
 msgstr "{{Identical|Download}}"
 
-#: contests/templates/edits.html:62 contests/templates/edits.txt:2
+#: contests/templates/edits.html:77 contests/templates/edits.txt:1
 msgctxt "edits-diff"
 msgid "Edit diff"
 msgstr ""
@@ -564,18 +564,18 @@ msgstr ""
 "[[:mw:Manual:Parameters_to_index.php#Page_revision_or_version|id of the "
 "edition (oldid)]] of the corresponding edit"
 
-#: contests/templates/edits.html:64 contests/templates/edits.txt:2
+#: contests/templates/edits.html:79 contests/templates/edits.txt:1
 msgctxt "edits-timestamp"
 msgid "Edit timestamp"
 msgstr "Table column label with the date/time of the corresponding edit"
 
-#: contests/templates/edits.html:65 contests/templates/edits.txt:2
+#: contests/templates/edits.html:80 contests/templates/edits.txt:1
 msgctxt "edits-user"
 msgid "User"
 msgstr ""
 "Table column label with the name of the author of the corresponding edition"
 
-#: contests/templates/edits.html:66 contests/templates/edits.txt:2
+#: contests/templates/edits.html:81 contests/templates/edits.txt:1
 msgctxt "edits-attached"
 msgid "Account attach date"
 msgstr ""
@@ -583,61 +583,61 @@ msgstr ""
 "account when it was linked to CentralAuth. In most cases it corresponds to "
 "the account creation time."
 
-#: contests/templates/edits.html:67 contests/templates/edits.txt:2
-#: contests/templates/modify.html:208
+#: contests/templates/edits.html:82 contests/templates/edits.txt:1
+#: contests/templates/modify.html:209
 msgctxt "edits-bytes"
 msgid "Bytes"
 msgstr "Table column label with corresponding edit size in bytes"
 
-#: contests/templates/edits.html:68 contests/templates/edits.txt:2
+#: contests/templates/edits.html:83 contests/templates/edits.txt:1
 msgctxt "edits-newpage"
 msgid "New article"
 msgstr ""
 "Table column label indicating whether the edit corresponds to the first edit"
 " (creation) of the page."
 
-#: contests/templates/edits.html:69 contests/templates/edits.txt:2
+#: contests/templates/edits.html:84 contests/templates/edits.txt:1
 msgctxt "edits-valid"
 msgid "Valid edit"
 msgstr ""
 "Table column label indicating whether an evaluator defined the corresponding"
 " edition as valid for counting in the contest."
 
-#: contests/templates/edits.html:70 contests/templates/edits.txt:2
+#: contests/templates/edits.html:85 contests/templates/edits.txt:1
 msgctxt "edits-withimage"
 msgid "With image"
 msgstr ""
 "Table column label indicating whether a reviewer defined the corresponding "
 "edit as containing images."
 
-#: contests/templates/edits.html:71 contests/templates/edits.txt:2
+#: contests/templates/edits.html:86 contests/templates/edits.txt:1
 msgctxt "edits-reverted"
 msgid "Reverted edit"
 msgstr ""
 "Table column label indicating whether the edit was reverted by the wiki "
 "community itself."
 
-#: contests/templates/edits.html:72 contests/templates/edits.txt:2
-#: contests/templates/modify.html:193 contests/templates/modify.html:210
+#: contests/templates/edits.html:87 contests/templates/edits.txt:1
+#: contests/templates/modify.html:194 contests/templates/modify.html:211
 msgctxt "edits-evaluator"
 msgid "Evaluator"
 msgstr ""
 "Table column label indicating the name of the reviewer who reviewed the "
 "corresponding edition."
 
-#: contests/templates/edits.html:73 contests/templates/edits.txt:2
+#: contests/templates/edits.html:88 contests/templates/edits.txt:1
 msgctxt "edits-evaltimestamp"
 msgid "Evaluation timestamp"
 msgstr "Table column label indicating the time the evaluation was made."
 
-#: contests/templates/edits.html:74 contests/templates/edits.txt:2
+#: contests/templates/edits.html:89 contests/templates/edits.txt:1
 msgctxt "edits-comment"
 msgid "Evaluator's comment"
 msgstr ""
 "Table column label indicating the notes entered by the evaluator at the time"
 " of evaluation in the corresponding edition."
 
-#: contests/templates/edits.txt:2
+#: contests/templates/edits.txt:1
 msgctxt "edits-curid"
 msgid "Article CurID"
 msgstr ""
@@ -645,7 +645,7 @@ msgstr ""
 "[[:mw:Manual:Parameters_to_index.php#Page_revision_or_version|id of the wiki"
 " page]] of the corresponding edit"
 
-#: contests/templates/edits.txt:2
+#: contests/templates/edits.txt:1
 msgctxt "edits-enrolled"
 msgid "Enrolled user"
 msgstr ""
@@ -1094,33 +1094,40 @@ msgctxt "login-cancel"
 msgid "Cancel"
 msgstr "{{Identical|Cancel}}"
 
-#: contests/templates/modify.html:29
+#: contests/templates/modify.html:24
+msgctxt "modify-success"
+msgid "Modification successfully done!"
+msgstr ""
+"Message displayed when an evaluation modification request has been "
+"completed."
+
+#: contests/templates/modify.html:32
 msgctxt "modify-consult"
 msgid "Check evaluation"
 msgstr ""
 "Title of the section where the form for consulting evaluations already made "
 "is displayed"
 
-#: contests/templates/modify.html:39
+#: contests/templates/modify.html:42
 msgctxt "modify-diff"
 msgid "Diff"
 msgstr ""
 "Label of the input field where the differential number is entered for consultation\n"
 "{{Identical|Diff}}"
 
-#: contests/templates/modify.html:45
+#: contests/templates/modify.html:48
 msgctxt "modify-load"
 msgid "Load edit"
 msgstr "Text used in a button to consult an evaluation already made"
 
-#: contests/templates/modify.html:54
+#: contests/templates/modify.html:58
 msgctxt "modify-reavaluate"
 msgid "Reevaluate"
 msgstr ""
 "Title of the section where the form for modifying an evaluation already made"
 " is displayed"
 
-#: contests/templates/modify.html:58 contests/templates/modify.html:206
+#: contests/templates/modify.html:62 contests/templates/modify.html:207
 #: contests/templates/triage.html:142
 msgctxt "isvalid"
 msgid "Valid edit?"
@@ -1128,10 +1135,10 @@ msgstr ""
 "Question label on the form where the evaluator certifies whether the edition"
 " is valid for the contest or not."
 
-#: contests/templates/modify.html:68 contests/templates/modify.html:101
+#: contests/templates/modify.html:70 contests/templates/modify.html:101
 #: contests/templates/modify.html:166 contests/templates/modify.html:167
 #: contests/templates/modify.html:168 contests/templates/modify.html:170
-#: contests/templates/modify.html:198 contests/templates/modify.html:215
+#: contests/templates/modify.html:199 contests/templates/modify.html:216
 #: contests/templates/triage.html:110 contests/templates/triage.html:119
 #: contests/templates/triage.html:152 contests/templates/triage.html:186
 msgctxt "yes"
@@ -1144,7 +1151,7 @@ msgstr ""
 #: contests/templates/modify.html:78 contests/templates/modify.html:109
 #: contests/templates/modify.html:166 contests/templates/modify.html:167
 #: contests/templates/modify.html:168 contests/templates/modify.html:170
-#: contests/templates/modify.html:198 contests/templates/modify.html:215
+#: contests/templates/modify.html:199 contests/templates/modify.html:216
 #: contests/templates/triage.html:113 contests/templates/triage.html:122
 #: contests/templates/triage.html:162 contests/templates/triage.html:194
 msgctxt "no"
@@ -1154,7 +1161,7 @@ msgstr ""
 "\n"
 "{{Identical|No}}"
 
-#: contests/templates/modify.html:81 contests/templates/modify.html:207
+#: contests/templates/modify.html:81 contests/templates/modify.html:208
 #: contests/templates/triage.html:166 contests/templates/triage.html:178
 msgctxt "withimage"
 msgid "With image?"
@@ -1264,29 +1271,29 @@ msgctxt "modify-label-comment"
 msgid "Evaluator's comment:"
 msgstr "Label where the notes entered by the previous evaluator is displayed"
 
-#: contests/templates/modify.html:181 contests/templates/modify.html:184
+#: contests/templates/modify.html:182 contests/templates/modify.html:185
 msgctxt "modify-showdiff"
 msgid "Edit diff"
 msgstr ""
 "Title of the section where the changes between two revisions of a page are "
 "displayed."
 
-#: contests/templates/modify.html:192
+#: contests/templates/modify.html:193
 msgctxt "modify-qualified"
 msgid "Qualified?"
 msgstr "Qualified?"
 
-#: contests/templates/modify.html:194 contests/templates/modify.html:211
+#: contests/templates/modify.html:195 contests/templates/modify.html:212
 msgctxt "modify-timestamp"
 msgid "Timestamp"
 msgstr "Timestamp"
 
-#: contests/templates/modify.html:199
+#: contests/templates/modify.html:200
 msgctxt "modify-automatic"
 msgid "Automatic"
 msgstr "Automatic"
 
-#: contests/templates/modify.html:209 contests/templates/triage.html:204
+#: contests/templates/modify.html:210 contests/templates/triage.html:204
 msgctxt "triage-observation"
 msgid "Observation"
 msgstr ""
@@ -1294,19 +1301,12 @@ msgstr ""
 "edition being evaluated. Usually a justification when an edit is rejected, "
 "for example."
 
-#: contests/templates/modify.html:226
+#: contests/templates/modify.html:227
 msgctxt "modify-notfound"
 msgid "Edit not found in the database!"
 msgstr ""
 "Error message displayed when the edition number entered is not in the "
 "database."
-
-#: contests/templates/modify.html:229
-msgctxt "modify-success"
-msgid "Modification successfully done!"
-msgstr ""
-"Message displayed when an evaluation modification request has been "
-"completed."
 
 #: contests/templates/triage.html:65 contests/templates/triage.html:344
 msgctxt "triage-counter"
