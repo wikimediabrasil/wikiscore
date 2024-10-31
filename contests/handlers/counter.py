@@ -163,7 +163,7 @@ class CounterHandler:
         participant_id = request.POST.get('user_id')
         participant = Edit.objects.filter(
             contest=self.contest, 
-            participant=Participant.objects.get(local_id=participant_id)
+            participant=Participant.objects.get(contest=self.contest, local_id=participant_id)
         ).update(last_evaluation=None)
         return True if participant.count() > 0 else False
     
