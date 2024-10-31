@@ -3,7 +3,8 @@
 		"authors": [
 			"Anterdc99",
 			"Huajing",
-			"Xyb"
+			"Xyb",
+			"沈澄心"
 		]
 	},
 	"main-title": "维基评分",
@@ -182,6 +183,7 @@
 	"triage-release": "发布跳过的编辑",
 	"triage-unhold": "发布所有评估者的编辑",
 	"triage-evaluation": "评估",
+	"triage-alterbytes": "更改字节",
 	"triage-save": "保存",
 	"triage-details": "编辑详细信息",
 	"triage-copyvio": "侵权检测器",
