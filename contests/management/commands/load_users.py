@@ -163,6 +163,7 @@ class Command(BaseCommand):
             self.stdout.write(f"Usuário {username} não encontrado. Ignorando...")
             return None
         else:
+            self.check_participant_enrollment(local_id, contest, timestamp)
             self.update_user_edits(local_id, contest, timestamp)
 
     def add_user_contest(self, global_id, contest, wiki_id, timestamp, username):
@@ -180,14 +181,23 @@ class Command(BaseCommand):
             global_id = None
             user=username
 
-        new_participant = Participant.objects.create(
+        new_participant, created = Participant.objects.get_or_create(
             contest=contest,
             user=user,
-            timestamp=timestamp,
-            global_id=global_id,
-            local_id=local_id,
-            attached=attached,
+            defaults={
+                'timestamp': timestamp,
+                'global_id': global_id,
+                'local_id': local_id,
+                'attached': attached
+            }
         )
+        
+        if not created:
+            new_participant.timestamp = timestamp
+            new_participant.global_id = global_id
+            new_participant.local_id = local_id
+            new_participant.attached = attached
+            new_participant.save()
 
         if global_id and local_id:
             new_enrollment = ParticipantEnrollment.objects.create(
@@ -209,6 +219,28 @@ class Command(BaseCommand):
             "guiid": global_id
         }
         return requests.get(contest.api_endpoint, params=params).json()
+
+    def check_participant_enrollment(self, local_id, contest, timestamp):
+        """Check if the participant is enrolled in the contest and creates an enrollment if necessary."""
+        try:
+            participant = Participant.objects.get(local_id=local_id, contest=contest)
+        except Participant.DoesNotExist:
+            self.stdout.write(f"Usuário com ID local {local_id} não encontrado. Ignorando...")
+            return None
+
+        last_enrollment = participant.last_enrollment
+        if last_enrollment and last_enrollment.enrolled:
+            self.stdout.write(f"Usuário com ID local {local_id} já está inscrito. Ignorando...")
+            return None
+
+        if last_enrollment and not last_enrollment.enrolled:
+            self.stdout.write(f"Usuário com ID local {local_id} não está mais inscrito. Reinscrevendo...")
+            new_enrollment = ParticipantEnrollment.objects.create(
+                contest=contest,
+                user=participant,
+                enrolled=True
+            )
+            Participant.objects.filter(local_id=local_id, contest=contest).update(last_enrollment=new_enrollment)
 
     def update_user_edits(self, local_id, contest, timestamp):
         """Updates user edits in the Edit table."""
