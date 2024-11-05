@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-28 12:23+0000\n"
+"POT-Creation-Date: 2024-11-05 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -281,7 +281,7 @@ msgstr "Graphique de résultats"
 #: contests/templates/contest.html:33
 msgctxt "login-manage"
 msgid "Manage contest"
-msgstr "Gestion du concours"
+msgstr "Gérer le concours"
 
 #: contests/templates/contest.html:39 contests/templates/home.html:7
 msgctxt "main-title"
@@ -1130,17 +1130,17 @@ msgstr "Diff de l'édition"
 #: contests/templates/modify.html:193
 msgctxt "modify-qualified"
 msgid "Qualified?"
-msgstr "Qualified?"
+msgstr "Qualifié ?"
 
 #: contests/templates/modify.html:195 contests/templates/modify.html:212
 msgctxt "modify-timestamp"
 msgid "Timestamp"
-msgstr "Timestamp"
+msgstr "Horodatage"
 
 #: contests/templates/modify.html:200
 msgctxt "modify-automatic"
 msgid "Automatic"
-msgstr "Automatic"
+msgstr "Automatique"
 
 #: contests/templates/modify.html:210 contests/templates/triage.html:204
 msgctxt "triage-observation"
