@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Anterdc99",
+			"GuoPC",
 			"Huajing",
 			"Xyb",
 			"沈澄心"
@@ -125,7 +126,7 @@
 	"login-newbytes": "每日新增KB数",
 	"login-validbytes": "每日验证KB数",
 	"login-cancel": "取消",
-	"login-manage": "竞赛管理",
+	"login-manage": "管理竞赛",
 	"password-username": "用户名",
 	"edits": "编辑",
 	"edits-csv": "下载",
