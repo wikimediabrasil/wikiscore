@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 14:37+0000\n"
+"POT-Creation-Date: 2024-11-07 12:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,7 @@ msgstr ""
 #, python-format
 msgctxt "backtrack-stats"
 msgid "Edit on %(1)s with %(2)s bytes"
-msgstr "Edit on %(1)s with %(2)s bytes"
+msgstr "Ännerung de(n) %(1)s mat %(2)s Byten"
 
 #: contests/templates/backtrack.html:44
 msgctxt "backtrack-areyousure"
@@ -50,7 +50,7 @@ msgstr "Sidd Dir sécher?"
 #: contests/templates/backtrack.html:46
 msgctxt "backtrack-accept"
 msgid "Accept edit"
-msgstr "Accept edit"
+msgstr "Ännerung akzeptéieren"
 
 #: contests/templates/backtrack.html:53
 #, python-format
@@ -89,7 +89,7 @@ msgstr "Counter"
 #: contests/templates/modify.html:7 contests/templates/modify.html:133
 msgctxt "modify"
 msgid "Review"
-msgstr "Review"
+msgstr "Nokucken"
 
 #: contests/templates/base.html:88 contests/templates/compare.html:6
 msgctxt "compare"
@@ -336,7 +336,7 @@ msgstr "Most expanded article"
 #, python-format
 msgctxt "triage-bytes"
 msgid "%(1)s bytes"
-msgstr "%(1)s bytes"
+msgstr "%(1)s Byten"
 
 #: contests/templates/contest.html:109
 msgctxt "counter-biggest-edition"
@@ -498,7 +498,7 @@ msgstr "Edit diff"
 #: contests/templates/edits.html:79 contests/templates/edits.txt:1
 msgctxt "edits-timestamp"
 msgid "Edit timestamp"
-msgstr "Edit timestamp"
+msgstr "Zäitstempel änneren"
 
 #: contests/templates/edits.html:80 contests/templates/edits.txt:1
 msgctxt "edits-user"
@@ -524,7 +524,7 @@ msgstr "Neien Artikel"
 #: contests/templates/edits.html:84 contests/templates/edits.txt:1
 msgctxt "edits-valid"
 msgid "Valid edit"
-msgstr "Valid edit"
+msgstr "Gülteg Ännerung"
 
 #: contests/templates/edits.html:85 contests/templates/edits.txt:1
 msgctxt "edits-withimage"
@@ -982,28 +982,28 @@ msgstr "Modification successfully done!"
 #: contests/templates/modify.html:32
 msgctxt "modify-consult"
 msgid "Check evaluation"
-msgstr "Check evaluation"
+msgstr "Bewäertung préiwen"
 
 #: contests/templates/modify.html:42
 msgctxt "modify-diff"
 msgid "Diff"
-msgstr "Diff"
+msgstr "Ënnerscheed"
 
 #: contests/templates/modify.html:48
 msgctxt "modify-load"
 msgid "Load edit"
-msgstr "Load edit"
+msgstr "Ännerung lueden"
 
 #: contests/templates/modify.html:58
 msgctxt "modify-reavaluate"
 msgid "Reevaluate"
-msgstr "Reevaluate"
+msgstr "Nei bewäerten"
 
 #: contests/templates/modify.html:62 contests/templates/modify.html:207
 #: contests/templates/triage.html:142
 msgctxt "isvalid"
 msgid "Valid edit?"
-msgstr "Valid edit?"
+msgstr "Gülteg Ännerung?"
 
 #: contests/templates/modify.html:70 contests/templates/modify.html:101
 #: contests/templates/modify.html:166 contests/templates/modify.html:167
@@ -1064,7 +1064,7 @@ msgstr "Benotzer:"
 #: contests/templates/modify.html:164
 msgctxt "modify-label-bytes"
 msgid "Bytes:"
-msgstr "Bytes:"
+msgstr "Byten:"
 
 #: contests/templates/modify.html:165 contests/templates/triage.html:339
 msgctxt "label-summary"
@@ -1079,7 +1079,7 @@ msgstr "Neien Artikel:"
 #: contests/templates/modify.html:167
 msgctxt "modify-label-valid"
 msgid "Valid edit:"
-msgstr "Valid edit:"
+msgstr "Gülteg Ännerung:"
 
 #: contests/templates/modify.html:168
 msgctxt "modify-label-enrolled"
@@ -1119,17 +1119,17 @@ msgstr "Edit diff"
 #: contests/templates/modify.html:193
 msgctxt "modify-qualified"
 msgid "Qualified?"
-msgstr "Qualified?"
+msgstr "Qualifizéiert?"
 
 #: contests/templates/modify.html:195 contests/templates/modify.html:212
 msgctxt "modify-timestamp"
 msgid "Timestamp"
-msgstr "Timestamp"
+msgstr "Zäitstempel"
 
 #: contests/templates/modify.html:200
 msgctxt "modify-automatic"
 msgid "Automatic"
-msgstr "Automatic"
+msgstr "Automatesch"
 
 #: contests/templates/modify.html:210 contests/templates/triage.html:204
 msgctxt "triage-observation"
@@ -1154,12 +1154,12 @@ msgstr "Last evaluation"
 #: contests/templates/triage.html:100 contests/templates/triage.html:330
 msgctxt "triage-diff"
 msgid "Diff"
-msgstr "Diff"
+msgstr "Ënnerscheed"
 
 #: contests/templates/triage.html:107
 msgctxt "triage-validedit"
 msgid "Valid edit"
-msgstr "Valid edit"
+msgstr "Gülteg Ännerung"
 
 #: contests/templates/triage.html:116
 msgctxt "triage-withimage"
@@ -1169,7 +1169,7 @@ msgstr "Mat Bild"
 #: contests/templates/triage.html:131
 msgctxt "triage-fix"
 msgid "Review"
-msgstr "Review"
+msgstr "Nokucken"
 
 #: contests/templates/triage.html:137
 msgctxt "triage-evaluation"
@@ -1279,7 +1279,7 @@ msgstr "Verify"
 #: contests/templates/triage.html:327
 msgctxt "label-diff"
 msgid "Difference:"
-msgstr "Difference:"
+msgstr "Ënnerscheed:"
 
 #: contests/templates/triage.html:334
 msgctxt "triage-copyvio"
@@ -1340,7 +1340,7 @@ msgstr "%(1)s Stonnen"
 #: contests/templates/triage.html:420
 msgctxt "triage-bpp"
 msgid "Bytes per point"
-msgstr "Bytes per point"
+msgstr "Bytë pro Punkt"
 
 #: contests/templates/triage.html:425
 msgctxt "triage-maxbytes"
