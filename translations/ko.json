@@ -16,6 +16,7 @@
 	"backtrack-areyousure": "확실합니까?",
 	"backtrack-stats": "$2 바이트로 $1에 편집",
 	"modify": "검토",
+	"modify-timestamp": "타임스탬프",
 	"modify-automatic": "자동",
 	"yes": "예",
 	"no": "아니요",
