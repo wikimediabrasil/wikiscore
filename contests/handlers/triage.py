@@ -186,13 +186,12 @@ class TriageHandler:
         )
 
         for locked in lockeds:
-            diff = Edit.objects.get(contest=self.contest, diff=locked.diff)
             evaluation = Evaluation.objects.create(
                 contest=self.contest,
-                diff=diff,
+                diff=Edit.objects.get(contest=self.contest, diff=locked.diff),
                 status='0' # Status '0' indicates the edit is pending
             )
-            diff.update(last_evaluation=evaluation)
+            Edit.objects.filter(contest=self.contest, diff=locked.diff).update(last_evaluation=evaluation)
 
         return lockeds
 
