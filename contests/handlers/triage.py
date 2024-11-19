@@ -27,7 +27,7 @@ class TriageHandler:
                 return {'action': 'release'}
 
         elif request.POST.get('unhold'):
-            if Evaluator.objects.get(contest=contest, profile=self.user.profile).user_status != 'G':
+            if Evaluator.objects.get(contest=self.contest, profile=self.user.profile).user_status != 'G':
                 raise PermissionError('User is not a group member')
             else:
                 if self.unhold_edit():
