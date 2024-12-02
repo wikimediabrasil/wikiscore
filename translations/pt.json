@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"RodrigoMoreira2008"
 		]
 	},
 	"main-title": "WikiScore",
@@ -26,6 +27,8 @@
 	"modify-diff": "Dif",
 	"modify-load": "Carregar edição",
 	"modify-reavaluate": "Reavaliar",
+	"modify-qualified": "Qualificado?",
+	"modify-automatic": "Automático",
 	"isvalid": "Edição válida?",
 	"yes": "Sim",
 	"no": "Não",
@@ -137,7 +140,7 @@
 	"login-newbytes": "KBytes adicionados por dia",
 	"login-validbytes": "KBytes validados por dia",
 	"login-cancel": "Cancelar",
-	"login-manage": "Gestão de concursos",
+	"login-manage": "Gerir concurso",
 	"password-username": "Nome de utilizador",
 	"edits": "Edições",
 	"edits-csv": "Descarregar",
