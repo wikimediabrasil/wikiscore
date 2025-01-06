@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Albertoleoncio",
+			"JPLSilva",
 			"YuriNikolai"
 		]
 	},
@@ -138,7 +139,7 @@
 	"login-newbytes": "KBytes adicionados por dia",
 	"login-validbytes": "KBytes validados por dia",
 	"login-cancel": "Cancelar",
-	"login-manage": "Gerenciamento de concursos",
+	"login-manage": "Gerenciar concursos",
 	"password-username": "Nome de usuário",
 	"edits": "Edições",
 	"edits-csv": "Baixar",
