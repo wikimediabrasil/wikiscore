@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-06 12:20+0000\n"
+"POT-Creation-Date: 2025-01-13 12:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,7 @@ msgstr ""
 #, python-format
 msgctxt "backtrack-stats"
 msgid "Edit on %(1)s with %(2)s bytes"
-msgstr "Ännerung de(n) %(1)s mat %(2)s Byten"
+msgstr "Ännerung de(n) %(1)s mat %(2)s Byte"
 
 #: contests/templates/backtrack.html:44
 msgctxt "backtrack-areyousure"
@@ -312,7 +312,7 @@ msgstr "Validated edits"
 #: contests/templates/contest.html:66
 msgctxt "counter-allbytes"
 msgid "Bytes added"
-msgstr "Bytes added"
+msgstr "Byte derbäigesat"
 
 #: contests/templates/contest.html:77
 msgctxt "counter-most-edited"
@@ -336,7 +336,7 @@ msgstr "Most expanded article"
 #, python-format
 msgctxt "triage-bytes"
 msgid "%(1)s bytes"
-msgstr "%(1)s Byten"
+msgstr "%(1)s Byte"
 
 #: contests/templates/contest.html:109
 msgctxt "counter-biggest-edition"
@@ -514,7 +514,7 @@ msgstr "Account attach date"
 #: contests/templates/modify.html:209
 msgctxt "edits-bytes"
 msgid "Bytes"
-msgstr "Byten"
+msgstr "Byte"
 
 #: contests/templates/edits.html:83 contests/templates/edits.txt:1
 msgctxt "edits-newpage"
@@ -1064,7 +1064,7 @@ msgstr "Benotzer:"
 #: contests/templates/modify.html:164
 msgctxt "modify-label-bytes"
 msgid "Bytes:"
-msgstr "Byten:"
+msgstr "Byte:"
 
 #: contests/templates/modify.html:165 contests/templates/triage.html:339
 msgctxt "label-summary"
@@ -1179,7 +1179,7 @@ msgstr "Evaluation"
 #: contests/templates/triage.html:211
 msgctxt "triage-alterbytes"
 msgid "Change bytes"
-msgstr "Change bytes"
+msgstr "Byte änneren"
 
 #: contests/templates/triage.html:215
 msgctxt "triage-vda"
