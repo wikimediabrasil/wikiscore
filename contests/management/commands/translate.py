@@ -73,7 +73,16 @@ class Command(BaseCommand):
             if entry.msgstr == '':
                 entry.msgstr = entry.msgid
 
+        # Save the .po file
         po.save(po_path)
+
+        # Edit the .po file to replace the creation date with an fixed date
+        with open(po_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        content = re.sub(r'"POT-Creation-Date:[^"]*"', '"POT-Creation-Date: 2021-01-01 00:00+0000"', content)
+        with open(po_path, 'w', encoding='utf-8') as f:
+            f.write(content)
+
         print(f"Successfully converted to {po_path}")
         return po
 
