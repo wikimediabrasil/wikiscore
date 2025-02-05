@@ -21,8 +21,8 @@ class ManageHandler():
                         group=group,
                         revert_time=request.POST.get('revert_time'),
                         official_list_pageid=request.POST.get('official_list_pageid'),
-                        category_pageid=request.POST.get('category_pageid') if source == 'category' else None,
-                        category_petscan=request.POST.get('category_petscan') if source == 'petscan' else None,
+                        category_pageid=request.POST.get('sourceid') if source == 'category' else None,
+                        category_petscan=request.POST.get('sourceid') if source == 'petscan' else None,
                         endpoint=request.POST.get('endpoint'),
                         api_endpoint=request.POST.get('api_endpoint'),
                         outreach_name=request.POST.get('outreach_name') or None,
@@ -52,8 +52,8 @@ class ManageHandler():
                     contest.name = request.POST.get('name')
                     contest.revert_time = request.POST.get('revert_time')
                     contest.official_list_pageid = request.POST.get('official_list_pageid')
-                    contest.category_pageid = request.POST.get('category_pageid') if source == 'category' else None
-                    contest.category_petscan = request.POST.get('category_petscan') if source == 'petscan' else None
+                    contest.category_pageid = request.POST.get('sourceid') if source == 'category' else None
+                    contest.category_petscan = request.POST.get('sourceid') if source == 'petscan' else None
                     contest.endpoint = request.POST.get('endpoint')
                     contest.api_endpoint = request.POST.get('api_endpoint')
                     contest.outreach_name = request.POST.get('outreach_name') or None
