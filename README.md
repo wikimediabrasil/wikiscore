@@ -71,7 +71,7 @@ SOCIAL_AUTH_MEDIAWIKI_SECRET = 'your_consumer_secret'
 SECRET_KEY = 'your_Django_secret_key'
 ```
 
-## Creating a Group on Admin Interface and Tying Users to Groups
+## Creating a Group
 
 1. Start the development server:
 
@@ -83,7 +83,7 @@ python manage.py runserver
 
 3. Visit 127.0.0.1:8000/admin/ and navigate to the "Groups" section.
 
-3. Create a new group and add yourself to the group as a "Manager".
+3. Create a new group (affiliate, usergroup, unnoficial group, etc) and add yourself to the group as a "Manager".
 
 ## Setting up a Cronjob
 
