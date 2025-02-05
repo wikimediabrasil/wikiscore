@@ -12,6 +12,7 @@ class ManageHandler():
                 if Contest.objects.filter(name_id=name_id).exists():
                     raise PermissionDenied("Contest already exists.")
                 else:
+                    source = request.POST.get('source')                        
                     contest = Contest.objects.create(
                         name_id=name_id,
                         start_time=request.POST.get('start_time'),
@@ -20,8 +21,8 @@ class ManageHandler():
                         group=group,
                         revert_time=request.POST.get('revert_time'),
                         official_list_pageid=request.POST.get('official_list_pageid'),
-                        category_pageid=request.POST.get('category_pageid'),
-                        category_petscan=request.POST.get('category_petscan'),
+                        category_pageid=request.POST.get('category_pageid') if source == 'category' else None,
+                        category_petscan=request.POST.get('category_petscan') if source == 'petscan' else None,
                         endpoint=request.POST.get('endpoint'),
                         api_endpoint=request.POST.get('api_endpoint'),
                         outreach_name=request.POST.get('outreach_name') or None,
@@ -45,13 +46,14 @@ class ManageHandler():
             elif request.POST.get('do_edit') is not None:
                 if Contest.objects.filter(name_id=name_id).exists():
                     contest = Contest.objects.get(name_id=name_id)
+                    source = request.POST.get('source')
                     contest.start_time = request.POST.get('start_time')
                     contest.end_time = request.POST.get('end_time')
                     contest.name = request.POST.get('name')
                     contest.revert_time = request.POST.get('revert_time')
                     contest.official_list_pageid = request.POST.get('official_list_pageid')
-                    contest.category_pageid = request.POST.get('category_pageid')
-                    contest.category_petscan = request.POST.get('category_petscan')
+                    contest.category_pageid = request.POST.get('category_pageid') if source == 'category' else None
+                    contest.category_petscan = request.POST.get('category_petscan') if source == 'petscan' else None
                     contest.endpoint = request.POST.get('endpoint')
                     contest.api_endpoint = request.POST.get('api_endpoint')
                     contest.outreach_name = request.POST.get('outreach_name') or None

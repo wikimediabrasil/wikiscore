@@ -10,40 +10,97 @@ This is an tool used to manage contests created and managed by WikiMovimento Bra
 The system's informations comes from local databases, which contain the data on the articles editions. These databases are fed by cron jobs, which must be set up separetely.
 
 
-## Running the script locally
-Use the following command:
+## Basic Django Application Setup
+
+### Prerequisites
+
+- Python 3.x
+- Django 4.x
+- pip (Python package installer)
+
+### Installation
+
+1. Clone the repository:
+
 ```bash
-php -S 127.0.0.1:8000
+git clone https://github.com/WikiMovimentoBrasil/wikiscore.git
+cd wikiscore
 ```
 
-Then visit 127.0.0.1:8000 on your prefered browser.
+2. Create and activate a virtual environment:
 
-## Setting up a new Wiki Contest
+```bash
+python3 -m venv env
+source env/bin/activate
+```
 
-### Define database connection credentials
-If you use Toolforge, credentials for connecting to the database are automatically registered. If you use another host, credentials must be entered on the bin/connect.php file.
+3. Install the required packages:
 
-### Set up a new database and tables
-Create a new database for the contest. Instructions for the tables are described in Initial.sql.
+```bash
+pip install -r requirements.txt
+```
 
-### Add the contest
-Please check the instructions on this repository's wiki for instructions.
+4. Apply the migrations:
 
-## Setting up cron jobs
-The update.php script must be set up to run at every 10 minutes to feed the contests' databases. It is responsible for gathering the information on:
-1. new editions made in listed articles,
-2. which users are participating in the contest,
-3. mark edits made by participants on edit's table, if made after the participant's time of enrollment,
-4. checks if users has been renamed during the course of the contest,
-6. if any previous edition has been reverted, unmade or deleted
+```bash
+python manage.py migrate
+```
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+## Creating a Superuser on Django Console
 
-Please make sure to update tests as appropriate.
+1. Run the following command to create a superuser:
 
-## License
-[GNU General Public License v3.0](https://github.com/WikiMovimentoBrasil/wikiscore/blob/master/LICENSE)
+```bash
+python manage.py createsuperuser
+```
 
-## Credits
-This application was developed by the Wiki Movimento Brasil User Group.
+2. Follow the prompts to enter the username, email, and password for the superuser. Make sure the username matches the username on Wikimedia, so you can log-in with OAuth.
+
+## Setting up OAuth for Logging In
+
+1. Register your application on the [Wikimedia OAuth](https://meta.wikimedia.org/wiki/Special:OAuthConsumerRegistration) to obtain the consumer key and secret. Ensure that your request:
+    - Uses OAuth version 1.0a
+    - Sets "http://127.0.0.1:8000/" as the callback URL
+    - Grants permission solely for user identity verification
+
+2. Create your `.env` file and add the following settings:
+
+```python
+SOCIAL_AUTH_MEDIAWIKI_KEY = 'your_consumer_key'
+SOCIAL_AUTH_MEDIAWIKI_SECRET = 'your_consumer_secret'
+SECRET_KEY = 'your_Django_secret_key'
+```
+
+## Creating a Group
+
+1. Start the development server:
+
+```bash
+python manage.py runserver
+```
+
+2. Visit 127.0.0.1:8000 on your preferred browser and log in via OAuth using the superuser account.
+
+3. Visit 127.0.0.1:8000/admin/ and navigate to the "Groups" section.
+
+3. Create a new group (affiliate, usergroup, unnoficial group, etc) and add yourself to the group as a "Manager".
+
+## Setting up a Cronjob
+
+1. Open your crontab file:
+
+```bash
+crontab -e
+```
+
+2. Add the following line to the crontab file to run the update command every 10 minutes:
+
+```bash
+*/10 * * * * /path/to/your/virtualenv/bin/python /path/to/your/project/manage.py update
+```
+
+Replace `/path/to/your/virtualenv` and `/path/to/your/project` with the appropriate paths for your environment.
+
+## Creating Contests
+
+For detailed instructions on creating contests, please refer to the [GitHub Wiki](https://github.com/WikiMovimentoBrasil/wikiscore/wiki) of this repository.
