@@ -953,7 +953,7 @@ msgstr "Cancella"
 #: contests/templates/manage.html:493
 msgctxt "manage-managemail"
 msgid "Manager's email"
-msgstr "Indirizzo di posta elettronica del responsabile"
+msgstr "Utenza Wikimedia del gestore"
 
 #: contests/templates/manage.html:508
 msgctxt "manage-create"
