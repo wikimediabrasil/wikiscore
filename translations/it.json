@@ -69,7 +69,7 @@
 	"manage-bpp": "Byte per ogni punto",
 	"manage-maxbytes": "Numero massimo di byte per articolo per ciascun partecipante",
 	"manage-ipp": "Immagini per ciascun punto",
-	"manage-managemail": "Indirizzo di posta elettronica del responsabile",
+	"manage-managemail": "Utenza Wikimedia del gestore",
 	"manage-remanaged": "Nuovo responsabile designato con successo!",
 	"manage-create": "Crea",
 	"manage-confirmmanager": "Definendo un nuovo responsabile tutti i valutatori e i responsabili già registrati saranno disattivati. Vuoi continuare?",
