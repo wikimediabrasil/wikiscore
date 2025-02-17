@@ -86,28 +86,38 @@ class Command(BaseCommand):
     def get_category_articles(self, contest):
         """Coleta lista de artigos na categoria."""
         list_ = []
+        pages = []
         categorymembers_api_params = {
             "action": "query",
             "format": "json",
-            "list": "categorymembers",
-            "cmnamespace": "0",
-            "cmpageid": contest.category_pageid,
-            "cmprop": "ids|title",
-            "cmlimit": "max"
+            "prop": "info",
+            "generator": "categorymembers",
+            "inprop": "associatedpage|subjectid",
+            "gcmnamespace": "1",
+            "gcmpageid": contest.category_pageid,
+            "gcmprop": "ids|title",
+            "gcmlimit": "max",
+
         }
         response = requests.get(contest.api_endpoint, params=categorymembers_api_params).json()
         if 'query' not in response:
             return list_
             
-        list_.extend(response['query']['categorymembers'])
+        list_.extend(response['query']['pages'])
 
         # Coleta segunda página da lista, caso exista
         while 'continue' in response:
-            categorymembers_api_params['cmcontinue'] = response['continue']['cmcontinue']
+            categorymembers_api_params['gcmcontinue'] = response['continue']['gcmcontinue']
             response = requests.get(contest.api_endpoint, params=categorymembers_api_params).json()
-            list_.extend(response['query']['categorymembers'])
+            list_.extend(response['query']['pages'])
 
-        return list_
+        for page in list_.values():
+            pages.append({
+                "pageid": page['subjectid'],
+                "title": page['associatedpage'],
+            })
+
+        return pages
 
     def get_article_revisions(self, article, contest):
         """Coleta revisões do artigo."""
