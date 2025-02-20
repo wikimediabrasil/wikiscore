@@ -85,7 +85,7 @@ class Command(BaseCommand):
 
     def get_category_articles(self, contest):
         """Coleta lista de artigos na categoria."""
-        list_ = []
+        list_ = {}
         pages = []
         categorymembers_api_params = {
             "action": "query",
@@ -103,19 +103,20 @@ class Command(BaseCommand):
         if 'query' not in response:
             return list_
             
-        list_.extend(response['query']['pages'])
+        list_.update(response['query']['pages'])
 
         # Coleta segunda página da lista, caso exista
         while 'continue' in response:
             categorymembers_api_params['gcmcontinue'] = response['continue']['gcmcontinue']
             response = requests.get(contest.api_endpoint, params=categorymembers_api_params).json()
-            list_.extend(response['query']['pages'])
+            list_.update(response['query']['pages'])
 
         for page in list_.values():
-            pages.append({
-                "pageid": page['subjectid'],
-                "title": page['associatedpage'],
-            })
+            if page.get('subjectid'):
+                pages.append({
+                    "pageid": page.get('subjectid'),
+                    "title": page.get('associatedpage'),
+                })
 
         return pages
 
