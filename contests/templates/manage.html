@@ -304,7 +304,7 @@
                                 <div class="w3-row">
                                     <div class="w3-half" style="padding-{{ right }}: 8px;">
                                         <label for="control_method">
-                                            <strong>{% trans 'Control method' context 'manage-controlmethod' %}</strong>
+                                            <strong>{% trans 'Participant enrollment method' context 'manage-controlmethod' %}</strong>
                                         </label>
                                         <select
                                         id="control_method"
@@ -312,8 +312,8 @@
                                         class="w3-select w3-border w3-margin-bottom"
                                         onchange="controlMethodChange('{% if contest.pk %}{{ contest.name_id }}{% else %}create{% endif %}')"
                                         {% if contest.pk %}disabled{% else %}required{% endif %}>
-                                            <option value="outreach" {% if contest.outreach_name %}selected{% endif %}>{% trans 'Outreach Dashboard' context 'manage-outreach' %}</option>
-                                            <option value="campaign" {% if contest.campaign_event_id %}selected{% endif %}>{% trans 'Campaign Event ID' context 'manage-campaign' %}</option>
+                                            <option value="outreach" {% if contest.outreach_name %}selected{% endif %}>{% trans 'Outreach Dashboard' context 'manage-outreachdashboard' %}</option>
+                                            <option value="campaign" {% if contest.campaign_event_id %}selected{% endif %}>{% trans 'Campaign Event' context 'manage-campaign' %}</option>
                                         </select>
                                     </div>
                                     <div class="w3-half" style="padding-{{ left }}: 8px;">
@@ -540,7 +540,7 @@
                                     </div>
                                 {% else %}
                                     <label for="managemail">
-                                        <strong>{% trans "Manager's email" context 'manage-managemail' %}</strong>
+                                        <strong>{% trans "Manager's Wikimedia account" context 'manage-managemail' %}</strong>
                                     </label>
                                     <input
                                     class="w3-input w3-border w3-margin-bottom"
