@@ -102,7 +102,7 @@ msgstr ""
 "Name of the tool page where the points count of each contest participant is "
 "displayed."
 
-#: contests/templates/base.html:84 contests/templates/manage.html:458
+#: contests/templates/base.html:84 contests/templates/manage.html:508
 #: contests/templates/modify.html:7 contests/templates/modify.html:133
 msgctxt "modify"
 msgid "Review"
@@ -664,8 +664,8 @@ msgctxt "evaluators-neweval"
 msgid "Add new evaluator"
 msgstr "Label of a board containing a form for inserting a new evaluator."
 
-#: contests/templates/evaluators.html:28 contests/templates/manage.html:499
-#: contests/templates/manage.html:524
+#: contests/templates/evaluators.html:28 contests/templates/manage.html:549
+#: contests/templates/manage.html:574
 msgctxt "password-username"
 msgid "Username"
 msgstr "{{identical|Username}}"
@@ -814,138 +814,153 @@ msgid ""
 " final adjustments to the tool."
 msgstr "Text displayed on the page that describes its purpose."
 
-#: contests/templates/manage.html:8 contests/templates/manage.html:101
+#: contests/templates/manage.html:8 contests/templates/manage.html:118
 msgctxt "manage-title"
 msgid "Contest management"
 msgstr "Contest management"
 
-#: contests/templates/manage.html:21 contests/templates/manage.html:248
-#: contests/templates/manage.html:251 contests/templates/manage.html:272
+#: contests/templates/manage.html:21 contests/templates/manage.html:265
+#: contests/templates/manage.html:268 contests/templates/manage.html:289
 msgctxt "manage-catid"
 msgid "Category ID of articles"
 msgstr "Label for the input field of the contest's monitoring category."
 
-#: contests/templates/manage.html:23 contests/templates/manage.html:249
-#: contests/templates/manage.html:252 contests/templates/manage.html:272
+#: contests/templates/manage.html:23 contests/templates/manage.html:266
+#: contests/templates/manage.html:269 contests/templates/manage.html:289
 msgctxt "manage-petscan"
 msgid "PetScan ID of the pages"
 msgstr "Label for the PetScan PSID code input field."
 
-#: contests/templates/manage.html:88
+#: contests/templates/manage.html:105
 msgctxt "manage-created"
 msgid "Contest created successfully!"
 msgstr ""
 "Message displayed when a registration request for a new contest has been "
 "completed."
 
-#: contests/templates/manage.html:89
+#: contests/templates/manage.html:106
 msgctxt "manage-remanaged"
 msgid "New manager successfully defined!"
 msgstr "Success message after defining a new contest manager."
 
-#: contests/templates/manage.html:90
+#: contests/templates/manage.html:107
 msgctxt "manage-restarted"
 msgid "Contest restarted successfully! Perform the database update."
 msgstr "Contest restarted successfully! Perform the database update."
 
-#: contests/templates/manage.html:91
+#: contests/templates/manage.html:108
 msgctxt "manage-deleted"
 msgid "Contest deleted successfully!"
 msgstr "Message displayed when a contest deletion request has been completed."
 
-#: contests/templates/manage.html:107
+#: contests/templates/manage.html:124
 msgctxt "manage-about"
 msgid ""
 "This page lists the contests registered in the system and allows the "
 "creation of new contests."
 msgstr "Text displayed on the page that describes its purpose."
 
-#: contests/templates/manage.html:116
+#: contests/templates/manage.html:133
 msgctxt "manage-newcontest"
 msgid "Create new contest"
 msgstr "Title of the form for creating a new contest."
 
-#: contests/templates/manage.html:124
+#: contests/templates/manage.html:141
 msgctxt "manage-contestname"
 msgid "Contest name"
 msgstr "Label for the contest full name input field."
 
-#: contests/templates/manage.html:130
+#: contests/templates/manage.html:147
 msgctxt "manage-contestnameabout"
 msgid "Enter the full contest name"
 msgstr "Placeholder for the contest full name input field."
 
-#: contests/templates/manage.html:140
+#: contests/templates/manage.html:157
 msgctxt "manage-internalcode"
 msgid "Internal code"
 msgstr ""
 "Label for the input field of the contest's internal code, as a kind of "
 "nickname."
 
-#: contests/templates/manage.html:146
+#: contests/templates/manage.html:163
 msgctxt "manage-internalcodeabout"
 msgid "Use only lower case letters and underscores"
 msgstr "Placeholder for the input field of the contest's group"
 
-#: contests/templates/manage.html:157
+#: contests/templates/manage.html:174
 msgctxt "manage-group"
 msgid "Group"
 msgstr ""
 "Label for the input field of the contest's group (e.g.: an Wikimedia "
 "affiliate)"
 
-#: contests/templates/manage.html:173
+#: contests/templates/manage.html:190
 msgctxt "manage-starttime"
 msgid "Start time"
 msgstr "Label for the start time input field."
 
-#: contests/templates/manage.html:185
+#: contests/templates/manage.html:202
 msgctxt "manage-endtime"
 msgid "End time"
 msgstr "Label for the end time input field."
 
-#: contests/templates/manage.html:198
+#: contests/templates/manage.html:215
 msgctxt "manage-endpoint"
 msgid "Endpoint address"
 msgstr ""
 "Label for the [[:mw:Manual:Index.php|wiki access point address]] input "
 "field."
 
-#: contests/templates/manage.html:210
+#: contests/templates/manage.html:227
 msgctxt "manage-api"
 msgid "API address"
 msgstr ""
 "Label for the [[:mw:Manual:Api.php|wiki API access point address]] input "
 "field."
 
-#: contests/templates/manage.html:225
+#: contests/templates/manage.html:242
 msgctxt "manage-reverttime"
 msgid "Rollback period (hours)"
 msgstr ""
 "Label for the field for inserting the desired delay period in evaluating "
 "edits."
 
-#: contests/templates/manage.html:239
+#: contests/templates/manage.html:256
 msgctxt "manage-source"
 msgid "Monitoring method"
 msgstr ""
 "Label for the input field for the wiki edit collection method (via category "
 "or PetScan)."
 
-#: contests/templates/manage.html:260
+#: contests/templates/manage.html:277
 msgctxt "manage-listid"
 msgid "Page ID with list of articles"
 msgstr ""
 "Label for the input field of the contest's official list of articles that "
 "are part of the contest."
 
-#: contests/templates/manage.html:288
+#: contests/templates/manage.html:307
+msgctxt "manage-controlmethod"
+msgid "Participant enrollment method"
+msgstr "Participant enrollment method"
+
+#: contests/templates/manage.html:315
+msgctxt "manage-outreachdashboard"
+msgid "Outreach Dashboard"
+msgstr "Outreach Dashboard"
+
+#: contests/templates/manage.html:316
+msgctxt "manage-campaign"
+msgid "Campaign Event"
+msgstr "Campaign Event"
+
+#: contests/templates/manage.html:322
 msgctxt "manage-outreach"
 msgid "Contest name in Outreach Dashboard"
 msgstr ""
 "Label for the input field of the contest's handle on the Outreach Dashboard."
 
-#: contests/templates/manage.html:294
+#: contests/templates/manage.html:328
 msgctxt "manage-outreachplacehold"
 msgid "Campaign_Name/Program_Name"
 msgstr ""
@@ -954,134 +969,144 @@ msgstr ""
 "slash and the two underscores, which indicates that a part of the Outreach "
 "URL is being requested."
 
-#: contests/templates/manage.html:303
+#: contests/templates/manage.html:335
+msgctxt "manage-campaigneventid"
+msgid "Campaign Event ID"
+msgstr "Campaign Event ID"
+
+#: contests/templates/manage.html:341
+msgctxt "manage-campaigneventidplacehold"
+msgid "Enter the Campaign Event ID"
+msgstr "Enter the Campaign Event ID"
+
+#: contests/templates/manage.html:353
 msgctxt "manage-bpp"
 msgid "Bytes per point"
 msgstr ""
 "Label for the input field of the contest's conversion rate from bytes to "
 "points."
 
-#: contests/templates/manage.html:316
+#: contests/templates/manage.html:366
 msgctxt "manage-maxbytes"
 msgid "Maximum bytes per article-participant"
 msgstr ""
 "Label for the input field of the contest's maximum limit of bytes added by "
 "each participant in each article."
 
-#: contests/templates/manage.html:330
+#: contests/templates/manage.html:380
 msgctxt "manage-minbytes"
 msgid "Minimum bytes per edit"
 msgstr ""
 "Label for the input field of the contest's required amount of bytes added in"
 " each edition for it to be countable."
 
-#: contests/templates/manage.html:347
+#: contests/templates/manage.html:397
 msgctxt "manage-ipp"
 msgid "Images per point"
 msgstr ""
 "Label for the input field of the contest's conversion rate from images to "
 "points."
 
-#: contests/templates/manage.html:360
+#: contests/templates/manage.html:410
 msgctxt "manage-maximages"
 msgid "Maximum images per article-participant"
 msgstr ""
 "Label for the input field of the contest's maximum limit of images added by "
 "each participant in each article."
 
-#: contests/templates/manage.html:369 contests/templates/triage.html:435
+#: contests/templates/manage.html:419 contests/templates/triage.html:435
 #: contests/templates/triage.html:468
 msgctxt "triage-indef"
 msgid "Undefined"
 msgstr "{{Identical|Undefined}}"
 
-#: contests/templates/manage.html:374
+#: contests/templates/manage.html:424
 msgctxt "manage-imagemode"
 msgid "Image evaluation mode"
 msgstr "Image evaluation mode"
 
-#: contests/templates/manage.html:381
+#: contests/templates/manage.html:431
 msgctxt "manage-perarticle"
 msgid "Per article"
 msgstr "Per article"
 
-#: contests/templates/manage.html:382
+#: contests/templates/manage.html:432
 msgctxt "manage-peredit"
 msgid "Per edit"
 msgstr "Per edit"
 
-#: contests/templates/manage.html:383
+#: contests/templates/manage.html:433
 msgctxt "manage-perimage"
 msgid "Per image"
 msgstr "Per image"
 
-#: contests/templates/manage.html:392
+#: contests/templates/manage.html:442
 msgctxt "manage-palette"
 msgid "Color palette"
 msgstr "Label for contest predefined color palette selection field."
 
-#: contests/templates/manage.html:429
+#: contests/templates/manage.html:479
 msgctxt "manage-custom"
 msgid "custom"
 msgstr ""
 "Special option among the color palettes, indicating that the user wants to "
 "insert a different color instead of the predefined ones."
 
-#: contests/templates/manage.html:434
+#: contests/templates/manage.html:484
 msgctxt "manage-hexcolor"
 msgid "Custom color (hex)"
 msgstr ""
 "Label for the hexadecimal code input field for the contest theme color."
 
-#: contests/templates/manage.html:465 contests/templates/triage.html:228
+#: contests/templates/manage.html:515 contests/templates/triage.html:228
 msgctxt "triage-save"
 msgid "Save"
 msgstr ""
 "Text used in a button for the evaluator to save their evaluation in relation"
 " to the on-screen edit."
 
-#: contests/templates/manage.html:472 contests/templates/manage.html:532
+#: contests/templates/manage.html:522 contests/templates/manage.html:582
 msgctxt "manage-newmanager"
 msgid "Set new manager"
 msgstr "Text used in a button to define a new contest manager."
 
-#: contests/templates/manage.html:480
+#: contests/templates/manage.html:530
 msgctxt "manage-confirmrestart"
 msgid ""
 "By restarting the contest, all evaluations already made will be deleted. Do "
 "you want to proceed?"
 msgstr "Text displayed in an alert after a request to restart a contest."
 
-#: contests/templates/manage.html:481
+#: contests/templates/manage.html:531
 msgctxt "manage-restart"
 msgid "Restart"
 msgstr ""
 "Text used in a button to delete records from a contest's tables from the "
 "database."
 
-#: contests/templates/manage.html:487
+#: contests/templates/manage.html:537
 msgctxt "manage-confirmdelete"
 msgid ""
 "By deleting the contest, all records related to this contest will be "
 "deleted. Do you want to proceed?"
 msgstr "Text displayed in an alert after a request to delete a contest."
 
-#: contests/templates/manage.html:488
+#: contests/templates/manage.html:538
 msgctxt "manage-delete"
 msgid "Delete"
 msgstr "Text used in a button to delete a contest from the database."
 
-#: contests/templates/manage.html:493
+#: contests/templates/manage.html:543
 msgctxt "manage-managemail"
-msgid "Manager's email"
+msgid "Manager's Wikimedia account"
 msgstr "Label for the contest manager's email input field."
 
-#: contests/templates/manage.html:508
+#: contests/templates/manage.html:558
 msgctxt "manage-create"
 msgid "Create"
 msgstr "Text used in a button to create a contest in the database."
 
-#: contests/templates/manage.html:517
+#: contests/templates/manage.html:567
 msgctxt "manage-confirmmanager"
 msgid ""
 "By defining a new manager, all evaluators and managers already registered "
@@ -1089,7 +1114,7 @@ msgid ""
 msgstr ""
 "Text displayed in an alert after a request to define a new contest manager."
 
-#: contests/templates/manage.html:538
+#: contests/templates/manage.html:588
 msgctxt "login-cancel"
 msgid "Cancel"
 msgstr "{{Identical|Cancel}}"

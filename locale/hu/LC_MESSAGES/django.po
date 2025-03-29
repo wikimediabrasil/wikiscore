@@ -85,7 +85,7 @@ msgctxt "counter"
 msgid "Counter"
 msgstr "Számláló"
 
-#: contests/templates/base.html:84 contests/templates/manage.html:458
+#: contests/templates/base.html:84 contests/templates/manage.html:508
 #: contests/templates/modify.html:7 contests/templates/modify.html:133
 msgctxt "modify"
 msgid "Review"
@@ -577,8 +577,8 @@ msgctxt "evaluators-neweval"
 msgid "Add new evaluator"
 msgstr "Új értékelő hozzáadása"
 
-#: contests/templates/evaluators.html:28 contests/templates/manage.html:499
-#: contests/templates/manage.html:524
+#: contests/templates/evaluators.html:28 contests/templates/manage.html:549
+#: contests/templates/manage.html:574
 msgctxt "password-username"
 msgid "Username"
 msgstr "Felhasználónév"
@@ -726,44 +726,44 @@ msgstr ""
 "Később további információkra lehet szükségünk az eszköz végleges "
 "beállításához."
 
-#: contests/templates/manage.html:8 contests/templates/manage.html:101
+#: contests/templates/manage.html:8 contests/templates/manage.html:118
 msgctxt "manage-title"
 msgid "Contest management"
 msgstr "Versenymenedzsment"
 
-#: contests/templates/manage.html:21 contests/templates/manage.html:248
-#: contests/templates/manage.html:251 contests/templates/manage.html:272
+#: contests/templates/manage.html:21 contests/templates/manage.html:265
+#: contests/templates/manage.html:268 contests/templates/manage.html:289
 msgctxt "manage-catid"
 msgid "Category ID of articles"
 msgstr "Category ID of articles"
 
-#: contests/templates/manage.html:23 contests/templates/manage.html:249
-#: contests/templates/manage.html:252 contests/templates/manage.html:272
+#: contests/templates/manage.html:23 contests/templates/manage.html:266
+#: contests/templates/manage.html:269 contests/templates/manage.html:289
 msgctxt "manage-petscan"
 msgid "PetScan ID of the pages"
 msgstr "PetScan ID of the pages"
 
-#: contests/templates/manage.html:88
+#: contests/templates/manage.html:105
 msgctxt "manage-created"
 msgid "Contest created successfully!"
 msgstr "Contest created successfully!"
 
-#: contests/templates/manage.html:89
+#: contests/templates/manage.html:106
 msgctxt "manage-remanaged"
 msgid "New manager successfully defined!"
 msgstr "New manager successfully defined!"
 
-#: contests/templates/manage.html:90
+#: contests/templates/manage.html:107
 msgctxt "manage-restarted"
 msgid "Contest restarted successfully! Perform the database update."
 msgstr "A verseny sikeresen újraindult! Frissítsd az adatbázist!"
 
-#: contests/templates/manage.html:91
+#: contests/templates/manage.html:108
 msgctxt "manage-deleted"
 msgid "Contest deleted successfully!"
 msgstr "Verseny sikeresen törölve!"
 
-#: contests/templates/manage.html:107
+#: contests/templates/manage.html:124
 msgctxt "manage-about"
 msgid ""
 "This page lists the contests registered in the system and allows the "
@@ -772,158 +772,183 @@ msgstr ""
 "Ez az oldal felsorolja a rendszerben regisztrált versenyeket, és lehetővé "
 "teszi új versenyek létrehozását."
 
-#: contests/templates/manage.html:116
+#: contests/templates/manage.html:133
 msgctxt "manage-newcontest"
 msgid "Create new contest"
 msgstr "Új verseny létrehozása"
 
-#: contests/templates/manage.html:124
+#: contests/templates/manage.html:141
 msgctxt "manage-contestname"
 msgid "Contest name"
 msgstr "Verseny neve"
 
-#: contests/templates/manage.html:130
+#: contests/templates/manage.html:147
 msgctxt "manage-contestnameabout"
 msgid "Enter the full contest name"
 msgstr "Enter the full contest name"
 
-#: contests/templates/manage.html:140
+#: contests/templates/manage.html:157
 msgctxt "manage-internalcode"
 msgid "Internal code"
 msgstr "Belső kód"
 
-#: contests/templates/manage.html:146
+#: contests/templates/manage.html:163
 msgctxt "manage-internalcodeabout"
 msgid "Use only lower case letters and underscores"
 msgstr "Csak kisbetűket és aláhúzásjelet használj!"
 
-#: contests/templates/manage.html:157
+#: contests/templates/manage.html:174
 msgctxt "manage-group"
 msgid "Group"
 msgstr "Csoport"
 
-#: contests/templates/manage.html:173
+#: contests/templates/manage.html:190
 msgctxt "manage-starttime"
 msgid "Start time"
 msgstr "Kezdési idő"
 
-#: contests/templates/manage.html:185
+#: contests/templates/manage.html:202
 msgctxt "manage-endtime"
 msgid "End time"
 msgstr "End time"
 
-#: contests/templates/manage.html:198
+#: contests/templates/manage.html:215
 msgctxt "manage-endpoint"
 msgid "Endpoint address"
 msgstr "Endpoint address"
 
-#: contests/templates/manage.html:210
+#: contests/templates/manage.html:227
 msgctxt "manage-api"
 msgid "API address"
 msgstr "API-cím"
 
-#: contests/templates/manage.html:225
+#: contests/templates/manage.html:242
 msgctxt "manage-reverttime"
 msgid "Rollback period (hours)"
 msgstr "Rollback period (hours)"
 
-#: contests/templates/manage.html:239
+#: contests/templates/manage.html:256
 msgctxt "manage-source"
 msgid "Monitoring method"
 msgstr "Monitoring módszer"
 
-#: contests/templates/manage.html:260
+#: contests/templates/manage.html:277
 msgctxt "manage-listid"
 msgid "Page ID with list of articles"
 msgstr "Page ID with list of articles"
 
-#: contests/templates/manage.html:288
+#: contests/templates/manage.html:307
+msgctxt "manage-controlmethod"
+msgid "Participant enrollment method"
+msgstr "Participant enrollment method"
+
+#: contests/templates/manage.html:315
+msgctxt "manage-outreachdashboard"
+msgid "Outreach Dashboard"
+msgstr "Outreach Dashboard"
+
+#: contests/templates/manage.html:316
+msgctxt "manage-campaign"
+msgid "Campaign Event"
+msgstr "Campaign Event"
+
+#: contests/templates/manage.html:322
 msgctxt "manage-outreach"
 msgid "Contest name in Outreach Dashboard"
 msgstr "Contest name in Outreach Dashboard"
 
-#: contests/templates/manage.html:294
+#: contests/templates/manage.html:328
 msgctxt "manage-outreachplacehold"
 msgid "Campaign_Name/Program_Name"
 msgstr "Campaign_Name/Program_Name"
 
-#: contests/templates/manage.html:303
+#: contests/templates/manage.html:335
+msgctxt "manage-campaigneventid"
+msgid "Campaign Event ID"
+msgstr "Campaign Event ID"
+
+#: contests/templates/manage.html:341
+msgctxt "manage-campaigneventidplacehold"
+msgid "Enter the Campaign Event ID"
+msgstr "Enter the Campaign Event ID"
+
+#: contests/templates/manage.html:353
 msgctxt "manage-bpp"
 msgid "Bytes per point"
 msgstr "Bájt pontonként"
 
-#: contests/templates/manage.html:316
+#: contests/templates/manage.html:366
 msgctxt "manage-maxbytes"
 msgid "Maximum bytes per article-participant"
 msgstr "Maximum bytes per article-participant"
 
-#: contests/templates/manage.html:330
+#: contests/templates/manage.html:380
 msgctxt "manage-minbytes"
 msgid "Minimum bytes per edit"
 msgstr "Minimális bájt szerkesztésenként"
 
-#: contests/templates/manage.html:347
+#: contests/templates/manage.html:397
 msgctxt "manage-ipp"
 msgid "Images per point"
 msgstr "Képek pontonként"
 
-#: contests/templates/manage.html:360
+#: contests/templates/manage.html:410
 msgctxt "manage-maximages"
 msgid "Maximum images per article-participant"
 msgstr "Maximum images per article-participant"
 
-#: contests/templates/manage.html:369 contests/templates/triage.html:435
+#: contests/templates/manage.html:419 contests/templates/triage.html:435
 #: contests/templates/triage.html:468
 msgctxt "triage-indef"
 msgid "Undefined"
 msgstr "Nem meghatározott"
 
-#: contests/templates/manage.html:374
+#: contests/templates/manage.html:424
 msgctxt "manage-imagemode"
 msgid "Image evaluation mode"
 msgstr "Képértékelési mód"
 
-#: contests/templates/manage.html:381
+#: contests/templates/manage.html:431
 msgctxt "manage-perarticle"
 msgid "Per article"
 msgstr "Cikkenként"
 
-#: contests/templates/manage.html:382
+#: contests/templates/manage.html:432
 msgctxt "manage-peredit"
 msgid "Per edit"
 msgstr "Szerkesztésenként"
 
-#: contests/templates/manage.html:383
+#: contests/templates/manage.html:433
 msgctxt "manage-perimage"
 msgid "Per image"
 msgstr "Képenként"
 
-#: contests/templates/manage.html:392
+#: contests/templates/manage.html:442
 msgctxt "manage-palette"
 msgid "Color palette"
 msgstr "Színskála"
 
-#: contests/templates/manage.html:429
+#: contests/templates/manage.html:479
 msgctxt "manage-custom"
 msgid "custom"
 msgstr "custom"
 
-#: contests/templates/manage.html:434
+#: contests/templates/manage.html:484
 msgctxt "manage-hexcolor"
 msgid "Custom color (hex)"
 msgstr "Egyedi szín (hex)"
 
-#: contests/templates/manage.html:465 contests/templates/triage.html:228
+#: contests/templates/manage.html:515 contests/templates/triage.html:228
 msgctxt "triage-save"
 msgid "Save"
 msgstr "Mentés"
 
-#: contests/templates/manage.html:472 contests/templates/manage.html:532
+#: contests/templates/manage.html:522 contests/templates/manage.html:582
 msgctxt "manage-newmanager"
 msgid "Set new manager"
 msgstr "Új menedzser beállítása"
 
-#: contests/templates/manage.html:480
+#: contests/templates/manage.html:530
 msgctxt "manage-confirmrestart"
 msgid ""
 "By restarting the contest, all evaluations already made will be deleted. Do "
@@ -932,12 +957,12 @@ msgstr ""
 "A verseny újraindításával minden már elvégzett értékelés törlődik. Akarod "
 "folytatni?"
 
-#: contests/templates/manage.html:481
+#: contests/templates/manage.html:531
 msgctxt "manage-restart"
 msgid "Restart"
 msgstr "Újraindítás"
 
-#: contests/templates/manage.html:487
+#: contests/templates/manage.html:537
 msgctxt "manage-confirmdelete"
 msgid ""
 "By deleting the contest, all records related to this contest will be "
@@ -946,22 +971,22 @@ msgstr ""
 "A verseny törlésével a versenyhez kapcsolódó valamennyi adat törlődik. "
 "Szeretnéd folytatni?"
 
-#: contests/templates/manage.html:488
+#: contests/templates/manage.html:538
 msgctxt "manage-delete"
 msgid "Delete"
 msgstr "Törlés"
 
-#: contests/templates/manage.html:493
+#: contests/templates/manage.html:543
 msgctxt "manage-managemail"
-msgid "Manager's email"
+msgid "Manager's Wikimedia account"
 msgstr "Menedzser email címe"
 
-#: contests/templates/manage.html:508
+#: contests/templates/manage.html:558
 msgctxt "manage-create"
 msgid "Create"
 msgstr "Létrehozás"
 
-#: contests/templates/manage.html:517
+#: contests/templates/manage.html:567
 msgctxt "manage-confirmmanager"
 msgid ""
 "By defining a new manager, all evaluators and managers already registered "
@@ -970,7 +995,7 @@ msgstr ""
 "By defining a new manager, all evaluators and managers already registered "
 "will be deactivated. Do you want to proceed?"
 
-#: contests/templates/manage.html:538
+#: contests/templates/manage.html:588
 msgctxt "login-cancel"
 msgid "Cancel"
 msgstr "Mégse"
