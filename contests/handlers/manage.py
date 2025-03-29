@@ -12,7 +12,8 @@ class ManageHandler():
                 if Contest.objects.filter(name_id=name_id).exists():
                     raise PermissionDenied("Contest already exists.")
                 else:
-                    source = request.POST.get('source')                        
+                    source = request.POST.get('source')
+                    control_method = request.POST.get('control_method')
                     contest = Contest.objects.create(
                         name_id=name_id,
                         start_time=request.POST.get('start_time'),
@@ -25,8 +26,8 @@ class ManageHandler():
                         category_petscan=request.POST.get('sourceid') if source == 'petscan' else None,
                         endpoint=request.POST.get('endpoint'),
                         api_endpoint=request.POST.get('api_endpoint'),
-                        outreach_name=request.POST.get('outreach_name') or None,
-                        campaign_event_id=request.POST.get('campaign_event_id') or None,
+                        outreach_name=request.POST.get('outreach_name') if control_method == 'outreach' else None,
+                        campaign_event_id=request.POST.get('campaign_event_id') if control_method == 'campaign' else None,
                         bytes_per_points=request.POST.get('bytes_per_points'),
                         max_bytes_per_article=request.POST.get('max_bytes_per_article'),
                         minimum_bytes=request.POST.get('minimum_bytes') or None,
@@ -47,6 +48,7 @@ class ManageHandler():
                 if Contest.objects.filter(name_id=name_id).exists():
                     contest = Contest.objects.get(name_id=name_id)
                     source = request.POST.get('source')
+                    control_method = request.POST.get('control_method')
                     contest.start_time = request.POST.get('start_time')
                     contest.end_time = request.POST.get('end_time')
                     contest.name = request.POST.get('name')
@@ -56,8 +58,8 @@ class ManageHandler():
                     contest.category_petscan = request.POST.get('sourceid') if source == 'petscan' else None
                     contest.endpoint = request.POST.get('endpoint')
                     contest.api_endpoint = request.POST.get('api_endpoint')
-                    contest.outreach_name = request.POST.get('outreach_name') or None
-                    contest.campaign_event_id = request.POST.get('campaign_event_id') or None
+                    contest.outreach_name = request.POST.get('outreach_name') if control_method == 'outreach' else None
+                    contest.campaign_event_id = request.POST.get('campaign_event_id') if control_method == 'campaign' else None
                     contest.bytes_per_points = request.POST.get('bytes_per_points')
                     contest.max_bytes_per_article = request.POST.get('max_bytes_per_article')
                     contest.minimum_bytes = request.POST.get('minimum_bytes') or None
