@@ -1,5 +1,7 @@
+import requests
 from contests.models import Contest, Evaluator, Edit, Participant, Article
 from credentials.models import Profile
+from django.core.exceptions import PermissionDenied
 
 class ManageHandler():
     def execute(self, request):
