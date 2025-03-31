@@ -848,7 +848,7 @@ msgstr "Pagina-ID met lijst van artikelen"
 #: contests/templates/manage.html:307
 msgctxt "manage-controlmethod"
 msgid "Participant enrollment method"
-msgstr "Participant enrollment method"
+msgstr "Inschrijfmethode van deelnemer"
 
 #: contests/templates/manage.html:315
 msgctxt "manage-outreachdashboard"
@@ -987,7 +987,7 @@ msgstr "Verwijderen"
 #: contests/templates/manage.html:543
 msgctxt "manage-managemail"
 msgid "Manager's Wikimedia account"
-msgstr "E-mailadres van de manager"
+msgstr "Wikimedia-account van de manager"
 
 #: contests/templates/manage.html:558
 msgctxt "manage-create"

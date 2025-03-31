@@ -841,17 +841,17 @@ msgstr "Назнака на страницата со список на стат
 #: contests/templates/manage.html:307
 msgctxt "manage-controlmethod"
 msgid "Participant enrollment method"
-msgstr "Participant enrollment method"
+msgstr "Начин на запишување на учесници"
 
 #: contests/templates/manage.html:315
 msgctxt "manage-outreachdashboard"
 msgid "Outreach Dashboard"
-msgstr "Outreach Dashboard"
+msgstr "Управувачница на Досег"
 
 #: contests/templates/manage.html:316
 msgctxt "manage-campaign"
 msgid "Campaign Event"
-msgstr "Campaign Event"
+msgstr "Поход"
 
 #: contests/templates/manage.html:322
 msgctxt "manage-outreach"
@@ -866,12 +866,12 @@ msgstr "Име_на_походот/Име_на_програмата"
 #: contests/templates/manage.html:335
 msgctxt "manage-campaigneventid"
 msgid "Campaign Event ID"
-msgstr "Campaign Event ID"
+msgstr "Назнака на походот"
 
 #: contests/templates/manage.html:341
 msgctxt "manage-campaigneventidplacehold"
 msgid "Enter the Campaign Event ID"
-msgstr "Enter the Campaign Event ID"
+msgstr "Внесете назнака на походот"
 
 #: contests/templates/manage.html:353
 msgctxt "manage-bpp"
@@ -980,7 +980,7 @@ msgstr "Избриши"
 #: contests/templates/manage.html:543
 msgctxt "manage-managemail"
 msgid "Manager's Wikimedia account"
-msgstr "Е-пошта на раководителот"
+msgstr "Викимедиина сметка на раководителот"
 
 #: contests/templates/manage.html:558
 msgctxt "manage-create"

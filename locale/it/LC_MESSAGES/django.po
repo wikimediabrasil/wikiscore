@@ -864,7 +864,7 @@ msgstr "Campaign_Name/Program_Name"
 #: contests/templates/manage.html:335
 msgctxt "manage-campaigneventid"
 msgid "Campaign Event ID"
-msgstr "Campaign Event ID"
+msgstr "ID evento campagna"
 
 #: contests/templates/manage.html:341
 msgctxt "manage-campaigneventidplacehold"
