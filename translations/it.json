@@ -66,6 +66,7 @@
 	"manage-contestname": "Nome del concorso",
 	"manage-internalcodeabout": "Utilizza solo lettere minuscole e trattini bassi",
 	"manage-starttime": "Ora di inizio",
+	"manage-campaigneventid": "ID evento campagna",
 	"manage-bpp": "Byte per ogni punto",
 	"manage-maxbytes": "Numero massimo di byte per articolo per ciascun partecipante",
 	"manage-ipp": "Immagini per ciascun punto",

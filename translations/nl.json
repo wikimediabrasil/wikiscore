@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"ABPMAB",
 			"McDutchie",
 			"Mitsjol",
 			"Siebrand"
@@ -228,6 +229,7 @@
 	"manage-source": "Bewakingsmethode",
 	"manage-listid": "Pagina-ID met lijst van artikelen",
 	"manage-catid": "Categorie-ID van artikelen",
+	"manage-controlmethod": "Inschrijfmethode van deelnemer",
 	"manage-outreach": "Naam van de wedstrijd in Outreach Dashboard",
 	"manage-outreachplacehold": "Campagnenaam/Programmanaam",
 	"manage-bpp": "Bytes per punt",
@@ -242,7 +244,7 @@
 	"manage-palette": "Kleurenpalet",
 	"manage-custom": "aangepast",
 	"manage-hexcolor": "Aangepaste kleur (hexadecimaal)",
-	"manage-managemail": "E-mailadres van de manager",
+	"manage-managemail": "Wikimedia-account van de manager",
 	"manage-newmanager": "Nieuwe beheerder instellen",
 	"manage-remanaged": "Nieuwe manager succesvol ingesteld!",
 	"manage-create": "Aanmaken",
