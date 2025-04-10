@@ -847,7 +847,7 @@ msgstr "Outreach Dashboard"
 #: contests/templates/manage.html:316
 msgctxt "manage-campaign"
 msgid "Campaign Event"
-msgstr "Campaign Event"
+msgstr "캠페인 이벤트"
 
 #: contests/templates/manage.html:322
 msgctxt "manage-outreach"
@@ -862,7 +862,7 @@ msgstr "Campaign_Name/Program_Name"
 #: contests/templates/manage.html:335
 msgctxt "manage-campaigneventid"
 msgid "Campaign Event ID"
-msgstr "Campaign Event ID"
+msgstr "캠페인 이벤트 ID"
 
 #: contests/templates/manage.html:341
 msgctxt "manage-campaigneventidplacehold"
