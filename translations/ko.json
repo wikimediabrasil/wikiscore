@@ -127,6 +127,8 @@
 	"manage-starttime": "시작 시간",
 	"manage-endtime": "종료 시간",
 	"manage-api": "API 주소",
+	"manage-campaign": "캠페인 이벤트",
+	"manage-campaigneventid": "캠페인 이벤트 ID",
 	"manage-imagemode": "이미지 평가 모드",
 	"manage-perarticle": "문서당",
 	"manage-peredit": "편집당",
