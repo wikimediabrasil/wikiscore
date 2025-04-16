@@ -6,6 +6,7 @@ from datetime import datetime
 from dateutil import parser
 from contests.models import Contest, Edit, Participant, ParticipantEnrollment, Qualification, Evaluation
 from django.core.management.base import BaseCommand
+from django.utils import timezone
 
 class Command(BaseCommand):
     help = "Carrega usuários inscritos no concurso."
@@ -21,9 +22,21 @@ class Command(BaseCommand):
         if contest.campaign_event_id:
             self.stdout.write("Este concurso possui um evento de campanha.")
             event_id = contest.campaign_event_id
-            api = f"https://meta.wikimedia.org/w/rest.php/campaignevents/v0/event_registration/{event_id}/participants?include_private=no&uselang=en"
-            response = requests.get(api).json()
-            enrollments = self.parse_event(response)
+            api_base = f"https://meta.wikimedia.org/w/rest.php/campaignevents/v0/event_registration/{event_id}/participants"
+            params = {"include_private": "no", "uselang": "en"}
+            enrollments = []
+            last_participant_id = None
+            has_more_results = True
+
+            while has_more_results:
+                if last_participant_id:
+                    params["last_participant_id"] = last_participant_id
+                response = requests.get(api_base, params=params).json()
+                if not response:
+                    has_more_results = False
+                else:
+                    enrollments.extend(self.parse_event(response))
+                    last_participant_id = response[-1]['participant_id']  # Get the last participant ID for the next query
         else:
             csv_content = self.fetch_csv_data(contest)
             if csv_content:
@@ -128,7 +141,10 @@ class Command(BaseCommand):
         for enrollment in enrollments:
             global_id = enrollment['global_id']
             username = enrollment['username']
-            timestamp = parser.parse(enrollment['enrollment_timestamp'])
+            timestamp = enrollment['enrollment_timestamp']
+            if not isinstance(timestamp, datetime):
+                timestamp = parser.parse(timestamp)
+            timestamp = timezone.make_aware(timestamp, timezone.utc) if timezone.is_naive(timestamp) else timestamp.astimezone(timezone.utc)
             self.stdout.write(f"Coletando informações do usuário {username} ({global_id})...")
 
             self.insert_or_update_user(global_id, username, contest, wiki_id, timestamp)
@@ -247,6 +263,8 @@ class Command(BaseCommand):
         self.stdout.write(f"Atualizando edições do usuário com ID local {local_id}...")
         participant = Participant.objects.get(local_id=local_id, contest=contest, last_enrollment__enrolled=True)
         
+        timestamp = timezone.make_aware(timestamp, timezone.utc) if timezone.is_naive(timestamp) else timestamp.astimezone(timezone.utc)
+
         Edit.objects.filter(user_id=local_id, contest=contest, participant=None).update(participant=participant)
 
         edits = Edit.objects.filter(user_id=local_id, timestamp__gte=timestamp, contest=contest, last_qualification=None)
