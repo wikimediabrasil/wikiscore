@@ -123,20 +123,18 @@ class Command(BaseCommand):
     def process_enrollments(self, enrollments, contest, wiki_id):
         """Processes each enrollment, updating or inserting users."""
         # Get all participant enrollments for the specific contest
-        already_enrolled = Participant.objects.filter(contest=contest, last_enrollment__enrolled=True).values_list('global_id', flat=True)
+        already_enrolled_ids = Participant.objects.filter(
+            contest=contest, last_enrollment__enrolled=True
+        ).exclude(global_id__in=[enrollment['global_id'] for enrollment in enrollments]).values_list('global_id', flat=True)
 
-        # Extract global IDs from the enrollments
-        enrollments_ids = set(enrollment['global_id'] for enrollment in enrollments)
-
-        for enrollment in already_enrolled:
-            if enrollment != 0 and str(enrollment) not in enrollments_ids:
-                self.stdout.write(f"Usuário {enrollment} não está mais inscrito. Desinscrevendo...")
-                unenroll = ParticipantEnrollment.objects.create(
-                    contest=contest, 
-                    enrolled=False, 
-                    user=Participant.objects.get(global_id=enrollment, contest=contest)
-                )
-                Participant.objects.filter(global_id=enrollment, contest=contest).update(last_enrollment=unenroll)
+        for global_id in already_enrolled_ids:
+            self.stdout.write(f"Usuário {global_id} não está mais inscrito. Desinscrevendo...")
+            unenroll = ParticipantEnrollment.objects.create(
+                contest=contest,
+                enrolled=False,
+                user=Participant.objects.get(global_id=global_id, contest=contest)
+            )
+            Participant.objects.filter(global_id=global_id, contest=contest).update(last_enrollment=unenroll)
 
         for enrollment in enrollments:
             global_id = enrollment['global_id']
