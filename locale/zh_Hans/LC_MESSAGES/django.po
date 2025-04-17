@@ -790,17 +790,17 @@ msgstr "包含条目列表的页面ID"
 #: contests/templates/manage.html:307
 msgctxt "manage-controlmethod"
 msgid "Participant enrollment method"
-msgstr "Participant enrollment method"
+msgstr "参与者登记方式"
 
 #: contests/templates/manage.html:315
 msgctxt "manage-outreachdashboard"
 msgid "Outreach Dashboard"
-msgstr "Outreach Dashboard"
+msgstr "Outreach控制面板"
 
 #: contests/templates/manage.html:316
 msgctxt "manage-campaign"
 msgid "Campaign Event"
-msgstr "Campaign Event"
+msgstr "活动事件"
 
 #: contests/templates/manage.html:322
 msgctxt "manage-outreach"
@@ -815,12 +815,12 @@ msgstr "活动_名称/计划_名称"
 #: contests/templates/manage.html:335
 msgctxt "manage-campaigneventid"
 msgid "Campaign Event ID"
-msgstr "Campaign Event ID"
+msgstr "活动事件ID"
 
 #: contests/templates/manage.html:341
 msgctxt "manage-campaigneventidplacehold"
 msgid "Enter the Campaign Event ID"
-msgstr "Enter the Campaign Event ID"
+msgstr "输入活动事件ID"
 
 #: contests/templates/manage.html:353
 msgctxt "manage-bpp"
@@ -925,7 +925,7 @@ msgstr "删除"
 #: contests/templates/manage.html:543
 msgctxt "manage-managemail"
 msgid "Manager's Wikimedia account"
-msgstr "管理者的电子邮件"
+msgstr "管理者的维基媒体账号"
 
 #: contests/templates/manage.html:558
 msgctxt "manage-create"
