@@ -853,12 +853,12 @@ msgstr "Inschrijfmethode van deelnemer"
 #: contests/templates/manage.html:315
 msgctxt "manage-outreachdashboard"
 msgid "Outreach Dashboard"
-msgstr "Outreach Dashboard"
+msgstr "Outreach-dashboard"
 
 #: contests/templates/manage.html:316
 msgctxt "manage-campaign"
 msgid "Campaign Event"
-msgstr "Campaign Event"
+msgstr "Campagne-evenement"
 
 #: contests/templates/manage.html:322
 msgctxt "manage-outreach"
@@ -873,12 +873,12 @@ msgstr "Campagnenaam/Programmanaam"
 #: contests/templates/manage.html:335
 msgctxt "manage-campaigneventid"
 msgid "Campaign Event ID"
-msgstr "Campaign Event ID"
+msgstr "Campagne-evenement-ID"
 
 #: contests/templates/manage.html:341
 msgctxt "manage-campaigneventidplacehold"
 msgid "Enter the Campaign Event ID"
-msgstr "Enter the Campaign Event ID"
+msgstr "Voer het campagne-evenement-ID in"
 
 #: contests/templates/manage.html:353
 msgctxt "manage-bpp"
