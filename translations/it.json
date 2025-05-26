@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"LametinoWiki"
+			"LametinoWiki",
+			"Wheelygay"
 		]
 	},
 	"main-title": "WikiScore",
@@ -34,7 +35,16 @@
 	"label-user": "Utente:",
 	"modify-label-bytes": "Byte:",
 	"modify-label-newpage": "Nuova voce:",
+	"modify-label-withimage": "Con immagine:",
 	"evaluators-areyousure": "Sei sicuro?",
+	"edits-title": "Titolo",
+	"edits-user": "Utente",
+	"edits-bytes": "Byte",
+	"edits-newpage": "Nuova voce",
+	"edits-withimage": "Con immagine",
+	"counter-alledited": "Voci modificati",
+	"counter-user": "Utente",
+	"edits": "Modifiche",
 	"edits-about": "Questa pagina elenca tutte le modifiche dei partecipanti al concorso. Per accedere alle modifiche apportate da tutti gli utenti, scarica il file CSV.",
 	"triage": "Smistamento",
 	"triage-lasteval": "Ultima valutazione",
@@ -64,6 +74,7 @@
 	"manage-deleted": "Il concorso è stato cancellato con successo!",
 	"manage-newcontest": "Crea un nuovo concorso",
 	"manage-contestname": "Nome del concorso",
+	"manage-group": "Gruppo",
 	"manage-internalcodeabout": "Utilizza solo lettere minuscole e trattini bassi",
 	"manage-starttime": "Ora di inizio",
 	"manage-campaigneventid": "ID evento campagna",
