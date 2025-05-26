@@ -267,7 +267,7 @@ msgstr "Reevaluate"
 #: contests/templates/edits.txt:1
 msgctxt "edits-title"
 msgid "Title"
-msgstr "Title"
+msgstr "Titolo"
 
 #: contests/templates/contest.html:31
 msgctxt "login-graph"
@@ -292,7 +292,7 @@ msgstr "Listed articles"
 #: contests/templates/contest.html:48
 msgctxt "counter-alledited"
 msgid "Edited articles"
-msgstr "Edited articles"
+msgstr "Voci modificati"
 
 #: contests/templates/contest.html:52
 msgctxt "counter-allcreated"
@@ -415,7 +415,7 @@ msgstr ""
 #: contests/templates/counter.html:39
 msgctxt "counter-user"
 msgid "User"
-msgstr "User"
+msgstr "Utente"
 
 #: contests/templates/counter.html:40
 msgctxt "counter-bytes"
@@ -503,7 +503,7 @@ msgstr "Edit timestamp"
 #: contests/templates/edits.html:80 contests/templates/edits.txt:1
 msgctxt "edits-user"
 msgid "User"
-msgstr "User"
+msgstr "Utente"
 
 #: contests/templates/edits.html:81 contests/templates/edits.txt:1
 msgctxt "edits-attached"
@@ -514,12 +514,12 @@ msgstr "Account attach date"
 #: contests/templates/modify.html:209
 msgctxt "edits-bytes"
 msgid "Bytes"
-msgstr "Bytes"
+msgstr "Byte"
 
 #: contests/templates/edits.html:83 contests/templates/edits.txt:1
 msgctxt "edits-newpage"
 msgid "New article"
-msgstr "New article"
+msgstr "Nuova voce"
 
 #: contests/templates/edits.html:84 contests/templates/edits.txt:1
 msgctxt "edits-valid"
@@ -529,7 +529,7 @@ msgstr "Valid edit"
 #: contests/templates/edits.html:85 contests/templates/edits.txt:1
 msgctxt "edits-withimage"
 msgid "With image"
-msgstr "With image"
+msgstr "Con immagine"
 
 #: contests/templates/edits.html:86 contests/templates/edits.txt:1
 msgctxt "edits-reverted"
@@ -799,7 +799,7 @@ msgstr "Utilizza solo lettere minuscole e trattini bassi"
 #: contests/templates/manage.html:174
 msgctxt "manage-group"
 msgid "Group"
-msgstr "Group"
+msgstr "Gruppo"
 
 #: contests/templates/manage.html:190
 msgctxt "manage-starttime"
@@ -1114,7 +1114,7 @@ msgstr "Enrolled user:"
 #: contests/templates/modify.html:169
 msgctxt "modify-label-withimage"
 msgid "With image:"
-msgstr "With image:"
+msgstr "Con immagine:"
 
 #: contests/templates/modify.html:170
 msgctxt "modify-label-reverted"
@@ -1239,7 +1239,7 @@ msgstr "Skip"
 #: contests/templates/triage.html:245
 msgctxt "edits"
 msgid "Edits"
-msgstr "Edits"
+msgstr "Modifiche"
 
 #: contests/templates/triage.html:248
 msgctxt "triage-toeval"
