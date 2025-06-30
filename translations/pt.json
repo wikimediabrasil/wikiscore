@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Hamilton Abreu",
+			"O andras",
 			"RodrigoMoreira2008"
 		]
 	},
@@ -27,6 +28,7 @@
 	"modify-diff": "Dif",
 	"modify-load": "Carregar edição",
 	"modify-reavaluate": "Reavaliar",
+	"modify-timestamp": "Data e hora",
 	"modify-qualified": "Qualificado?",
 	"modify-automatic": "Automático",
 	"isvalid": "Edição válida?",
@@ -226,8 +228,13 @@
 	"manage-source": "Método de monitorização",
 	"manage-listid": "Identificador da página com a lista de artigos",
 	"manage-catid": "Identificador da categoria dos artigos",
+	"manage-controlmethod": "Método de inscrição dos participantes",
+	"manage-outreachdashboard": "Painel de Divulgação",
 	"manage-outreach": "Nome do concurso no Painel de Controlo da Divulgação",
 	"manage-outreachplacehold": "Nome_Campanha/Nome_Programa",
+	"manage-campaign": "Evento de Campanha",
+	"manage-campaigneventid": "ID do Evento de Campanha",
+	"manage-campaigneventidplacehold": "Introduza o ID do Evento de Campanha",
 	"manage-bpp": "Bytes por ponto",
 	"manage-maxbytes": "Máximo de bytes por participante do artigo",
 	"manage-minbytes": "Mínimo de bytes por edição",
@@ -240,7 +247,7 @@
 	"manage-palette": "Paleta de cores",
 	"manage-custom": "personalizada",
 	"manage-hexcolor": "Cor personalizada (hex)",
-	"manage-managemail": "Correio eletrónico do gestor",
+	"manage-managemail": "Conta Wikimedia do gestor",
 	"manage-newmanager": "Definir novo gestor",
 	"manage-remanaged": "Novo gestor definido!",
 	"manage-create": "Criar",

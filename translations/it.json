@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
+			"Emabarto01",
 			"LametinoWiki",
 			"Wheelygay"
 		]
@@ -15,6 +16,7 @@
 	"index-about-main": "Lo strumento ha un'interfaccia semplice che può essere tradotta in altre lingue. Permette di convalidare rapidamente le modifiche nelle voci di qualsiasi wikiconcorso. Valutatori diversi possono avere profili diversi, con registri di convalida personalizzati.",
 	"index-enroll-short": "Registra un nuovo wikiconcorso",
 	"index-enroll-intro": "Per richiedere la registrazione di un nuovo wikiconcorso, il contatto iniziale si fa tramite la mail di contatto di Wiki Movimento Brasil.",
+	"index-enroll-main": "Invia un'email a wikiscore@wmnobrasil.org e fornisci informazioni di base sul tuo gruppo (capitolo, organizzazione tematica o gruppo di utenti, ufficiale o meno) e sui potenziali concorsi. Potremmo richiederti ulteriori informazioni in seguito per le modifiche finali allo strumento.",
 	"backtrack": "Torna indietro",
 	"backtrack-areyousure": "Sei sicura/o?",
 	"backtrack-accept": "Accetta modifica",
@@ -24,16 +26,19 @@
 	"modify-consult": "Controlla la valutazione",
 	"modify-diff": "Differenze",
 	"modify-reavaluate": "Rivalutare",
+	"modify-automatic": "Automatico",
 	"isvalid": "Modifica valida?",
 	"yes": "Sì",
 	"no": "No",
 	"exit": "Esci",
 	"withimage": "Con immagine?",
 	"quantity": "Quantità",
+	"label-page": "Voce:",
 	"modify-label-edition": "Versione:",
 	"label-timestamp": "Data e ora:",
 	"label-user": "Utente:",
 	"modify-label-bytes": "Byte:",
+	"label-summary": "Riassunto:",
 	"modify-label-newpage": "Nuova voce:",
 	"modify-label-withimage": "Con immagine:",
 	"evaluators-areyousure": "Sei sicuro?",
