@@ -843,17 +843,17 @@ msgstr "Identificador da página com a lista de artigos"
 #: contests/templates/manage.html:307
 msgctxt "manage-controlmethod"
 msgid "Participant enrollment method"
-msgstr "Participant enrollment method"
+msgstr "Método de inscrição dos participantes"
 
 #: contests/templates/manage.html:315
 msgctxt "manage-outreachdashboard"
 msgid "Outreach Dashboard"
-msgstr "Outreach Dashboard"
+msgstr "Painel de Divulgação"
 
 #: contests/templates/manage.html:316
 msgctxt "manage-campaign"
 msgid "Campaign Event"
-msgstr "Campaign Event"
+msgstr "Evento de Campanha"
 
 #: contests/templates/manage.html:322
 msgctxt "manage-outreach"
@@ -868,12 +868,12 @@ msgstr "Nome_Campanha/Nome_Programa"
 #: contests/templates/manage.html:335
 msgctxt "manage-campaigneventid"
 msgid "Campaign Event ID"
-msgstr "Campaign Event ID"
+msgstr "ID do Evento de Campanha"
 
 #: contests/templates/manage.html:341
 msgctxt "manage-campaigneventidplacehold"
 msgid "Enter the Campaign Event ID"
-msgstr "Enter the Campaign Event ID"
+msgstr "Introduza o ID do Evento de Campanha"
 
 #: contests/templates/manage.html:353
 msgctxt "manage-bpp"
@@ -982,7 +982,7 @@ msgstr "Eliminar"
 #: contests/templates/manage.html:543
 msgctxt "manage-managemail"
 msgid "Manager's Wikimedia account"
-msgstr "Correio eletrónico do gestor"
+msgstr "Conta Wikimedia do gestor"
 
 #: contests/templates/manage.html:558
 msgctxt "manage-create"
@@ -1153,7 +1153,7 @@ msgstr "Qualificado?"
 #: contests/templates/modify.html:195 contests/templates/modify.html:212
 msgctxt "modify-timestamp"
 msgid "Timestamp"
-msgstr "Timestamp"
+msgstr "Data e hora"
 
 #: contests/templates/modify.html:200
 msgctxt "modify-automatic"

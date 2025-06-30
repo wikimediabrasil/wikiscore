@@ -850,17 +850,17 @@ msgstr "Identifiant de page avec la liste d'articles"
 #: contests/templates/manage.html:307
 msgctxt "manage-controlmethod"
 msgid "Participant enrollment method"
-msgstr "Participant enrollment method"
+msgstr "Méthode d’inscription des participants(es)"
 
 #: contests/templates/manage.html:315
 msgctxt "manage-outreachdashboard"
 msgid "Outreach Dashboard"
-msgstr "Outreach Dashboard"
+msgstr "Tableau de bord de sensibilisation"
 
 #: contests/templates/manage.html:316
 msgctxt "manage-campaign"
 msgid "Campaign Event"
-msgstr "Campaign Event"
+msgstr "Événement de la campagne"
 
 #: contests/templates/manage.html:322
 msgctxt "manage-outreach"
@@ -875,12 +875,12 @@ msgstr "Nom_Campagne/Nom_Programme"
 #: contests/templates/manage.html:335
 msgctxt "manage-campaigneventid"
 msgid "Campaign Event ID"
-msgstr "Campaign Event ID"
+msgstr "ID de l’événement de la campagne"
 
 #: contests/templates/manage.html:341
 msgctxt "manage-campaigneventidplacehold"
 msgid "Enter the Campaign Event ID"
-msgstr "Enter the Campaign Event ID"
+msgstr "Saisissez l’ID de l’événement de la campagne"
 
 #: contests/templates/manage.html:353
 msgctxt "manage-bpp"
@@ -989,7 +989,7 @@ msgstr "Supprimer"
 #: contests/templates/manage.html:543
 msgctxt "manage-managemail"
 msgid "Manager's Wikimedia account"
-msgstr "Courriel du gérant"
+msgstr "Compte Wikimédia du gérant"
 
 #: contests/templates/manage.html:558
 msgctxt "manage-create"

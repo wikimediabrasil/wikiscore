@@ -720,10 +720,10 @@ msgid ""
 "not) and potential contests. We may request additional information later for"
 " final adjustments to the tool."
 msgstr ""
-"Send an email to wikiscore@wmnobrasil.org and provide basic information "
-"about your group (chapter, thematic organization or user group, official or "
-"not) and potential contests. We may request additional information later for"
-" final adjustments to the tool."
+"Invia un'email a wikiscore@wmnobrasil.org e fornisci informazioni di base "
+"sul tuo gruppo (capitolo, organizzazione tematica o gruppo di utenti, "
+"ufficiale o meno) e sui potenziali concorsi. Potremmo richiederti ulteriori "
+"informazioni in seguito per le modifiche finali allo strumento."
 
 #: contests/templates/manage.html:8 contests/templates/manage.html:118
 msgctxt "manage-title"
@@ -1094,7 +1094,7 @@ msgstr "Byte:"
 #: contests/templates/modify.html:165 contests/templates/triage.html:339
 msgctxt "label-summary"
 msgid "Summary:"
-msgstr "Summary:"
+msgstr "Riassunto:"
 
 #: contests/templates/modify.html:166
 msgctxt "modify-label-newpage"
@@ -1154,7 +1154,7 @@ msgstr "Timestamp"
 #: contests/templates/modify.html:200
 msgctxt "modify-automatic"
 msgid "Automatic"
-msgstr "Automatic"
+msgstr "Automatico"
 
 #: contests/templates/modify.html:210 contests/templates/triage.html:204
 msgctxt "triage-observation"
@@ -1289,7 +1289,7 @@ msgstr "Edit details"
 #: contests/templates/triage.html:314
 msgctxt "label-page"
 msgid "Article:"
-msgstr "Article:"
+msgstr "Voce:"
 
 #: contests/templates/triage.html:318
 msgctxt "triage-authorship"
