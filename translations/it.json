@@ -35,6 +35,7 @@
 	"quantity": "Quantità",
 	"label-page": "Voce:",
 	"modify-label-edition": "Versione:",
+	"modify-label-curid": "ID Voce:",
 	"label-timestamp": "Data e ora:",
 	"label-user": "Utente:",
 	"modify-label-bytes": "Byte:",
