@@ -1074,7 +1074,7 @@ msgstr "Versione:"
 #: contests/templates/modify.html:153
 msgctxt "modify-label-curid"
 msgid "Article ID:"
-msgstr "Article ID:"
+msgstr "ID Voce:"
 
 #: contests/templates/modify.html:162 contests/templates/triage.html:323
 msgctxt "label-timestamp"
