@@ -122,10 +122,16 @@ class Command(BaseCommand):
 
     def process_enrollments(self, enrollments, contest, wiki_id):
         """Processes each enrollment, updating or inserting users."""
+        # Filter out enrollments with empty or invalid global_id
+        valid_global_ids = [
+            enrollment['global_id']
+            for enrollment in enrollments
+            if enrollment.get('global_id') not in [None, '', 0]
+        ]
         # Get all participant enrollments for the specific contest
         already_enrolled_ids = Participant.objects.filter(
             contest=contest, last_enrollment__enrolled=True
-        ).exclude(global_id__in=[enrollment['global_id'] for enrollment in enrollments]).values_list('global_id', flat=True)
+        ).exclude(global_id__in=valid_global_ids).values_list('global_id', flat=True)
 
         for global_id in already_enrolled_ids:
             self.stdout.write(f"Usuário {global_id} não está mais inscrito. Desinscrevendo...")
