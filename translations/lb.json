@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"GilPe",
 			"Volvox"
 		]
 	},
@@ -29,7 +30,7 @@
 	"label-user": "Benotzer:",
 	"modify-label-bytes": "Byte:",
 	"label-diff": "Ënnerscheed:",
-	"label-summary": "Resumé:",
+	"label-summary": "Resümmee:",
 	"modify-label-newpage": "Neien Artikel:",
 	"modify-label-valid": "Gülteg Ännerung:",
 	"modify-label-withimage": "Mat Bild:",
