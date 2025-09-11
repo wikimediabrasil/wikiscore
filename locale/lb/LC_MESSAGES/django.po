@@ -1094,7 +1094,7 @@ msgstr "Byte:"
 #: contests/templates/modify.html:165 contests/templates/triage.html:339
 msgctxt "label-summary"
 msgid "Summary:"
-msgstr "Resumé:"
+msgstr "Resümmee:"
 
 #: contests/templates/modify.html:166
 msgctxt "modify-label-newpage"
