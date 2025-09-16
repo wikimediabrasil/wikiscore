@@ -69,15 +69,19 @@ class Command(BaseCommand):
                 compare_data = self.get_revision_compare(revision, contest)
 
                 # Executa inserção no banco de dados
-                Edit.objects.create(
-                    diff=revision['revid'],
-                    article=article,
-                    timestamp=compare_data.get('timestamp'),
-                    user_id=compare_data.get('user_id'),
-                    orig_bytes=compare_data.get('bytes'),
-                    new_page=compare_data.get('new_page'),
-                    contest=contest
-                )
+                try:
+                    Edit.objects.create(
+                        diff=revision['revid'],
+                        article=article,
+                        timestamp=compare_data.get('timestamp'),
+                        user_id=compare_data.get('user_id'),
+                        orig_bytes=compare_data.get('bytes'),
+                        new_page=compare_data.get('new_page'),
+                        contest=contest
+                    )
+                except Exception as e:
+                    self.stdout.write(f" -> erro ao inserir: {e}")
+                    continue
 
                 self.stdout.write(" -> feito!")
 
