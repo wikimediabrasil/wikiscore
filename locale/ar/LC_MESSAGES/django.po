@@ -206,7 +206,7 @@ msgctxt "compare-nowikidata-about"
 msgid ""
 "The articles below are included in the category but have no connection to "
 "Wikidata."
-msgstr "المقالات أدناه مدرجة في الفئة ولكن ليس لها علاقة بـ Wikidata."
+msgstr "المقالات أدناه مدرجة في الفئة ولكن ليس لها علاقة بويكي بيانات."
 
 #: contests/templates/compare.html:189
 msgctxt "compare-inconsistency"
