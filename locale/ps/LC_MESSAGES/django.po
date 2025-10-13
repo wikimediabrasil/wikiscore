@@ -20,7 +20,7 @@ msgstr ""
 #: contests/templates/backtrack.html:7 contests/templates/base.html:96
 msgctxt "backtrack"
 msgid "Backtrack"
-msgstr "ಪಿರವು"
+msgstr "Backtrack"
 
 #: contests/templates/backtrack.html:15
 msgctxt "backtrack-about"
@@ -30,126 +30,126 @@ msgid ""
 "necessary, click on the button to accept the edit. After acceptance, the "
 "edit will be available in the evaluation queue."
 msgstr ""
-"ಈ ಪುಟೊಡು ಸೇರೊನ್ಯರ ವಿಕಿ ಪಂತೊದ ಪೊರ್ತುಡು ಮಲ್ತಿನ ಸಂಪಾದನೆಲೆನ್ ಪಟ್ಟಿ ಮಲ್ತ್‌ದ್ "
-"ಉಂಡಾಂಡ ಅವು ಎಂಚ ಮುಟ್ಟೊಡ ಪನ್ಪುನೆನ್ ನೋಂದಣಿ ಆಯೆರೆ ದುಂಬು ಮಲ್ತೆರ್.  ಅಗತ್ಯೊ "
-"ಇತ್ತ್ಂಡ, ಸಂಪೊಲಿತ್‌ನೆನ್ ಸೀಕಾರೊ ಮಲ್ಪಿಯರೆ ಗುಬ್ಬಿನ್ ಒತ್ತ್‌ಲೆ. ಸೀಕಾರೊ ಆಯಿನೆಡ್ದ್ "
-"ಬುಕ್ಕೊ, ಮೌಲ್ಯಮಾಪನೊದ ಸಾಲ್‌ಡ್ ಸಂಪೊಲಿಪಿಯರ ಆಪುಂಡು."
+"This page lists the edits participats did in the context of the wikicontest "
+"but were made before their registration in the Outreach Dashboard. If "
+"necessary, click on the button to accept the edit. After acceptance, the "
+"edit will be available in the evaluation queue."
 
 #: contests/templates/backtrack.html:36
 #, python-format
 msgctxt "backtrack-stats"
 msgid "Edit on %(1)s with %(2)s bytes"
-msgstr "ಸಂಪೊಲ್ತಿನವು %(1)sಡ್ %(2)s ಬೈಟ್ಸ್"
+msgstr "Edit on %(1)s with %(2)s bytes"
 
 #: contests/templates/backtrack.html:44
 msgctxt "backtrack-areyousure"
 msgid "Are you sure?"
-msgstr "ಈರ್ ಇಪ್ಪುನವು ನಿಗಂಟಾ?"
+msgstr "ايا تاسو ډاډه ياست؟"
 
 #: contests/templates/backtrack.html:46
 msgctxt "backtrack-accept"
 msgid "Accept edit"
-msgstr "ಸಂಪೊಲ್ತಿನೆಗ್ ಒಪ್ಪಿಗೆ"
+msgstr "سمون منل"
 
 #: contests/templates/backtrack.html:53
 #, python-format
 msgctxt "backtrack-enrollment"
 msgid "Participant enrolled on %(1)s"
-msgstr "ಬಾಗವಹಿಸಯಿನಕುಲೆನ ದಾಕಲಾತಿ %(1)s"
+msgstr "Participant enrolled on %(1)s"
 
 #: contests/templates/backtrack.html:60
 msgctxt "backtrack-success"
 msgid "Edit accepted successfully!"
-msgstr "ಒತ್ತೊಂದ್ ಸಂಪೊಲ್ತಿನವು ಸಿದ್ದಿಯಾತ್ಂಡ್!"
+msgstr "Edit accepted successfully!"
 
 #: contests/templates/base.html:56 contests/templates/base.html:76
 #: contests/templates/triage.html:7
 msgctxt "triage"
 msgid "Triage"
-msgstr "ಚಿಕಿತ್ಸೆದ ನಿರ್ದಾರೊ"
+msgstr "Triage"
 
 #: contests/templates/base.html:66 contests/templates/home.html:20
 #, python-format
 msgctxt "triage-welcome"
 msgid "Welcome, %(1)s"
-msgstr "ಸ್ವಾಗತೊ, %(1)s"
+msgstr "%(1)s، ښه راغلې!"
 
 #: contests/templates/base.html:71
 msgctxt "triage-panel"
 msgid "Panel"
-msgstr "ಆಯ್ಕೆ ಮಲ್ಪುನ ತಂಡೊ"
+msgstr "منځدړه"
 
 #: contests/templates/base.html:80 contests/templates/counter.html:7
 msgctxt "counter"
 msgid "Counter"
-msgstr "ಎದುರಾದ್"
+msgstr "شمېرگر"
 
 #: contests/templates/base.html:84 contests/templates/manage.html:508
 #: contests/templates/modify.html:7 contests/templates/modify.html:133
 msgctxt "modify"
 msgid "Review"
-msgstr "ಪರಿಶೀಲಿಸಲೆ"
+msgstr "مخکتنه"
 
 #: contests/templates/base.html:88 contests/templates/compare.html:6
 msgctxt "compare"
 msgid "Comparator"
-msgstr "ಹೋಲಿಕೆಗಾರೆ"
+msgstr "پرتلونکی"
 
 #: contests/templates/base.html:92 contests/templates/edits.html:8
 msgctxt "triage-evaluated"
 msgid "Evaluated"
-msgstr "ಮೌಲ್ಯನಿರ್ಣಯೊ"
+msgstr "ارزول شوی"
 
 #: contests/templates/base.html:100 contests/templates/evaluators.html:8
 #: contests/templates/evaluators.html:75
 msgctxt "evaluators"
 msgid "Evaluators"
-msgstr "ಮೌಲ್ಯಮಾಪಕೆರ್"
+msgstr "ارزونکي"
 
 #: contests/templates/base.html:104
 msgctxt "triage-list"
 msgid "Official list"
-msgstr "ಅದಿಕ್ರತ ಪಟ್ಟಿ"
+msgstr "رسمي لړليک"
 
 #: contests/templates/base.html:109
 msgctxt "triage-cat"
 msgid "Categorization"
-msgstr "ವರ್ಗೀಕರಣೊ"
+msgstr "ډلبندي"
 
 #: contests/templates/base.html:114
 msgctxt "triage-outreach"
 msgid "Outreach Dashboard"
-msgstr "ಪಿದಯಿ ಮುಟ್ಟುನ ದತ್ತಸಂಚಯೊ"
+msgstr "لاسرسي ليددړه"
 
 #: contests/templates/base.html:119 contests/templates/home.html:57
 msgctxt "exit"
 msgid "Exit"
-msgstr "ಪಿದಯಿ ಪೋ"
+msgstr "وتل"
 
 #: contests/templates/compare.html:33 contests/templates/compare.html:57
 msgctxt "compare-soon"
 msgid "up to 10 minutes"
-msgstr "10 ನಿಮಿಸೊ ಮುಟ್ಟ"
+msgstr "تر ۱۰ دقيقو"
 
 #: contests/templates/compare.html:57 contests/templates/compare.html:75
 msgctxt "compare-next"
 msgid "Next update in:"
-msgstr "ಪೊಸತ್ತಾದ್ ದುಂಬರಿನ"
+msgstr "راتلونکې هم‌مهالنه په:"
 
 #: contests/templates/compare.html:59
 msgctxt "compare-ended"
 msgid "Contest ended. There will be no further updates."
-msgstr "ಪಂತೊ ಮುಗಿಂಡ್. ದುಂಬುಗು ದಾಲ ಪೊಸತ್ತಾದ್ ಇಜ್ಜಿ."
+msgstr "Contest ended. There will be no further updates."
 
 #: contests/templates/compare.html:68
 msgctxt "compare-force"
 msgid "Update anyway"
-msgstr "ಏಪಲಾ ಪೊಸತ್ತ್‌ನ ಮಲ್ಪುಲೆ"
+msgstr "خامخا هم‌مهالول"
 
 #: contests/templates/compare.html:85
 msgctxt "compare-anticipate"
 msgid "Anticipate update"
-msgstr "ಪೊಸತ್ತ್‌ನ್ ನಿರೀಕ್ಷೆ ಮಲ್ಪುಲೆ"
+msgstr "Anticipate update"
 
 #: contests/templates/compare.html:87
 msgctxt "compare-early"
@@ -157,13 +157,13 @@ msgid ""
 "The last update occurred less than 30 minutes ago. Please wait before "
 "requesting a new update."
 msgstr ""
-"ಕಡೆತ ಪೊಸತ್ ಮಲ್ತ್‌ನವು 30 ನಿಮಿಸೊಡ್ದ್ ಒಂತೆ ದುಂಬು ನಡತ್ಂಡ್. ಒಂಜಿ ಪೊಸತ್ತ್ "
-"ಮಲ್ತ್‌ನೆನ್ ಕೊರ್ಪುನ ದುಂಬು ದಯಮಲ್ತ್ ನಿರೀಕ್ಷೆ ಮಲ್ಪುಲೆ."
+"The last update occurred less than 30 minutes ago. Please wait before "
+"requesting a new update."
 
 #: contests/templates/compare.html:99
 msgctxt "compare-unlisted"
 msgid "Not listed"
-msgstr "ಪಟ್ಟಿಡ್ ಇದ್ದಿ"
+msgstr "لړشوی نه دی"
 
 #: contests/templates/compare.html:103
 msgctxt "compare-unlisted-about"
@@ -171,13 +171,13 @@ msgid ""
 "The articles below are included in the category but are not listed "
 "officially."
 msgstr ""
-"ತಿರ್ತ್‌ಡಿಪ್ಪುನ ಲೇಕನೊಲು ಈ ವಿಬಾಗೊಡು ಸೇರ್ದುಂಡು ಆಂಡ ಅವು ವಿದಿವತ್ತಾದ್ ಪಟ್ಟಿ "
-"ಆತ್‌ಜಿ."
+"The articles below are included in the category but are not listed "
+"officially."
 
 #: contests/templates/compare.html:121
 msgctxt "compare-uncated"
 msgid "Removed from category"
-msgstr "ವರ್ಗೊಡ್ದ್ ದೆತ್ತ್ ಪಾಡ್ದೆರ್"
+msgstr "له وېشنيزې لرې‌کول"
 
 #: contests/templates/compare.html:125
 msgctxt "compare-uncated-about"
@@ -185,12 +185,13 @@ msgid ""
 "The articles below are listed officially, but are not included in the "
 "category."
 msgstr ""
-"ತಿರ್ತ್‌ಡಿಪ್ಪುನ ಲೇಕನೊಲು ವಿದಿವತ್ತಾದ್ ಪಟ್ಟಿ ಆತ್ಂಡ್. ಆಂಡ ಅವು ವರ್ಗೊಗು ಸೇರ್ದ್‌ಜಿ."
+"The articles below are listed officially, but are not included in the "
+"category."
 
 #: contests/templates/compare.html:143
 msgctxt "compare-deletion"
 msgid "Potential deletions"
-msgstr "ಮಾಜಾವುನ ಸಂಬವೊಲು"
+msgstr "احتمالي ړنگونې"
 
 #: contests/templates/compare.html:147
 msgctxt "compare-deletion-about"
@@ -198,13 +199,13 @@ msgid ""
 "The articles below are included in the category and are marked for some form"
 " of deletion (fast, semi-fast, by consensus, or by application)."
 msgstr ""
-"ತಿರ್ತ್‌ಡಿಪ್ಪುನ ಲೇಕನೊಲು ಈ ವಿಬಾಗೊಡು ಸೇರ್ದುಂಡು ಬುಕ್ಕೊ ಕೆಲವು ರೀತಿದ ಮಾಜಾವುನೆಗ್ "
-"ಗುರ್ತಾತ್ಂಡ್(ವೇಗೊ, ಅರೆ-ವೇಗೊ, ಒಮ್ಮತೊಡು, ಅತ್ತಂದೆ ಅನ್ವಯೊಡು)."
+"The articles below are included in the category and are marked for some form"
+" of deletion (fast, semi-fast, by consensus, or by application)."
 
 #: contests/templates/compare.html:167
 msgctxt "compare-nowikidata"
 msgid "Missing Wikidata"
-msgstr "ವಿಕಿಡೇಟಾ ತತ್ತ್ ಪೋತ್ಂಡ್"
+msgstr "ورک ويکي‌اومتوکي"
 
 #: contests/templates/compare.html:171
 msgctxt "compare-nowikidata-about"
@@ -212,13 +213,13 @@ msgid ""
 "The articles below are included in the category but have no connection to "
 "Wikidata."
 msgstr ""
-"ತಿರ್ತ್‌ಡಿಪ್ಪುನ ಲೇಕನೊಲು ಈ ವರ್ಗೊಡು ಸೇರ್ದ್ಂಡ್ ಆಂಡ ಅಯಿಕ್ ವಿಕಿಡೇಟಾದ ಸಮ್ಮಂದೊ "
-"ಇದ್ದಿ."
+"The articles below are included in the category but have no connection to "
+"Wikidata."
 
 #: contests/templates/compare.html:189
 msgctxt "compare-inconsistency"
 msgid "Inconsistencies"
-msgstr "ಸಂಗತಿ ಇದ್ಯಾಂದಿನವು"
+msgstr "ناانډولۍ"
 
 #: contests/templates/compare.html:193
 msgctxt "compare-inconsistency-about"
@@ -227,106 +228,106 @@ msgid ""
 "but were removed. If they are marked in red, the edit was validated and "
 "awarded points to the participant."
 msgstr ""
-"ತಿರ್ತ್‌ಡ್ ಪಟ್ಟಿ ಮಲ್ತ್‌ನ ಸಂಪಾದನೆಲು ವರ್ಗೊಡು ಪಟ್ಟಿ ಮಲ್ತ್‌ನ ಲೇಕನೊಲೆಗ್ ಸೇರ್ದುಂಡು."
-" ಆಂಡ ಆ ಲೇಕನೊನು ದೆತ್ತ್‌ದೆರ್. ಅವು ಕೆಂಪು ಬಣ್ಣೊಡು ಗುರ್ತಾತ್ಂಡ್.  ಸಂಪಾದನೆನ್ ಮಾನ್ಯ "
-"ಮಲ್ತ್‌ದರ್ ಬುಕ್ಕೊ ಪಾಲ್ ಪಡೆಯಿನೆಗ್ ಅಂಕೊಲೆನ್ ಕೊರ್ತೆರ್."
+"The listed edits below belong to articles that were listed in the category "
+"but were removed. If they are marked in red, the edit was validated and "
+"awarded points to the participant."
 
 #: contests/templates/compare.html:203 contests/templates/compare.html:235
 msgctxt "compare-seediff"
 msgid "See edit no."
-msgstr "ಸಂಪಾದನೆ ಸಂಕ್ಯೆನ್ ತೂಲೆ."
+msgstr "سمون شمېره وگورئ."
 
 #: contests/templates/compare.html:208
 msgctxt "compare-areyousure"
 msgid "This edit will be removed from the database. Do you want to proceed?"
-msgstr "ಈ ಸಂಪಾದನೆನ್ ದತ್ತಸಂಚಯೊಡ್ದ್ ದೆತ್ತ್ ಪಾಡುವೆರ್. ಈರ್ ದುಂಬು ಪೋಯರ ಬಯಕುವರಾ?"
+msgstr "This edit will be removed from the database. Do you want to proceed?"
 
 #: contests/templates/compare.html:211
 msgctxt "compare-delete"
 msgid "Delete"
-msgstr "ಮಾಜಾಲೆ"
+msgstr "ړنگول"
 
 #: contests/templates/compare.html:221
 msgctxt "compare-rollback"
 msgid "Rollbacks"
-msgstr "ಪಿರ ತಿರ್ಗಲೆ"
+msgstr "شاگرځ"
 
 #: contests/templates/compare.html:225
 msgctxt "compare-rollback-about"
 msgid "The listed edits below were rolled back after validation."
-msgstr "ತಿರ್ತ್‌ಡ್ ಮಲ್ತ್‌ನ ಸಂಪಾದನೆಲೆನ್ ಮಾನ್ಯತೆಡ್ದ್ ಬುಕ್ಕೊ ಪಿರ ತಿರ್ಗಲೆ."
+msgstr "The listed edits below were rolled back after validation."
 
 #: contests/templates/compare.html:242
 msgctxt "compare-reevaluate"
 msgid "Reevaluate"
-msgstr "ಪಿರ ರ್ಮೌಲ್ಯಮಾಪನ ಮಲ್ಪುಲೆ"
+msgstr "بیا ارزونه"
 
 #: contests/templates/contest.html:4 contests/templates/edits.html:78
 #: contests/templates/edits.txt:1
 msgctxt "edits-title"
 msgid "Title"
-msgstr "ತರೆಬರವು"
+msgstr "سرليک"
 
 #: contests/templates/contest.html:31
 msgctxt "login-graph"
 msgid "Graphic scoreboard"
-msgstr "ಬರವುದ ಅಂಕಪಟ್ಟಿ"
+msgstr "گراپيک نومرو دړه"
 
 #: contests/templates/contest.html:33
 msgctxt "login-manage"
 msgid "Manage contest"
-msgstr "ಪಂತೊನು ನಿರ್ವಹಣೆ ಮಲ್ಪುಲೆ"
+msgstr "سيالۍ مهارول"
 
 #: contests/templates/contest.html:39 contests/templates/home.html:7
 msgctxt "main-title"
 msgid "WikiScore"
-msgstr "ವಿಕಿಸೋರ್ಸ್"
+msgstr "ويکي‌شمېر"
 
 #: contests/templates/contest.html:44
 msgctxt "counter-allpages"
 msgid "Listed articles"
-msgstr "ಪಟ್ಟಿ ಮಲ್ತ್‌ನ ಲೇಕನೊಲು"
+msgstr "لړليک‌شوې ليکنې"
 
 #: contests/templates/contest.html:48
 msgctxt "counter-alledited"
 msgid "Edited articles"
-msgstr "ಸಂಪೊಲ್ತ್‌ನ ಲೇಕನೊಲು"
+msgstr "سمې‌شوې ليکنې"
 
 #: contests/templates/contest.html:52
 msgctxt "counter-allcreated"
 msgid "Created articles"
-msgstr "ಸ್ರಿಸ್ಟಿ ಮಲ್ತ್‌ನ ಲೇಕನೊಲು"
+msgstr "جوړې‌شوې ليکنې"
 
 #: contests/templates/contest.html:58
 msgctxt "counter-allenrolled"
 msgid "Enrolled users"
-msgstr "ನೋಂದಾಯಿಸಯಿನ ಬಳಕೆದಾರೆರ್"
+msgstr "نوم‌ليکلي کارنان"
 
 #: contests/templates/contest.html:62
 msgctxt "counter-allvalidated"
 msgid "Validated edits"
-msgstr "ಪ್ರಕಟೊ ಆಯಿನ ಸಂಪಾದನೆಲು"
+msgstr "تاییدشوي سمونونه"
 
 #: contests/templates/contest.html:66
 msgctxt "counter-allbytes"
 msgid "Bytes added"
-msgstr "ಬೈಟ್ಸ್‌ಲೆನ್ ಸೇರಾದ್‌ನೆ"
+msgstr "بايټونه ورگډ شول"
 
 #: contests/templates/contest.html:77
 msgctxt "counter-most-edited"
 msgid "Most edited article"
-msgstr "ದಿಂಜ ಸಂಪಾದನೆ ಆಯಿನ ಲೇಕನೊ"
+msgstr "ډېرې سمېل‌شوې ليکنې"
 
 #: contests/templates/contest.html:85
 #, python-format
 msgctxt "counter-editions"
 msgid "%(1)s edits"
-msgstr "%(1)s ಸಂಪಾದನೆಲು"
+msgstr "%(1)s سمونونه"
 
 #: contests/templates/contest.html:93
 msgctxt "counter-biggest-delta"
 msgid "Most expanded article"
-msgstr "ದಿಂಜ ವಿಸ್ತಾರವಾದಿಪ್ಪುನ ಲೇಕನೊ"
+msgstr "ډېره غځول‌شوې ليکنه"
 
 #: contests/templates/contest.html:101 contests/templates/contest.html:117
 #: contests/templates/triage.html:422 contests/templates/triage.html:427
@@ -334,47 +335,47 @@ msgstr "ದಿಂಜ ವಿಸ್ತಾರವಾದಿಪ್ಪುನ ಲೇಕ�
 #, python-format
 msgctxt "triage-bytes"
 msgid "%(1)s bytes"
-msgstr "%(1)s ಬೈಟ್ಸ್"
+msgstr "%(1)s بايټونه"
 
 #: contests/templates/contest.html:109
 msgctxt "counter-biggest-edition"
 msgid "Biggest edition"
-msgstr "ದಿಂಜ ಮಲ್ಲ ಆವೃತ್ತಿ"
+msgstr "لويه گڼه"
 
 #: contests/templates/contest.html:153 contests/templates/contest.html:164
 msgctxt "login-alledits"
 msgid "Edits per day"
-msgstr "ದಿನೊತ ಸಂಪಾದನೆ"
+msgstr "هره ورځ سمونونه"
 
 #: contests/templates/contest.html:171
 msgctxt "login-validedits"
 msgid "Validated edits per day"
-msgstr "ದಿನೊತ ಮಾನ್ಯತೆ ಪಡೆಯಿನ ಸಂಪಾದನೆಲು"
+msgstr "Validated edits per day"
 
 #: contests/templates/contest.html:191
 msgctxt "login-newevents"
 msgid "Created articles and enrolled participants per day"
-msgstr "ಲೇಕನೊಲೆನ್ ರಚನೆ ಮಲ್ತೆರ್ ಬುಕ್ಕೊ ದಿನೊಟು ಬಾಗವಹಿಸಯಿನಕ್ಲೆನ್ ಸೇರಾಯೆರ್"
+msgstr "Created articles and enrolled participants per day"
 
 #: contests/templates/contest.html:202
 msgctxt "login-newpages"
 msgid "New articles per day"
-msgstr "ದಿನೊತ ಪೊಸ ಲೇಕನೊಲು"
+msgstr "New articles per day"
 
 #: contests/templates/contest.html:209
 msgctxt "login-newparticipants"
 msgid "Enrolled participants per day"
-msgstr "ದಿನೊಟು ಪಾಲ್ ಪಡೆಯಿನಗ್ಲೆ ದಾಕಲೆ"
+msgstr "Enrolled participants per day"
 
 #: contests/templates/contest.html:229 contests/templates/contest.html:240
 msgctxt "login-newbytes"
 msgid "KBytes added per day"
-msgstr "ದಿನೊಟು ಸೇರಾಯಿನ ಕೆಬೈಟ್ಸ್"
+msgstr "KBytes added per day"
 
 #: contests/templates/contest.html:247
 msgctxt "login-validbytes"
 msgid "KBytes validated per day"
-msgstr "ದಿನೊಟು ಮಾನ್ಯತೆ ಪಡೆಯಿನ ಕೆಬೈಟ್ಸ್"
+msgstr "KBytes validated per day"
 
 #: contests/templates/counter.html:14
 #, python-format
@@ -383,8 +384,8 @@ msgid ""
 "This count refers to the wikicontest %(1)s and was generated on %(2)s at "
 "%(3)s UTC time."
 msgstr ""
-"ಈ ಲೆಕ್ಕೊ ವಿಕಿ ಪಂತೊಡು %(1)sನ್ ಸೂಚಿಸವುಂಡು ಬುಕ್ಕೊ %(2)sಡ್ %(3)s ಯುಟಿಸಿ ಸಮಯೊಡು "
-"ಉಂಡಾತ್ಂಡ್."
+"This count refers to the wikicontest %(1)s and was generated on %(2)s at "
+"%(3)s UTC time."
 
 #: contests/templates/counter.html:15
 msgctxt "counter-description"
@@ -395,11 +396,11 @@ msgid ""
 "registered users who have edited any of the articles in the list of this "
 "wikicontest are listed below, even if they have no valid edits."
 msgstr ""
-"ಒಟ್ಟು ಅಂಕೊಲೆನ ಪ್ರಕಾರೊ ಶ್ರೇಣಿ ಕ್ರಮೊನು ನಿರ್ದರಿಸವೆರ್.  ಅಂಕೊನು ಪ್ರತ್ಯೇಕೊ "
-"ಮಲ್ಪುವೆರ್. ಸೇರ್ಸಾಯಿನ ಬೈಟ್‌ಲೆನ ಒಟ್ಟು ಲೆಕ್ಕೊನು ಸಮವಾದ್ ಗಳಸುವೆರ್.  ಬುಕ್ಕೊಲಾ ಸಮೊ "
-"ಇತ್ತ್ಂಡ, ಗಳಸ್‌ನ ಅಕ್ಷರಮಾಲೆಡ್ ಈ ವಿಕಿ ಪಂತೊನು ಪಟ್ಟಿಡ್ ಒವ್ವೆ ಒಂಜಿ ಲೇಕನೊನ್ ಸಂಪಾದನೆ"
-" ಮಲ್ತಿನ ಮಾತ ನೋಂದಾಯಿತ ಬಳಕೆದಾರೆರೆಗ್ ಒಪ್ಪಂದೊ ಇದ್ಯಾಂದೆ ಸಂಪಾದನೆ ಇತ್ತ್ಂಡಲಾ ತಿರ್ತ್ "
-"ವಿವರೊ ಇಪ್ಪುಂಡು."
+"The ranking order is determined according to the total points, calculated "
+"with the score rounded down, using the total sum of added bytes as a "
+"tiebreaker, and if there is still a tie, in alphabetical order. All "
+"registered users who have edited any of the articles in the list of this "
+"wikicontest are listed below, even if they have no valid edits."
 
 #: contests/templates/counter.html:22
 msgctxt "counter-uptotime"
@@ -407,43 +408,43 @@ msgid ""
 "If you want to get a score up to a specific time, please specify it in the "
 "form below."
 msgstr ""
-"ಈರ್ ಒಂಜಿ ನಿಚ್ಚಯೊದ ಪೊರ್ತುಗು ಸಮಯೊಗು ಅಂಕೊ ದೆತೊನೊಡಾಂಡ, ದಯಮಲ್ತ್ ತಿರ್ತ್‌ದ ನಮೂನೆಡ್ "
-"ಸೂಚಿಸಲೆ."
+"If you want to get a score up to a specific time, please specify it in the "
+"form below."
 
 #: contests/templates/counter.html:39
 msgctxt "counter-user"
 msgid "User"
-msgstr "ಬಳಕೆದಾರೆ"
+msgstr "کارن"
 
 #: contests/templates/counter.html:40
 msgctxt "counter-bytes"
 msgid "Sum of bytes"
-msgstr "ಒಟ್ಟು ಬೈಟ್ಸ್‌ಲು"
+msgstr "بايټونو ټولگه"
 
 #: contests/templates/counter.html:41
 msgctxt "counter-edits"
 msgid "Total edits"
-msgstr "ಒಟ್ಟು ಸಂಪಾದನೆಲು"
+msgstr "ټولټال سمونونه"
 
 #: contests/templates/counter.html:42
 msgctxt "counter-ppb"
 msgid "Points per byte"
-msgstr "ಒಂಜಿ ಬೈಟ್‌ಗ್ ಅಂಕೊಲು"
+msgstr "د هر بايټ نومرې"
 
 #: contests/templates/counter.html:43
 msgctxt "counter-images"
 msgid "Articles with images"
-msgstr "ಚಿತ್ರೊ ಲೇಕನೊ"
+msgstr "انځور لرونکې ليکنې"
 
 #: contests/templates/counter.html:44
 msgctxt "counter-ppi"
 msgid "Points per image"
-msgstr "ಒಂಜಿ ಚಿತ್ರೊಗು ಅಂಕೊಲು"
+msgstr "په هر انځور نومرې"
 
 #: contests/templates/counter.html:45
 msgctxt "counter-points"
 msgid "Total points"
-msgstr "ಒಟ್ಟು ಅಂಕೊಲು"
+msgstr "ټولټال نومرې"
 
 #: contests/templates/counter.html:47 contests/templates/counter.html:72
 #: contests/templates/evaluators.html:65
@@ -451,7 +452,7 @@ msgstr "ಒಟ್ಟು ಅಂಕೊಲು"
 #: contests/templates/evaluators.html:147
 msgctxt "counter-redefine"
 msgid "Reset"
-msgstr "ಪಿರ ಹೊಂದಿಸವೊನ್ಲ"
+msgstr "له‌سره‌اوڼل"
 
 #: contests/templates/counter.html:64
 msgctxt "counter-confirm"
@@ -459,21 +460,20 @@ msgid ""
 "All evaluations on this participant's edits will be undone. Do you want to "
 "proceed?"
 msgstr ""
-"ಪಾಲ್ ಪಡೆಯಿನಕ್ಲೆನ ಸಂಪಾದನೆಲೆನ್ ಮೌಲ್ಯಮಾಪನ ಮಲ್ಪುನಗ ರದ್ದು ಮಲ್ಪುವೆರ್. ಈರ್ ದುಂಬು "
-"ಪೋಯೆರೆ ಬಯಕುವರಾ?"
+"All evaluations on this participant's edits will be undone. Do you want to "
+"proceed?"
 
 #: contests/templates/counter.html:83 contests/templates/triage.html:304
 msgctxt "triage-noedit"
 msgid "There is no edit to be displayed at this time."
-msgstr "ಈ ಪೊರ್ತುಡು ತೋಜಾವುನ ಸಂಪಾದನೆ ಇದ್ದಿ."
+msgstr "There is no edit to be displayed at this time."
 
 #: contests/templates/counter.html:91
 msgctxt "counter-success"
 msgid ""
 "Edits successfully reset! A new database update will be performed shortly."
 msgstr ""
-"ಸಂಪಾದನೆಲು ಎಡ್ಡೆಡ್ ಪಿರ ಸಂಯೋಜನೆ ಆತ್ಂಡ್! ಒಂಜಿ ಪೊಸ ದತ್ತಸಂಚಯೊನು  ಪೊಸತ್ತಾದ್ ಬೇಗೊ "
-"ಮಲ್ಪುವೆರ್."
+"Edits successfully reset! A new database update will be performed shortly."
 
 #: contests/templates/edits.html:61
 msgctxt "edits-about"
@@ -481,85 +481,85 @@ msgid ""
 "This page lists all edits made by contest participants. To access edits made"
 " by all users, download the CSV file."
 msgstr ""
-"ಈ ಪುಟೊಡು ಪಂತೊಡು ಪಾಲ್ ಪಡೆಯಿನಕುಲು ಮಲ್ತಿನ ಮಾತಾ ಸಂಪಾದನೆಲೆನ್ ಪಟ್ಟಿ ಮಲ್ತ್‌ನ ಉಂಡು. "
-"ಮಾತಾ ಬಳಕೆದಾರೆರ್ ಮಲ್ತಿನ ಸಂಪಾದನೆಲೆನ್ ತೂಯೆರೆ, ಸಿಎಸ್‌ವಿ ಕಡತೊಲೆನ್ ನಕಲ್‌ ಮಲ್ಪುಲೆ."
+"This page lists all edits made by contest participants. To access edits made"
+" by all users, download the CSV file."
 
 #: contests/templates/edits.html:66
 msgctxt "edits-csv"
 msgid "Download"
-msgstr "ಡೌನ್‍ಲೋಡ್"
+msgstr "راکښته‌کول"
 
 #: contests/templates/edits.html:77 contests/templates/edits.txt:1
 msgctxt "edits-diff"
 msgid "Edit diff"
-msgstr "ವ್ಯತ್ಯಾಸೊನು ಸಂಪಾದಿಸಲೆ"
+msgstr "توپير سمول"
 
 #: contests/templates/edits.html:79 contests/templates/edits.txt:1
 msgctxt "edits-timestamp"
 msgid "Edit timestamp"
-msgstr "ಸಮಯೊ ಮುದ್ರೆನ್ ಸಂಪಾದಿಸಲೆ"
+msgstr "وخت‌ټاپه سمول"
 
 #: contests/templates/edits.html:80 contests/templates/edits.txt:1
 msgctxt "edits-user"
 msgid "User"
-msgstr "ಬಳಕೆದಾರೆ"
+msgstr "کارن"
 
 #: contests/templates/edits.html:81 contests/templates/edits.txt:1
 msgctxt "edits-attached"
 msgid "Account attach date"
-msgstr "ಕಾತೆನ್ ಸೇರಾಯಿನ ದಿನೊ"
+msgstr "گڼون سره تړلي اومتوکي"
 
 #: contests/templates/edits.html:82 contests/templates/edits.txt:1
 #: contests/templates/modify.html:209
 msgctxt "edits-bytes"
 msgid "Bytes"
-msgstr "ಬೈಟ್ಸ್"
+msgstr "بايټونه"
 
 #: contests/templates/edits.html:83 contests/templates/edits.txt:1
 msgctxt "edits-newpage"
 msgid "New article"
-msgstr "ಪೊಸ ಲೇಕನೊ"
+msgstr "نوې ليکنه"
 
 #: contests/templates/edits.html:84 contests/templates/edits.txt:1
 msgctxt "edits-valid"
 msgid "Valid edit"
-msgstr "ಮಾನಾದಿಗೆದ ಸಂಪಾದನೆ"
+msgstr "باوري سمون"
 
 #: contests/templates/edits.html:85 contests/templates/edits.txt:1
 msgctxt "edits-withimage"
 msgid "With image"
-msgstr "ಚಿತ್ರೊದೊಟ್ಟುಗು"
+msgstr "له انځور سره"
 
 #: contests/templates/edits.html:86 contests/templates/edits.txt:1
 msgctxt "edits-reverted"
 msgid "Reverted edit"
-msgstr "ಪಿರ ಮಲ್ತಿನ ಸಂಪಾದನೆ"
+msgstr "بېرته‌گرځول‌شوی سمون"
 
 #: contests/templates/edits.html:87 contests/templates/edits.txt:1
 #: contests/templates/modify.html:194 contests/templates/modify.html:211
 msgctxt "edits-evaluator"
 msgid "Evaluator"
-msgstr "ಮೌಲ್ಯಮಾಪಕೆ"
+msgstr "ارزوونکی"
 
 #: contests/templates/edits.html:88 contests/templates/edits.txt:1
 msgctxt "edits-evaltimestamp"
 msgid "Evaluation timestamp"
-msgstr "ಮೌಲ್ಯಮಾಪನೊದ ಸಮಯೊ ಮುದ್ರೆ"
+msgstr "ارزونې وخت‌ټاپه"
 
 #: contests/templates/edits.html:89 contests/templates/edits.txt:1
 msgctxt "edits-comment"
 msgid "Evaluator's comment"
-msgstr "ಮೌಲ್ಯಮಾಪಕೆರೆ ಅಬಿಪ್ರಾಯೊ"
+msgstr "ارزوونکي څرگندونه"
 
 #: contests/templates/edits.txt:1
 msgctxt "edits-curid"
 msgid "Article CurID"
-msgstr "ಲೇಕನೊದ ಕ್ಯೂಆರ್ ಐಡಿ"
+msgstr "ليکنې اوسنی‌پېژند"
 
 #: contests/templates/edits.txt:1
 msgctxt "edits-enrolled"
 msgid "Enrolled user"
-msgstr "ನೋಂದಾಯಿಸಯಿನ ಬಳಕೆದಾರೆ"
+msgstr "نوم‌ليکلی کارن"
 
 #: contests/templates/evaluators.html:14
 msgctxt "evaluators-about"
@@ -567,37 +567,36 @@ msgid ""
 "This page lists the managers and evaluators of this wikicontest. The contest"
 " manager also has options to enable or disable evaluators."
 msgstr ""
-"ಈ ಪುಟೊಡು ಈ ವಿಕಿ ಪಂತೊನು ನಡಪಾಪುನ ಬುಕ್ಕೊ ಮೌಲ್ಯಮಾಪಕೆರೆನ ಪಟ್ಟಿ ಉಂಡು. ಪಂತೊಡು "
-"ನಡಪಾದ್ ಕೊರ್ಪುನ ಅತ್ತಂಡ ಮೌಲ್ಯಮಾಪಕೆರೆನ್ ಸಕ್ರಿಯ ಅತ್ತಂದೆ ನಿಷ್ಕ್ರಿಯ ಮಲ್ಪುನ "
-"ಆಯ್ಕೆಲುಲಾ ಉಂಡು."
+"This page lists the managers and evaluators of this wikicontest. The contest"
+" manager also has options to enable or disable evaluators."
 
 #: contests/templates/evaluators.html:20
 msgctxt "evaluators-neweval"
 msgid "Add new evaluator"
-msgstr "ಪೊಸ ಮೌಲ್ಯಮಾಪಕೆರೆನ್ ಸೇರಾಲೆ"
+msgstr "نوی ارزوونکي ورگډول"
 
 #: contests/templates/evaluators.html:28 contests/templates/manage.html:549
 #: contests/templates/manage.html:574
 msgctxt "password-username"
 msgid "Username"
-msgstr "ಬಳಕೆದಾರರೆ ಪುದರ್"
+msgstr "کارن‌نوم"
 
 #: contests/templates/evaluators.html:34
 msgctxt "evaluators-register"
 msgid "Register"
-msgstr "ನೋಂದಾಯಿಸಲೆ"
+msgstr "نوم‌ليکنه"
 
 #: contests/templates/evaluators.html:44
 msgctxt "evaluators-manager"
 msgid "Managers"
-msgstr "ನಡಪಾದ್ ಕೊರ್ಪುನಾರ್"
+msgstr "مهارگر"
 
 #: contests/templates/evaluators.html:54 contests/templates/evaluators.html:85
 #: contests/templates/evaluators.html:126
 #, python-format
 msgctxt "evaluators-stats"
 msgid "%(1)s evaluations performed"
-msgstr "%(1)s ಮೌಲ್ಯಮಾಪನೊಲೆನ್ ಮಲ್ತೆರ್"
+msgstr "%(1)s ارزونې ترسره شوې"
 
 #: contests/templates/evaluators.html:63 contests/templates/evaluators.html:94
 #: contests/templates/evaluators.html:104
@@ -605,27 +604,27 @@ msgstr "%(1)s ಮೌಲ್ಯಮಾಪನೊಲೆನ್ ಮಲ್ತೆರ್"
 #: contests/templates/evaluators.html:145 contests/templates/triage.html:280
 msgctxt "evaluators-areyousure"
 msgid "Are you sure?"
-msgstr "ಈರೆಗ್ ಕಂಡಿತೊ ಉಂಡ?"
+msgstr "آيا تاسې ډاډه ياست؟"
 
 #: contests/templates/evaluators.html:96
 msgctxt "evaluators-disable"
 msgid "Disable"
-msgstr "ಅನರ್ಹೊ"
+msgstr "ناچارن"
 
 #: contests/templates/evaluators.html:116
 msgctxt "evaluators-disabled"
 msgid "Disabled"
-msgstr "ಅನರ್ಹೊ"
+msgstr "ناچارن‌شوی"
 
 #: contests/templates/evaluators.html:137
 msgctxt "evaluators-enable"
 msgid "Enable"
-msgstr "ಅರ್ಹೊ"
+msgstr "چارن"
 
 #: contests/templates/graph.html:7 contests/templates/graph.html:25
 msgctxt "graph"
 msgid "Points graph"
-msgstr "ಬಿಂದುರೇಕೆ"
+msgstr "نومرو گراپ"
 
 #: contests/templates/graph.html:31
 msgctxt "graph-about"
@@ -638,42 +637,43 @@ msgid ""
 "inserted by the organizers of the wikicontest on their official page should "
 "be considered."
 msgstr ""
-"ತಿರ್ತ್‌ದ ರೇಕೆನ್ ವಿಕಿ ಪಂತೊದ ಪೊರ್ತುಡು ಸುರುತ 9 ಜನೊ ಬಾಗವಹಿಸಹಿನಕ್ಲ್ ಪಡೆಯಿನ "
-"ಅಂಕೊಲೆನ ವಿಕಾಸೊನು ತೋಜಾವುಂಡು. ಈ ರೇಕೆ ಸ್ವಯಂಚಾಲಿತವಾದ್ ಉಂಡಾಪುಂಡು.  ಬುಕ್ಕೊ ಉಂದು "
-"ಅಕೇರಿ ಅತ್ತಂದೆ ವಿಸ್ವಾಸೊದ ಶ್ರೇಣಿನ್ ರೂಪಿಸವುಜಿ. ದಯಮಲ್ತ್ ಗಮನಿಸಲೆ, ಸಂಗಟಕೆರ್ ದುಂಬುದ"
-" ಸಂಪಾದನೆಲೆನ್ ಪೆರ ಮೌಲ್ಯಮಾಪನ ಮಲ್ಪೊಲಿ, ಬುಕ್ಕೊ ಪ್ರದರ್ಶಿತ ಬಿಂದುಲೆನ್ ದುಂಬುದ ಸೂಚನೆ "
-"ಇಜ್ಜಿಂಡಲಾ ಪೆರ ಲೆಕ್ಕೊ ಮಲ್ಪೊಲಿ. ಒಂಜಿ ಒಪ್ಪಿಗೆ ಇತ್ತ್ಂಡ, ವಿಕಿ ಪಂತೊದ ಸಂಗಟಕೆರ್ "
-"ಅಕ್ಲೆನ ಒಪ್ಪುನ ಪುಟೊಟು ಸೇರಾಯಿನ ಪಟ್ಟಿನ್ ಮಾತ್ರೊ ಲೆಕ್ಕೊಗು ದೆತೊನೊಡು."
+"The graph below displays the evolution of scores received by the top 9 "
+"participants during the wikicontest. This graph is generated automatically "
+"and does not constitute a final or official ranking. Please note that "
+"organizers may reevaluate previous edits, and the displayed points may be "
+"recalculated without prior notice. In case of discrepancy, only the table "
+"inserted by the organizers of the wikicontest on their official page should "
+"be considered."
 
 #: contests/templates/graph.html:49
 msgctxt "graph-axis"
 msgid "Ranking of the top 9 participants by elapsed day"
-msgstr "ಕರಿನ ದಿನೊಟು ಸುರುತ 9 ಪಾಲ್ ಪಡೆಯಿನಕ್ಲೆನ ಶ್ರೇಣಿ"
+msgstr "Ranking of the top 9 participants by elapsed day"
 
 #: contests/templates/home.html:44
 msgctxt "contest-enter"
 msgid "Join a contest"
-msgstr "ಪಂತೊಡು ಸೇರೊನ್ಲೆ"
+msgstr "سيالۍ کې گډون‌کول"
 
 #: contests/templates/home.html:50
 msgctxt "contest-manage"
 msgid "Manage contests"
-msgstr "ಪಂತೊಲೆನ್ ನಡಪಾದ್ ಕೊರ್ಲೆ"
+msgstr "سيالۍ مهارول"
 
 #: contests/templates/home.html:63
 msgctxt "login"
 msgid "Log in"
-msgstr "ಸಂಪರ್ಕ ಪಡೆಲೆ"
+msgstr "ننوتل"
 
 #: contests/templates/home.html:77
 msgctxt "contest-select"
 msgid "Select your contest"
-msgstr "ಈರೆನ ಪಂತೊನು ಆಯ್ಕೆ ಮಲ್ಪುಲೆ"
+msgstr "خپله سيالي غوره‌کول"
 
 #: contests/templates/home.html:117
 msgctxt "index-about-short"
 msgid "What is it?"
-msgstr "ಉಂದು ದಾಯ್ತ?"
+msgstr "دا څه دي؟"
 
 #: contests/templates/home.html:119
 msgctxt "index-about-intro"
@@ -681,8 +681,8 @@ msgid ""
 "WikiScore is a tool created to validate edits and count scores of "
 "participants in wikicontests."
 msgstr ""
-"ವಿಕಿಸ್ಕೋರ್ ಪಂಡ ಸಂಪೊಲ್ತಿನೆನ್ ಮಾನ್ಯ ಮಲ್ಪೆರೆ ಬುಕ್ಕೊ ವಿಕಿ ಪಂತೊಲೆಡ್ ಪಾಲ್ "
-"ಪಡೆಯಿನಕ್ಲೆನ ಲೆಕ್ಕೊನು ದೀಡೊನ್ಯರ ತಯಾರ್ ಮಲ್ತಿನ ಒಓಂಜಿ ಸಾದನೊ."
+"WikiScore is a tool created to validate edits and count scores of "
+"participants in wikicontests."
 
 #: contests/templates/home.html:120
 msgctxt "index-about-main"
@@ -692,15 +692,15 @@ msgid ""
 "evaluators may have different profiles, with individualized validation "
 "records."
 msgstr ""
-"ಈ ಸಾದನೊಗು ಬೇತೆ ಬಾಸೆಲೆಗ್ ಅನುವಾದೊ ಮಲ್ಪುನ ಒಂಜಿ ಸುಲಬೊದ ಸಾದಿ ಉಂಡು. ಒವ್ವೆ ವಿಕಿ "
-"ಪಂತೊಲೆಡ್ ಲೇಕನೊಲೆಡ್ ಸಂಪಾದನೆಲೆನ್ ಬೇಗ ಒತ್ತೊನ್ಯರ ಉಂದು ಅನುವು ಮಲ್ಪುಂಡು. ಬೇತೆ ಬೇತೆ "
-"ಮೌಲ್ಯಮಾಪಕೆರ್ ಬೇತೆ ಬೇತೆ ವಿವರಣೆಲೆನ್ ತೋಜಾವೊಲಿ. ಸ್ವಂತೊ ಮಾನ್ಯತೆದ ದಾಕಲೆಲೆನ್ "
-"ದೀಡೊನೊಲಿ."
+"The tool has a simple interface translatable to other languages. It allows "
+"to quickly validate edits in articles from any wikicontest. Different "
+"evaluators may have different profiles, with individualized validation "
+"records."
 
 #: contests/templates/home.html:129
 msgctxt "index-enroll-short"
 msgid "Register a new wikicontest"
-msgstr "ಒಂಜಿ ಪೊಸ ವಿಕಿ ಪಂತೊನು ನೋಂದಾಯಿಸಲೆ"
+msgstr "Register a new wikicontest"
 
 #: contests/templates/home.html:134
 msgctxt "index-enroll-intro"
@@ -708,8 +708,8 @@ msgid ""
 "To request the registration of a new wikicontest, the initial contact will "
 "be made via the contact email of Wiki Movimento Brasil."
 msgstr ""
-"ಒಂಜಿ ಪೊಸ ವಿಕಿ ಪಂತೊದ ನೋಂದಾವಣೆಗ್ ವಿನಂತಿ ಮಲ್ಪಿಯರ ಸುರೂತ ಸಂಪರ್ಕೊನು ವಿಕಿ ಮೊವಿಮೆಂಟೊ"
-" ಬ್ರೆಜಿಲ್‌ದ ಸಂಪರ್ಕೊ ಇಮೇಲ್‌ಡ್ ಮಲ್ಪುವೆರ್."
+"To request the registration of a new wikicontest, the initial contact will "
+"be made via the contact email of Wiki Movimento Brasil."
 
 #: contests/templates/home.html:135
 msgctxt "index-enroll-main"
@@ -719,47 +719,47 @@ msgid ""
 "not) and potential contests. We may request additional information later for"
 " final adjustments to the tool."
 msgstr ""
-"wikiscore@wmnobrasil.org ಗ್ ಒಂಜಿ ಇಮೇಲ್ ಕಡಪುಡುಲೆ. ಬುಕ್ಕೊ ನಿಕ್ಲೆನ ಗುಂಪು "
-"(ಅದ್ಯಾಯೊ, ವಿಷಯ ಆದಾರೊದ ಸಂಗಟನೆ ಅತ್ತಂದೆ ಬಳಕೆದಾರೆರೆ ಗುಂಪು, ಅದಿಕೃತ ಅತ್ತಂದೆ ಅತ್ತ್)"
-" ಬುಕ್ಕೊ ನಡಪೊಡಾಯಿನ ಪಂತೊಲೆನ ಬಗೆಟ್ ಮೂಲದೊ ಮಾಹಿತಿನ್ ಒದಗಿಸಲೆ. ಸಾದನೊಗು ಅಕೇರಿದ "
-"ಹೊಂದಾಣಿಕೆಲೆಗ್ ನಮ ನನೊಂಜಿ ಸರ್ತಿ ಹೆಚ್ಚುವರಿ ಮಾಹಿತಿನ್ ಕೋರೊಲಿ."
+"Send an email to wikiscore@wmnobrasil.org and provide basic information "
+"about your group (chapter, thematic organization or user group, official or "
+"not) and potential contests. We may request additional information later for"
+" final adjustments to the tool."
 
 #: contests/templates/manage.html:8 contests/templates/manage.html:118
 msgctxt "manage-title"
 msgid "Contest management"
-msgstr "ಪಂತೊದ ನಿರ್ವಹಣೆ"
+msgstr "سيالۍ چاروالي"
 
 #: contests/templates/manage.html:21 contests/templates/manage.html:265
 #: contests/templates/manage.html:268 contests/templates/manage.html:289
 msgctxt "manage-catid"
 msgid "Category ID of articles"
-msgstr "ಲೇಕನೊಲೆ ವರ್ಗೊದ ಐಡಿ"
+msgstr "Category ID of articles"
 
 #: contests/templates/manage.html:23 contests/templates/manage.html:266
 #: contests/templates/manage.html:269 contests/templates/manage.html:289
 msgctxt "manage-petscan"
 msgid "PetScan ID of the pages"
-msgstr "ಪುಟೊಲೆನ ಐಡಿನ್ ತೂಲೆ"
+msgstr "PetScan ID of the pages"
 
 #: contests/templates/manage.html:105
 msgctxt "manage-created"
 msgid "Contest created successfully!"
-msgstr "ಪಂತೊ ಎಡ್ಡೆಡ್ ತಯಾರಾತ್ಂಡ್!"
+msgstr "سيالۍ په برياليتوب سره جوړه شوه!"
 
 #: contests/templates/manage.html:106
 msgctxt "manage-remanaged"
 msgid "New manager successfully defined!"
-msgstr "ಪೊಸ ವ್ಯವಸ್ತಾಪಕೆರೆನ್ ಯಶಸ್ವಿಯಾದ್ ವ್ಯಾಕ್ಯಾನಿಸಯೆರ್"
+msgstr "New manager successfully defined!"
 
 #: contests/templates/manage.html:107
 msgctxt "manage-restarted"
 msgid "Contest restarted successfully! Perform the database update."
-msgstr "ಪಂತೊ ಎಡ್ಡೆಡ್ ಸುರುವಾಂಡ್! ದತ್ತಸಂಚಯೊನು ಪೊಸತ್ ಮಲ್ಪುಲೆ."
+msgstr "سيالۍ په برياليتوب سره بيا پيل شوه! اومتوک‌اډانه هم‌مهاله کړئ."
 
 #: contests/templates/manage.html:108
 msgctxt "manage-deleted"
 msgid "Contest deleted successfully!"
-msgstr "ಪಂತೊನು ಎಡ್ಡೆಡ್ ಮಾಜಿದ್ಂಡ್!"
+msgstr "سيالۍ په برياليتوب سره ړنگه‌شوه!"
 
 #: contests/templates/manage.html:124
 msgctxt "manage-about"
@@ -767,184 +767,184 @@ msgid ""
 "This page lists the contests registered in the system and allows the "
 "creation of new contests."
 msgstr ""
-"ಈ ಪುಟೊತ ವ್ಯವಸ್ತೆಡ್ ಸೇರಾಯಿನ ಪಂತೊಲೆನ ಪಟ್ಟಿ ಮುಲ್ಪ ಉಂಡು.  ಬುಕ್ಕೊ ಪೊಸ ಪಂತೊಲೆನ್ "
-"ತಯಾರ್ ಮಲ್ಪಿಯರ ಒಪ್ಪಿಗೆ ಕೊರ್ಪುಂಡು."
+"This page lists the contests registered in the system and allows the "
+"creation of new contests."
 
 #: contests/templates/manage.html:133
 msgctxt "manage-newcontest"
 msgid "Create new contest"
-msgstr "ಪೊಸ ಪಂತೊನು ಸ್ರಿಸ್ಟಿಸಲೆ"
+msgstr "نوې سیالي جوړول"
 
 #: contests/templates/manage.html:141
 msgctxt "manage-contestname"
 msgid "Contest name"
-msgstr "ಪಂತೊದ ಪುದರ್"
+msgstr "سیالۍ نوم"
 
 #: contests/templates/manage.html:147
 msgctxt "manage-contestnameabout"
 msgid "Enter the full contest name"
-msgstr "ಪಂತೊದ ಪೂರ್ತಿ ಪುದರ್‌ನ್ ಸೇರಾಲೆ"
+msgstr "د سیالۍ بشپړ نوم دننه کړئ"
 
 #: contests/templates/manage.html:157
 msgctxt "manage-internalcode"
 msgid "Internal code"
-msgstr "ಉಲಯಿದ ಸಂಕೇತೊ"
+msgstr "دننه‌نی کوډ"
 
 #: contests/templates/manage.html:163
 msgctxt "manage-internalcodeabout"
 msgid "Use only lower case letters and underscores"
-msgstr "ಎಲ್ಯ ಅಕ್ಷರೊಲೆನ್ ಬುಕ್ಕೊ ಅಡಿಗೆರೆಲೆನ್ ಮಾತ್ರ ಗಳಸ್‌ಲೆ"
+msgstr "Use only lower case letters and underscores"
 
 #: contests/templates/manage.html:174
 msgctxt "manage-group"
 msgid "Group"
-msgstr "ಗುಂಪು"
+msgstr "ډله"
 
 #: contests/templates/manage.html:190
 msgctxt "manage-starttime"
 msgid "Start time"
-msgstr "ಸುರು ಮಲ್ಪುನ ಪೊರ್ತು"
+msgstr "پيل وخت"
 
 #: contests/templates/manage.html:202
 msgctxt "manage-endtime"
 msgid "End time"
-msgstr "ಮುಗಿಪುನ ಪೊರ್ತು"
+msgstr "پای وخت"
 
 #: contests/templates/manage.html:215
 msgctxt "manage-endpoint"
 msgid "Endpoint address"
-msgstr "ಅಕೇರಿದ ವಿಳಾಸೊ"
+msgstr "د پای ټکی پته"
 
 #: contests/templates/manage.html:227
 msgctxt "manage-api"
 msgid "API address"
-msgstr "ಎಪಿಐ ವಿಳಾಸೊ"
+msgstr "ای‌پي‌آی پته"
 
 #: contests/templates/manage.html:242
 msgctxt "manage-reverttime"
 msgid "Rollback period (hours)"
-msgstr "ಪಿರವುದ ಪೊರ್ತು(ಗಂಟೆ)"
+msgstr "شاگرځ موده (گړۍ)"
 
 #: contests/templates/manage.html:256
 msgctxt "manage-source"
 msgid "Monitoring method"
-msgstr "ಪರೀಕ್ಷಿಸವುನ ವಿದಾನೊ"
+msgstr "Monitoring method"
 
 #: contests/templates/manage.html:277
 msgctxt "manage-listid"
 msgid "Page ID with list of articles"
-msgstr "ಪಟ್ಟಿದ ಅಕೇರಿದ ಪುಟೊದ ಐಡಿ"
+msgstr "Page ID with list of articles"
 
 #: contests/templates/manage.html:307
 msgctxt "manage-controlmethod"
 msgid "Participant enrollment method"
-msgstr "ಪಾಲ್ ಪಡೆಯಿನಕ್ಲೆನ ಸೇರಾಯಿನ ವಿದಾನೊ"
+msgstr "Participant enrollment method"
 
 #: contests/templates/manage.html:315
 msgctxt "manage-outreachdashboard"
 msgid "Outreach Dashboard"
-msgstr "ದತ್ತಸಂಚಯೊ ಮುಟ್ಟುನ ಬಗೆ"
+msgstr "Outreach Dashboard"
 
 #: contests/templates/manage.html:316
 msgctxt "manage-campaign"
 msgid "Campaign Event"
-msgstr "ಪೊರ್ಂಬಾಟೊದ ಸಂಗತಿ"
+msgstr "Campaign Event"
 
 #: contests/templates/manage.html:322
 msgctxt "manage-outreach"
 msgid "Contest name in Outreach Dashboard"
-msgstr "ಪಂತೊದ ಪುದರ್ದ ದತ್ತಸಂಚಯೊ ಮುಟ್ಟುನ ಬಗೆ"
+msgstr "Contest name in Outreach Dashboard"
 
 #: contests/templates/manage.html:328
 msgctxt "manage-outreachplacehold"
 msgid "Campaign_Name/Program_Name"
-msgstr "ಪೊರ್ಂಬಾಟೊದ_ಪುದರ್/ಲೇಸ್‌ದ_ಪುದರ್"
+msgstr "Campaign_Name/Program_Name"
 
 #: contests/templates/manage.html:335
 msgctxt "manage-campaigneventid"
 msgid "Campaign Event ID"
-msgstr "ಪೊರ್ಂಬಾಟೊ ಸಂಗತಿದ ಐಡಿ"
+msgstr "Campaign Event ID"
 
 #: contests/templates/manage.html:341
 msgctxt "manage-campaigneventidplacehold"
 msgid "Enter the Campaign Event ID"
-msgstr "ಪೊರ್ಂಬಾಟೊ ಸಂಗತಿದ ಐಡಿನ್ ಸೇರಾವುನೆ"
+msgstr "Enter the Campaign Event ID"
 
 #: contests/templates/manage.html:353
 msgctxt "manage-bpp"
 msgid "Bytes per point"
-msgstr "ಪ್ರತೀ ಅಂಸೊಗು ಬೈಟುಲು"
+msgstr "Bytes per point"
 
 #: contests/templates/manage.html:366
 msgctxt "manage-maxbytes"
 msgid "Maximum bytes per article-participant"
-msgstr "ಬಾಗವಹಿಸವುನಕ್ಲೆನ ಪ್ರತೀ ಲೇಕನೊದ ಎಚ್ಚದ ಬೈಟ್‌ಲು"
+msgstr "Maximum bytes per article-participant"
 
 #: contests/templates/manage.html:380
 msgctxt "manage-minbytes"
 msgid "Minimum bytes per edit"
-msgstr "ಪ್ರತೀ ಸಂಪಾದನೆದ ಕಡಿಮೆ ಬೈಟ್‌ಲು"
+msgstr "Minimum bytes per edit"
 
 #: contests/templates/manage.html:397
 msgctxt "manage-ipp"
 msgid "Images per point"
-msgstr "ಒಂಜಿ ಚಿತ್ರೊಗು ಅಂಕೊಲು"
+msgstr "Images per point"
 
 #: contests/templates/manage.html:410
 msgctxt "manage-maximages"
 msgid "Maximum images per article-participant"
-msgstr "ಬಾಗವಹಿಸವುನಕ್ಲೆನ ಪ್ರತೀ ಲೇಕನೊದ ಎಚ್ಚದ ಬೈಟ್‌ಲು"
+msgstr "Maximum images per article-participant"
 
 #: contests/templates/manage.html:419 contests/templates/triage.html:435
 #: contests/templates/triage.html:468
 msgctxt "triage-indef"
 msgid "Undefined"
-msgstr "ಅನಿಶ್ಚಿತೊ"
+msgstr "ناڅرگنده"
 
 #: contests/templates/manage.html:424
 msgctxt "manage-imagemode"
 msgid "Image evaluation mode"
-msgstr "ಚಿತ್ರೊ ಮೌಲ್ಯಮಾಪನ ವಿದಾನೊ"
+msgstr "Image evaluation mode"
 
 #: contests/templates/manage.html:431
 msgctxt "manage-perarticle"
 msgid "Per article"
-msgstr "ಪ್ರತಿಯೊಂಜಿ ಲೇಕನೊಗು"
+msgstr "Per article"
 
 #: contests/templates/manage.html:432
 msgctxt "manage-peredit"
 msgid "Per edit"
-msgstr "ಪ್ರತಿಯೊಂಜಿ ಸಂಪಾದನೆಗ್"
+msgstr "Per edit"
 
 #: contests/templates/manage.html:433
 msgctxt "manage-perimage"
 msgid "Per image"
-msgstr "ಪ್ರತಿಯೊಂಜಿ ಚಿತ್ರೊಗು"
+msgstr "Per image"
 
 #: contests/templates/manage.html:442
 msgctxt "manage-palette"
 msgid "Color palette"
-msgstr "ಬಣ್ಣೊದ ಬಟ್ಟಲ್"
+msgstr "Color palette"
 
 #: contests/templates/manage.html:479
 msgctxt "manage-custom"
 msgid "custom"
-msgstr "ಆಚಾರೊ"
+msgstr "دوديز"
 
 #: contests/templates/manage.html:484
 msgctxt "manage-hexcolor"
 msgid "Custom color (hex)"
-msgstr "ಆಚಾರೊಲೆ ಬಣ್ಣೊ(ಹೆಕ್ಸ್)"
+msgstr "دوديز رنگ (هېکس)"
 
 #: contests/templates/manage.html:515 contests/templates/triage.html:228
 msgctxt "triage-save"
 msgid "Save"
-msgstr "ಒರಿಪುಲೆ"
+msgstr "خوندي‌کول"
 
 #: contests/templates/manage.html:522 contests/templates/manage.html:582
 msgctxt "manage-newmanager"
 msgid "Set new manager"
-msgstr "ಪೊಸ ವ್ಯವಸ್ತಾಪಕೆರೆನ್ ನಿಗಂಟ್ ಮಲ್ಪುಲೆ"
+msgstr "Set new manager"
 
 #: contests/templates/manage.html:530
 msgctxt "manage-confirmrestart"
@@ -952,13 +952,13 @@ msgid ""
 "By restarting the contest, all evaluations already made will be deleted. Do "
 "you want to proceed?"
 msgstr ""
-"ಪಂತೊನು ಸುರುಮಲ್ಪುನಗ ಮಲ್ಪುನಗ, ದುಂಬೇ ಮಲ್ತಿನ ಮಾತಾ ಮೌಲ್ಯಮಾಪನೊಲೆನ್ ದೆತ್ತ್ "
-"ಪಾಡುವೆರ್. ಈರ್ ದುಂಬು ಪೋಯೆರೆ ಬಯಸುವರಾ?"
+"By restarting the contest, all evaluations already made will be deleted. Do "
+"you want to proceed?"
 
 #: contests/templates/manage.html:531
 msgctxt "manage-restart"
 msgid "Restart"
-msgstr "ನಾನೊರೊ ಮಲ್ಪುಲೆ"
+msgstr "بياپيلول"
 
 #: contests/templates/manage.html:537
 msgctxt "manage-confirmdelete"
@@ -966,23 +966,23 @@ msgid ""
 "By deleting the contest, all records related to this contest will be "
 "deleted. Do you want to proceed?"
 msgstr ""
-"ಪಂತೊನು ದೆಪ್ಪುನಗ, ಈ ಪಂತೊಗು ಸಮ್ಮಂದೊ ಆಪುನ ಮಾತಾ ದಾಕಲೆಲೆನ್ ದೆತ್ತ್ ಪಾಡ್‌ವೆರ್. ಈರ್ "
-"ದುಂಬು ಪೋಯೆರೆ ಬಯಸುವರಾ?"
+"By deleting the contest, all records related to this contest will be "
+"deleted. Do you want to proceed?"
 
 #: contests/templates/manage.html:538
 msgctxt "manage-delete"
 msgid "Delete"
-msgstr "ದೆತ್ತ್ ಪಾಡ್ಲೆ"
+msgstr "ړنگول"
 
 #: contests/templates/manage.html:543
 msgctxt "manage-managemail"
 msgid "Manager's Wikimedia account"
-msgstr "ವ್ಯವಸ್ತಾಪಕೆರೆನ ವಿಕಿಮೀಡಿಯಾ ಕಾತೆ"
+msgstr "Manager's Wikimedia account"
 
 #: contests/templates/manage.html:558
 msgctxt "manage-create"
 msgid "Create"
-msgstr "ಸ್ರಿಸ್ಟಿಸಲೆ"
+msgstr "جوړول"
 
 #: contests/templates/manage.html:567
 msgctxt "manage-confirmmanager"
@@ -990,44 +990,44 @@ msgid ""
 "By defining a new manager, all evaluators and managers already registered "
 "will be deactivated. Do you want to proceed?"
 msgstr ""
-"ಒಂಜಿ ಪೊಸ ವ್ಯವಸ್ತಾಪಕೆರೆನ್ ವ್ಯಾಕ್ಯಾನಿಸವುನ ನಿಲೆಟ್, ದುಂಬೇ ಸೇರಾಯಿನ ಮಾತಾ "
-"ಮೌಲ್ಯಮಾಪಕೆರ್ ಬುಕ್ಕೊ ವ್ಯವಸ್ತಾಪಕೆರ್ ದೆಪ್ಪೊಡಾಪುಂಡು. ಈರ್ ದುಂಬು ಪೋಯೆರೆ ಬಯಸುವರಾ?"
+"By defining a new manager, all evaluators and managers already registered "
+"will be deactivated. Do you want to proceed?"
 
 #: contests/templates/manage.html:588
 msgctxt "login-cancel"
 msgid "Cancel"
-msgstr "ರದ್ದು ಮಲ್ಪುಲೆ"
+msgstr "ناگارل"
 
 #: contests/templates/modify.html:24
 msgctxt "modify-success"
 msgid "Modification successfully done!"
-msgstr "ಎಡ್ಡೆಡ್ ಮಾರ್ಪಾಡ್ ಮಲ್ತೆರ್!"
+msgstr "Modification successfully done!"
 
 #: contests/templates/modify.html:32
 msgctxt "modify-consult"
 msgid "Check evaluation"
-msgstr "ಮೌಲ್ಯಮಾಪನೊನು ಪರಿಶೀಲಿಸಲೆ"
+msgstr "ارزونې سم‌کتنه"
 
 #: contests/templates/modify.html:42
 msgctxt "modify-diff"
 msgid "Diff"
-msgstr "ವ್ಯತ್ಯಸೊ"
+msgstr "توپير"
 
 #: contests/templates/modify.html:48
 msgctxt "modify-load"
 msgid "Load edit"
-msgstr "ಸಂಪೊಲ್ತಿನೆನ್ ಲೋಡ್ ಮಲ್ಪುಲೆ"
+msgstr "سمون بارول"
 
 #: contests/templates/modify.html:58
 msgctxt "modify-reavaluate"
 msgid "Reevaluate"
-msgstr "ಪಿರ ಮೌಲ್ಯಮಾಪನೊ ಮಲ್ಪುಲೆ"
+msgstr "بیا ارزونه"
 
 #: contests/templates/modify.html:62 contests/templates/modify.html:207
 #: contests/templates/triage.html:142
 msgctxt "isvalid"
 msgid "Valid edit?"
-msgstr "ಮಾನಾದಿಗೆದ ಸಂಪಾದನೆ?"
+msgstr "باوري سمون؟"
 
 #: contests/templates/modify.html:70 contests/templates/modify.html:101
 #: contests/templates/modify.html:166 contests/templates/modify.html:167
@@ -1037,7 +1037,7 @@ msgstr "ಮಾನಾದಿಗೆದ ಸಂಪಾದನೆ?"
 #: contests/templates/triage.html:152 contests/templates/triage.html:186
 msgctxt "yes"
 msgid "Yes"
-msgstr "ಅಂದ್"
+msgstr "هو"
 
 #: contests/templates/modify.html:78 contests/templates/modify.html:109
 #: contests/templates/modify.html:166 contests/templates/modify.html:167
@@ -1047,383 +1047,383 @@ msgstr "ಅಂದ್"
 #: contests/templates/triage.html:162 contests/templates/triage.html:194
 msgctxt "no"
 msgid "No"
-msgstr "ಅತ್ತ್"
+msgstr "نه"
 
 #: contests/templates/modify.html:81 contests/templates/modify.html:208
 #: contests/templates/triage.html:166 contests/templates/triage.html:178
 msgctxt "withimage"
 msgid "With image?"
-msgstr "ಚಿತ್ರೊಡೊಟ್ಟುಗೆ?"
+msgstr "د انځور سره؟"
 
 #: contests/templates/modify.html:92 contests/templates/triage.html:176
 msgctxt "quantity"
 msgid "Quantity"
-msgstr "ಪ್ರಮಾಣೊ"
+msgstr "څومره‌والی"
 
 #: contests/templates/modify.html:142
 msgctxt "modify-diffstats"
 msgid "Data from edit"
-msgstr "ಸಂಪೊಲ್ತಿನ ಡಾಟ"
+msgstr "د سمون څخه اومتوکي"
 
 #: contests/templates/modify.html:144
 msgctxt "modify-label-edition"
 msgid "Edit:"
-msgstr "ತಿದ್ದ್:"
+msgstr "سمون:"
 
 #: contests/templates/modify.html:153
 msgctxt "modify-label-curid"
 msgid "Article ID:"
-msgstr "ಬರವುದ ಐಡಿ:"
+msgstr "ليکنې پېژند:"
 
 #: contests/templates/modify.html:162 contests/templates/triage.html:323
 msgctxt "label-timestamp"
 msgid "Timestamp:"
-msgstr "ಸಮಯೊ ಮುದ್ರೆ"
+msgstr "وخت ټاپه:"
 
 #: contests/templates/modify.html:163 contests/templates/triage.html:311
 msgctxt "label-user"
 msgid "User:"
-msgstr "ಬಳಕೆದಾರೆರ್:"
+msgstr "کارن:"
 
 #: contests/templates/modify.html:164
 msgctxt "modify-label-bytes"
 msgid "Bytes:"
-msgstr "ಬೈಟ್ಸ್:"
+msgstr "بايټونه:"
 
 #: contests/templates/modify.html:165 contests/templates/triage.html:339
 msgctxt "label-summary"
 msgid "Summary:"
-msgstr "ಸಾರಾಂಸೊ:"
+msgstr "لنډيز:"
 
 #: contests/templates/modify.html:166
 msgctxt "modify-label-newpage"
 msgid "New article:"
-msgstr "ಪೊಸ ಬರವು:"
+msgstr "نوې ليکنه:"
 
 #: contests/templates/modify.html:167
 msgctxt "modify-label-valid"
 msgid "Valid edit:"
-msgstr "ಮಾನಾದಿಗೆದ ಸಂಪಾದನೆ?"
+msgstr "باوري سمون:"
 
 #: contests/templates/modify.html:168
 msgctxt "modify-label-enrolled"
 msgid "Enrolled user:"
-msgstr "ದಾಕಲಾಯಿನ ಬಳಕೆದಾರೆರ್:"
+msgstr "نوم‌ليکلی کارن:"
 
 #: contests/templates/modify.html:169
 msgctxt "modify-label-withimage"
 msgid "With image:"
-msgstr "ಚಿತ್ರೊದೊಟ್ಟುಗೆ"
+msgstr "له انځور سره:"
 
 #: contests/templates/modify.html:170
 msgctxt "modify-label-reverted"
 msgid "Reverted edit:"
-msgstr "ಪಿರ ಮಲ್ತ್‌ನ ಸಂಪಾದನೆ"
+msgstr "بېرته‌گرځول‌شوی سمون:"
 
 #: contests/templates/modify.html:171
 msgctxt "modify-label-evaluator"
 msgid "Evaluator:"
-msgstr "ಮೌಲ್ಯಮಾಪಕೆ:"
+msgstr "ارزونکی:"
 
 #: contests/templates/modify.html:172
 msgctxt "modify-label-evaltimestamp"
 msgid "Evaluation timestamp:"
-msgstr "ಮೌಲ್ಯಮಾಪನೊದ ಸಮಯ ಮುದ್ರೆ:"
+msgstr "ارزونې وخت‌ټاپه:"
 
 #: contests/templates/modify.html:173
 msgctxt "modify-label-comment"
 msgid "Evaluator's comment:"
-msgstr "ಮೌಲ್ಯಮಾಪಕೆರೆ ಅಬಿಪ್ರಾಯೊ:"
+msgstr "ارزوونکي څرگندونه:"
 
 #: contests/templates/modify.html:182 contests/templates/modify.html:185
 msgctxt "modify-showdiff"
 msgid "Edit diff"
-msgstr "ಸಂಪಾದನೆದ ವ್ಯತ್ಯಾಸೊ"
+msgstr "توپير سمول"
 
 #: contests/templates/modify.html:193
 msgctxt "modify-qualified"
 msgid "Qualified?"
-msgstr "ಅರ್ಹತೆ?"
+msgstr "وړ؟"
 
 #: contests/templates/modify.html:195 contests/templates/modify.html:212
 msgctxt "modify-timestamp"
 msgid "Timestamp"
-msgstr "ಸಮಯೊ ಮುದ್ರೆ"
+msgstr "وخت‌ټاپه"
 
 #: contests/templates/modify.html:200
 msgctxt "modify-automatic"
 msgid "Automatic"
-msgstr "ಸೊಂತೊ ಚಾಲನೆ"
+msgstr "خپلکاره"
 
 #: contests/templates/modify.html:210 contests/templates/triage.html:204
 msgctxt "triage-observation"
 msgid "Observation"
-msgstr "ಗುಮನೊ ಕೊರ್ಪುನ"
+msgstr "څارنه"
 
 #: contests/templates/modify.html:227
 msgctxt "modify-notfound"
 msgid "Edit not found in the database!"
-msgstr "ಡೇಟಾಬೇಸ್‌ಡ್ ಸಂಪಾದನೆ ತೋಜುಜಿ!"
+msgstr "Edit not found in the database!"
 
 #: contests/templates/triage.html:65 contests/templates/triage.html:344
 msgctxt "triage-counter"
 msgid "Bytes in selected text"
-msgstr "ಪೆಜಿನ ಪಟ್ಯೊಡ್ ಬೈಟ್‌ಲು"
+msgstr "ټاکل‌شوي ليک کې بايټونه"
 
 #: contests/templates/triage.html:98
 msgctxt "triage-lasteval"
 msgid "Last evaluation"
-msgstr "ಕಡೆತ ಮೌಲ್ಯಮಾಪನೊ"
+msgstr "وروستۍ ارزونه"
 
 #: contests/templates/triage.html:100 contests/templates/triage.html:330
 msgctxt "triage-diff"
 msgid "Diff"
-msgstr "ವ್ಯತ್ಯಾಸೊ"
+msgstr "توپير"
 
 #: contests/templates/triage.html:107
 msgctxt "triage-validedit"
 msgid "Valid edit"
-msgstr "ಮಾನಾದಿಗೆದ ಸಂಪಾದನೆ"
+msgstr "باوري سمون"
 
 #: contests/templates/triage.html:116
 msgctxt "triage-withimage"
 msgid "With image"
-msgstr "ಚಿತ್ರ ಸಮೇತೊ"
+msgstr "له انځور سره"
 
 #: contests/templates/triage.html:131
 msgctxt "triage-fix"
 msgid "Review"
-msgstr "ಸಮೀಕ್ಷೆ ಮಲ್ಪುಲೆ"
+msgstr "بياکتنه"
 
 #: contests/templates/triage.html:137
 msgctxt "triage-evaluation"
 msgid "Evaluation"
-msgstr "ಮೌಲ್ಯಮಾಪನ"
+msgstr "ارزونه"
 
 #: contests/templates/triage.html:211
 msgctxt "triage-alterbytes"
 msgid "Change bytes"
-msgstr "ಬೈಟ್ಸ್‌ಲೆನ್ ಬದಲ್ಪುಲೆ"
+msgstr "بايټونه بدلول"
 
 #: contests/templates/triage.html:215
 msgctxt "triage-vda"
 msgid "Copyright infringement"
-msgstr "ಬೂಕುದ ಹಕ್ಕ್‌ನ್ ಮೀರುನೆ"
+msgstr "لمېس‌رښتې سرغړونه"
 
 #: contests/templates/triage.html:216
 msgctxt "triage-redirect"
 msgid "Mere redirection"
-msgstr "ಕೇವಲ ಪರಿ ಕಡಪುಡ್‌ನೆ"
+msgstr "Mere redirection"
 
 #: contests/templates/triage.html:217
 msgctxt "triage-noref"
 msgid "Sourceless content"
-msgstr "ಮೂಲೊ ಇದ್ಯಾಂತಿನ ವಿಸಯೊ"
+msgstr "بې سرچينې منځپانگه"
 
 #: contests/templates/triage.html:218
 msgctxt "triage-onlycat"
 msgid "Mere categorization"
-msgstr "ಕೇವಲ ವರ್ಗೀಕರಣೊ"
+msgstr "Mere categorization"
 
 #: contests/templates/triage.html:219
 msgctxt "triage-onlytag"
 msgid "Mere insertion of maintenance marks"
-msgstr "ಕೇವಲ ನಿರ್ವಹಣೆದ ಗುರುತುಲೆನ್ ಸೇರಾವುನವು"
+msgstr "Mere insertion of maintenance marks"
 
 #: contests/templates/triage.html:239
 msgctxt "triage-jump"
 msgid "Skip"
-msgstr "ಬುಡ್ಲೆ"
+msgstr "تېرېدل"
 
 #: contests/templates/triage.html:245
 msgctxt "edits"
 msgid "Edits"
-msgstr "ಸಂಪಾದನೆಲು"
+msgstr "سمونونه"
 
 #: contests/templates/triage.html:248
 msgctxt "triage-toeval"
 msgid "Available"
-msgstr "ತಿಕೊಂದುಂಡು"
+msgstr " لاسرسي وړ"
 
 #: contests/templates/triage.html:252
 msgctxt "triage-towait"
 msgid "Awaiting"
-msgstr "ನಿರೀಕ್ಷೆ ಮಲ್ಪುನೆ"
+msgstr "په تمه"
 
 #: contests/templates/triage.html:258
 msgctxt "triage-onhold"
 msgid "On evaluation"
-msgstr "ಮೌಲ್ಯಮಾಪನೊಡು"
+msgstr "ارزونې لاندې"
 
 #: contests/templates/triage.html:262
 msgctxt "triage-onskip"
 msgid "Skipped"
-msgstr "ಬುಡ್ದು ಪಾಡ್ಲೆ"
+msgstr "پرېښودل شوی"
 
 #: contests/templates/triage.html:274
 msgctxt "triage-release"
 msgid "Release skipped edits"
-msgstr "ಬುಡ್ದ್ ಪಾಡ್‌ನ ಸಂಪಾದನೆಲೆನ್ ಬುಡುಗಡೆ ಮಲ್ಪುಲೆ"
+msgstr "Release skipped edits"
 
 #: contests/templates/triage.html:287
 msgctxt "triage-unhold"
 msgid "Release edits from all evaluators"
-msgstr "ಮಾತಾ ಮೌಲ್ಯಮಾಪಕೆರೆನ ಸಂಪಾದನೆಲೆನ್ ಬಿಡುಗಡೆ ಮಲ್ಪುಲೆ"
+msgstr "Release edits from all evaluators"
 
 #: contests/templates/triage.html:297
 msgctxt "triage-database"
 msgid "Database updating."
-msgstr "ದತ್ತಸಂಚಯೊ ಪೊಸತ್ ಮಲ್ತ್‌ನೆ."
+msgstr "اومتوک‌اډانې هم‌مهالول."
 
 #: contests/templates/triage.html:298
 msgctxt "triage-databaseabout"
 msgid "Please wait a few minutes and refresh the page."
-msgstr "ದಯಮಲ್ತ್ ಒಂಜಿ ರಡ್ಡ್ ನಿಮಿಸೊ ಕಾತೊಂದು ಪುಟೊನು ಪೊಸತ್ ಮಲ್ಪುಲೆ."
+msgstr "Please wait a few minutes and refresh the page."
 
 #: contests/templates/triage.html:309
 msgctxt "triage-details"
 msgid "Edit details"
-msgstr "ವಿವರೊಲೆನ್ ಸಂಪಾದನೆ ಮಲ್ಪುಲೆ"
+msgstr "پېښې سپيناوی"
 
 #: contests/templates/triage.html:314
 msgctxt "label-page"
 msgid "Article:"
-msgstr "ಬರವು:"
+msgstr "ليکنه:"
 
 #: contests/templates/triage.html:318
 msgctxt "triage-authorship"
 msgid "Authorship:"
-msgstr "ಲೇಕಕೆರ್:"
+msgstr "لیکوالي:"
 
 #: contests/templates/triage.html:320 contests/templates/triage.html:336
 msgctxt "triage-verify"
 msgid "Verify"
-msgstr "ಪರಿಶೀಲಿಸಲೆ"
+msgstr "تاييدي"
 
 #: contests/templates/triage.html:327
 msgctxt "label-diff"
 msgid "Difference:"
-msgstr "ಯತ್ವಾಸೊ:"
+msgstr "توپيرونه:"
 
 #: contests/templates/triage.html:334
 msgctxt "triage-copyvio"
 msgid "Copyvio Detector"
-msgstr "ನಕಲುಗಾರೆ"
+msgstr "Copyvio Detector"
 
 #: contests/templates/triage.html:347
 msgctxt "triage-differential"
 msgid "Edit differential"
-msgstr "ಸಂಪಾದನೆದ ವ್ಯತ್ಯಾಸೊ"
+msgstr "توپيري سمول"
 
 #: contests/templates/triage.html:375
 msgctxt "triage-recenthistory"
 msgid "Recent history"
-msgstr "ಇತ್ತೆದ ಇತಿಯಾಸೊ"
+msgstr "تازه پېښليک"
 
 #: contests/templates/triage.html:388
 msgctxt "triage-generalinfo"
 msgid "General information"
-msgstr "ಸಾಮಾನ್ಯೊ ಮಾಹಿತಿ"
+msgstr "ټولواله مالومات"
 
 #: contests/templates/triage.html:390
 msgctxt "triage-contestname"
 msgid "wikicontest name"
-msgstr "ವಿಕಿ ಪಂತೊದ ಪುದರ್"
+msgstr "ويکي‌سيالۍ نوم"
 
 #: contests/templates/triage.html:395
 msgctxt "triage-loggedname"
 msgid "Current evaluator name"
-msgstr "ಇತ್ತೆದ ಮೌಲ್ಯಮಾಪಕೆರೆನ ಪುದರ್"
+msgstr "Current evaluator name"
 
 #: contests/templates/triage.html:400
 msgctxt "triage-conteststart"
 msgid "wikicontest start time"
-msgstr "ವಿಕಿ ಪಂತೊ ಸುರುವಾಪುನ ಪೊರ್ತು"
+msgstr "wikicontest start time"
 
 #: contests/templates/triage.html:405
 msgctxt "triage-contestend"
 msgid "wikicontest end time"
-msgstr "ವಿಕಿ ಪಂತೊ ಮುಗಿಪುನ ಪೊರ್ತು"
+msgstr "wikicontest end time"
 
 #: contests/templates/triage.html:410
 msgctxt "triage-lastupdate"
 msgid "Last database update"
-msgstr "ಕಡೆತ ದತ್ತಸಂಚಯೊ ಪೊಸತ್ ಮಲ್ತ್‌ನೆ"
+msgstr "Last database update"
 
 #: contests/templates/triage.html:415
 msgctxt "triage-delay"
 msgid "Delay in registering edits"
-msgstr "ಸಂಪಾದನೆಲೆನ್ ನೋಂದಾಯಿಸಯರ ತಡ ಆಯಿನೆ"
+msgstr "Delay in registering edits"
 
 #: contests/templates/triage.html:417
 #, python-format
 msgctxt "triage-hours"
 msgid "%(1)s hours"
-msgstr "%(1)s ಗಂಟೆ"
+msgstr "%(1)s گړۍ"
 
 #: contests/templates/triage.html:420
 msgctxt "triage-bpp"
 msgid "Bytes per point"
-msgstr "ಒಂಜಿ ಬೈಟ್‌ಗ್ ಅಂಕೊಲು"
+msgstr "Bytes per point"
 
 #: contests/templates/triage.html:425
 msgctxt "triage-maxbytes"
 msgid "Maximum bytes/points per article"
-msgstr "ಒಂಜಿ ಲೇಕನೊಗು ದಿಂಜ ಬೈಟ್ಸ್/ಅಂಕೊಲು"
+msgstr "Maximum bytes/points per article"
 
 #: contests/templates/triage.html:429
 #, python-format
 msgctxt "triage-points"
 msgid "%(1)s points"
-msgstr "%(1)s ಅಂಕೊಲು"
+msgstr "%(1)s نومرې"
 
 #: contests/templates/triage.html:432
 msgctxt "triage-minbytes"
 msgid "Minimum bytes per edit"
-msgstr "ಪ್ರತಿ ಸಂಪಾದನೆಗ್ ಕಡಿಮೆ ಬೈಟ್‌ಲು"
+msgstr "Minimum bytes per edit"
 
 #: contests/templates/triage.html:437
 msgctxt "triage-includingall"
 msgid "Including edits with negative bytes"
-msgstr "ಸಂಪಾದನೆಲೆನ್ ಸೇರ್‌ನ ಎದ್‌ರ್ ಪಾತೆರೊದ ಬೈಟ್‌ಲ್"
+msgstr "Including edits with negative bytes"
 
 #: contests/templates/triage.html:443
 msgctxt "triage-ipp"
 msgid "Images per point"
-msgstr "ಒಂಜಿ ಚಿತ್ರೊಗು ಅಂಕೊಲು"
+msgstr "Images per point"
 
 #: contests/templates/triage.html:446
 msgctxt "triage-noimages"
 msgid "Disabled"
-msgstr "ಅನರ್ಹೊ"
+msgstr "ناچارن‌شوی"
 
 #: contests/templates/triage.html:448
 #, python-format
 msgctxt "triage-images"
 msgid "%(1)s image(s)"
-msgstr "%(1)s ಚಿತ್ರೊಲು"
+msgstr "%(1)s انځور(ونه)"
 
 #: contests/templates/triage.html:452
 msgctxt "triage-imagemode"
 msgid "Image mode"
-msgstr "ಚಿತ್ರೊದ ಕ್ರಮೊ"
+msgstr "انځور ونگ‌ډول"
 
 #: contests/templates/triage.html:455
 msgctxt "triage-byimage"
 msgid "Per image"
-msgstr "ಪ್ರತಿಯೊಂಜಿ ಚಿತ್ರೊಗು"
+msgstr "پر انځور"
 
 #: contests/templates/triage.html:457
 msgctxt "triage-byedition"
 msgid "Per edit"
-msgstr "ಪ್ರತಿಯೊಂಜಿ ಸಂಪಾದನೆಗ್"
+msgstr "پر سمون"
 
 #: contests/templates/triage.html:459
 msgctxt "triage-bypage"
 msgid "Per article"
-msgstr "ಪ್ರತಿಯೊಂಜಿ ಲೇಕನೊಗು"
+msgstr "پر ليکنه"
 
 #: contests/templates/triage.html:463
 msgctxt "triage-maximages"
 msgid "Maximum images per article"
-msgstr "ಒಂಜಿ ಲೇಕನೊಗು ದಿಂಜ ಚಿತ್ರೊಲು"
+msgstr "Maximum images per article"
