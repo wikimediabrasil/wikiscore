@@ -20,7 +20,7 @@ class Command(BaseCommand):
             # Recupera lista do PetScan
             petscan_list = requests.get(f"https://petscan.wmflabs.org/?format=json&psid={contest.category_petscan}").json()
             list_ = [
-                {"id": item['id'], "title": item['title']} 
+                {"pageid": item['id'], "title": item['title']} 
                 for item in petscan_list['*'][0]['a']['*']
             ]
         else:
