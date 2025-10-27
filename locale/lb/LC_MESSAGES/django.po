@@ -453,7 +453,7 @@ msgstr "Total points"
 #: contests/templates/evaluators.html:147
 msgctxt "counter-redefine"
 msgid "Reset"
-msgstr "Zrécksetzen"
+msgstr "Zerécksetzen"
 
 #: contests/templates/counter.html:64
 msgctxt "counter-confirm"
