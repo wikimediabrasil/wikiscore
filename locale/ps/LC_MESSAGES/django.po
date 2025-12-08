@@ -749,7 +749,7 @@ msgstr "سيالۍ په برياليتوب سره جوړه شوه!"
 #: contests/templates/manage.html:106
 msgctxt "manage-remanaged"
 msgid "New manager successfully defined!"
-msgstr "New manager successfully defined!"
+msgstr "نوی چاروال په برياليتوب سره وروپېژندل شو!"
 
 #: contests/templates/manage.html:107
 msgctxt "manage-restarted"
@@ -944,7 +944,7 @@ msgstr "خوندي‌کول"
 #: contests/templates/manage.html:522 contests/templates/manage.html:582
 msgctxt "manage-newmanager"
 msgid "Set new manager"
-msgstr "Set new manager"
+msgstr "نوی چاروال ټاکل"
 
 #: contests/templates/manage.html:530
 msgctxt "manage-confirmrestart"
