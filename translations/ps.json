@@ -165,6 +165,8 @@
 	"manage-reverttime": "شاگرځ موده (گړۍ)",
 	"manage-custom": "دوديز",
 	"manage-hexcolor": "دوديز رنگ (هېکس)",
+	"manage-newmanager": "نوی چاروال ټاکل",
+	"manage-remanaged": "نوی چاروال په برياليتوب سره وروپېژندل شو!",
 	"manage-create": "جوړول",
 	"manage-restart": "بياپيلول",
 	"manage-delete": "ړنگول"
