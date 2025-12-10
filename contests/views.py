@@ -173,6 +173,11 @@ def triage_view(request, contest):
         do_evaluate = {'action': None}
     get_evaluate = handler.get_evaluate(request)
 
+    # Ensure safe dict merge even if handler returns None
+    if not isinstance(do_evaluate, dict):
+        do_evaluate = {}
+    if not isinstance(get_evaluate, dict):
+        get_evaluate = {}
     triage_dict = get_evaluate | do_evaluate
     triage_dict.update({
         'triage_points': int(contest.max_bytes_per_article / contest.bytes_per_points),
