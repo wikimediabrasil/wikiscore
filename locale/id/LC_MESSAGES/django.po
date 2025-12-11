@@ -277,7 +277,7 @@ msgstr "Graphic scoreboard"
 #: contests/templates/contest.html:33
 msgctxt "login-manage"
 msgid "Manage contest"
-msgstr "Manajemen kontes"
+msgstr "Kelola ajang"
 
 #: contests/templates/contest.html:39 contests/templates/home.html:7
 msgctxt "main-title"
