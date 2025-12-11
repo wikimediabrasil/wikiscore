@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Penyuwangi",
 			"Veracious"
 		]
 	},
@@ -57,7 +58,7 @@
 	"login": "Masuk log",
 	"login-alledits": "Suntingan per hari",
 	"login-cancel": "Batal",
-	"login-manage": "Manajemen kontes",
+	"login-manage": "Kelola ajang",
 	"password-username": "Nama pengguna",
 	"edits": "Suntingan",
 	"edits-csv": "Unduh",
