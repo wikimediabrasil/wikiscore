@@ -21,7 +21,7 @@ msgstr ""
 #: contests/templates/backtrack.html:7 contests/templates/base.html:96
 msgctxt "backtrack"
 msgid "Backtrack"
-msgstr "Backtrack"
+msgstr "Bakåtspår"
 
 #: contests/templates/backtrack.html:15
 msgctxt "backtrack-about"
@@ -31,10 +31,11 @@ msgid ""
 "necessary, click on the button to accept the edit. After acceptance, the "
 "edit will be available in the evaluation queue."
 msgstr ""
-"This page lists the edits participats did in the context of the wikicontest "
-"but were made before their registration in the Outreach Dashboard. If "
-"necessary, click on the button to accept the edit. After acceptance, the "
-"edit will be available in the evaluation queue."
+"Den här sidan listar de redigeringar som deltagarna gjorde i samband med "
+"wikitävlingen men som gjordes innan de registrerade sig i Outreach-"
+"instrumentpanelen. Klicka vid behov på knappen för att acceptera "
+"redigeringen. Efter godkännande kommer redigeringen att finnas tillgänglig i"
+" utvärderingskön."
 
 #: contests/templates/backtrack.html:36
 #, python-format
@@ -73,7 +74,7 @@ msgstr "Triage"
 #, python-format
 msgctxt "triage-welcome"
 msgid "Welcome, %(1)s"
-msgstr "Welcome, %(1)s"
+msgstr "Välkommen, %(1)s"
 
 #: contests/templates/base.html:71
 msgctxt "triage-panel"
@@ -99,7 +100,7 @@ msgstr "Komparatör"
 #: contests/templates/base.html:92 contests/templates/edits.html:8
 msgctxt "triage-evaluated"
 msgid "Evaluated"
-msgstr "Evaluated"
+msgstr "Utvärderad"
 
 #: contests/templates/base.html:100 contests/templates/evaluators.html:8
 #: contests/templates/evaluators.html:75
@@ -110,17 +111,17 @@ msgstr "Utvärderare"
 #: contests/templates/base.html:104
 msgctxt "triage-list"
 msgid "Official list"
-msgstr "Official list"
+msgstr "Officiell lista"
 
 #: contests/templates/base.html:109
 msgctxt "triage-cat"
 msgid "Categorization"
-msgstr "Categorization"
+msgstr "Kategorisering"
 
 #: contests/templates/base.html:114
 msgctxt "triage-outreach"
 msgid "Outreach Dashboard"
-msgstr "Outreach Dashboard"
+msgstr "Uppsökande instrumentpanel"
 
 #: contests/templates/base.html:119 contests/templates/home.html:57
 msgctxt "exit"
@@ -196,8 +197,8 @@ msgid ""
 "The articles below are included in the category and are marked for some form"
 " of deletion (fast, semi-fast, by consensus, or by application)."
 msgstr ""
-"The articles below are included in the category and are marked for some form"
-" of deletion (fast, semi-fast, by consensus, or by application)."
+"Artiklarna nedan ingår i kategorin och är markerade för någon form av "
+"radering (snabb, halvsnabb, genom konsensus eller genom applikation)."
 
 #: contests/templates/compare.html:167
 msgctxt "compare-nowikidata"
@@ -216,7 +217,7 @@ msgstr ""
 #: contests/templates/compare.html:189
 msgctxt "compare-inconsistency"
 msgid "Inconsistencies"
-msgstr "Inconsistencies"
+msgstr "Inkonsekvenser"
 
 #: contests/templates/compare.html:193
 msgctxt "compare-inconsistency-about"
@@ -225,39 +226,40 @@ msgid ""
 "but were removed. If they are marked in red, the edit was validated and "
 "awarded points to the participant."
 msgstr ""
-"The listed edits below belong to articles that were listed in the category "
-"but were removed. If they are marked in red, the edit was validated and "
-"awarded points to the participant."
+"Redigeringarna nedan tillhör artiklar som listades i kategorin men togs "
+"bort. Om de är markerade med rött har redigeringen validerats och deltagaren"
+" har fått poäng."
 
 #: contests/templates/compare.html:203 contests/templates/compare.html:235
 msgctxt "compare-seediff"
 msgid "See edit no."
-msgstr "See edit no."
+msgstr "Se redigering nr."
 
 #: contests/templates/compare.html:208
 msgctxt "compare-areyousure"
 msgid "This edit will be removed from the database. Do you want to proceed?"
-msgstr "This edit will be removed from the database. Do you want to proceed?"
+msgstr ""
+"Den här redigeringen kommer att tas bort från databasen. Vill du fortsätta?"
 
 #: contests/templates/compare.html:211
 msgctxt "compare-delete"
 msgid "Delete"
-msgstr "Delete"
+msgstr "Radera"
 
 #: contests/templates/compare.html:221
 msgctxt "compare-rollback"
 msgid "Rollbacks"
-msgstr "Rollbacks"
+msgstr "Rulla tillbaka"
 
 #: contests/templates/compare.html:225
 msgctxt "compare-rollback-about"
 msgid "The listed edits below were rolled back after validation."
-msgstr "The listed edits below were rolled back after validation."
+msgstr "Redigeringarna nedan återställdes efter validering."
 
 #: contests/templates/compare.html:242
 msgctxt "compare-reevaluate"
 msgid "Reevaluate"
-msgstr "Reevaluate"
+msgstr "Omvärdera"
 
 #: contests/templates/contest.html:4 contests/templates/edits.html:78
 #: contests/templates/edits.txt:1
@@ -268,12 +270,12 @@ msgstr "Titel"
 #: contests/templates/contest.html:31
 msgctxt "login-graph"
 msgid "Graphic scoreboard"
-msgstr "Graphic scoreboard"
+msgstr "Grafisk resultattavla"
 
 #: contests/templates/contest.html:33
 msgctxt "login-manage"
 msgid "Manage contest"
-msgstr "Manage contest"
+msgstr "Hantera tävling"
 
 #: contests/templates/contest.html:39 contests/templates/home.html:7
 msgctxt "main-title"
@@ -332,7 +334,7 @@ msgstr "Mest utökade artikel"
 #, python-format
 msgctxt "triage-bytes"
 msgid "%(1)s bytes"
-msgstr "%(1)s bytes"
+msgstr "%(1)s byte"
 
 #: contests/templates/contest.html:109
 msgctxt "counter-biggest-edition"
@@ -342,12 +344,12 @@ msgstr "Största upplagan"
 #: contests/templates/contest.html:153 contests/templates/contest.html:164
 msgctxt "login-alledits"
 msgid "Edits per day"
-msgstr "Edits per day"
+msgstr "Redigeringar per dag"
 
 #: contests/templates/contest.html:171
 msgctxt "login-validedits"
 msgid "Validated edits per day"
-msgstr "Validated edits per day"
+msgstr "Validerade redigeringar per dag"
 
 #: contests/templates/contest.html:191
 msgctxt "login-newevents"
@@ -357,7 +359,7 @@ msgstr "Skapade artiklar och antagna deltagare per dag"
 #: contests/templates/contest.html:202
 msgctxt "login-newpages"
 msgid "New articles per day"
-msgstr "New articles per day"
+msgstr "Nya artiklar per dag"
 
 #: contests/templates/contest.html:209
 msgctxt "login-newparticipants"
@@ -367,12 +369,12 @@ msgstr "Antagna deltagare per dag"
 #: contests/templates/contest.html:229 contests/templates/contest.html:240
 msgctxt "login-newbytes"
 msgid "KBytes added per day"
-msgstr "KBytes added per day"
+msgstr "KBytes tillagda per dag"
 
 #: contests/templates/contest.html:247
 msgctxt "login-validbytes"
 msgid "KBytes validated per day"
-msgstr "KBytes validated per day"
+msgstr "KBytes validerade per dag"
 
 #: contests/templates/counter.html:14
 #, python-format
@@ -393,11 +395,11 @@ msgid ""
 "registered users who have edited any of the articles in the list of this "
 "wikicontest are listed below, even if they have no valid edits."
 msgstr ""
-"The ranking order is determined according to the total points, calculated "
-"with the score rounded down, using the total sum of added bytes as a "
-"tiebreaker, and if there is still a tie, in alphabetical order. All "
-"registered users who have edited any of the articles in the list of this "
-"wikicontest are listed below, even if they have no valid edits."
+"Rankningsordningen bestäms utifrån den totala poängen, beräknad med poängen "
+"avrundad nedåt, med den totala summan av tillagda byte som utslagsfråga, och"
+" om det fortfarande är oavgjort, i alfabetisk ordning. Alla registrerade "
+"användare som har redigerat någon av artiklarna i listan för denna "
+"wikitävling listas nedan, även om de inte har några giltiga redigeringar."
 
 #: contests/templates/counter.html:22
 msgctxt "counter-uptotime"
@@ -405,8 +407,8 @@ msgid ""
 "If you want to get a score up to a specific time, please specify it in the "
 "form below."
 msgstr ""
-"If you want to get a score up to a specific time, please specify it in the "
-"form below."
+"Om du vill få en poäng upp till en specifik tid, vänligen ange det i "
+"formuläret nedan."
 
 #: contests/templates/counter.html:39
 msgctxt "counter-user"
@@ -463,7 +465,7 @@ msgstr ""
 #: contests/templates/counter.html:83 contests/templates/triage.html:304
 msgctxt "triage-noedit"
 msgid "There is no edit to be displayed at this time."
-msgstr "There is no edit to be displayed at this time."
+msgstr "Det finns ingen redigering att visa just nu."
 
 #: contests/templates/counter.html:91
 msgctxt "counter-success"
@@ -479,13 +481,13 @@ msgid ""
 "This page lists all edits made by contest participants. To access edits made"
 " by all users, download the CSV file."
 msgstr ""
-"This page lists all edits made by contest participants. To access edits made"
-" by all users, download the CSV file."
+"Den här sidan listar alla redigeringar som gjorts av tävlingsdeltagare. För "
+"att komma åt redigeringar som gjorts av alla användare, ladda ner CSV-filen."
 
 #: contests/templates/edits.html:66
 msgctxt "edits-csv"
 msgid "Download"
-msgstr "Download"
+msgstr "Ladda ned"
 
 #: contests/templates/edits.html:77 contests/templates/edits.txt:1
 msgctxt "edits-diff"
@@ -565,8 +567,9 @@ msgid ""
 "This page lists the managers and evaluators of this wikicontest. The contest"
 " manager also has options to enable or disable evaluators."
 msgstr ""
-"This page lists the managers and evaluators of this wikicontest. The contest"
-" manager also has options to enable or disable evaluators."
+"Den här sidan listar tävlingsansvariga och utvärderare för denna "
+"wikitävling. Tävlingsansvarig har också alternativ för att aktivera eller "
+"inaktivera utvärderare."
 
 #: contests/templates/evaluators.html:20
 msgctxt "evaluators-neweval"
@@ -577,7 +580,7 @@ msgstr "Lägg till ny utvärderare"
 #: contests/templates/manage.html:574
 msgctxt "password-username"
 msgid "Username"
-msgstr "Username"
+msgstr "Användarnamn"
 
 #: contests/templates/evaluators.html:34
 msgctxt "evaluators-register"
@@ -635,18 +638,17 @@ msgid ""
 "inserted by the organizers of the wikicontest on their official page should "
 "be considered."
 msgstr ""
-"The graph below displays the evolution of scores received by the top 9 "
-"participants during the wikicontest. This graph is generated automatically "
-"and does not constitute a final or official ranking. Please note that "
-"organizers may reevaluate previous edits, and the displayed points may be "
-"recalculated without prior notice. In case of discrepancy, only the table "
-"inserted by the organizers of the wikicontest on their official page should "
-"be considered."
+"Diagrammet nedan visar utvecklingen av poängen som de 9 bästa deltagarna "
+"fått under wikitävlingen. Diagrammet genereras automatiskt och utgör inte en"
+" slutgiltig eller officiell ranking. Observera att arrangörerna kan "
+"omvärdera tidigare redigeringar, och de visade poängen kan beräknas om utan "
+"föregående meddelande. Vid avvikelser bör endast tabellen som infogas av "
+"arrangörerna av wikitävlingen på deras officiella sida beaktas."
 
 #: contests/templates/graph.html:49
 msgctxt "graph-axis"
 msgid "Ranking of the top 9 participants by elapsed day"
-msgstr "Ranking of the top 9 participants by elapsed day"
+msgstr "Rankning av de 9 bästa deltagarna per förfluten dag"
 
 #: contests/templates/home.html:44
 msgctxt "contest-enter"
@@ -661,7 +663,7 @@ msgstr "Hantera tävlingar"
 #: contests/templates/home.html:63
 msgctxt "login"
 msgid "Log in"
-msgstr "Log in"
+msgstr "Logga in"
 
 #: contests/templates/home.html:77
 msgctxt "contest-select"
@@ -726,24 +728,24 @@ msgstr ""
 #: contests/templates/manage.html:8 contests/templates/manage.html:118
 msgctxt "manage-title"
 msgid "Contest management"
-msgstr "Contest management"
+msgstr "Tävlingshantering"
 
 #: contests/templates/manage.html:21 contests/templates/manage.html:265
 #: contests/templates/manage.html:268 contests/templates/manage.html:289
 msgctxt "manage-catid"
 msgid "Category ID of articles"
-msgstr "Category ID of articles"
+msgstr "Kategori-ID för artiklar"
 
 #: contests/templates/manage.html:23 contests/templates/manage.html:266
 #: contests/templates/manage.html:269 contests/templates/manage.html:289
 msgctxt "manage-petscan"
 msgid "PetScan ID of the pages"
-msgstr "PetScan ID of the pages"
+msgstr "PetScan-ID för sidorna"
 
 #: contests/templates/manage.html:105
 msgctxt "manage-created"
 msgid "Contest created successfully!"
-msgstr "Contest created successfully!"
+msgstr "Tävlingen har skapats!"
 
 #: contests/templates/manage.html:106
 msgctxt "manage-remanaged"
@@ -753,12 +755,12 @@ msgstr "Ny hanterare har definierats!"
 #: contests/templates/manage.html:107
 msgctxt "manage-restarted"
 msgid "Contest restarted successfully! Perform the database update."
-msgstr "Contest restarted successfully! Perform the database update."
+msgstr "Tävlingen har startat om! Uppdatera databasen."
 
 #: contests/templates/manage.html:108
 msgctxt "manage-deleted"
 msgid "Contest deleted successfully!"
-msgstr "Contest deleted successfully!"
+msgstr "Tävlingen har raderats!"
 
 #: contests/templates/manage.html:124
 msgctxt "manage-about"
@@ -766,144 +768,144 @@ msgid ""
 "This page lists the contests registered in the system and allows the "
 "creation of new contests."
 msgstr ""
-"This page lists the contests registered in the system and allows the "
-"creation of new contests."
+"Den här sidan listar de tävlingar som är registrerade i systemet och gör det"
+" möjligt att skapa nya tävlingar."
 
 #: contests/templates/manage.html:133
 msgctxt "manage-newcontest"
 msgid "Create new contest"
-msgstr "Create new contest"
+msgstr "Skapa en ny tävling"
 
 #: contests/templates/manage.html:141
 msgctxt "manage-contestname"
 msgid "Contest name"
-msgstr "Contest name"
+msgstr "Tävlingens namn"
 
 #: contests/templates/manage.html:147
 msgctxt "manage-contestnameabout"
 msgid "Enter the full contest name"
-msgstr "Enter the full contest name"
+msgstr "Ange det fullständiga tävlingsnamnet"
 
 #: contests/templates/manage.html:157
 msgctxt "manage-internalcode"
 msgid "Internal code"
-msgstr "Internal code"
+msgstr "Intern kod"
 
 #: contests/templates/manage.html:163
 msgctxt "manage-internalcodeabout"
 msgid "Use only lower case letters and underscores"
-msgstr "Use only lower case letters and underscores"
+msgstr "Använd endast gemener och understreck"
 
 #: contests/templates/manage.html:174
 msgctxt "manage-group"
 msgid "Group"
-msgstr "Group"
+msgstr "Grupp"
 
 #: contests/templates/manage.html:190
 msgctxt "manage-starttime"
 msgid "Start time"
-msgstr "Start time"
+msgstr "Starttid"
 
 #: contests/templates/manage.html:202
 msgctxt "manage-endtime"
 msgid "End time"
-msgstr "End time"
+msgstr "Sluttid"
 
 #: contests/templates/manage.html:215
 msgctxt "manage-endpoint"
 msgid "Endpoint address"
-msgstr "Endpoint address"
+msgstr "Slutpunktsadress"
 
 #: contests/templates/manage.html:227
 msgctxt "manage-api"
 msgid "API address"
-msgstr "API address"
+msgstr "API-adress"
 
 #: contests/templates/manage.html:242
 msgctxt "manage-reverttime"
 msgid "Rollback period (hours)"
-msgstr "Rollback period (hours)"
+msgstr "Återställningsperiod (timmar)"
 
 #: contests/templates/manage.html:256
 msgctxt "manage-source"
 msgid "Monitoring method"
-msgstr "Monitoring method"
+msgstr "Övervakningsmetod"
 
 #: contests/templates/manage.html:277
 msgctxt "manage-listid"
 msgid "Page ID with list of articles"
-msgstr "Page ID with list of articles"
+msgstr "Sid-ID med lista över artiklar"
 
 #: contests/templates/manage.html:307
 msgctxt "manage-controlmethod"
 msgid "Participant enrollment method"
-msgstr "Participant enrollment method"
+msgstr "Deltagarregistreringsmetod"
 
 #: contests/templates/manage.html:315
 msgctxt "manage-outreachdashboard"
 msgid "Outreach Dashboard"
-msgstr "Outreach Dashboard"
+msgstr "Uppsökande instrumentpanel"
 
 #: contests/templates/manage.html:316
 msgctxt "manage-campaign"
 msgid "Campaign Event"
-msgstr "Campaign Event"
+msgstr "Kampanjevenemang"
 
 #: contests/templates/manage.html:322
 msgctxt "manage-outreach"
 msgid "Contest name in Outreach Dashboard"
-msgstr "Contest name in Outreach Dashboard"
+msgstr "Tävlingens namn i Outreach-instrumentpanelen"
 
 #: contests/templates/manage.html:328
 msgctxt "manage-outreachplacehold"
 msgid "Campaign_Name/Program_Name"
-msgstr "Campaign_Name/Program_Name"
+msgstr "Kampanj_Namn/Program_Namn"
 
 #: contests/templates/manage.html:335
 msgctxt "manage-campaigneventid"
 msgid "Campaign Event ID"
-msgstr "Campaign Event ID"
+msgstr "Kampanjens Händelse-ID"
 
 #: contests/templates/manage.html:341
 msgctxt "manage-campaigneventidplacehold"
 msgid "Enter the Campaign Event ID"
-msgstr "Enter the Campaign Event ID"
+msgstr "Ange kampanjens Händelse-ID"
 
 #: contests/templates/manage.html:353
 msgctxt "manage-bpp"
 msgid "Bytes per point"
-msgstr "Bytes per point"
+msgstr "Byte per poäng"
 
 #: contests/templates/manage.html:366
 msgctxt "manage-maxbytes"
 msgid "Maximum bytes per article-participant"
-msgstr "Maximum bytes per article-participant"
+msgstr "Maximalt antal byte per artikeldeltagare"
 
 #: contests/templates/manage.html:380
 msgctxt "manage-minbytes"
 msgid "Minimum bytes per edit"
-msgstr "Minimum bytes per edit"
+msgstr "Minsta antal byte per redigering"
 
 #: contests/templates/manage.html:397
 msgctxt "manage-ipp"
 msgid "Images per point"
-msgstr "Images per point"
+msgstr "Bilder per poäng"
 
 #: contests/templates/manage.html:410
 msgctxt "manage-maximages"
 msgid "Maximum images per article-participant"
-msgstr "Maximum images per article-participant"
+msgstr "Maximalt antal byte per artikeldeltagare"
 
 #: contests/templates/manage.html:419 contests/templates/triage.html:435
 #: contests/templates/triage.html:468
 msgctxt "triage-indef"
 msgid "Undefined"
-msgstr "Undefined"
+msgstr "Odefinierad"
 
 #: contests/templates/manage.html:424
 msgctxt "manage-imagemode"
 msgid "Image evaluation mode"
-msgstr "Image evaluation mode"
+msgstr "Bildutvärderingsläge"
 
 #: contests/templates/manage.html:431
 msgctxt "manage-perarticle"
@@ -938,7 +940,7 @@ msgstr "Anpassad färg (hex)"
 #: contests/templates/manage.html:515 contests/templates/triage.html:228
 msgctxt "triage-save"
 msgid "Save"
-msgstr "Save"
+msgstr "Spara"
 
 #: contests/templates/manage.html:522 contests/templates/manage.html:582
 msgctxt "manage-newmanager"
@@ -951,8 +953,8 @@ msgid ""
 "By restarting the contest, all evaluations already made will be deleted. Do "
 "you want to proceed?"
 msgstr ""
-"By restarting the contest, all evaluations already made will be deleted. Do "
-"you want to proceed?"
+"Genom att starta om tävlingen kommer alla utvärderingar som redan gjorts att"
+" raderas. Vill du fortsätta?"
 
 #: contests/templates/manage.html:531
 msgctxt "manage-restart"
@@ -965,8 +967,8 @@ msgid ""
 "By deleting the contest, all records related to this contest will be "
 "deleted. Do you want to proceed?"
 msgstr ""
-"By deleting the contest, all records related to this contest will be "
-"deleted. Do you want to proceed?"
+"Genom att radera tävlingen kommer alla poster relaterade till den att "
+"raderas. Vill du fortsätta?"
 
 #: contests/templates/manage.html:538
 msgctxt "manage-delete"
@@ -989,13 +991,13 @@ msgid ""
 "By defining a new manager, all evaluators and managers already registered "
 "will be deactivated. Do you want to proceed?"
 msgstr ""
-"By defining a new manager, all evaluators and managers already registered "
-"will be deactivated. Do you want to proceed?"
+"Genom att definiera en ny ledare kommer alla utvärderare och ledare som "
+"redan är registrerade att inaktiveras. Vill du fortsätta?"
 
 #: contests/templates/manage.html:588
 msgctxt "login-cancel"
 msgid "Cancel"
-msgstr "Cancel"
+msgstr "Avbryt"
 
 #: contests/templates/modify.html:24
 msgctxt "modify-success"
@@ -1167,122 +1169,122 @@ msgstr "Redigeringen hittades inte i databasen!"
 #: contests/templates/triage.html:65 contests/templates/triage.html:344
 msgctxt "triage-counter"
 msgid "Bytes in selected text"
-msgstr "Bytes in selected text"
+msgstr "Byte i markerad text"
 
 #: contests/templates/triage.html:98
 msgctxt "triage-lasteval"
 msgid "Last evaluation"
-msgstr "Last evaluation"
+msgstr "Senaste utvärdering"
 
 #: contests/templates/triage.html:100 contests/templates/triage.html:330
 msgctxt "triage-diff"
 msgid "Diff"
-msgstr "Diff"
+msgstr "Skillnad"
 
 #: contests/templates/triage.html:107
 msgctxt "triage-validedit"
 msgid "Valid edit"
-msgstr "Valid edit"
+msgstr "Giltig redigering"
 
 #: contests/templates/triage.html:116
 msgctxt "triage-withimage"
 msgid "With image"
-msgstr "With image"
+msgstr "Med bild"
 
 #: contests/templates/triage.html:131
 msgctxt "triage-fix"
 msgid "Review"
-msgstr "Review"
+msgstr "Granska"
 
 #: contests/templates/triage.html:137
 msgctxt "triage-evaluation"
 msgid "Evaluation"
-msgstr "Evaluation"
+msgstr "Utvärderare"
 
 #: contests/templates/triage.html:211
 msgctxt "triage-alterbytes"
 msgid "Change bytes"
-msgstr "Change bytes"
+msgstr "Ändra byte"
 
 #: contests/templates/triage.html:215
 msgctxt "triage-vda"
 msgid "Copyright infringement"
-msgstr "Copyright infringement"
+msgstr "Upphovsrättsintrång"
 
 #: contests/templates/triage.html:216
 msgctxt "triage-redirect"
 msgid "Mere redirection"
-msgstr "Mere redirection"
+msgstr "Bara omdirigering"
 
 #: contests/templates/triage.html:217
 msgctxt "triage-noref"
 msgid "Sourceless content"
-msgstr "Sourceless content"
+msgstr "Källlöst innehåll"
 
 #: contests/templates/triage.html:218
 msgctxt "triage-onlycat"
 msgid "Mere categorization"
-msgstr "Mere categorization"
+msgstr "Bara kategorisering"
 
 #: contests/templates/triage.html:219
 msgctxt "triage-onlytag"
 msgid "Mere insertion of maintenance marks"
-msgstr "Mere insertion of maintenance marks"
+msgstr "Bara införande av underhållsmärken"
 
 #: contests/templates/triage.html:239
 msgctxt "triage-jump"
 msgid "Skip"
-msgstr "Skip"
+msgstr "Hopp över"
 
 #: contests/templates/triage.html:245
 msgctxt "edits"
 msgid "Edits"
-msgstr "Edits"
+msgstr "Redigeringar"
 
 #: contests/templates/triage.html:248
 msgctxt "triage-toeval"
 msgid "Available"
-msgstr "Available"
+msgstr "Tillgänglig"
 
 #: contests/templates/triage.html:252
 msgctxt "triage-towait"
 msgid "Awaiting"
-msgstr "Awaiting"
+msgstr "Väntande"
 
 #: contests/templates/triage.html:258
 msgctxt "triage-onhold"
 msgid "On evaluation"
-msgstr "On evaluation"
+msgstr "Vid utvärdering"
 
 #: contests/templates/triage.html:262
 msgctxt "triage-onskip"
 msgid "Skipped"
-msgstr "Skipped"
+msgstr "Överhoppad"
 
 #: contests/templates/triage.html:274
 msgctxt "triage-release"
 msgid "Release skipped edits"
-msgstr "Release skipped edits"
+msgstr "Släpp hoppade redigeringar"
 
 #: contests/templates/triage.html:287
 msgctxt "triage-unhold"
 msgid "Release edits from all evaluators"
-msgstr "Release edits from all evaluators"
+msgstr "Frigör redigeringar från alla utvärderare"
 
 #: contests/templates/triage.html:297
 msgctxt "triage-database"
 msgid "Database updating."
-msgstr "Database updating."
+msgstr "Databasuppdatering."
 
 #: contests/templates/triage.html:298
 msgctxt "triage-databaseabout"
 msgid "Please wait a few minutes and refresh the page."
-msgstr "Please wait a few minutes and refresh the page."
+msgstr "Vänta några minuter och uppdatera sidan."
 
 #: contests/templates/triage.html:309
 msgctxt "triage-details"
 msgid "Edit details"
-msgstr "Edit details"
+msgstr "Redigerings detaljer"
 
 #: contests/templates/triage.html:314
 msgctxt "label-page"
@@ -1292,12 +1294,12 @@ msgstr "Artikel:"
 #: contests/templates/triage.html:318
 msgctxt "triage-authorship"
 msgid "Authorship:"
-msgstr "Authorship:"
+msgstr "Författarskap:"
 
 #: contests/templates/triage.html:320 contests/templates/triage.html:336
 msgctxt "triage-verify"
 msgid "Verify"
-msgstr "Verify"
+msgstr "Verifiera"
 
 #: contests/templates/triage.html:327
 msgctxt "label-diff"
@@ -1307,122 +1309,122 @@ msgstr "Skillnad:"
 #: contests/templates/triage.html:334
 msgctxt "triage-copyvio"
 msgid "Copyvio Detector"
-msgstr "Copyvio Detector"
+msgstr "Copyvio-detektor"
 
 #: contests/templates/triage.html:347
 msgctxt "triage-differential"
 msgid "Edit differential"
-msgstr "Edit differential"
+msgstr "Redigera skilnaden"
 
 #: contests/templates/triage.html:375
 msgctxt "triage-recenthistory"
 msgid "Recent history"
-msgstr "Recent history"
+msgstr "Senaste historik"
 
 #: contests/templates/triage.html:388
 msgctxt "triage-generalinfo"
 msgid "General information"
-msgstr "General information"
+msgstr "Allmän information"
 
 #: contests/templates/triage.html:390
 msgctxt "triage-contestname"
 msgid "wikicontest name"
-msgstr "wikicontest name"
+msgstr "wikitävlingsnamn"
 
 #: contests/templates/triage.html:395
 msgctxt "triage-loggedname"
 msgid "Current evaluator name"
-msgstr "Current evaluator name"
+msgstr "Nuvarande utvärderares namn"
 
 #: contests/templates/triage.html:400
 msgctxt "triage-conteststart"
 msgid "wikicontest start time"
-msgstr "wikicontest start time"
+msgstr "wikitävlingens starttid"
 
 #: contests/templates/triage.html:405
 msgctxt "triage-contestend"
 msgid "wikicontest end time"
-msgstr "wikicontest end time"
+msgstr "wikitävlingens sluttid"
 
 #: contests/templates/triage.html:410
 msgctxt "triage-lastupdate"
 msgid "Last database update"
-msgstr "Last database update"
+msgstr "Senaste databasuppdatering"
 
 #: contests/templates/triage.html:415
 msgctxt "triage-delay"
 msgid "Delay in registering edits"
-msgstr "Delay in registering edits"
+msgstr "Försening i registreringen av redigeringar"
 
 #: contests/templates/triage.html:417
 #, python-format
 msgctxt "triage-hours"
 msgid "%(1)s hours"
-msgstr "%(1)s hours"
+msgstr "%(1)s timmar"
 
 #: contests/templates/triage.html:420
 msgctxt "triage-bpp"
 msgid "Bytes per point"
-msgstr "Bytes per point"
+msgstr "Byte per punkt"
 
 #: contests/templates/triage.html:425
 msgctxt "triage-maxbytes"
 msgid "Maximum bytes/points per article"
-msgstr "Maximum bytes/points per article"
+msgstr "Maximalt antal byte/poäng per artikel"
 
 #: contests/templates/triage.html:429
 #, python-format
 msgctxt "triage-points"
 msgid "%(1)s points"
-msgstr "%(1)s points"
+msgstr "%(1)s poäng"
 
 #: contests/templates/triage.html:432
 msgctxt "triage-minbytes"
 msgid "Minimum bytes per edit"
-msgstr "Minimum bytes per edit"
+msgstr "Minsta antal byte per redigering"
 
 #: contests/templates/triage.html:437
 msgctxt "triage-includingall"
 msgid "Including edits with negative bytes"
-msgstr "Including edits with negative bytes"
+msgstr "Inklusive redigeringar med negativa byte"
 
 #: contests/templates/triage.html:443
 msgctxt "triage-ipp"
 msgid "Images per point"
-msgstr "Images per point"
+msgstr "Bilder per poäng"
 
 #: contests/templates/triage.html:446
 msgctxt "triage-noimages"
 msgid "Disabled"
-msgstr "Disabled"
+msgstr "Inaktiverad"
 
 #: contests/templates/triage.html:448
 #, python-format
 msgctxt "triage-images"
 msgid "%(1)s image(s)"
-msgstr "%(1)s image(s)"
+msgstr "%(1)s bild(er)"
 
 #: contests/templates/triage.html:452
 msgctxt "triage-imagemode"
 msgid "Image mode"
-msgstr "Image mode"
+msgstr "Bildläge"
 
 #: contests/templates/triage.html:455
 msgctxt "triage-byimage"
 msgid "Per image"
-msgstr "Per image"
+msgstr "Per bild"
 
 #: contests/templates/triage.html:457
 msgctxt "triage-byedition"
 msgid "Per edit"
-msgstr "Per edit"
+msgstr "Per redigering"
 
 #: contests/templates/triage.html:459
 msgctxt "triage-bypage"
 msgid "Per article"
-msgstr "Per article"
+msgstr "Per artikel"
 
 #: contests/templates/triage.html:463
 msgctxt "triage-maximages"
 msgid "Maximum images per article"
-msgstr "Maximum images per article"
+msgstr "Maximalt antal bilder per artikel"
