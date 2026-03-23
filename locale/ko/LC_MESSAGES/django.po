@@ -312,7 +312,7 @@ msgstr "Validated edits"
 #: contests/templates/contest.html:66
 msgctxt "counter-allbytes"
 msgid "Bytes added"
-msgstr "추가된 바이틔"
+msgstr "추가된 바이트"
 
 #: contests/templates/contest.html:77
 msgctxt "counter-most-edited"
