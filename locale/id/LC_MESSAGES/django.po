@@ -21,7 +21,7 @@ msgstr ""
 #: contests/templates/backtrack.html:7 contests/templates/base.html:96
 msgctxt "backtrack"
 msgid "Backtrack"
-msgstr "Backtrack"
+msgstr "Lacak mundur"
 
 #: contests/templates/backtrack.html:15
 msgctxt "backtrack-about"
@@ -31,49 +31,49 @@ msgid ""
 "necessary, click on the button to accept the edit. After acceptance, the "
 "edit will be available in the evaluation queue."
 msgstr ""
-"This page lists the edits participats did in the context of the wikicontest "
-"but were made before their registration in the Outreach Dashboard. If "
-"necessary, click on the button to accept the edit. After acceptance, the "
-"edit will be available in the evaluation queue."
+"Halaman ini mencantumkan suntingan yang dilakukan peserta dalam konteks "
+"ajang wiki tetapi dibuat sebelum mendaftar di Dasbor Penjangkauan, Jika "
+"perlu, klik tombol untuk menyetujui suntingan. Setelah disetujui, "
+"suntingannya akan tersedia dalam antrian penilaian."
 
 #: contests/templates/backtrack.html:36
 #, python-format
 msgctxt "backtrack-stats"
 msgid "Edit on %(1)s with %(2)s bytes"
-msgstr "Edit on %(1)s with %(2)s bytes"
+msgstr "Suntangan pada %(1)s dengan %(2)s bita"
 
 #: contests/templates/backtrack.html:44
 msgctxt "backtrack-areyousure"
 msgid "Are you sure?"
-msgstr "Apa Anda yakin?"
+msgstr "Yakin?"
 
 #: contests/templates/backtrack.html:46
 msgctxt "backtrack-accept"
 msgid "Accept edit"
-msgstr "Terima suntingan"
+msgstr "Setujui suntingan"
 
 #: contests/templates/backtrack.html:53
 #, python-format
 msgctxt "backtrack-enrollment"
 msgid "Participant enrolled on %(1)s"
-msgstr "Participant enrolled on %(1)s"
+msgstr "Peserta mendaftar pada %(1)s"
 
 #: contests/templates/backtrack.html:60
 msgctxt "backtrack-success"
 msgid "Edit accepted successfully!"
-msgstr "Edit accepted successfully!"
+msgstr "Suntingan berhasil disetujui!"
 
 #: contests/templates/base.html:56 contests/templates/base.html:76
 #: contests/templates/triage.html:7
 msgctxt "triage"
 msgid "Triage"
-msgstr "Triage"
+msgstr "Triase"
 
 #: contests/templates/base.html:66 contests/templates/home.html:20
 #, python-format
 msgctxt "triage-welcome"
 msgid "Welcome, %(1)s"
-msgstr "Welcome, %(1)s"
+msgstr "Selamat datang, %(1)s"
 
 #: contests/templates/base.html:71
 msgctxt "triage-panel"
@@ -83,7 +83,7 @@ msgstr "Panel"
 #: contests/templates/base.html:80 contests/templates/counter.html:7
 msgctxt "counter"
 msgid "Counter"
-msgstr "Counter"
+msgstr "Penghitung"
 
 #: contests/templates/base.html:84 contests/templates/manage.html:508
 #: contests/templates/modify.html:7 contests/templates/modify.html:133
@@ -94,7 +94,7 @@ msgstr "Tinjauan"
 #: contests/templates/base.html:88 contests/templates/compare.html:6
 msgctxt "compare"
 msgid "Comparator"
-msgstr "Comparator"
+msgstr "Pembanding"
 
 #: contests/templates/base.html:92 contests/templates/edits.html:8
 msgctxt "triage-evaluated"
@@ -105,22 +105,22 @@ msgstr "Dievaluasi"
 #: contests/templates/evaluators.html:75
 msgctxt "evaluators"
 msgid "Evaluators"
-msgstr "Evaluators"
+msgstr "Penilai"
 
 #: contests/templates/base.html:104
 msgctxt "triage-list"
 msgid "Official list"
-msgstr "Official list"
+msgstr "Daftar resmi"
 
 #: contests/templates/base.html:109
 msgctxt "triage-cat"
 msgid "Categorization"
-msgstr "Categorization"
+msgstr "Pengategorian"
 
 #: contests/templates/base.html:114
 msgctxt "triage-outreach"
 msgid "Outreach Dashboard"
-msgstr "Outreach Dashboard"
+msgstr "Dasbor Penjangkauan"
 
 #: contests/templates/base.html:119 contests/templates/home.html:57
 msgctxt "exit"
@@ -130,27 +130,27 @@ msgstr "Keluar"
 #: contests/templates/compare.html:33 contests/templates/compare.html:57
 msgctxt "compare-soon"
 msgid "up to 10 minutes"
-msgstr "up to 10 minutes"
+msgstr "hingga 10 menit"
 
 #: contests/templates/compare.html:57 contests/templates/compare.html:75
 msgctxt "compare-next"
 msgid "Next update in:"
-msgstr "Next update in:"
+msgstr "Pemutakhirkan selanjutnya dalam:"
 
 #: contests/templates/compare.html:59
 msgctxt "compare-ended"
 msgid "Contest ended. There will be no further updates."
-msgstr "Contest ended. There will be no further updates."
+msgstr "Ajang berakhir. Tak akan ada pemutakhiran lebih lanjut."
 
 #: contests/templates/compare.html:68
 msgctxt "compare-force"
 msgid "Update anyway"
-msgstr "Update anyway"
+msgstr "Mutakhirkan saja"
 
 #: contests/templates/compare.html:85
 msgctxt "compare-anticipate"
 msgid "Anticipate update"
-msgstr "Anticipate update"
+msgstr "Antisipasikan pemutakhiran"
 
 #: contests/templates/compare.html:87
 msgctxt "compare-early"
@@ -158,13 +158,13 @@ msgid ""
 "The last update occurred less than 30 minutes ago. Please wait before "
 "requesting a new update."
 msgstr ""
-"The last update occurred less than 30 minutes ago. Please wait before "
-"requesting a new update."
+"Pemutakhiran terakhir terjadi kurang dari 30 menit lalu. Mohon tunggu "
+"sebelum meminta pemutakhiran baru."
 
 #: contests/templates/compare.html:99
 msgctxt "compare-unlisted"
 msgid "Not listed"
-msgstr "Not listed"
+msgstr "Tak tercantum"
 
 #: contests/templates/compare.html:103
 msgctxt "compare-unlisted-about"
@@ -172,13 +172,13 @@ msgid ""
 "The articles below are included in the category but are not listed "
 "officially."
 msgstr ""
-"The articles below are included in the category but are not listed "
-"officially."
+"Artikel yang ada di bawah disertakan dalam kategori tetapi tidak resmi "
+"tercantum."
 
 #: contests/templates/compare.html:121
 msgctxt "compare-uncated"
 msgid "Removed from category"
-msgstr "Removed from category"
+msgstr "Dicopot dari kategori"
 
 #: contests/templates/compare.html:125
 msgctxt "compare-uncated-about"
@@ -186,13 +186,13 @@ msgid ""
 "The articles below are listed officially, but are not included in the "
 "category."
 msgstr ""
-"The articles below are listed officially, but are not included in the "
-"category."
+"Artikel yang ada di bawah resmi tercantum, tetapi tak disertakan dalam "
+"kategori."
 
 #: contests/templates/compare.html:143
 msgctxt "compare-deletion"
 msgid "Potential deletions"
-msgstr "Potential deletions"
+msgstr "Penghapusan potensial"
 
 #: contests/templates/compare.html:147
 msgctxt "compare-deletion-about"
@@ -200,13 +200,14 @@ msgid ""
 "The articles below are included in the category and are marked for some form"
 " of deletion (fast, semi-fast, by consensus, or by application)."
 msgstr ""
-"The articles below are included in the category and are marked for some form"
-" of deletion (fast, semi-fast, by consensus, or by application)."
+"Artikel yang ada di bawah disertakan dalam kategori dan ditandai untuk "
+"penghapusan tertentu (cepat, cepat sebagian, berdasarkan konsensus, atau "
+"berdasarkan permohonan)."
 
 #: contests/templates/compare.html:167
 msgctxt "compare-nowikidata"
 msgid "Missing Wikidata"
-msgstr "Missing Wikidata"
+msgstr "Wikidata tak ada"
 
 #: contests/templates/compare.html:171
 msgctxt "compare-nowikidata-about"
@@ -214,13 +215,13 @@ msgid ""
 "The articles below are included in the category but have no connection to "
 "Wikidata."
 msgstr ""
-"The articles below are included in the category but have no connection to "
-"Wikidata."
+"Artikel yang ada di bawah disertakan dalam kategori tetapi tak tersambung ke"
+" Wikidata."
 
 #: contests/templates/compare.html:189
 msgctxt "compare-inconsistency"
 msgid "Inconsistencies"
-msgstr "Inconsistencies"
+msgstr "Ketidakkonsistenan"
 
 #: contests/templates/compare.html:193
 msgctxt "compare-inconsistency-about"
@@ -229,19 +230,20 @@ msgid ""
 "but were removed. If they are marked in red, the edit was validated and "
 "awarded points to the participant."
 msgstr ""
-"The listed edits below belong to articles that were listed in the category "
-"but were removed. If they are marked in red, the edit was validated and "
-"awarded points to the participant."
+"Suntingan yang tercantum di bawah berasal dari artikel yang sempat tercantum"
+" dalam kategori tetapi dicopot. Jika ditandai merah, suntingannya telah "
+"diabsahkan dan diberi poin kepada peserta."
 
 #: contests/templates/compare.html:203 contests/templates/compare.html:235
 msgctxt "compare-seediff"
 msgid "See edit no."
-msgstr "See edit no."
+msgstr "Lihat suntingan no."
 
 #: contests/templates/compare.html:208
 msgctxt "compare-areyousure"
 msgid "This edit will be removed from the database. Do you want to proceed?"
-msgstr "This edit will be removed from the database. Do you want to proceed?"
+msgstr ""
+"Suntingan ini akan dicopot dari pangkalan data. Yakin ingin melanjutkan?"
 
 #: contests/templates/compare.html:211
 msgctxt "compare-delete"
@@ -251,17 +253,19 @@ msgstr "Hapus"
 #: contests/templates/compare.html:221
 msgctxt "compare-rollback"
 msgid "Rollbacks"
-msgstr "Rollbacks"
+msgstr "Pengembalian revisi"
 
 #: contests/templates/compare.html:225
 msgctxt "compare-rollback-about"
 msgid "The listed edits below were rolled back after validation."
-msgstr "The listed edits below were rolled back after validation."
+msgstr ""
+"Suntingan yang tercantum di bawah terkena pengembalian revisi setelah "
+"pengabsahan."
 
 #: contests/templates/compare.html:242
 msgctxt "compare-reevaluate"
 msgid "Reevaluate"
-msgstr "Reevaluate"
+msgstr "Nilai ulang"
 
 #: contests/templates/contest.html:4 contests/templates/edits.html:78
 #: contests/templates/edits.txt:1
@@ -272,7 +276,7 @@ msgstr "Judul"
 #: contests/templates/contest.html:31
 msgctxt "login-graph"
 msgid "Graphic scoreboard"
-msgstr "Graphic scoreboard"
+msgstr "Papan skor grafis"
 
 #: contests/templates/contest.html:33
 msgctxt "login-manage"
@@ -287,7 +291,7 @@ msgstr "WikiSkor"
 #: contests/templates/contest.html:44
 msgctxt "counter-allpages"
 msgid "Listed articles"
-msgstr "Listed articles"
+msgstr "Artikel tercantum"
 
 #: contests/templates/contest.html:48
 msgctxt "counter-alledited"
@@ -302,12 +306,12 @@ msgstr "Artikel yang dibuat"
 #: contests/templates/contest.html:58
 msgctxt "counter-allenrolled"
 msgid "Enrolled users"
-msgstr "Enrolled users"
+msgstr "Pengguna terdaftar"
 
 #: contests/templates/contest.html:62
 msgctxt "counter-allvalidated"
 msgid "Validated edits"
-msgstr "Validated edits"
+msgstr "Suntingan terabsahkan"
 
 #: contests/templates/contest.html:66
 msgctxt "counter-allbytes"
@@ -336,12 +340,12 @@ msgstr "Artikel yang paling banyak dikembangkan"
 #, python-format
 msgctxt "triage-bytes"
 msgid "%(1)s bytes"
-msgstr "%(1)s bytes"
+msgstr "%(1)s bita"
 
 #: contests/templates/contest.html:109
 msgctxt "counter-biggest-edition"
 msgid "Biggest edition"
-msgstr "Biggest edition"
+msgstr "Penyuntingan terbesar"
 
 #: contests/templates/contest.html:153 contests/templates/contest.html:164
 msgctxt "login-alledits"
@@ -351,32 +355,32 @@ msgstr "Suntingan per hari"
 #: contests/templates/contest.html:171
 msgctxt "login-validedits"
 msgid "Validated edits per day"
-msgstr "Validated edits per day"
+msgstr "Suntingan terabsahkan per hari"
 
 #: contests/templates/contest.html:191
 msgctxt "login-newevents"
 msgid "Created articles and enrolled participants per day"
-msgstr "Created articles and enrolled participants per day"
+msgstr "Artikel tercipta dan peserta terdaftar per hari"
 
 #: contests/templates/contest.html:202
 msgctxt "login-newpages"
 msgid "New articles per day"
-msgstr "New articles per day"
+msgstr "Artikel baru per hari"
 
 #: contests/templates/contest.html:209
 msgctxt "login-newparticipants"
 msgid "Enrolled participants per day"
-msgstr "Enrolled participants per day"
+msgstr "Peserta terdaftar per hari"
 
 #: contests/templates/contest.html:229 contests/templates/contest.html:240
 msgctxt "login-newbytes"
 msgid "KBytes added per day"
-msgstr "KBytes added per day"
+msgstr "Penambahan KBita per hari"
 
 #: contests/templates/contest.html:247
 msgctxt "login-validbytes"
 msgid "KBytes validated per day"
-msgstr "KBytes validated per day"
+msgstr "Pengabsahan KBita per hari"
 
 #: contests/templates/counter.html:14
 #, python-format
@@ -385,8 +389,8 @@ msgid ""
 "This count refers to the wikicontest %(1)s and was generated on %(2)s at "
 "%(3)s UTC time."
 msgstr ""
-"This count refers to the wikicontest %(1)s and was generated on %(2)s at "
-"%(3)s UTC time."
+"Hitungan ini mengacu ajang wiki %(1)s dan dihasilkan pada %(2)s pukul %(3)s "
+"UTC."
 
 #: contests/templates/counter.html:15
 msgctxt "counter-description"
@@ -397,11 +401,12 @@ msgid ""
 "registered users who have edited any of the articles in the list of this "
 "wikicontest are listed below, even if they have no valid edits."
 msgstr ""
-"The ranking order is determined according to the total points, calculated "
-"with the score rounded down, using the total sum of added bytes as a "
-"tiebreaker, and if there is still a tie, in alphabetical order. All "
-"registered users who have edited any of the articles in the list of this "
-"wikicontest are listed below, even if they have no valid edits."
+"Urutan pemeringkatan ditentukan menurut total poin, dihitung dengan "
+"pembulatan skor ke bawah, menggunakan jumlah total bita yang ditambah "
+"sebagai pemecah nilai seri, dan jika masih ada seri, diurutkan berdasarkan "
+"abjad. Semua pengguna terdaftar yang telah menyunting salah satu artikel "
+"dalam daftar ajang wiki ini akan dicantumkan di bawah, bahkan jika suntingan"
+" mereka tak ada yang absah."
 
 #: contests/templates/counter.html:22
 msgctxt "counter-uptotime"
@@ -409,8 +414,8 @@ msgid ""
 "If you want to get a score up to a specific time, please specify it in the "
 "form below."
 msgstr ""
-"If you want to get a score up to a specific time, please specify it in the "
-"form below."
+"Jika Anda mau dapat skor hingga waktu tertentu, silakan rincikan di formulir"
+" di bawah."
 
 #: contests/templates/counter.html:39
 msgctxt "counter-user"
@@ -453,7 +458,7 @@ msgstr "Total poin"
 #: contests/templates/evaluators.html:147
 msgctxt "counter-redefine"
 msgid "Reset"
-msgstr "Reset"
+msgstr "Atur ulang"
 
 #: contests/templates/counter.html:64
 msgctxt "counter-confirm"
@@ -461,20 +466,21 @@ msgid ""
 "All evaluations on this participant's edits will be undone. Do you want to "
 "proceed?"
 msgstr ""
-"All evaluations on this participant's edits will be undone. Do you want to "
-"proceed?"
+"Semua penilaian atas suntingan peserta ini akan diurungkan. Yakin ingin "
+"melanjutkan?"
 
 #: contests/templates/counter.html:83 contests/templates/triage.html:304
 msgctxt "triage-noedit"
 msgid "There is no edit to be displayed at this time."
-msgstr "There is no edit to be displayed at this time."
+msgstr "Tiada suntingan yang bisa ditampilkan saat ini."
 
 #: contests/templates/counter.html:91
 msgctxt "counter-success"
 msgid ""
 "Edits successfully reset! A new database update will be performed shortly."
 msgstr ""
-"Edits successfully reset! A new database update will be performed shortly."
+"Suntingan berhasil diatur ulang! Pemutakhirkan pangkalan data baru akan "
+"segera dilakukan."
 
 #: contests/templates/edits.html:61
 msgctxt "edits-about"
@@ -482,8 +488,8 @@ msgid ""
 "This page lists all edits made by contest participants. To access edits made"
 " by all users, download the CSV file."
 msgstr ""
-"This page lists all edits made by contest participants. To access edits made"
-" by all users, download the CSV file."
+"Halaman ini mencantumkan semua suntingan buatan peserta ajang. Untuk "
+"mengakses suntingan buatan semua pengguna, unduh berkas CSV."
 
 #: contests/templates/edits.html:66
 msgctxt "edits-csv"
@@ -493,12 +499,12 @@ msgstr "Unduh"
 #: contests/templates/edits.html:77 contests/templates/edits.txt:1
 msgctxt "edits-diff"
 msgid "Edit diff"
-msgstr "Edit diff"
+msgstr "Sunting perbedaan"
 
 #: contests/templates/edits.html:79 contests/templates/edits.txt:1
 msgctxt "edits-timestamp"
 msgid "Edit timestamp"
-msgstr "Edit timestamp"
+msgstr "Stempel waktu suntingan"
 
 #: contests/templates/edits.html:80 contests/templates/edits.txt:1
 msgctxt "edits-user"
@@ -508,7 +514,7 @@ msgstr "Pengguna"
 #: contests/templates/edits.html:81 contests/templates/edits.txt:1
 msgctxt "edits-attached"
 msgid "Account attach date"
-msgstr "Account attach date"
+msgstr "Tanggal lampiran akun"
 
 #: contests/templates/edits.html:82 contests/templates/edits.txt:1
 #: contests/templates/modify.html:209
@@ -524,17 +530,17 @@ msgstr "Artikel baru"
 #: contests/templates/edits.html:84 contests/templates/edits.txt:1
 msgctxt "edits-valid"
 msgid "Valid edit"
-msgstr "Valid edit"
+msgstr "Suntingan absah"
 
 #: contests/templates/edits.html:85 contests/templates/edits.txt:1
 msgctxt "edits-withimage"
 msgid "With image"
-msgstr "With image"
+msgstr "Dengan gambar"
 
 #: contests/templates/edits.html:86 contests/templates/edits.txt:1
 msgctxt "edits-reverted"
 msgid "Reverted edit"
-msgstr "Reverted edit"
+msgstr "Suntingan yang diurungkan"
 
 #: contests/templates/edits.html:87 contests/templates/edits.txt:1
 #: contests/templates/modify.html:194 contests/templates/modify.html:211
@@ -545,22 +551,22 @@ msgstr "Penilai"
 #: contests/templates/edits.html:88 contests/templates/edits.txt:1
 msgctxt "edits-evaltimestamp"
 msgid "Evaluation timestamp"
-msgstr "Evaluation timestamp"
+msgstr "Stempel waktu penilaian"
 
 #: contests/templates/edits.html:89 contests/templates/edits.txt:1
 msgctxt "edits-comment"
 msgid "Evaluator's comment"
-msgstr "Evaluator's comment"
+msgstr "Komentar penilai"
 
 #: contests/templates/edits.txt:1
 msgctxt "edits-curid"
 msgid "Article CurID"
-msgstr "Article CurID"
+msgstr "CurID artikel"
 
 #: contests/templates/edits.txt:1
 msgctxt "edits-enrolled"
 msgid "Enrolled user"
-msgstr "Enrolled user"
+msgstr "Pengguna terdaftar"
 
 #: contests/templates/evaluators.html:14
 msgctxt "evaluators-about"
@@ -568,13 +574,13 @@ msgid ""
 "This page lists the managers and evaluators of this wikicontest. The contest"
 " manager also has options to enable or disable evaluators."
 msgstr ""
-"This page lists the managers and evaluators of this wikicontest. The contest"
-" manager also has options to enable or disable evaluators."
+"Halaman ini mencantumkan pengelola dan penilai ajang wiki ini. Pengelola "
+"ajang juga punya pilihan untuk menyalakan atau memadamkan penilai."
 
 #: contests/templates/evaluators.html:20
 msgctxt "evaluators-neweval"
 msgid "Add new evaluator"
-msgstr "Add new evaluator"
+msgstr "Tambahkan penilai baru"
 
 #: contests/templates/evaluators.html:28 contests/templates/manage.html:549
 #: contests/templates/manage.html:574
@@ -585,19 +591,19 @@ msgstr "Nama pengguna"
 #: contests/templates/evaluators.html:34
 msgctxt "evaluators-register"
 msgid "Register"
-msgstr "Register"
+msgstr "Daftarkan"
 
 #: contests/templates/evaluators.html:44
 msgctxt "evaluators-manager"
 msgid "Managers"
-msgstr "Managers"
+msgstr "Pengelola"
 
 #: contests/templates/evaluators.html:54 contests/templates/evaluators.html:85
 #: contests/templates/evaluators.html:126
 #, python-format
 msgctxt "evaluators-stats"
 msgid "%(1)s evaluations performed"
-msgstr "%(1)s evaluations performed"
+msgstr "%(1)s penilaian dilakukan"
 
 #: contests/templates/evaluators.html:63 contests/templates/evaluators.html:94
 #: contests/templates/evaluators.html:104
@@ -605,27 +611,27 @@ msgstr "%(1)s evaluations performed"
 #: contests/templates/evaluators.html:145 contests/templates/triage.html:280
 msgctxt "evaluators-areyousure"
 msgid "Are you sure?"
-msgstr "Apa Anda yakin?"
+msgstr "Yakin?"
 
 #: contests/templates/evaluators.html:96
 msgctxt "evaluators-disable"
 msgid "Disable"
-msgstr "Disable"
+msgstr "Nyalakan"
 
 #: contests/templates/evaluators.html:116
 msgctxt "evaluators-disabled"
 msgid "Disabled"
-msgstr "Disabled"
+msgstr "Dipadamkan"
 
 #: contests/templates/evaluators.html:137
 msgctxt "evaluators-enable"
 msgid "Enable"
-msgstr "Enable"
+msgstr "Padamkan"
 
 #: contests/templates/graph.html:7 contests/templates/graph.html:25
 msgctxt "graph"
 msgid "Points graph"
-msgstr "Points graph"
+msgstr "Grafik poin"
 
 #: contests/templates/graph.html:31
 msgctxt "graph-about"
@@ -638,28 +644,28 @@ msgid ""
 "inserted by the organizers of the wikicontest on their official page should "
 "be considered."
 msgstr ""
-"The graph below displays the evolution of scores received by the top 9 "
-"participants during the wikicontest. This graph is generated automatically "
-"and does not constitute a final or official ranking. Please note that "
-"organizers may reevaluate previous edits, and the displayed points may be "
-"recalculated without prior notice. In case of discrepancy, only the table "
-"inserted by the organizers of the wikicontest on their official page should "
-"be considered."
+"Grafik di bawah menampilkan evolusi skor yang diterima oleh 9 peserta "
+"teratas selama ajang wiki. Grafik ini dihasilkan otomatis dan bukanlah "
+"pemeringkatan akhir atau resmi. Mohon ingat bahwa penyelenggara dapat "
+"menilai ulang suntingan sebelumnya, dan poin yang tertampil dapat dihitung "
+"ulang tanpa pemberitahuan lebih dulu. Jika terjadi perbedaan, hanya tabel "
+"yang disediakan penyelenggara ajang wiki di halaman resmi mereka yang harus "
+"dipertimbangkan."
 
 #: contests/templates/graph.html:49
 msgctxt "graph-axis"
 msgid "Ranking of the top 9 participants by elapsed day"
-msgstr "Ranking of the top 9 participants by elapsed day"
+msgstr "Pemeringkatan 9 peserta teratas berdasarkan hari yang berlalu"
 
 #: contests/templates/home.html:44
 msgctxt "contest-enter"
 msgid "Join a contest"
-msgstr "Ikuti kontes"
+msgstr "Ikuti ajang"
 
 #: contests/templates/home.html:50
 msgctxt "contest-manage"
 msgid "Manage contests"
-msgstr "Kelola kontes"
+msgstr "Kelola ajang"
 
 #: contests/templates/home.html:63
 msgctxt "login"
@@ -669,7 +675,7 @@ msgstr "Masuk log"
 #: contests/templates/home.html:77
 msgctxt "contest-select"
 msgid "Select your contest"
-msgstr "Pilih kontes Anda"
+msgstr "Pilih ajang Anda"
 
 #: contests/templates/home.html:117
 msgctxt "index-about-short"
@@ -682,8 +688,8 @@ msgid ""
 "WikiScore is a tool created to validate edits and count scores of "
 "participants in wikicontests."
 msgstr ""
-"WikiScore is a tool created to validate edits and count scores of "
-"participants in wikicontests."
+"WikiSkor adalah alat yang dibuat untuk mengabsahkan suntingan dan menghitung"
+" skor peserta dalam ajang wiki."
 
 #: contests/templates/home.html:120
 msgctxt "index-about-main"
@@ -693,15 +699,15 @@ msgid ""
 "evaluators may have different profiles, with individualized validation "
 "records."
 msgstr ""
-"The tool has a simple interface translatable to other languages. It allows "
-"to quickly validate edits in articles from any wikicontest. Different "
-"evaluators may have different profiles, with individualized validation "
-"records."
+"Alat ini antarmukanya sederhana dan bisa diterjemah. Di sini, dimungkinkan "
+"pengabsahan suntingan artikel dari ajang wiki mana pun dengan cepat. "
+"Berbagai penilai profilnya beda-beda, dengan catatan pengabsahan yang "
+"terindividualkan."
 
 #: contests/templates/home.html:129
 msgctxt "index-enroll-short"
 msgid "Register a new wikicontest"
-msgstr "Register a new wikicontest"
+msgstr "Daftarkan ajang wiki baru"
 
 #: contests/templates/home.html:134
 msgctxt "index-enroll-intro"
@@ -709,8 +715,8 @@ msgid ""
 "To request the registration of a new wikicontest, the initial contact will "
 "be made via the contact email of Wiki Movimento Brasil."
 msgstr ""
-"To request the registration of a new wikicontest, the initial contact will "
-"be made via the contact email of Wiki Movimento Brasil."
+"Untuk meminta pendaftaran ajang wiki baru, kontak awal akan dibuat lewat "
+"surel kontak milik Wiki Movimento Brasil."
 
 #: contests/templates/home.html:135
 msgctxt "index-enroll-main"
@@ -720,47 +726,47 @@ msgid ""
 "not) and potential contests. We may request additional information later for"
 " final adjustments to the tool."
 msgstr ""
-"Send an email to wikiscore@wmnobrasil.org and provide basic information "
-"about your group (chapter, thematic organization or user group, official or "
-"not) and potential contests. We may request additional information later for"
-" final adjustments to the tool."
+"Kirim surel ke wikiscore@wmnobrasil.org dan sediakan informasi dasar tentang"
+" kelompok Anda (cabang, organisasi tematik, atau kelompok pengguna, resmi "
+"atau tidak) dan ajang yang mungkin ada. Kami mungkin kemudiannya meminta "
+"informasi tambahan untuk penyesuaian akhir pada alat ini."
 
 #: contests/templates/manage.html:8 contests/templates/manage.html:118
 msgctxt "manage-title"
 msgid "Contest management"
-msgstr "Contest management"
+msgstr "Pengelolaan ajang"
 
 #: contests/templates/manage.html:21 contests/templates/manage.html:265
 #: contests/templates/manage.html:268 contests/templates/manage.html:289
 msgctxt "manage-catid"
 msgid "Category ID of articles"
-msgstr "Category ID of articles"
+msgstr "ID kategori artikel"
 
 #: contests/templates/manage.html:23 contests/templates/manage.html:266
 #: contests/templates/manage.html:269 contests/templates/manage.html:289
 msgctxt "manage-petscan"
 msgid "PetScan ID of the pages"
-msgstr "PetScan ID of the pages"
+msgstr "ID PetScan-nya halaman-halaman ini"
 
 #: contests/templates/manage.html:105
 msgctxt "manage-created"
 msgid "Contest created successfully!"
-msgstr "Contest created successfully!"
+msgstr "Acara berhasil dibuat!"
 
 #: contests/templates/manage.html:106
 msgctxt "manage-remanaged"
 msgid "New manager successfully defined!"
-msgstr "New manager successfully defined!"
+msgstr "Pengelola baru berhasil ditentukan!"
 
 #: contests/templates/manage.html:107
 msgctxt "manage-restarted"
 msgid "Contest restarted successfully! Perform the database update."
-msgstr "Contest restarted successfully! Perform the database update."
+msgstr "Ajang berhasil dimulai lagi! Lakukan pemutakhiran pangkalan data."
 
 #: contests/templates/manage.html:108
 msgctxt "manage-deleted"
 msgid "Contest deleted successfully!"
-msgstr "Contest deleted successfully!"
+msgstr "Ajang berhasil dihapus!"
 
 #: contests/templates/manage.html:124
 msgctxt "manage-about"
@@ -768,174 +774,174 @@ msgid ""
 "This page lists the contests registered in the system and allows the "
 "creation of new contests."
 msgstr ""
-"This page lists the contests registered in the system and allows the "
-"creation of new contests."
+"Halaman ini mencantumkan ajang terdaftar dalam sistem dan memungkinkan "
+"pembuatan ajang baru."
 
 #: contests/templates/manage.html:133
 msgctxt "manage-newcontest"
 msgid "Create new contest"
-msgstr "Create new contest"
+msgstr "Buat ajang baru"
 
 #: contests/templates/manage.html:141
 msgctxt "manage-contestname"
 msgid "Contest name"
-msgstr "Contest name"
+msgstr "Nama ajang"
 
 #: contests/templates/manage.html:147
 msgctxt "manage-contestnameabout"
 msgid "Enter the full contest name"
-msgstr "Enter the full contest name"
+msgstr "Masukkan nama lengkap ajang"
 
 #: contests/templates/manage.html:157
 msgctxt "manage-internalcode"
 msgid "Internal code"
-msgstr "Internal code"
+msgstr "Kode internal"
 
 #: contests/templates/manage.html:163
 msgctxt "manage-internalcodeabout"
 msgid "Use only lower case letters and underscores"
-msgstr "Use only lower case letters and underscores"
+msgstr "Gunakan hanya huruf kecil dan garis bawah"
 
 #: contests/templates/manage.html:174
 msgctxt "manage-group"
 msgid "Group"
-msgstr "Group"
+msgstr "Kelompok"
 
 #: contests/templates/manage.html:190
 msgctxt "manage-starttime"
 msgid "Start time"
-msgstr "Start time"
+msgstr "Waktu mulai"
 
 #: contests/templates/manage.html:202
 msgctxt "manage-endtime"
 msgid "End time"
-msgstr "End time"
+msgstr "Waktu selesai"
 
 #: contests/templates/manage.html:215
 msgctxt "manage-endpoint"
 msgid "Endpoint address"
-msgstr "Endpoint address"
+msgstr "Alamat titik akhir"
 
 #: contests/templates/manage.html:227
 msgctxt "manage-api"
 msgid "API address"
-msgstr "API address"
+msgstr "Alamat API"
 
 #: contests/templates/manage.html:242
 msgctxt "manage-reverttime"
 msgid "Rollback period (hours)"
-msgstr "Rollback period (hours)"
+msgstr "Periode pengembalian (jam)"
 
 #: contests/templates/manage.html:256
 msgctxt "manage-source"
 msgid "Monitoring method"
-msgstr "Monitoring method"
+msgstr "Cara pemantauan"
 
 #: contests/templates/manage.html:277
 msgctxt "manage-listid"
 msgid "Page ID with list of articles"
-msgstr "Page ID with list of articles"
+msgstr "ID halaman dengan daftar artikel"
 
 #: contests/templates/manage.html:307
 msgctxt "manage-controlmethod"
 msgid "Participant enrollment method"
-msgstr "Participant enrollment method"
+msgstr "Cara pendaftaran peserta"
 
 #: contests/templates/manage.html:315
 msgctxt "manage-outreachdashboard"
 msgid "Outreach Dashboard"
-msgstr "Outreach Dashboard"
+msgstr "Dasbor Penjangkauan"
 
 #: contests/templates/manage.html:316
 msgctxt "manage-campaign"
 msgid "Campaign Event"
-msgstr "Campaign Event"
+msgstr "Acara Kampanye"
 
 #: contests/templates/manage.html:322
 msgctxt "manage-outreach"
 msgid "Contest name in Outreach Dashboard"
-msgstr "Contest name in Outreach Dashboard"
+msgstr "Nama ajang di Dasbor Penjangkauan"
 
 #: contests/templates/manage.html:328
 msgctxt "manage-outreachplacehold"
 msgid "Campaign_Name/Program_Name"
-msgstr "Campaign_Name/Program_Name"
+msgstr "Nama_Kampanye/Nama_Program"
 
 #: contests/templates/manage.html:335
 msgctxt "manage-campaigneventid"
 msgid "Campaign Event ID"
-msgstr "Campaign Event ID"
+msgstr "ID Acara Kampanye"
 
 #: contests/templates/manage.html:341
 msgctxt "manage-campaigneventidplacehold"
 msgid "Enter the Campaign Event ID"
-msgstr "Enter the Campaign Event ID"
+msgstr "Masukkan ID Acara Kampanye"
 
 #: contests/templates/manage.html:353
 msgctxt "manage-bpp"
 msgid "Bytes per point"
-msgstr "Bytes per point"
+msgstr "Bita per poin"
 
 #: contests/templates/manage.html:366
 msgctxt "manage-maxbytes"
 msgid "Maximum bytes per article-participant"
-msgstr "Maximum bytes per article-participant"
+msgstr "Maksimum bita per artikel-peserta"
 
 #: contests/templates/manage.html:380
 msgctxt "manage-minbytes"
 msgid "Minimum bytes per edit"
-msgstr "Minimum bytes per edit"
+msgstr "Bita minimum per suntingan"
 
 #: contests/templates/manage.html:397
 msgctxt "manage-ipp"
 msgid "Images per point"
-msgstr "Images per point"
+msgstr "Gambar per poin"
 
 #: contests/templates/manage.html:410
 msgctxt "manage-maximages"
 msgid "Maximum images per article-participant"
-msgstr "Maximum images per article-participant"
+msgstr "Maksimum gambar per artikel-peserta"
 
 #: contests/templates/manage.html:419 contests/templates/triage.html:435
 #: contests/templates/triage.html:468
 msgctxt "triage-indef"
 msgid "Undefined"
-msgstr "Undefined"
+msgstr "Tak ditentukan"
 
 #: contests/templates/manage.html:424
 msgctxt "manage-imagemode"
 msgid "Image evaluation mode"
-msgstr "Image evaluation mode"
+msgstr "Moda penilaian gambar"
 
 #: contests/templates/manage.html:431
 msgctxt "manage-perarticle"
 msgid "Per article"
-msgstr "Per article"
+msgstr "Per artikel"
 
 #: contests/templates/manage.html:432
 msgctxt "manage-peredit"
 msgid "Per edit"
-msgstr "Per edit"
+msgstr "Per suntingan"
 
 #: contests/templates/manage.html:433
 msgctxt "manage-perimage"
 msgid "Per image"
-msgstr "Per image"
+msgstr "Per gambar"
 
 #: contests/templates/manage.html:442
 msgctxt "manage-palette"
 msgid "Color palette"
-msgstr "Color palette"
+msgstr "Palet warna"
 
 #: contests/templates/manage.html:479
 msgctxt "manage-custom"
 msgid "custom"
-msgstr "custom"
+msgstr "kustom"
 
 #: contests/templates/manage.html:484
 msgctxt "manage-hexcolor"
 msgid "Custom color (hex)"
-msgstr "Custom color (hex)"
+msgstr "Warna kustom (heks)"
 
 #: contests/templates/manage.html:515 contests/templates/triage.html:228
 msgctxt "triage-save"
@@ -945,7 +951,7 @@ msgstr "Simpan"
 #: contests/templates/manage.html:522 contests/templates/manage.html:582
 msgctxt "manage-newmanager"
 msgid "Set new manager"
-msgstr "Set new manager"
+msgstr "Atur pengelola baru"
 
 #: contests/templates/manage.html:530
 msgctxt "manage-confirmrestart"
@@ -953,13 +959,13 @@ msgid ""
 "By restarting the contest, all evaluations already made will be deleted. Do "
 "you want to proceed?"
 msgstr ""
-"By restarting the contest, all evaluations already made will be deleted. Do "
-"you want to proceed?"
+"Dengan memulai ulang ajang, semua penilaian yang sudah dibuat akan dihapus. "
+"Yakin ingin lanjut?"
 
 #: contests/templates/manage.html:531
 msgctxt "manage-restart"
 msgid "Restart"
-msgstr "Restart"
+msgstr "Mulai ulang"
 
 #: contests/templates/manage.html:537
 msgctxt "manage-confirmdelete"
@@ -967,23 +973,23 @@ msgid ""
 "By deleting the contest, all records related to this contest will be "
 "deleted. Do you want to proceed?"
 msgstr ""
-"By deleting the contest, all records related to this contest will be "
-"deleted. Do you want to proceed?"
+"Dengan menghapus ajang, semua catatan terkait ajang ini akan dihapus. Yakin "
+"ingin lanjut?"
 
 #: contests/templates/manage.html:538
 msgctxt "manage-delete"
 msgid "Delete"
-msgstr "Delete"
+msgstr "Hapus"
 
 #: contests/templates/manage.html:543
 msgctxt "manage-managemail"
 msgid "Manager's Wikimedia account"
-msgstr "Manager's Wikimedia account"
+msgstr "Akun Wikimedia pengelola"
 
 #: contests/templates/manage.html:558
 msgctxt "manage-create"
 msgid "Create"
-msgstr "Create"
+msgstr "Buat"
 
 #: contests/templates/manage.html:567
 msgctxt "manage-confirmmanager"
@@ -991,8 +997,8 @@ msgid ""
 "By defining a new manager, all evaluators and managers already registered "
 "will be deactivated. Do you want to proceed?"
 msgstr ""
-"By defining a new manager, all evaluators and managers already registered "
-"will be deactivated. Do you want to proceed?"
+"Dengan menentukan pengelola baru, semua penilai dan pengelola yang sudah "
+"terdaftar akan dipadamkan. Yakin ingin lanjut?"
 
 #: contests/templates/manage.html:588
 msgctxt "login-cancel"
@@ -1002,33 +1008,33 @@ msgstr "Batal"
 #: contests/templates/modify.html:24
 msgctxt "modify-success"
 msgid "Modification successfully done!"
-msgstr "Modification successfully done!"
+msgstr "Pengubahan berhasil dilakukan!"
 
 #: contests/templates/modify.html:32
 msgctxt "modify-consult"
 msgid "Check evaluation"
-msgstr "Evaluasi pemeriksaan"
+msgstr "Penilaian pengecekan"
 
 #: contests/templates/modify.html:42
 msgctxt "modify-diff"
 msgid "Diff"
-msgstr "Diff"
+msgstr "Beda"
 
 #: contests/templates/modify.html:48
 msgctxt "modify-load"
 msgid "Load edit"
-msgstr "Load edit"
+msgstr "Muat suntingan"
 
 #: contests/templates/modify.html:58
 msgctxt "modify-reavaluate"
 msgid "Reevaluate"
-msgstr "Reevaluate"
+msgstr "Nilai ulang"
 
 #: contests/templates/modify.html:62 contests/templates/modify.html:207
 #: contests/templates/triage.html:142
 msgctxt "isvalid"
 msgid "Valid edit?"
-msgstr "Suntingan sah?"
+msgstr "Suntingan absah?"
 
 #: contests/templates/modify.html:70 contests/templates/modify.html:101
 #: contests/templates/modify.html:166 contests/templates/modify.html:167
@@ -1104,7 +1110,7 @@ msgstr "Artikel baru"
 #: contests/templates/modify.html:167
 msgctxt "modify-label-valid"
 msgid "Valid edit:"
-msgstr "Suntingan sah:"
+msgstr "Suntingan absah:"
 
 #: contests/templates/modify.html:168
 msgctxt "modify-label-enrolled"
@@ -1119,7 +1125,7 @@ msgstr "Dengan gambar:"
 #: contests/templates/modify.html:170
 msgctxt "modify-label-reverted"
 msgid "Reverted edit:"
-msgstr "Suntingan yang dibalikkan:"
+msgstr "Suntingan yang diurungkan:"
 
 #: contests/templates/modify.html:171
 msgctxt "modify-label-evaluator"
@@ -1129,107 +1135,107 @@ msgstr "Penilai:"
 #: contests/templates/modify.html:172
 msgctxt "modify-label-evaltimestamp"
 msgid "Evaluation timestamp:"
-msgstr "Evaluation timestamp:"
+msgstr "Stempel waktu penilaian:"
 
 #: contests/templates/modify.html:173
 msgctxt "modify-label-comment"
 msgid "Evaluator's comment:"
-msgstr "Evaluator's comment:"
+msgstr "Komentar penilai:"
 
 #: contests/templates/modify.html:182 contests/templates/modify.html:185
 msgctxt "modify-showdiff"
 msgid "Edit diff"
-msgstr "Edit diff"
+msgstr "Sunting perbedaan"
 
 #: contests/templates/modify.html:193
 msgctxt "modify-qualified"
 msgid "Qualified?"
-msgstr "Qualified?"
+msgstr "Memenuhi syarat?"
 
 #: contests/templates/modify.html:195 contests/templates/modify.html:212
 msgctxt "modify-timestamp"
 msgid "Timestamp"
-msgstr "Timestamp"
+msgstr "Stempel waktu"
 
 #: contests/templates/modify.html:200
 msgctxt "modify-automatic"
 msgid "Automatic"
-msgstr "Automatic"
+msgstr "Otomatis"
 
 #: contests/templates/modify.html:210 contests/templates/triage.html:204
 msgctxt "triage-observation"
 msgid "Observation"
-msgstr "Observation"
+msgstr "Pengamatan"
 
 #: contests/templates/modify.html:227
 msgctxt "modify-notfound"
 msgid "Edit not found in the database!"
-msgstr "Edit not found in the database!"
+msgstr "Suntingan tak ditemukan dalam pangkalan data!"
 
 #: contests/templates/triage.html:65 contests/templates/triage.html:344
 msgctxt "triage-counter"
 msgid "Bytes in selected text"
-msgstr "Bytes in selected text"
+msgstr "Bita dalam teks terpilih"
 
 #: contests/templates/triage.html:98
 msgctxt "triage-lasteval"
 msgid "Last evaluation"
-msgstr "Last evaluation"
+msgstr "Penilaian terakhir"
 
 #: contests/templates/triage.html:100 contests/templates/triage.html:330
 msgctxt "triage-diff"
 msgid "Diff"
-msgstr "Diff"
+msgstr "Beda"
 
 #: contests/templates/triage.html:107
 msgctxt "triage-validedit"
 msgid "Valid edit"
-msgstr "Valid edit"
+msgstr "Suntingan absah"
 
 #: contests/templates/triage.html:116
 msgctxt "triage-withimage"
 msgid "With image"
-msgstr "With image"
+msgstr "Dengan gambar"
 
 #: contests/templates/triage.html:131
 msgctxt "triage-fix"
 msgid "Review"
-msgstr "Review"
+msgstr "Tinjauan"
 
 #: contests/templates/triage.html:137
 msgctxt "triage-evaluation"
 msgid "Evaluation"
-msgstr "Evaluation"
+msgstr "Penilaian"
 
 #: contests/templates/triage.html:211
 msgctxt "triage-alterbytes"
 msgid "Change bytes"
-msgstr "Change bytes"
+msgstr "Ubah bita"
 
 #: contests/templates/triage.html:215
 msgctxt "triage-vda"
 msgid "Copyright infringement"
-msgstr "Copyright infringement"
+msgstr "Pelanggaran hak cipta"
 
 #: contests/templates/triage.html:216
 msgctxt "triage-redirect"
 msgid "Mere redirection"
-msgstr "Mere redirection"
+msgstr "Pengalihan belaka"
 
 #: contests/templates/triage.html:217
 msgctxt "triage-noref"
 msgid "Sourceless content"
-msgstr "Sourceless content"
+msgstr "Konten tak bersumber"
 
 #: contests/templates/triage.html:218
 msgctxt "triage-onlycat"
 msgid "Mere categorization"
-msgstr "Mere categorization"
+msgstr "Pengategorian belaka"
 
 #: contests/templates/triage.html:219
 msgctxt "triage-onlytag"
 msgid "Mere insertion of maintenance marks"
-msgstr "Mere insertion of maintenance marks"
+msgstr "Penyisipan tanda pemeliharaan belaka"
 
 #: contests/templates/triage.html:239
 msgctxt "triage-jump"
@@ -1254,7 +1260,7 @@ msgstr "Menunggu"
 #: contests/templates/triage.html:258
 msgctxt "triage-onhold"
 msgid "On evaluation"
-msgstr "On evaluation"
+msgstr "Pada penilaian"
 
 #: contests/templates/triage.html:262
 msgctxt "triage-onskip"
@@ -1264,27 +1270,27 @@ msgstr "Dilewati"
 #: contests/templates/triage.html:274
 msgctxt "triage-release"
 msgid "Release skipped edits"
-msgstr "Release skipped edits"
+msgstr "Lepaskan suntingan terlewat"
 
 #: contests/templates/triage.html:287
 msgctxt "triage-unhold"
 msgid "Release edits from all evaluators"
-msgstr "Release edits from all evaluators"
+msgstr "Lepaskan suntingan dari semua penilai"
 
 #: contests/templates/triage.html:297
 msgctxt "triage-database"
 msgid "Database updating."
-msgstr "Database updating."
+msgstr "Pemutakhiran pangkalan data."
 
 #: contests/templates/triage.html:298
 msgctxt "triage-databaseabout"
 msgid "Please wait a few minutes and refresh the page."
-msgstr "Please wait a few minutes and refresh the page."
+msgstr "Mohon tunggu beberapa menit dan segarkan halaman."
 
 #: contests/templates/triage.html:309
 msgctxt "triage-details"
 msgid "Edit details"
-msgstr "Edit details"
+msgstr "Rincian suntingan"
 
 #: contests/templates/triage.html:314
 msgctxt "label-page"
@@ -1294,12 +1300,12 @@ msgstr "Artikel:"
 #: contests/templates/triage.html:318
 msgctxt "triage-authorship"
 msgid "Authorship:"
-msgstr "Authorship:"
+msgstr "Kepengarangan:"
 
 #: contests/templates/triage.html:320 contests/templates/triage.html:336
 msgctxt "triage-verify"
 msgid "Verify"
-msgstr "Verify"
+msgstr "Pastikan"
 
 #: contests/templates/triage.html:327
 msgctxt "label-diff"
@@ -1309,68 +1315,68 @@ msgstr "Perbedaan:"
 #: contests/templates/triage.html:334
 msgctxt "triage-copyvio"
 msgid "Copyvio Detector"
-msgstr "Copyvio Detector"
+msgstr "Pendeteksi pelanggaran hak cipta"
 
 #: contests/templates/triage.html:347
 msgctxt "triage-differential"
 msgid "Edit differential"
-msgstr "Edit differential"
+msgstr "Sunting perbedaan"
 
 #: contests/templates/triage.html:375
 msgctxt "triage-recenthistory"
 msgid "Recent history"
-msgstr "Recent history"
+msgstr "Riwayat terbaru"
 
 #: contests/templates/triage.html:388
 msgctxt "triage-generalinfo"
 msgid "General information"
-msgstr "General information"
+msgstr "Informasi umum"
 
 #: contests/templates/triage.html:390
 msgctxt "triage-contestname"
 msgid "wikicontest name"
-msgstr "wikicontest name"
+msgstr "nama ajang wiki"
 
 #: contests/templates/triage.html:395
 msgctxt "triage-loggedname"
 msgid "Current evaluator name"
-msgstr "Current evaluator name"
+msgstr "Nama penilai saat ini"
 
 #: contests/templates/triage.html:400
 msgctxt "triage-conteststart"
 msgid "wikicontest start time"
-msgstr "wikicontest start time"
+msgstr "waktu mulai ajang wiki"
 
 #: contests/templates/triage.html:405
 msgctxt "triage-contestend"
 msgid "wikicontest end time"
-msgstr "wikicontest end time"
+msgstr "waktu berakhir ajang wiki"
 
 #: contests/templates/triage.html:410
 msgctxt "triage-lastupdate"
 msgid "Last database update"
-msgstr "Last database update"
+msgstr "Pemutakhiran pangkalan data terakhir"
 
 #: contests/templates/triage.html:415
 msgctxt "triage-delay"
 msgid "Delay in registering edits"
-msgstr "Delay in registering edits"
+msgstr "Penundaan saat mendaftarkan suntingan"
 
 #: contests/templates/triage.html:417
 #, python-format
 msgctxt "triage-hours"
 msgid "%(1)s hours"
-msgstr "%(1)s hours"
+msgstr "%(1)s jam"
 
 #: contests/templates/triage.html:420
 msgctxt "triage-bpp"
 msgid "Bytes per point"
-msgstr "Bytes per point"
+msgstr "Bita per poin"
 
 #: contests/templates/triage.html:425
 msgctxt "triage-maxbytes"
 msgid "Maximum bytes/points per article"
-msgstr "Maximum bytes/points per article"
+msgstr "Maksimum bita/poin per artikel"
 
 #: contests/templates/triage.html:429
 #, python-format
@@ -1381,50 +1387,50 @@ msgstr "%(1)s poin"
 #: contests/templates/triage.html:432
 msgctxt "triage-minbytes"
 msgid "Minimum bytes per edit"
-msgstr "Minimum bytes per edit"
+msgstr "Bita minimum per suntingan"
 
 #: contests/templates/triage.html:437
 msgctxt "triage-includingall"
 msgid "Including edits with negative bytes"
-msgstr "Including edits with negative bytes"
+msgstr "Termasuk suntingan dengan bita negatif"
 
 #: contests/templates/triage.html:443
 msgctxt "triage-ipp"
 msgid "Images per point"
-msgstr "Images per point"
+msgstr "Gambar per poin"
 
 #: contests/templates/triage.html:446
 msgctxt "triage-noimages"
 msgid "Disabled"
-msgstr "Disabled"
+msgstr "Dipadamkan"
 
 #: contests/templates/triage.html:448
 #, python-format
 msgctxt "triage-images"
 msgid "%(1)s image(s)"
-msgstr "%(1)s image(s)"
+msgstr "%(1)s gambar"
 
 #: contests/templates/triage.html:452
 msgctxt "triage-imagemode"
 msgid "Image mode"
-msgstr "Image mode"
+msgstr "Moda gambar"
 
 #: contests/templates/triage.html:455
 msgctxt "triage-byimage"
 msgid "Per image"
-msgstr "Per image"
+msgstr "Per gambar"
 
 #: contests/templates/triage.html:457
 msgctxt "triage-byedition"
 msgid "Per edit"
-msgstr "Per edit"
+msgstr "Per suntingan"
 
 #: contests/templates/triage.html:459
 msgctxt "triage-bypage"
 msgid "Per article"
-msgstr "Per article"
+msgstr "Per artikel"
 
 #: contests/templates/triage.html:463
 msgctxt "triage-maximages"
 msgid "Maximum images per article"
-msgstr "Maximum images per article"
+msgstr "Maksimum gambar per artikel"
