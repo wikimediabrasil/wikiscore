@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Suleiman the Magnificent Television",
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
@@ -136,7 +137,7 @@
 	"manage-palette": "컬러 팔레트",
 	"manage-custom": "사용자 지정",
 	"manage-hexcolor": "사용자 지정 색 (16진수)",
-	"manage-managemail": "관리자의 이메일",
+	"manage-managemail": "관리자의 위키미디어 계정",
 	"manage-newmanager": "새 관리자 설정",
 	"manage-remanaged": "새 관리자를 성공적으로 정의하였습니다!",
 	"manage-create": "만들기",
