@@ -976,7 +976,7 @@ msgstr "삭제"
 #: contests/templates/manage.html:543
 msgctxt "manage-managemail"
 msgid "Manager's Wikimedia account"
-msgstr "관리자의 이메일"
+msgstr "관리자의 위키미디어 계정"
 
 #: contests/templates/manage.html:558
 msgctxt "manage-create"
