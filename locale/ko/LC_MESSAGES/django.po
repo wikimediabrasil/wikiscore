@@ -50,7 +50,7 @@ msgstr "확실합니까?"
 #: contests/templates/backtrack.html:46
 msgctxt "backtrack-accept"
 msgid "Accept edit"
-msgstr "Accept edit"
+msgstr "편집 승인"
 
 #: contests/templates/backtrack.html:53
 #, python-format
@@ -61,19 +61,19 @@ msgstr "Participant enrolled on %(1)s"
 #: contests/templates/backtrack.html:60
 msgctxt "backtrack-success"
 msgid "Edit accepted successfully!"
-msgstr "Edit accepted successfully!"
+msgstr "편집이 성공적으로 승인되었습니다!"
 
 #: contests/templates/base.html:56 contests/templates/base.html:76
 #: contests/templates/triage.html:7
 msgctxt "triage"
 msgid "Triage"
-msgstr "Triage"
+msgstr "선별"
 
 #: contests/templates/base.html:66 contests/templates/home.html:20
 #, python-format
 msgctxt "triage-welcome"
 msgid "Welcome, %(1)s"
-msgstr "Welcome, %(1)s"
+msgstr "%(1)s님, 환영합니다"
 
 #: contests/templates/base.html:71
 msgctxt "triage-panel"
@@ -292,22 +292,22 @@ msgstr "Listed articles"
 #: contests/templates/contest.html:48
 msgctxt "counter-alledited"
 msgid "Edited articles"
-msgstr "Edited articles"
+msgstr "편집된 문서"
 
 #: contests/templates/contest.html:52
 msgctxt "counter-allcreated"
 msgid "Created articles"
-msgstr "Created articles"
+msgstr "생성된 문서"
 
 #: contests/templates/contest.html:58
 msgctxt "counter-allenrolled"
 msgid "Enrolled users"
-msgstr "Enrolled users"
+msgstr "등록된 사용자"
 
 #: contests/templates/contest.html:62
 msgctxt "counter-allvalidated"
 msgid "Validated edits"
-msgstr "Validated edits"
+msgstr "검증된 편집"
 
 #: contests/templates/contest.html:66
 msgctxt "counter-allbytes"
@@ -430,7 +430,7 @@ msgstr "총 편집"
 #: contests/templates/counter.html:42
 msgctxt "counter-ppb"
 msgid "Points per byte"
-msgstr "Points per byte"
+msgstr "바이트 당 점수"
 
 #: contests/templates/counter.html:43
 msgctxt "counter-images"
@@ -440,12 +440,12 @@ msgstr "이미지가 있는 문서"
 #: contests/templates/counter.html:44
 msgctxt "counter-ppi"
 msgid "Points per image"
-msgstr "Points per image"
+msgstr "이미지 당 점수"
 
 #: contests/templates/counter.html:45
 msgctxt "counter-points"
 msgid "Total points"
-msgstr "Total points"
+msgstr "총점"
 
 #: contests/templates/counter.html:47 contests/templates/counter.html:72
 #: contests/templates/evaluators.html:65
@@ -508,7 +508,7 @@ msgstr "사용자"
 #: contests/templates/edits.html:81 contests/templates/edits.txt:1
 msgctxt "edits-attached"
 msgid "Account attach date"
-msgstr "Account attach date"
+msgstr "계정 연결 날짜"
 
 #: contests/templates/edits.html:82 contests/templates/edits.txt:1
 #: contests/templates/modify.html:209
@@ -550,12 +550,12 @@ msgstr "평가 타임스탬프"
 #: contests/templates/edits.html:89 contests/templates/edits.txt:1
 msgctxt "edits-comment"
 msgid "Evaluator's comment"
-msgstr "Evaluator's comment"
+msgstr "평가자 의견"
 
 #: contests/templates/edits.txt:1
 msgctxt "edits-curid"
 msgid "Article CurID"
-msgstr "Article CurID"
+msgstr "문서 curID"
 
 #: contests/templates/edits.txt:1
 msgctxt "edits-enrolled"
@@ -625,7 +625,7 @@ msgstr "활성화"
 #: contests/templates/graph.html:7 contests/templates/graph.html:25
 msgctxt "graph"
 msgid "Points graph"
-msgstr "Points graph"
+msgstr "점수 그래프"
 
 #: contests/templates/graph.html:31
 msgctxt "graph-about"
@@ -732,13 +732,13 @@ msgstr "대회 관리"
 #: contests/templates/manage.html:268 contests/templates/manage.html:289
 msgctxt "manage-catid"
 msgid "Category ID of articles"
-msgstr "Category ID of articles"
+msgstr "문서의 분류 ID"
 
 #: contests/templates/manage.html:23 contests/templates/manage.html:266
 #: contests/templates/manage.html:269 contests/templates/manage.html:289
 msgctxt "manage-petscan"
 msgid "PetScan ID of the pages"
-msgstr "PetScan ID of the pages"
+msgstr "문서의 PetScan ID"
 
 #: contests/templates/manage.html:105
 msgctxt "manage-created"
@@ -812,7 +812,7 @@ msgstr "종료 시간"
 #: contests/templates/manage.html:215
 msgctxt "manage-endpoint"
 msgid "Endpoint address"
-msgstr "Endpoint address"
+msgstr "종단점 주소"
 
 #: contests/templates/manage.html:227
 msgctxt "manage-api"
@@ -857,7 +857,7 @@ msgstr "Contest name in Outreach Dashboard"
 #: contests/templates/manage.html:328
 msgctxt "manage-outreachplacehold"
 msgid "Campaign_Name/Program_Name"
-msgstr "Campaign_Name/Program_Name"
+msgstr "캠페인_이름/프로그램_이름"
 
 #: contests/templates/manage.html:335
 msgctxt "manage-campaigneventid"
@@ -867,32 +867,32 @@ msgstr "캠페인 이벤트 ID"
 #: contests/templates/manage.html:341
 msgctxt "manage-campaigneventidplacehold"
 msgid "Enter the Campaign Event ID"
-msgstr "Enter the Campaign Event ID"
+msgstr "캠페인 이벤트 ID를 입력"
 
 #: contests/templates/manage.html:353
 msgctxt "manage-bpp"
 msgid "Bytes per point"
-msgstr "Bytes per point"
+msgstr "점 당 바이트"
 
 #: contests/templates/manage.html:366
 msgctxt "manage-maxbytes"
 msgid "Maximum bytes per article-participant"
-msgstr "Maximum bytes per article-participant"
+msgstr "문서-참가자 당 최대 바이트"
 
 #: contests/templates/manage.html:380
 msgctxt "manage-minbytes"
 msgid "Minimum bytes per edit"
-msgstr "Minimum bytes per edit"
+msgstr "편집 당 최대 바이트"
 
 #: contests/templates/manage.html:397
 msgctxt "manage-ipp"
 msgid "Images per point"
-msgstr "Images per point"
+msgstr "점 당 이미지"
 
 #: contests/templates/manage.html:410
 msgctxt "manage-maximages"
 msgid "Maximum images per article-participant"
-msgstr "Maximum images per article-participant"
+msgstr "문서-참가자 당 최대 이미지"
 
 #: contests/templates/manage.html:419 contests/templates/triage.html:435
 #: contests/templates/triage.html:468
@@ -950,9 +950,7 @@ msgctxt "manage-confirmrestart"
 msgid ""
 "By restarting the contest, all evaluations already made will be deleted. Do "
 "you want to proceed?"
-msgstr ""
-"By restarting the contest, all evaluations already made will be deleted. Do "
-"you want to proceed?"
+msgstr "대회를 재시작하면 이미 이루어진 모든 평가가 삭제됩니다. 계속하시겠습니까?"
 
 #: contests/templates/manage.html:531
 msgctxt "manage-restart"
@@ -964,9 +962,7 @@ msgctxt "manage-confirmdelete"
 msgid ""
 "By deleting the contest, all records related to this contest will be "
 "deleted. Do you want to proceed?"
-msgstr ""
-"By deleting the contest, all records related to this contest will be "
-"deleted. Do you want to proceed?"
+msgstr "대회를 삭제하면 이 대회와 관련된 모든 기록이 삭제됩니다. 계속하시겠습니까?"
 
 #: contests/templates/manage.html:538
 msgctxt "manage-delete"
@@ -988,9 +984,7 @@ msgctxt "manage-confirmmanager"
 msgid ""
 "By defining a new manager, all evaluators and managers already registered "
 "will be deactivated. Do you want to proceed?"
-msgstr ""
-"By defining a new manager, all evaluators and managers already registered "
-"will be deactivated. Do you want to proceed?"
+msgstr "새 관리자를 정의하면 이미 등록한 모든 평가자와 관리자가 비활성화됩니다. 계속하시겠습니까?"
 
 #: contests/templates/manage.html:588
 msgctxt "login-cancel"
@@ -1005,28 +999,28 @@ msgstr "Modification successfully done!"
 #: contests/templates/modify.html:32
 msgctxt "modify-consult"
 msgid "Check evaluation"
-msgstr "Check evaluation"
+msgstr "평가 확인"
 
 #: contests/templates/modify.html:42
 msgctxt "modify-diff"
 msgid "Diff"
-msgstr "Diff"
+msgstr "차이"
 
 #: contests/templates/modify.html:48
 msgctxt "modify-load"
 msgid "Load edit"
-msgstr "Load edit"
+msgstr "편집 불러오기"
 
 #: contests/templates/modify.html:58
 msgctxt "modify-reavaluate"
 msgid "Reevaluate"
-msgstr "Reevaluate"
+msgstr "재평가"
 
 #: contests/templates/modify.html:62 contests/templates/modify.html:207
 #: contests/templates/triage.html:142
 msgctxt "isvalid"
 msgid "Valid edit?"
-msgstr "Valid edit?"
+msgstr "유효한 편집?"
 
 #: contests/templates/modify.html:70 contests/templates/modify.html:101
 #: contests/templates/modify.html:166 contests/templates/modify.html:167
@@ -1172,7 +1166,7 @@ msgstr "Bytes in selected text"
 #: contests/templates/triage.html:98
 msgctxt "triage-lasteval"
 msgid "Last evaluation"
-msgstr "Last evaluation"
+msgstr "마지막 평가"
 
 #: contests/templates/triage.html:100 contests/templates/triage.html:330
 msgctxt "triage-diff"
@@ -1202,7 +1196,7 @@ msgstr "평가"
 #: contests/templates/triage.html:211
 msgctxt "triage-alterbytes"
 msgid "Change bytes"
-msgstr "Change bytes"
+msgstr "바이트 변경"
 
 #: contests/templates/triage.html:215
 msgctxt "triage-vda"
@@ -1247,12 +1241,12 @@ msgstr "사용 가능"
 #: contests/templates/triage.html:252
 msgctxt "triage-towait"
 msgid "Awaiting"
-msgstr "Awaiting"
+msgstr "대기 중"
 
 #: contests/templates/triage.html:258
 msgctxt "triage-onhold"
 msgid "On evaluation"
-msgstr "On evaluation"
+msgstr "평가 중"
 
 #: contests/templates/triage.html:262
 msgctxt "triage-onskip"
@@ -1282,7 +1276,7 @@ msgstr "Please wait a few minutes and refresh the page."
 #: contests/templates/triage.html:309
 msgctxt "triage-details"
 msgid "Edit details"
-msgstr "Edit details"
+msgstr "자세한 사항 편집"
 
 #: contests/templates/triage.html:314
 msgctxt "label-page"
@@ -1317,7 +1311,7 @@ msgstr "Edit differential"
 #: contests/templates/triage.html:375
 msgctxt "triage-recenthistory"
 msgid "Recent history"
-msgstr "Recent history"
+msgstr "최근 역사"
 
 #: contests/templates/triage.html:388
 msgctxt "triage-generalinfo"
@@ -1327,27 +1321,27 @@ msgstr "일반 정보"
 #: contests/templates/triage.html:390
 msgctxt "triage-contestname"
 msgid "wikicontest name"
-msgstr "wikicontest name"
+msgstr "위키대회 이름"
 
 #: contests/templates/triage.html:395
 msgctxt "triage-loggedname"
 msgid "Current evaluator name"
-msgstr "Current evaluator name"
+msgstr "현재 평가자 이름"
 
 #: contests/templates/triage.html:400
 msgctxt "triage-conteststart"
 msgid "wikicontest start time"
-msgstr "wikicontest start time"
+msgstr "위키대회 이름 시작 시간"
 
 #: contests/templates/triage.html:405
 msgctxt "triage-contestend"
 msgid "wikicontest end time"
-msgstr "wikicontest end time"
+msgstr "위키대회 이름 종료 시간"
 
 #: contests/templates/triage.html:410
 msgctxt "triage-lastupdate"
 msgid "Last database update"
-msgstr "Last database update"
+msgstr "마지막 데이터베이스 업데이트"
 
 #: contests/templates/triage.html:415
 msgctxt "triage-delay"
@@ -1363,12 +1357,12 @@ msgstr "%(1)s시간"
 #: contests/templates/triage.html:420
 msgctxt "triage-bpp"
 msgid "Bytes per point"
-msgstr "Bytes per point"
+msgstr "점 당 바이트"
 
 #: contests/templates/triage.html:425
 msgctxt "triage-maxbytes"
 msgid "Maximum bytes/points per article"
-msgstr "Maximum bytes/points per article"
+msgstr "문서 당 최대 바이트/점"
 
 #: contests/templates/triage.html:429
 #, python-format
@@ -1379,17 +1373,17 @@ msgstr "%(1)s점"
 #: contests/templates/triage.html:432
 msgctxt "triage-minbytes"
 msgid "Minimum bytes per edit"
-msgstr "Minimum bytes per edit"
+msgstr "편집 당 최대 바이트"
 
 #: contests/templates/triage.html:437
 msgctxt "triage-includingall"
 msgid "Including edits with negative bytes"
-msgstr "Including edits with negative bytes"
+msgstr "음의 바이트를 가진 편집 포함"
 
 #: contests/templates/triage.html:443
 msgctxt "triage-ipp"
 msgid "Images per point"
-msgstr "Images per point"
+msgstr "점 당 이미지"
 
 #: contests/templates/triage.html:446
 msgctxt "triage-noimages"

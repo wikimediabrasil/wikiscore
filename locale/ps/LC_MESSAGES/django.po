@@ -1283,7 +1283,7 @@ msgstr "Please wait a few minutes and refresh the page."
 #: contests/templates/triage.html:309
 msgctxt "triage-details"
 msgid "Edit details"
-msgstr "پېښې سپيناوی"
+msgstr "سپيناوی سمول"
 
 #: contests/templates/triage.html:314
 msgctxt "label-page"
