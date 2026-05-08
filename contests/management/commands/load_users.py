@@ -87,14 +87,13 @@ class Command(BaseCommand):
             if user.get('role') != 0:
                 continue
 
-            global_id = user.get('id')
             username = user.get('username')
             enrollment_timestamp = user.get('enrolled_at')
-            if not all([global_id, username, enrollment_timestamp]):
+            if not all([username, enrollment_timestamp]):
                 continue
 
             enrollments.append({
-                'global_id': global_id,
+                'global_id': None,
                 'username': username,
                 'enrollment_timestamp': enrollment_timestamp,
             })
@@ -148,25 +147,24 @@ class Command(BaseCommand):
 
     def process_enrollments(self, enrollments, contest, wiki_id):
         """Processes each enrollment, updating or inserting users."""
-        # Filter out enrollments with empty or invalid global_id
-        valid_global_ids = [
-            enrollment['global_id']
+        valid_usernames = [
+            enrollment['username']
             for enrollment in enrollments
-            if enrollment.get('global_id') not in [None, '', 0]
+            if enrollment.get('username')
         ]
-        # Get all participant enrollments for the specific contest
-        already_enrolled_ids = Participant.objects.filter(
-            contest=contest, last_enrollment__enrolled=True
-        ).exclude(global_id__in=valid_global_ids).values_list('global_id', flat=True)
+        already_enrolled_users = Participant.objects.filter(
+            contest=contest,
+            last_enrollment__enrolled=True,
+        ).exclude(user__in=valid_usernames)
 
-        for global_id in already_enrolled_ids:
-            self.stdout.write(f"Usuário {global_id} não está mais inscrito. Desinscrevendo...")
+        for participant in already_enrolled_users:
+            self.stdout.write(f"Usuário {participant.user} não está mais inscrito. Desinscrevendo...")
             unenroll = ParticipantEnrollment.objects.create(
                 contest=contest,
                 enrolled=False,
-                user=Participant.objects.get(global_id=global_id, contest=contest)
+                user=participant,
             )
-            Participant.objects.filter(global_id=global_id, contest=contest).update(last_enrollment=unenroll)
+            Participant.objects.filter(pk=participant.pk).update(last_enrollment=unenroll)
 
         for enrollment in enrollments:
             global_id = enrollment['global_id']
@@ -195,9 +193,10 @@ class Command(BaseCommand):
             local_id = None
             try:
                 participant = Participant.objects.get(user=username, contest=contest)
+                local_id = participant.local_id
             except Participant.DoesNotExist:
                 self.stdout.write(f"Usuário {username} não encontrado. Inserindo...")
-                self.add_user_contest(global_id, contest, wiki_id, timestamp, username)
+                local_id = self.add_user_contest(global_id, contest, wiki_id, timestamp, username)
                 participant = None
 
         
@@ -214,12 +213,20 @@ class Command(BaseCommand):
 
     def add_user_contest(self, global_id, contest, wiki_id, timestamp, username):
         """Adds a user to the contest."""
-        if global_id:
-            centralauth_response = self.fetch_user_data(global_id, contest)
-            centralauth_merged = centralauth_response['query']['globaluserinfo']['merged']
+        if username:
+            centralauth_response = self.fetch_user_data(username, contest, by_username=True)
+            global_userinfo = centralauth_response.get('query', {}).get('globaluserinfo', {})
+            centralauth_merged = global_userinfo.get('merged', [])
             local_id = next((merged['id'] for merged in centralauth_merged if merged['wiki'] == wiki_id), None)
-            user = centralauth_response['query']['globaluserinfo']['name']
-            attached = centralauth_response['query']['globaluserinfo']['registration']
+            user = global_userinfo.get('name') or username
+            attached = global_userinfo.get('registration')
+            global_id = global_userinfo.get('id') or global_id
+        elif global_id:
+            centralauth_response = self.fetch_user_data(global_id, contest)
+            centralauth_merged = centralauth_response.get('query', {}).get('globaluserinfo', {}).get('merged', [])
+            local_id = next((merged['id'] for merged in centralauth_merged if merged['wiki'] == wiki_id), None)
+            user = centralauth_response.get('query', {}).get('globaluserinfo', {}).get('name')
+            attached = centralauth_response.get('query', {}).get('globaluserinfo', {}).get('registration')
         else:
             local_id = None
             user = None
@@ -254,7 +261,7 @@ class Command(BaseCommand):
 
         return local_id
 
-    def fetch_user_data(self, global_id, contest):
+    def fetch_user_data(self, user_data, contest, by_username=False):
         """Fetches user data from the contest API."""
         params = {
             "action": "query",
@@ -262,8 +269,11 @@ class Command(BaseCommand):
             "meta": "globaluserinfo",
             "guiprop": "merged",
             "formatversion": "2",
-            "guiid": global_id
         }
+        if by_username:
+            params["guiuser"] = user_data
+        else:
+            params["guiid"] = user_data
         return requests.get(
             contest.api_endpoint,
             params=params,
