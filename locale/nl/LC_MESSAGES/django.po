@@ -46,7 +46,7 @@ msgstr "Bewerking op %(1)s met %(2)s bytes"
 #: contests/templates/backtrack.html:44
 msgctxt "backtrack-areyousure"
 msgid "Are you sure?"
-msgstr "Weet je het zeker?"
+msgstr "Weet u het zeker?"
 
 #: contests/templates/backtrack.html:46
 msgctxt "backtrack-accept"
@@ -62,7 +62,7 @@ msgstr "Deelnemer ingeschreven op %(1)s"
 #: contests/templates/backtrack.html:60
 msgctxt "backtrack-success"
 msgid "Edit accepted successfully!"
-msgstr "Bewerking succesvol geaccepteerd!"
+msgstr "Bewerking geaccepteerd!"
 
 #: contests/templates/base.html:56 contests/templates/base.html:76
 #: contests/templates/triage.html:7
@@ -243,7 +243,7 @@ msgstr "Zie bewerkingsnr."
 #: contests/templates/compare.html:208
 msgctxt "compare-areyousure"
 msgid "This edit will be removed from the database. Do you want to proceed?"
-msgstr "Deze bewerking wordt uit de database verwijderd. Wil je doorgaan?"
+msgstr "Deze bewerking wordt uit de database verwijderd. Wilt u doorgaan?"
 
 #: contests/templates/compare.html:211
 msgctxt "compare-delete"
@@ -466,7 +466,7 @@ msgid ""
 "proceed?"
 msgstr ""
 "Alle evaluaties van de bewerkingen van deze deelnemer worden ongedaan "
-"gemaakt. Wil je doorgaan?"
+"gemaakt. Wilt u doorgaan?"
 
 #: contests/templates/counter.html:83 contests/templates/triage.html:304
 msgctxt "triage-noedit"
@@ -478,8 +478,8 @@ msgctxt "counter-success"
 msgid ""
 "Edits successfully reset! A new database update will be performed shortly."
 msgstr ""
-"Bewerkingen succesvol gereset! Er zal binnenkort een nieuwe database-update "
-"worden uitgevoerd."
+"Bewerkingen opnieuw ingesteld! De database wordt binnenkort binnenkort "
+"bijgewerkt."
 
 #: contests/templates/edits.html:61
 msgctxt "edits-about"
@@ -612,7 +612,7 @@ msgstr "%(1)s evaluaties uitgevoerd"
 #: contests/templates/evaluators.html:145 contests/templates/triage.html:280
 msgctxt "evaluators-areyousure"
 msgid "Are you sure?"
-msgstr "Weet je het zeker?"
+msgstr "Weet u het zeker?"
 
 #: contests/templates/evaluators.html:96
 msgctxt "evaluators-disable"
@@ -754,12 +754,12 @@ msgstr "PetScan-ID van de pagina's"
 #: contests/templates/manage.html:105
 msgctxt "manage-created"
 msgid "Contest created successfully!"
-msgstr "Wedstrijd succesvol aangemaakt!"
+msgstr "Wedstrijd aangemaakt!"
 
 #: contests/templates/manage.html:106
 msgctxt "manage-remanaged"
 msgid "New manager successfully defined!"
-msgstr "Nieuwe manager succesvol ingesteld!"
+msgstr "Nieuwe manager is ingesteld!"
 
 #: contests/templates/manage.html:107
 msgctxt "manage-restarted"
@@ -769,7 +769,7 @@ msgstr "De wedstrijd is hervat! Voer de database-update uit."
 #: contests/templates/manage.html:108
 msgctxt "manage-deleted"
 msgid "Contest deleted successfully!"
-msgstr "Wedstrijd succesvol verwijderd!"
+msgstr "Wedstrijd verwijderd!"
 
 #: contests/templates/manage.html:124
 msgctxt "manage-about"
@@ -963,7 +963,7 @@ msgid ""
 "you want to proceed?"
 msgstr ""
 "Door de wedstrijd opnieuw te starten, worden alle reeds gemaakte evaluaties "
-"verwijderd. Wil je doorgaan?"
+"verwijderd. Wilt u doorgaan?"
 
 #: contests/templates/manage.html:531
 msgctxt "manage-restart"
@@ -1011,7 +1011,7 @@ msgstr "Annuleren"
 #: contests/templates/modify.html:24
 msgctxt "modify-success"
 msgid "Modification successfully done!"
-msgstr "Wijziging succesvol uitgevoerd!"
+msgstr "Wijziging uitgevoerd!"
 
 #: contests/templates/modify.html:32
 msgctxt "modify-consult"
