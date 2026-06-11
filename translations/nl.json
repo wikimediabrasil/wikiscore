@@ -252,8 +252,8 @@
 	"manage-newmanager": "Nieuwe beheerder instellen",
 	"manage-remanaged": "Nieuwe manager is ingesteld!",
 	"manage-create": "Aanmaken",
-	"manage-confirmmanager": "Door een nieuwe manager te definiëren, worden alle reeds geregistreerde evaluators en managers gedeactiveerd. Wilt u doorgaan?",
-	"manage-confirmrestart": "Door de wedstrijd opnieuw te starten, worden alle reeds gemaakte evaluaties verwijderd. Wilt u doorgaan?",
+	"manage-confirmmanager": "Door een nieuwe manager te definiëren, worden alle al geregistreerde evaluators en managers gedeactiveerd. Wilt u doorgaan?",
+	"manage-confirmrestart": "Door de wedstrijd opnieuw te starten, worden alle al gemaakte evaluaties verwijderd. Wilt u doorgaan?",
 	"manage-confirmdelete": "Door de wedstrijd te verwijderen, worden alle gegevens over deze wedstrijd verwijderd. Wilt u doorgaan?",
 	"manage-restart": "Herstarten",
 	"manage-delete": "Verwijderen"
