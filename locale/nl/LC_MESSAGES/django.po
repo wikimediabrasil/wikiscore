@@ -962,7 +962,7 @@ msgid ""
 "By restarting the contest, all evaluations already made will be deleted. Do "
 "you want to proceed?"
 msgstr ""
-"Door de wedstrijd opnieuw te starten, worden alle reeds gemaakte evaluaties "
+"Door de wedstrijd opnieuw te starten, worden alle al gemaakte evaluaties "
 "verwijderd. Wilt u doorgaan?"
 
 #: contests/templates/manage.html:531
@@ -1000,7 +1000,7 @@ msgid ""
 "By defining a new manager, all evaluators and managers already registered "
 "will be deactivated. Do you want to proceed?"
 msgstr ""
-"Door een nieuwe manager te definiëren, worden alle reeds geregistreerde "
+"Door een nieuwe manager te definiëren, worden alle al geregistreerde "
 "evaluators en managers gedeactiveerd. Wilt u doorgaan?"
 
 #: contests/templates/manage.html:588
