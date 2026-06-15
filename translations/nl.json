@@ -89,7 +89,7 @@
 	"counter": "Teller",
 	"counter-about": "Dit getal heeft betrekking op de wikiwedstrijd $1 en is gegenereerd op $2 om $3 (UTC-tijd).",
 	"counter-description": "De rangorde wordt bepaald op basis van het totaal aantal punten, berekend met de score naar beneden afgerond. Daarbij wordt de totale som van de toegevoegde bytes als ''tiebreak'' gebruikt. Is er dan nog een gelijkspel, dan wordt gesorteerd op alfabetische volgorde. Alle geregistreerde gebruikers die een van de artikelen in de lijst van deze wikiwedstrijd hebben bewerkt, worden hieronder vermeld, ook als ze geen geldige bewerkingen hebben.",
-	"counter-uptotime": "Als u een score tot een bepaalde tijd wilt krijgen, kunt u dit in het onderstaande formulier vermelden.",
+	"counter-uptotime": "Als u een score tot een specifieke tijd wilt krijgen, kunt u dit in het onderstaande formulier vermelden.",
 	"counter-allpages": "Vermelde artikelen",
 	"counter-alledited": "Bewerkte artikelen",
 	"counter-allcreated": "Gemaakte pagina's",
