@@ -16,12 +16,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 
 #: contests/templates/backtrack.html:7 contests/templates/base.html:96
 msgctxt "backtrack"
 msgid "Backtrack"
-msgstr "Teruggaan"
+msgstr "Vrátenie"
 
 #: contests/templates/backtrack.html:15
 msgctxt "backtrack-about"
@@ -31,127 +31,126 @@ msgid ""
 "necessary, click on the button to accept the edit. After acceptance, the "
 "edit will be available in the evaluation queue."
 msgstr ""
-"Deze pagina vermeldt de bewerkingen die deelnemers hebben uitgevoerd in de "
-"context van de wikiwedstrijd, maar die zijn aangebracht vóór hun registratie"
-" in het Outreach Dashboard. Klik indien nodig op de knop om de bewerking te "
-"accepteren. Na acceptatie is de bewerking beschikbaar in de "
-"evaluatiewachtrij."
+"Táto stránka uvádza úpravy, ktoré účastníci vykonali v rámci wikisúťaže, no "
+"boli urobené pred ich registráciou v nástroji Outreach Dashboard. V prípade "
+"potreby kliknite na tlačidlo, aby ste úpravu prijali. Po prijatí bude úprava"
+" dostupná v rade na hodnotenie."
 
 #: contests/templates/backtrack.html:36
 #, python-format
 msgctxt "backtrack-stats"
 msgid "Edit on %(1)s with %(2)s bytes"
-msgstr "Bewerking op %(1)s met %(2)s bytes"
+msgstr "Upravte na %(1)s s %(2)s bajtmi"
 
 #: contests/templates/backtrack.html:44
 msgctxt "backtrack-areyousure"
 msgid "Are you sure?"
-msgstr "Weet u het zeker?"
+msgstr "Ste si istý/á?"
 
 #: contests/templates/backtrack.html:46
 msgctxt "backtrack-accept"
 msgid "Accept edit"
-msgstr "Bewerking accepteren"
+msgstr "Prijať úpravu"
 
 #: contests/templates/backtrack.html:53
 #, python-format
 msgctxt "backtrack-enrollment"
 msgid "Participant enrolled on %(1)s"
-msgstr "Deelnemer ingeschreven op %(1)s"
+msgstr "Účastník sa zapísal na %(1)s"
 
 #: contests/templates/backtrack.html:60
 msgctxt "backtrack-success"
 msgid "Edit accepted successfully!"
-msgstr "Bewerking geaccepteerd!"
+msgstr "Úprava bola úspešne prijatá!"
 
 #: contests/templates/base.html:56 contests/templates/base.html:76
 #: contests/templates/triage.html:7
 msgctxt "triage"
 msgid "Triage"
-msgstr "Triage"
+msgstr "Triedenie"
 
 #: contests/templates/base.html:66 contests/templates/home.html:20
 #, python-format
 msgctxt "triage-welcome"
 msgid "Welcome, %(1)s"
-msgstr "Welkom, %(1)s"
+msgstr "Vitajte, %(1)s"
 
 #: contests/templates/base.html:71
 msgctxt "triage-panel"
 msgid "Panel"
-msgstr "Paneel"
+msgstr "Panel"
 
 #: contests/templates/base.html:80 contests/templates/counter.html:7
 msgctxt "counter"
 msgid "Counter"
-msgstr "Teller"
+msgstr "Počítadlo"
 
 #: contests/templates/base.html:84 contests/templates/manage.html:508
 #: contests/templates/modify.html:7 contests/templates/modify.html:133
 msgctxt "modify"
 msgid "Review"
-msgstr "Beoordelen"
+msgstr "Skontrolovať"
 
 #: contests/templates/base.html:88 contests/templates/compare.html:6
 msgctxt "compare"
 msgid "Comparator"
-msgstr "Comparator"
+msgstr "Porovnávač"
 
 #: contests/templates/base.html:92 contests/templates/edits.html:8
 msgctxt "triage-evaluated"
 msgid "Evaluated"
-msgstr "Geëvalueerd"
+msgstr "Ohodnotené"
 
 #: contests/templates/base.html:100 contests/templates/evaluators.html:8
 #: contests/templates/evaluators.html:75
 msgctxt "evaluators"
 msgid "Evaluators"
-msgstr "Beoordelaars"
+msgstr "hodnotitelia"
 
 #: contests/templates/base.html:104
 msgctxt "triage-list"
 msgid "Official list"
-msgstr "Officiële lijst"
+msgstr "Oficiálny zoznam"
 
 #: contests/templates/base.html:109
 msgctxt "triage-cat"
 msgid "Categorization"
-msgstr "Categorisering"
+msgstr "Kategorizácia"
 
 #: contests/templates/base.html:114
 msgctxt "triage-outreach"
 msgid "Outreach Dashboard"
-msgstr "Outreach-dashboard"
+msgstr "Outreach Dashboard"
 
 #: contests/templates/base.html:119 contests/templates/home.html:57
 msgctxt "exit"
 msgid "Exit"
-msgstr "Verlaten"
+msgstr "Východ"
 
 #: contests/templates/compare.html:33 contests/templates/compare.html:57
 msgctxt "compare-soon"
 msgid "up to 10 minutes"
-msgstr "uiterlijk 10 minuten"
+msgstr "do 10 minút"
 
 #: contests/templates/compare.html:57 contests/templates/compare.html:75
 msgctxt "compare-next"
 msgid "Next update in:"
-msgstr "Volgende update over:"
+msgstr "Ďalšia aktualizácia o:"
 
 #: contests/templates/compare.html:59
 msgctxt "compare-ended"
 msgid "Contest ended. There will be no further updates."
-msgstr "De wedstrijd is voorbij. Er zullen geen verdere updates zijn."
+msgstr "Súťaž sa skončila. Ďalšie aktualizácie nebudú."
 
 #: contests/templates/compare.html:68
 msgctxt "compare-force"
 msgid "Update anyway"
-msgstr "Hoe dan ook bijwerken"
+msgstr "Aktualizovať aj tak"
 
 #: contests/templates/compare.html:85
 msgctxt "compare-anticipate"
 msgid "Anticipate update"
-msgstr "Op een update anticiperen"
+msgstr "Urýchliť aktualizáciu"
 
 #: contests/templates/compare.html:87
 msgctxt "compare-early"
@@ -159,13 +158,13 @@ msgid ""
 "The last update occurred less than 30 minutes ago. Please wait before "
 "requesting a new update."
 msgstr ""
-"De laatste update vond minder dan 30 minuten geleden plaats. Wacht even "
-"voordat u een nieuwe update aanvraagt."
+"Posledná aktualizácia prebehla pred menej ako 30 minútami. Pred vyžiadaním "
+"novej aktualizácie počkajte."
 
 #: contests/templates/compare.html:99
 msgctxt "compare-unlisted"
 msgid "Not listed"
-msgstr "Niet op de lijst"
+msgstr "Neuvedené"
 
 #: contests/templates/compare.html:103
 msgctxt "compare-unlisted-about"
@@ -173,13 +172,13 @@ msgid ""
 "The articles below are included in the category but are not listed "
 "officially."
 msgstr ""
-"Onderstaande artikelen zijn opgenomen in de categorie, maar nog niet "
-"officieel vermeld."
+"Nižšie uvedené články sú zaradené v kategórii, ale nie sú oficiálne uvedené "
+"v zozname."
 
 #: contests/templates/compare.html:121
 msgctxt "compare-uncated"
 msgid "Removed from category"
-msgstr "Verwijderd uit categorie"
+msgstr "Odstránené z kategórie"
 
 #: contests/templates/compare.html:125
 msgctxt "compare-uncated-about"
@@ -187,13 +186,13 @@ msgid ""
 "The articles below are listed officially, but are not included in the "
 "category."
 msgstr ""
-"Onderstaande artikelen staan officieel vermeld, maar zijn niet opgenomen in "
-"de categorie."
+"Nižšie uvedené články sú oficiálne uvedené v zozname, ale nie sú zaradené v "
+"kategórii."
 
 #: contests/templates/compare.html:143
 msgctxt "compare-deletion"
 msgid "Potential deletions"
-msgstr "Mogelijke verwijderingen"
+msgstr "Možné zmazania"
 
 #: contests/templates/compare.html:147
 msgctxt "compare-deletion-about"
@@ -201,14 +200,13 @@ msgid ""
 "The articles below are included in the category and are marked for some form"
 " of deletion (fast, semi-fast, by consensus, or by application)."
 msgstr ""
-"De onderstaande artikelen zijn opgenomen in de categorie en zijn gemarkeerd "
-"voor een vorm van verwijdering (snel, semi-snel, bij consensus of op "
-"aanvraag)."
+"Nižšie uvedené články sú zaradené v kategórii a sú označené na niektorú "
+"formu zmazania (rýchle, polorýchle, na základe konsenzu alebo na žiadosť)."
 
 #: contests/templates/compare.html:167
 msgctxt "compare-nowikidata"
 msgid "Missing Wikidata"
-msgstr "Wikidata ontbreekt"
+msgstr "Chýbajúce Wikidáta"
 
 #: contests/templates/compare.html:171
 msgctxt "compare-nowikidata-about"
@@ -216,13 +214,13 @@ msgid ""
 "The articles below are included in the category but have no connection to "
 "Wikidata."
 msgstr ""
-"De onderstaande artikelen zijn opgenomen in de categorie, maar hebben geen "
-"verbinding met Wikidata."
+"Nižšie uvedené články sú zaradené v kategórii, ale nemajú žiadne prepojenie "
+"na Wikidáta."
 
 #: contests/templates/compare.html:189
 msgctxt "compare-inconsistency"
 msgid "Inconsistencies"
-msgstr "Tegenstrijdigheden"
+msgstr "Nezrovnalosti"
 
 #: contests/templates/compare.html:193
 msgctxt "compare-inconsistency-about"
@@ -231,55 +229,55 @@ msgid ""
 "but were removed. If they are marked in red, the edit was validated and "
 "awarded points to the participant."
 msgstr ""
-"De onderstaande bewerkingen behoren tot artikelen die in de categorie "
-"stonden maar zijn verwijderd. Als ze in het rood gemarkeerd zijn, is de "
-"bewerking gevalideerd en zijn er punten toegekend aan de deelnemer."
+"Nižšie uvedené úpravy patria k článkom, ktoré boli uvedené v kategórii, ale "
+"boli z nej odstránené. Ak sú označené červenou farbou, úprava bola "
+"validovaná a účastníkovi priniesla body."
 
 #: contests/templates/compare.html:203 contests/templates/compare.html:235
 msgctxt "compare-seediff"
 msgid "See edit no."
-msgstr "Zie bewerkingsnr."
+msgstr "Pozrieť úpravu č."
 
 #: contests/templates/compare.html:208
 msgctxt "compare-areyousure"
 msgid "This edit will be removed from the database. Do you want to proceed?"
-msgstr "Deze bewerking wordt uit de database verwijderd. Wilt u doorgaan?"
+msgstr "Táto úprava bude odstránená z databázy. Chcete pokračovať?"
 
 #: contests/templates/compare.html:211
 msgctxt "compare-delete"
 msgid "Delete"
-msgstr "Verwijderen"
+msgstr "Zmazať"
 
 #: contests/templates/compare.html:221
 msgctxt "compare-rollback"
 msgid "Rollbacks"
-msgstr "Terugdraaiingen"
+msgstr "Vrátenia späť"
 
 #: contests/templates/compare.html:225
 msgctxt "compare-rollback-about"
 msgid "The listed edits below were rolled back after validation."
-msgstr "De onderstaande bewerkingen zijn na validatie ongedaan gemaakt."
+msgstr "Nižšie uvedené úpravy boli po validácii vrátené späť."
 
 #: contests/templates/compare.html:242
 msgctxt "compare-reevaluate"
 msgid "Reevaluate"
-msgstr "Herbeoordelen"
+msgstr "Prehodnotiť"
 
 #: contests/templates/contest.html:4 contests/templates/edits.html:78
 #: contests/templates/edits.txt:1
 msgctxt "edits-title"
 msgid "Title"
-msgstr "Titel"
+msgstr "Názov"
 
 #: contests/templates/contest.html:31
 msgctxt "login-graph"
 msgid "Graphic scoreboard"
-msgstr "Grafisch scorebord"
+msgstr "Grafická výsledková tabuľka"
 
 #: contests/templates/contest.html:33
 msgctxt "login-manage"
 msgid "Manage contest"
-msgstr "Wedstrijd beheren"
+msgstr "Spravovať súťaž"
 
 #: contests/templates/contest.html:39 contests/templates/home.html:7
 msgctxt "main-title"
@@ -289,48 +287,48 @@ msgstr "WikiScore"
 #: contests/templates/contest.html:44
 msgctxt "counter-allpages"
 msgid "Listed articles"
-msgstr "Vermelde artikelen"
+msgstr "Uvedené články"
 
 #: contests/templates/contest.html:48
 msgctxt "counter-alledited"
 msgid "Edited articles"
-msgstr "Bewerkte artikelen"
+msgstr "Upravené články"
 
 #: contests/templates/contest.html:52
 msgctxt "counter-allcreated"
 msgid "Created articles"
-msgstr "Gemaakte pagina's"
+msgstr "Vytvorené články"
 
 #: contests/templates/contest.html:58
 msgctxt "counter-allenrolled"
 msgid "Enrolled users"
-msgstr "Ingeschreven gebruikers"
+msgstr "Zapísaní používatelia"
 
 #: contests/templates/contest.html:62
 msgctxt "counter-allvalidated"
 msgid "Validated edits"
-msgstr "Gevalideerde bewerkingen"
+msgstr "Validované úpravy"
 
 #: contests/templates/contest.html:66
 msgctxt "counter-allbytes"
 msgid "Bytes added"
-msgstr "Bytes toegevoegd"
+msgstr "Pridané bajty"
 
 #: contests/templates/contest.html:77
 msgctxt "counter-most-edited"
 msgid "Most edited article"
-msgstr "Meest bewerkte artikel"
+msgstr "Najviac upravovaný článok"
 
 #: contests/templates/contest.html:85
 #, python-format
 msgctxt "counter-editions"
 msgid "%(1)s edits"
-msgstr "%(1)s bewerkingen"
+msgstr "%(1)s {{PLURAL:%(1)s|úprava|úpravy|úprav}}"
 
 #: contests/templates/contest.html:93
 msgctxt "counter-biggest-delta"
 msgid "Most expanded article"
-msgstr "Meest uitgebreide artikel"
+msgstr "Najviac rozšírený článok"
 
 #: contests/templates/contest.html:101 contests/templates/contest.html:117
 #: contests/templates/triage.html:422 contests/templates/triage.html:427
@@ -338,47 +336,47 @@ msgstr "Meest uitgebreide artikel"
 #, python-format
 msgctxt "triage-bytes"
 msgid "%(1)s bytes"
-msgstr "%(1)s bytes"
+msgstr "%(1)s {{PLURAL:%(1)s|bajt|bajty|bajtov}}"
 
 #: contests/templates/contest.html:109
 msgctxt "counter-biggest-edition"
 msgid "Biggest edition"
-msgstr "Grootste editie"
+msgstr "Najväčšia úprava"
 
 #: contests/templates/contest.html:153 contests/templates/contest.html:164
 msgctxt "login-alledits"
 msgid "Edits per day"
-msgstr "Bewerkingen per dag"
+msgstr "Úpravy za deň"
 
 #: contests/templates/contest.html:171
 msgctxt "login-validedits"
 msgid "Validated edits per day"
-msgstr "Gevalideerde bewerkingen per dag"
+msgstr "Validované úpravy za deň"
 
 #: contests/templates/contest.html:191
 msgctxt "login-newevents"
 msgid "Created articles and enrolled participants per day"
-msgstr "Per dag aangemaakte artikelen en ingeschreven deelnemers"
+msgstr "Vytvorené články a zapísaní účastníci za deň"
 
 #: contests/templates/contest.html:202
 msgctxt "login-newpages"
 msgid "New articles per day"
-msgstr "Nieuwe artikelen per dag"
+msgstr "Nové články za deň"
 
 #: contests/templates/contest.html:209
 msgctxt "login-newparticipants"
 msgid "Enrolled participants per day"
-msgstr "Ingeschreven deelnemers per dag"
+msgstr "Zapísaní účastníci za deň"
 
 #: contests/templates/contest.html:229 contests/templates/contest.html:240
 msgctxt "login-newbytes"
 msgid "KBytes added per day"
-msgstr "KBytes toegevoegd per dag"
+msgstr "Pridané kB za deň"
 
 #: contests/templates/contest.html:247
 msgctxt "login-validbytes"
 msgid "KBytes validated per day"
-msgstr "KBytes gevalideerd per dag"
+msgstr "Validované kB za deň"
 
 #: contests/templates/counter.html:14
 #, python-format
@@ -387,8 +385,8 @@ msgid ""
 "This count refers to the wikicontest %(1)s and was generated on %(2)s at "
 "%(3)s UTC time."
 msgstr ""
-"Dit getal heeft betrekking op de wikiwedstrijd %(1)s en is gegenereerd op "
-"%(2)s om %(3)s (UTC-tijd)."
+"Tento počet sa vzťahuje na wikisúťaž %(1)s a bol vygenerovaný %(2)s o %(3)s "
+"UTC."
 
 #: contests/templates/counter.html:15
 msgctxt "counter-description"
@@ -399,13 +397,11 @@ msgid ""
 "registered users who have edited any of the articles in the list of this "
 "wikicontest are listed below, even if they have no valid edits."
 msgstr ""
-"De rangorde wordt bepaald op basis van het totaal aantal punten, berekend "
-"met de score naar beneden afgerond. Daarbij wordt de totale som van de "
-"toegevoegde bytes als ''tiebreak'' gebruikt. Is er dan nog een gelijkspel, "
-"dan wordt gesorteerd op alfabetische volgorde. Alle geregistreerde "
-"gebruikers die een van de artikelen in de lijst van deze wikiwedstrijd "
-"hebben bewerkt, worden hieronder vermeld, ook als ze geen geldige "
-"bewerkingen hebben."
+"Poradie sa určuje podľa celkového počtu bodov, vypočítaného so skóre "
+"zaokrúhleným nadol, pričom rozhodujúcim kritériom je celkový súčet pridaných"
+" bajtov, a ak je výsledok stále nerozhodný, podľa abecedného poradia. Nižšie"
+" sú uvedení všetci registrovaní používatelia, ktorí upravili niektorý z "
+"článkov v zozname tejto wikisúťaže, aj keď nemajú žiadne platné úpravy."
 
 #: contests/templates/counter.html:22
 msgctxt "counter-uptotime"
@@ -413,43 +409,42 @@ msgid ""
 "If you want to get a score up to a specific time, please specify it in the "
 "form below."
 msgstr ""
-"Als u een score tot een specifieke tijd wilt krijgen, kunt u dit in het "
-"onderstaande formulier vermelden."
+"Ak chcete získať skóre k určitému času, zadajte ho vo formulári nižšie."
 
 #: contests/templates/counter.html:39
 msgctxt "counter-user"
 msgid "User"
-msgstr "Gebruiker"
+msgstr "Používateľ"
 
 #: contests/templates/counter.html:40
 msgctxt "counter-bytes"
 msgid "Sum of bytes"
-msgstr "Som van bytes"
+msgstr "Súčet bajtov"
 
 #: contests/templates/counter.html:41
 msgctxt "counter-edits"
 msgid "Total edits"
-msgstr "Totaal aantal bewerkingen"
+msgstr "Celkový počet úprav"
 
 #: contests/templates/counter.html:42
 msgctxt "counter-ppb"
 msgid "Points per byte"
-msgstr "Punten per byte"
+msgstr "Body za bajt"
 
 #: contests/templates/counter.html:43
 msgctxt "counter-images"
 msgid "Articles with images"
-msgstr "Artikelen met afbeeldingen"
+msgstr "Články s obrázkami"
 
 #: contests/templates/counter.html:44
 msgctxt "counter-ppi"
 msgid "Points per image"
-msgstr "Punten per afbeelding"
+msgstr "Body za obrázok"
 
 #: contests/templates/counter.html:45
 msgctxt "counter-points"
 msgid "Total points"
-msgstr "Puntentotaal"
+msgstr "Celkový počet bodov"
 
 #: contests/templates/counter.html:47 contests/templates/counter.html:72
 #: contests/templates/evaluators.html:65
@@ -457,7 +452,7 @@ msgstr "Puntentotaal"
 #: contests/templates/evaluators.html:147
 msgctxt "counter-redefine"
 msgid "Reset"
-msgstr "Opnieuw instellen"
+msgstr "Vynulovať"
 
 #: contests/templates/counter.html:64
 msgctxt "counter-confirm"
@@ -465,21 +460,20 @@ msgid ""
 "All evaluations on this participant's edits will be undone. Do you want to "
 "proceed?"
 msgstr ""
-"Alle evaluaties van de bewerkingen van deze deelnemer worden ongedaan "
-"gemaakt. Wilt u doorgaan?"
+"Všetky hodnotenia úprav tohto účastníka budú zrušené. Chcete pokračovať?"
 
 #: contests/templates/counter.html:83 contests/templates/triage.html:304
 msgctxt "triage-noedit"
 msgid "There is no edit to be displayed at this time."
-msgstr "Er kan momenteel geen bewerking worden weergegeven."
+msgstr "Momentálne nie je k dispozícii žiadna úprava na zobrazenie."
 
 #: contests/templates/counter.html:91
 msgctxt "counter-success"
 msgid ""
 "Edits successfully reset! A new database update will be performed shortly."
 msgstr ""
-"Bewerkingen opnieuw ingesteld! De database wordt binnenkort binnenkort "
-"bijgewerkt."
+"Úpravy boli úspešne vynulované! Čoskoro sa vykoná nová aktualizácia "
+"databázy."
 
 #: contests/templates/edits.html:61
 msgctxt "edits-about"
@@ -487,86 +481,85 @@ msgid ""
 "This page lists all edits made by contest participants. To access edits made"
 " by all users, download the CSV file."
 msgstr ""
-"Op deze pagina worden alle bewerkingen vermeld die door deelnemers aan de "
-"wedstrijd zijn aangebracht. Download het CSV-bestand om de bewerkingen in te"
-" zien die door alle gebruikers zijn aangebracht."
+"Táto stránka uvádza všetky úpravy vykonané účastníkmi súťaže. Ak chcete "
+"získať prístup k úpravám všetkých používateľov, stiahnite si súbor CSV."
 
 #: contests/templates/edits.html:66
 msgctxt "edits-csv"
 msgid "Download"
-msgstr "Downloaden"
+msgstr "Stiahnuť"
 
 #: contests/templates/edits.html:77 contests/templates/edits.txt:1
 msgctxt "edits-diff"
 msgid "Edit diff"
-msgstr "Verschil bewerkingen"
+msgstr "Rozdiel úpravy"
 
 #: contests/templates/edits.html:79 contests/templates/edits.txt:1
 msgctxt "edits-timestamp"
 msgid "Edit timestamp"
-msgstr "Tijdstip bewerking"
+msgstr "Časová značka úpravy"
 
 #: contests/templates/edits.html:80 contests/templates/edits.txt:1
 msgctxt "edits-user"
 msgid "User"
-msgstr "Gebruiker"
+msgstr "Používateľ"
 
 #: contests/templates/edits.html:81 contests/templates/edits.txt:1
 msgctxt "edits-attached"
 msgid "Account attach date"
-msgstr "Datum toevoegen account"
+msgstr "Dátum pripojenia účtu"
 
 #: contests/templates/edits.html:82 contests/templates/edits.txt:1
 #: contests/templates/modify.html:209
 msgctxt "edits-bytes"
 msgid "Bytes"
-msgstr "Bytes"
+msgstr "Bajty"
 
 #: contests/templates/edits.html:83 contests/templates/edits.txt:1
 msgctxt "edits-newpage"
 msgid "New article"
-msgstr "Nieuw artikel"
+msgstr "Nový článok"
 
 #: contests/templates/edits.html:84 contests/templates/edits.txt:1
 msgctxt "edits-valid"
 msgid "Valid edit"
-msgstr "Geldige bewerking"
+msgstr "Platná úprava"
 
 #: contests/templates/edits.html:85 contests/templates/edits.txt:1
 msgctxt "edits-withimage"
 msgid "With image"
-msgstr "Met afbeelding"
+msgstr "S obrázkom"
 
 #: contests/templates/edits.html:86 contests/templates/edits.txt:1
 msgctxt "edits-reverted"
 msgid "Reverted edit"
-msgstr "Teruggedraaide bewerking"
+msgstr "Vrátená úprava"
 
 #: contests/templates/edits.html:87 contests/templates/edits.txt:1
 #: contests/templates/modify.html:194 contests/templates/modify.html:211
 msgctxt "edits-evaluator"
 msgid "Evaluator"
-msgstr "Beoordelaar"
+msgstr "Hodnotiteľ"
 
 #: contests/templates/edits.html:88 contests/templates/edits.txt:1
 msgctxt "edits-evaltimestamp"
 msgid "Evaluation timestamp"
-msgstr "Evaluatietijdstip"
+msgstr "Časová značka hodnotenia"
 
 #: contests/templates/edits.html:89 contests/templates/edits.txt:1
 msgctxt "edits-comment"
 msgid "Evaluator's comment"
-msgstr "Opmerking van de beoordelaar"
+msgstr "Komentár hodnotiteľa"
 
 #: contests/templates/edits.txt:1
 msgctxt "edits-curid"
 msgid "Article CurID"
-msgstr "Pagina CurID"
+msgstr "CurID článku"
 
 #: contests/templates/edits.txt:1
 msgctxt "edits-enrolled"
 msgid "Enrolled user"
-msgstr "Geregistreerde gebruiker"
+msgstr "Zapísaný používateľ"
 
 #: contests/templates/evaluators.html:14
 msgctxt "evaluators-about"
@@ -574,37 +567,36 @@ msgid ""
 "This page lists the managers and evaluators of this wikicontest. The contest"
 " manager also has options to enable or disable evaluators."
 msgstr ""
-"Op deze pagina staan de managers en beoordelaars van deze wikiwedstrijd "
-"vermeld. De wedstrijdmanager heeft ook opties om beoordelaars in of uit te "
-"schakelen."
+"Táto stránka uvádza manažérov a hodnotiteľov tejto wikisúťaže. Manažér "
+"súťaže má aj možnosti povoliť alebo zakázať hodnotiteľov."
 
 #: contests/templates/evaluators.html:20
 msgctxt "evaluators-neweval"
 msgid "Add new evaluator"
-msgstr "Nieuwe beoordelaar toevoegen"
+msgstr "Pridať nového hodnotiteľa"
 
 #: contests/templates/evaluators.html:28 contests/templates/manage.html:549
 #: contests/templates/manage.html:574
 msgctxt "password-username"
 msgid "Username"
-msgstr "Gebruikersnaam"
+msgstr "Používateľské meno"
 
 #: contests/templates/evaluators.html:34
 msgctxt "evaluators-register"
 msgid "Register"
-msgstr "Registreren"
+msgstr "Zaregistrovať"
 
 #: contests/templates/evaluators.html:44
 msgctxt "evaluators-manager"
 msgid "Managers"
-msgstr "Beheerders"
+msgstr "Manažéri"
 
 #: contests/templates/evaluators.html:54 contests/templates/evaluators.html:85
 #: contests/templates/evaluators.html:126
 #, python-format
 msgctxt "evaluators-stats"
 msgid "%(1)s evaluations performed"
-msgstr "%(1)s evaluaties uitgevoerd"
+msgstr "Vykonaných hodnotení: %(1)s"
 
 #: contests/templates/evaluators.html:63 contests/templates/evaluators.html:94
 #: contests/templates/evaluators.html:104
@@ -612,27 +604,27 @@ msgstr "%(1)s evaluaties uitgevoerd"
 #: contests/templates/evaluators.html:145 contests/templates/triage.html:280
 msgctxt "evaluators-areyousure"
 msgid "Are you sure?"
-msgstr "Weet u het zeker?"
+msgstr "Ste si istý?"
 
 #: contests/templates/evaluators.html:96
 msgctxt "evaluators-disable"
 msgid "Disable"
-msgstr "Uitschakelen"
+msgstr "Zakázať"
 
 #: contests/templates/evaluators.html:116
 msgctxt "evaluators-disabled"
 msgid "Disabled"
-msgstr "Uitgeschakeld"
+msgstr "Zakázaní"
 
 #: contests/templates/evaluators.html:137
 msgctxt "evaluators-enable"
 msgid "Enable"
-msgstr "Inschakelen"
+msgstr "Povoliť"
 
 #: contests/templates/graph.html:7 contests/templates/graph.html:25
 msgctxt "graph"
 msgid "Points graph"
-msgstr "Puntengrafiek"
+msgstr "Graf bodov"
 
 #: contests/templates/graph.html:31
 msgctxt "graph-about"
@@ -645,44 +637,43 @@ msgid ""
 "inserted by the organizers of the wikicontest on their official page should "
 "be considered."
 msgstr ""
-"In de onderstaande grafiek wordt de evolutie van de scores weergegeven die "
-"de top 9 deelnemers tijdens de wikiwedstrijd hebben ontvangen. Deze grafiek "
-"wordt automatisch gegenereerd en vormt geen definitief of officieel "
-"klassement. Houd er rekening mee dat organisatoren eerdere bewerkingen "
-"opnieuw kunnen beoordelen en dat de weergegeven punten zonder voorafgaande "
-"kennisgeving opnieuw kunnen worden berekend. In geval van discrepantie moet "
-"alleen de tabel in aanmerking worden genomen die door de organisatoren van "
-"de wikiwedstrijd op hun officiële pagina is ingevoegd."
+"Nižšie uvedený graf zobrazuje vývoj skóre, ktoré získali 9 najlepších "
+"účastníkov počas wikisúťaže. Tento graf sa generuje automaticky a "
+"nepredstavuje konečné alebo oficiálne poradie. Upozorňujeme, že organizátori"
+" môžu prehodnotiť predchádzajúce úpravy a zobrazené body môžu byť "
+"prepočítané bez predchádzajúceho upozornenia. V prípade nezrovnalostí treba "
+"brať do úvahy iba tabuľku, ktorú organizátori wikisúťaže vložili na ich "
+"oficiálnu stránku."
 
 #: contests/templates/graph.html:49
 msgctxt "graph-axis"
 msgid "Ranking of the top 9 participants by elapsed day"
-msgstr "Ranglijst van de beste 9 deelnemers op basis van verstreken dagen"
+msgstr "Poradie 9 najlepších účastníkov podľa uplynutého dňa"
 
 #: contests/templates/home.html:44
 msgctxt "contest-enter"
 msgid "Join a contest"
-msgstr "Doe mee aan een wedstrijd"
+msgstr "Zapojte sa do súťaže"
 
 #: contests/templates/home.html:50
 msgctxt "contest-manage"
 msgid "Manage contests"
-msgstr "Wedstrijden beheren"
+msgstr "Spravujte súťaže"
 
 #: contests/templates/home.html:63
 msgctxt "login"
 msgid "Log in"
-msgstr "Aanmelden"
+msgstr "Prihlásiť sa"
 
 #: contests/templates/home.html:77
 msgctxt "contest-select"
 msgid "Select your contest"
-msgstr "Selecteer uw wedstrijd"
+msgstr "Vyberte si svoju súťaž"
 
 #: contests/templates/home.html:117
 msgctxt "index-about-short"
 msgid "What is it?"
-msgstr "Wat is het?"
+msgstr "Čo je to?"
 
 #: contests/templates/home.html:119
 msgctxt "index-about-intro"
@@ -690,8 +681,8 @@ msgid ""
 "WikiScore is a tool created to validate edits and count scores of "
 "participants in wikicontests."
 msgstr ""
-"WikiScore is een hulpmiddel dat is gemaakt om bewerkingen te valideren en de"
-" scores van deelnemers aan wikiwedstrijden te tellen."
+"WikiScore je nástroj vytvorený na overovanie úprav a počítanie skóre "
+"účastníkov wikisúťaží."
 
 #: contests/templates/home.html:120
 msgctxt "index-about-main"
@@ -701,15 +692,14 @@ msgid ""
 "evaluators may have different profiles, with individualized validation "
 "records."
 msgstr ""
-"Het hulpprogramma heeft een eenvoudige interface die naar andere talen kan "
-"worden vertaald. Het maakt het mogelijk om snel bewerkingen in pagina's van "
-"elke wikiwedstrijd te valideren. Verschillende beoordelaars kunnen "
-"verschillende profielen hebben, met geïndividualiseerde validatierecords."
+"Tento nástroj má jednoduchý rozhranie, ktoré sa prekladá do iných jazykov. "
+"Umožňuje rýchlo overenie úprav v článkoch z akéhokoľvek vikonkurzentu. Rôzni"
+" hodnotitelia môžu mať rôzne profily s individuálnymi záznammi o validácii."
 
 #: contests/templates/home.html:129
 msgctxt "index-enroll-short"
 msgid "Register a new wikicontest"
-msgstr "Registreer een nieuwe wikiwedstrijd"
+msgstr "Zaregistrujte novú wikisúťaž"
 
 #: contests/templates/home.html:134
 msgctxt "index-enroll-intro"
@@ -717,9 +707,8 @@ msgid ""
 "To request the registration of a new wikicontest, the initial contact will "
 "be made via the contact email of Wiki Movimento Brasil."
 msgstr ""
-"Om de registratie voor een nieuwe wikiwedstrijd aan te vragen, zal het "
-"eerste contact plaatsvinden via het contact-e-mailadres van Wiki Movimento "
-"Brasil."
+"Na požiadanie o registráciu nového wikikonkurentu sa prvý kontakt uskutoční "
+"prostredníctvom kontaktného e-mailu Wiki Movimento Brasil."
 
 #: contests/templates/home.html:135
 msgctxt "index-enroll-main"
@@ -729,47 +718,47 @@ msgid ""
 "not) and potential contests. We may request additional information later for"
 " final adjustments to the tool."
 msgstr ""
-"Stuur een e-mail naar wikiscore@wmnobrasil.org en geef basisinformatie over "
-"uw groep (chapter, thematische organisatie of gebruikersgroep, officieel of "
-"niet) en mogelijke wedstrijden. Het kan zijn dat wij later om aanvullende "
-"informatie vragen voor definitieve aanpassingen aan het hulpprogramma."
+"Pošlite e-mail na adresu wikiscore@wmnobrasil.org a poskytnite základné "
+"informácie o vašej skupine (kapitola, tematická organizácia alebo skupina "
+"používateľov, oficiálna alebo neoficiálna) a potenciálnych súťažiach. Neskôr"
+" si môžeme vyžiadať dodatočné informácie na konečné úpravy nástroja."
 
 #: contests/templates/manage.html:8 contests/templates/manage.html:118
 msgctxt "manage-title"
 msgid "Contest management"
-msgstr "Wedstrijdmanagement"
+msgstr "Správa súťaže"
 
 #: contests/templates/manage.html:21 contests/templates/manage.html:265
 #: contests/templates/manage.html:268 contests/templates/manage.html:289
 msgctxt "manage-catid"
 msgid "Category ID of articles"
-msgstr "Categorie-ID van artikelen"
+msgstr "ID kategórie článkov"
 
 #: contests/templates/manage.html:23 contests/templates/manage.html:266
 #: contests/templates/manage.html:269 contests/templates/manage.html:289
 msgctxt "manage-petscan"
 msgid "PetScan ID of the pages"
-msgstr "PetScan-ID van de pagina's"
+msgstr "PetScan ID stránok"
 
 #: contests/templates/manage.html:105
 msgctxt "manage-created"
 msgid "Contest created successfully!"
-msgstr "Wedstrijd aangemaakt!"
+msgstr "Súťaž bola úspešne vytvorená!"
 
 #: contests/templates/manage.html:106
 msgctxt "manage-remanaged"
 msgid "New manager successfully defined!"
-msgstr "Nieuwe manager is ingesteld!"
+msgstr "Nový manažér bol úspešne určený!"
 
 #: contests/templates/manage.html:107
 msgctxt "manage-restarted"
 msgid "Contest restarted successfully! Perform the database update."
-msgstr "De wedstrijd is hervat! Voer de database-update uit."
+msgstr "Súťaž bola úspešne reštartovaná! Vykonajte aktualizáciu databázy."
 
 #: contests/templates/manage.html:108
 msgctxt "manage-deleted"
 msgid "Contest deleted successfully!"
-msgstr "Wedstrijd verwijderd!"
+msgstr "Súťaž bola úspešne zmazaná!"
 
 #: contests/templates/manage.html:124
 msgctxt "manage-about"
@@ -777,184 +766,184 @@ msgid ""
 "This page lists the contests registered in the system and allows the "
 "creation of new contests."
 msgstr ""
-"Deze pagina geeft een overzicht van de wedstrijden die in het systeem zijn "
-"geregistreerd en maakt het mogelijk nieuwe wedstrijden aan te maken."
+"Táto stránka uvádza súťaže zaregistrované v systéme a umožňuje vytváranie "
+"nových súťaží."
 
 #: contests/templates/manage.html:133
 msgctxt "manage-newcontest"
 msgid "Create new contest"
-msgstr "Wedstrijd aanmaken"
+msgstr "Vytvoriť novú súťaž"
 
 #: contests/templates/manage.html:141
 msgctxt "manage-contestname"
 msgid "Contest name"
-msgstr "Wedstrijdnaam"
+msgstr "Názov súťaže"
 
 #: contests/templates/manage.html:147
 msgctxt "manage-contestnameabout"
 msgid "Enter the full contest name"
-msgstr "Vul de volledige wedstrijdnaam in"
+msgstr "Zadajte úplný názov súťaže"
 
 #: contests/templates/manage.html:157
 msgctxt "manage-internalcode"
 msgid "Internal code"
-msgstr "Interne code"
+msgstr "Interný kód"
 
 #: contests/templates/manage.html:163
 msgctxt "manage-internalcodeabout"
 msgid "Use only lower case letters and underscores"
-msgstr "Gebruik alleen kleine letters en onderstrepingstekens"
+msgstr "Používajte iba malé písmená a podčiarkovníky"
 
 #: contests/templates/manage.html:174
 msgctxt "manage-group"
 msgid "Group"
-msgstr "Groep"
+msgstr "Skupina"
 
 #: contests/templates/manage.html:190
 msgctxt "manage-starttime"
 msgid "Start time"
-msgstr "Begintijd"
+msgstr "Čas začiatku"
 
 #: contests/templates/manage.html:202
 msgctxt "manage-endtime"
 msgid "End time"
-msgstr "Eindtijd"
+msgstr "Čas konca"
 
 #: contests/templates/manage.html:215
 msgctxt "manage-endpoint"
 msgid "Endpoint address"
-msgstr "Eindpuntadres"
+msgstr "Adresa koncového bodu"
 
 #: contests/templates/manage.html:227
 msgctxt "manage-api"
 msgid "API address"
-msgstr "API-adres"
+msgstr "Adresa API"
 
 #: contests/templates/manage.html:242
 msgctxt "manage-reverttime"
 msgid "Rollback period (hours)"
-msgstr "Terugdraaiperiode (uren)"
+msgstr "Obdobie vrátenia späť (hodiny)"
 
 #: contests/templates/manage.html:256
 msgctxt "manage-source"
 msgid "Monitoring method"
-msgstr "Bewakingsmethode"
+msgstr "Metóda monitorovania"
 
 #: contests/templates/manage.html:277
 msgctxt "manage-listid"
 msgid "Page ID with list of articles"
-msgstr "Pagina-ID met lijst van artikelen"
+msgstr "ID stránky so zoznamom článkov"
 
 #: contests/templates/manage.html:307
 msgctxt "manage-controlmethod"
 msgid "Participant enrollment method"
-msgstr "Inschrijfmethode van deelnemer"
+msgstr "Metóda zápisu účastníkov"
 
 #: contests/templates/manage.html:315
 msgctxt "manage-outreachdashboard"
 msgid "Outreach Dashboard"
-msgstr "Outreach-dashboard"
+msgstr "Outreach Dashboard"
 
 #: contests/templates/manage.html:316
 msgctxt "manage-campaign"
 msgid "Campaign Event"
-msgstr "Campagne-evenement"
+msgstr "Kampaňové podujatie"
 
 #: contests/templates/manage.html:322
 msgctxt "manage-outreach"
 msgid "Contest name in Outreach Dashboard"
-msgstr "Naam van de wedstrijd in Outreach Dashboard"
+msgstr "Názov súťaže v nástroji Outreach Dashboard"
 
 #: contests/templates/manage.html:328
 msgctxt "manage-outreachplacehold"
 msgid "Campaign_Name/Program_Name"
-msgstr "Campagnenaam/Programmanaam"
+msgstr "Campaign_Name/Program_Name"
 
 #: contests/templates/manage.html:335
 msgctxt "manage-campaigneventid"
 msgid "Campaign Event ID"
-msgstr "Campagne-evenement-ID"
+msgstr "ID kampaňového podujatia"
 
 #: contests/templates/manage.html:341
 msgctxt "manage-campaigneventidplacehold"
 msgid "Enter the Campaign Event ID"
-msgstr "Voer het campagne-evenement-ID in"
+msgstr "Zadajte ID kampaňového podujatia"
 
 #: contests/templates/manage.html:353
 msgctxt "manage-bpp"
 msgid "Bytes per point"
-msgstr "Bytes per punt"
+msgstr "Bajty za bod"
 
 #: contests/templates/manage.html:366
 msgctxt "manage-maxbytes"
 msgid "Maximum bytes per article-participant"
-msgstr "Maximaal aantal bytes per artikeldeelnemer"
+msgstr "Maximálny počet bajtov na článok a účastníka"
 
 #: contests/templates/manage.html:380
 msgctxt "manage-minbytes"
 msgid "Minimum bytes per edit"
-msgstr "Minimale bytes per bewerking"
+msgstr "Minimálny počet bajtov na úpravu"
 
 #: contests/templates/manage.html:397
 msgctxt "manage-ipp"
 msgid "Images per point"
-msgstr "Afbeeldingen per punt"
+msgstr "Obrázky za bod"
 
 #: contests/templates/manage.html:410
 msgctxt "manage-maximages"
 msgid "Maximum images per article-participant"
-msgstr "Maximaal aantal bytes per artikeldeelnemer"
+msgstr "Maximálny počet obrázkov na článok a účastníka"
 
 #: contests/templates/manage.html:419 contests/templates/triage.html:435
 #: contests/templates/triage.html:468
 msgctxt "triage-indef"
 msgid "Undefined"
-msgstr "Niet gedefiniëerd"
+msgstr "Nedefinované"
 
 #: contests/templates/manage.html:424
 msgctxt "manage-imagemode"
 msgid "Image evaluation mode"
-msgstr "Beeldevaluatiemodus"
+msgstr "Režim hodnotenia obrázkov"
 
 #: contests/templates/manage.html:431
 msgctxt "manage-perarticle"
 msgid "Per article"
-msgstr "Per pagina"
+msgstr "Za článok"
 
 #: contests/templates/manage.html:432
 msgctxt "manage-peredit"
 msgid "Per edit"
-msgstr "Per bewerking"
+msgstr "Za úpravu"
 
 #: contests/templates/manage.html:433
 msgctxt "manage-perimage"
 msgid "Per image"
-msgstr "Per afbeelding"
+msgstr "Za obrázok"
 
 #: contests/templates/manage.html:442
 msgctxt "manage-palette"
 msgid "Color palette"
-msgstr "Kleurenpalet"
+msgstr "Farebná paleta"
 
 #: contests/templates/manage.html:479
 msgctxt "manage-custom"
 msgid "custom"
-msgstr "aangepast"
+msgstr "vlastná"
 
 #: contests/templates/manage.html:484
 msgctxt "manage-hexcolor"
 msgid "Custom color (hex)"
-msgstr "Aangepaste kleur (hexadecimaal)"
+msgstr "Vlastná farba (hex)"
 
 #: contests/templates/manage.html:515 contests/templates/triage.html:228
 msgctxt "triage-save"
 msgid "Save"
-msgstr "Opslaan"
+msgstr "Uložiť"
 
 #: contests/templates/manage.html:522 contests/templates/manage.html:582
 msgctxt "manage-newmanager"
 msgid "Set new manager"
-msgstr "Nieuwe beheerder instellen"
+msgstr "Nastaviť nového manažéra"
 
 #: contests/templates/manage.html:530
 msgctxt "manage-confirmrestart"
@@ -962,13 +951,13 @@ msgid ""
 "By restarting the contest, all evaluations already made will be deleted. Do "
 "you want to proceed?"
 msgstr ""
-"Door de wedstrijd opnieuw te starten, worden alle al gemaakte evaluaties "
-"verwijderd. Wilt u doorgaan?"
+"Reštartovaním súťaže budú zmazané všetky doposiaľ vykonané hodnotenia. "
+"Chcete pokračovať?"
 
 #: contests/templates/manage.html:531
 msgctxt "manage-restart"
 msgid "Restart"
-msgstr "Herstarten"
+msgstr "Reštartovať"
 
 #: contests/templates/manage.html:537
 msgctxt "manage-confirmdelete"
@@ -976,23 +965,23 @@ msgid ""
 "By deleting the contest, all records related to this contest will be "
 "deleted. Do you want to proceed?"
 msgstr ""
-"Door de wedstrijd te verwijderen, worden alle gegevens over deze wedstrijd "
-"verwijderd. Wilt u doorgaan?"
+"Zmazaním súťaže budú zmazané všetky záznamy súvisiace s touto súťažou. "
+"Chcete pokračovať?"
 
 #: contests/templates/manage.html:538
 msgctxt "manage-delete"
 msgid "Delete"
-msgstr "Verwijderen"
+msgstr "Zmazať"
 
 #: contests/templates/manage.html:543
 msgctxt "manage-managemail"
 msgid "Manager's Wikimedia account"
-msgstr "Wikimedia-account van de manager"
+msgstr "Wikimedia účet manažéra"
 
 #: contests/templates/manage.html:558
 msgctxt "manage-create"
 msgid "Create"
-msgstr "Aanmaken"
+msgstr "Vytvoriť"
 
 #: contests/templates/manage.html:567
 msgctxt "manage-confirmmanager"
@@ -1000,44 +989,44 @@ msgid ""
 "By defining a new manager, all evaluators and managers already registered "
 "will be deactivated. Do you want to proceed?"
 msgstr ""
-"Door een nieuwe manager te definiëren, worden alle al geregistreerde "
-"evaluators en managers gedeactiveerd. Wilt u doorgaan?"
+"Určením nového manažéra budú deaktivovaní všetci už zaregistrovaní "
+"hodnotitelia a manažéri. Chcete pokračovať?"
 
 #: contests/templates/manage.html:588
 msgctxt "login-cancel"
 msgid "Cancel"
-msgstr "Annuleren"
+msgstr "Zrušiť"
 
 #: contests/templates/modify.html:24
 msgctxt "modify-success"
 msgid "Modification successfully done!"
-msgstr "Wijziging uitgevoerd!"
+msgstr "Úprava bola úspešne vykonaná!"
 
 #: contests/templates/modify.html:32
 msgctxt "modify-consult"
 msgid "Check evaluation"
-msgstr "Evaluatie controleren"
+msgstr "Kontrola hodnotenia"
 
 #: contests/templates/modify.html:42
 msgctxt "modify-diff"
 msgid "Diff"
-msgstr "Wijz"
+msgstr "Rozdiel"
 
 #: contests/templates/modify.html:48
 msgctxt "modify-load"
 msgid "Load edit"
-msgstr "Bewerking laden"
+msgstr "Načítať úpravu"
 
 #: contests/templates/modify.html:58
 msgctxt "modify-reavaluate"
 msgid "Reevaluate"
-msgstr "Herbeoordelen"
+msgstr "Prehodnotiť"
 
 #: contests/templates/modify.html:62 contests/templates/modify.html:207
 #: contests/templates/triage.html:142
 msgctxt "isvalid"
 msgid "Valid edit?"
-msgstr "Geldige bewerking?"
+msgstr "Platná úprava?"
 
 #: contests/templates/modify.html:70 contests/templates/modify.html:101
 #: contests/templates/modify.html:166 contests/templates/modify.html:167
@@ -1047,7 +1036,7 @@ msgstr "Geldige bewerking?"
 #: contests/templates/triage.html:152 contests/templates/triage.html:186
 msgctxt "yes"
 msgid "Yes"
-msgstr "Ja"
+msgstr "Áno"
 
 #: contests/templates/modify.html:78 contests/templates/modify.html:109
 #: contests/templates/modify.html:166 contests/templates/modify.html:167
@@ -1057,383 +1046,383 @@ msgstr "Ja"
 #: contests/templates/triage.html:162 contests/templates/triage.html:194
 msgctxt "no"
 msgid "No"
-msgstr "Nee"
+msgstr "Nie"
 
 #: contests/templates/modify.html:81 contests/templates/modify.html:208
 #: contests/templates/triage.html:166 contests/templates/triage.html:178
 msgctxt "withimage"
 msgid "With image?"
-msgstr "Met afbeelding?"
+msgstr "S obrazom?"
 
 #: contests/templates/modify.html:92 contests/templates/triage.html:176
 msgctxt "quantity"
 msgid "Quantity"
-msgstr "Hoeveelheid"
+msgstr "Množstvo"
 
 #: contests/templates/modify.html:142
 msgctxt "modify-diffstats"
 msgid "Data from edit"
-msgstr "Gegevens van bewerking"
+msgstr "Údaje z úpravy"
 
 #: contests/templates/modify.html:144
 msgctxt "modify-label-edition"
 msgid "Edit:"
-msgstr "Bewerking:"
+msgstr "Upraviť"
 
 #: contests/templates/modify.html:153
 msgctxt "modify-label-curid"
 msgid "Article ID:"
-msgstr "Artikel-ID:"
+msgstr "ID článku:"
 
 #: contests/templates/modify.html:162 contests/templates/triage.html:323
 msgctxt "label-timestamp"
 msgid "Timestamp:"
-msgstr "Tijdstip:"
+msgstr "Časová značka"
 
 #: contests/templates/modify.html:163 contests/templates/triage.html:311
 msgctxt "label-user"
 msgid "User:"
-msgstr "Gebruiker:"
+msgstr "Používateľ:"
 
 #: contests/templates/modify.html:164
 msgctxt "modify-label-bytes"
 msgid "Bytes:"
-msgstr "Bytes:"
+msgstr "Bajty:"
 
 #: contests/templates/modify.html:165 contests/templates/triage.html:339
 msgctxt "label-summary"
 msgid "Summary:"
-msgstr "Samenvatting:"
+msgstr "Zhrnutie:"
 
 #: contests/templates/modify.html:166
 msgctxt "modify-label-newpage"
 msgid "New article:"
-msgstr "Nieuw artikel:"
+msgstr "Nový článok"
 
 #: contests/templates/modify.html:167
 msgctxt "modify-label-valid"
 msgid "Valid edit:"
-msgstr "Geldige bewerking:"
+msgstr "Platná úprava:"
 
 #: contests/templates/modify.html:168
 msgctxt "modify-label-enrolled"
 msgid "Enrolled user:"
-msgstr "Geregistreerde gebruiker:"
+msgstr "Registrovaný používateľ:"
 
 #: contests/templates/modify.html:169
 msgctxt "modify-label-withimage"
 msgid "With image:"
-msgstr "Met afbeelding:"
+msgstr "S obrazom?"
 
 #: contests/templates/modify.html:170
 msgctxt "modify-label-reverted"
 msgid "Reverted edit:"
-msgstr "Teruggedraaide bewerking:"
+msgstr "Vrátená úprava"
 
 #: contests/templates/modify.html:171
 msgctxt "modify-label-evaluator"
 msgid "Evaluator:"
-msgstr "Beoordelaar:"
+msgstr "Hodnotiteľ:"
 
 #: contests/templates/modify.html:172
 msgctxt "modify-label-evaltimestamp"
 msgid "Evaluation timestamp:"
-msgstr "Evaluatietijdstip:"
+msgstr "Časová snačka hodnotenia:"
 
 #: contests/templates/modify.html:173
 msgctxt "modify-label-comment"
 msgid "Evaluator's comment:"
-msgstr "Opmerking van de beoordelaar:"
+msgstr "Význam hodnotiteľa:"
 
 #: contests/templates/modify.html:182 contests/templates/modify.html:185
 msgctxt "modify-showdiff"
 msgid "Edit diff"
-msgstr "Verschil bewerkingen"
+msgstr "Upraviť rozdiel"
 
 #: contests/templates/modify.html:193
 msgctxt "modify-qualified"
 msgid "Qualified?"
-msgstr "Gekwalificeerd?"
+msgstr "Kvalifikovaná?"
 
 #: contests/templates/modify.html:195 contests/templates/modify.html:212
 msgctxt "modify-timestamp"
 msgid "Timestamp"
-msgstr "Tijdstip"
+msgstr "Časová značka"
 
 #: contests/templates/modify.html:200
 msgctxt "modify-automatic"
 msgid "Automatic"
-msgstr "Automatisch"
+msgstr "Automatická"
 
 #: contests/templates/modify.html:210 contests/templates/triage.html:204
 msgctxt "triage-observation"
 msgid "Observation"
-msgstr "Observatie"
+msgstr "Poznámka"
 
 #: contests/templates/modify.html:227
 msgctxt "modify-notfound"
 msgid "Edit not found in the database!"
-msgstr "Bewerking niet gevonden in de database!"
+msgstr "Úprava sa nenašla v databáze!"
 
 #: contests/templates/triage.html:65 contests/templates/triage.html:344
 msgctxt "triage-counter"
 msgid "Bytes in selected text"
-msgstr "Bytes in geselecteerde tekst"
+msgstr "Bajty vo vybranom texte"
 
 #: contests/templates/triage.html:98
 msgctxt "triage-lasteval"
 msgid "Last evaluation"
-msgstr "Laatste evaluatie"
+msgstr "Posledné hodnotenie"
 
 #: contests/templates/triage.html:100 contests/templates/triage.html:330
 msgctxt "triage-diff"
 msgid "Diff"
-msgstr "Wijz"
+msgstr "Rozdiel"
 
 #: contests/templates/triage.html:107
 msgctxt "triage-validedit"
 msgid "Valid edit"
-msgstr "Geldige bewerking"
+msgstr "Platná úprava"
 
 #: contests/templates/triage.html:116
 msgctxt "triage-withimage"
 msgid "With image"
-msgstr "Met afbeelding"
+msgstr "S obrázkom"
 
 #: contests/templates/triage.html:131
 msgctxt "triage-fix"
 msgid "Review"
-msgstr "Beoordelen"
+msgstr "Skontrolovať"
 
 #: contests/templates/triage.html:137
 msgctxt "triage-evaluation"
 msgid "Evaluation"
-msgstr "Evaluatie"
+msgstr "Hodnotenie"
 
 #: contests/templates/triage.html:211
 msgctxt "triage-alterbytes"
 msgid "Change bytes"
-msgstr "Bytes wijzigen"
+msgstr "Zmeniť bajty"
 
 #: contests/templates/triage.html:215
 msgctxt "triage-vda"
 msgid "Copyright infringement"
-msgstr "Auteursrechtenschending"
+msgstr "Porušenie autorských práv"
 
 #: contests/templates/triage.html:216
 msgctxt "triage-redirect"
 msgid "Mere redirection"
-msgstr "Slechts een doorverwijzing"
+msgstr "Iba presmerovanie"
 
 #: contests/templates/triage.html:217
 msgctxt "triage-noref"
 msgid "Sourceless content"
-msgstr "Inhoud zonder bron"
+msgstr "Obsah bez zdrojov"
 
 #: contests/templates/triage.html:218
 msgctxt "triage-onlycat"
 msgid "Mere categorization"
-msgstr "Slechts een categorisatie"
+msgstr "Iba kategorizácia"
 
 #: contests/templates/triage.html:219
 msgctxt "triage-onlytag"
 msgid "Mere insertion of maintenance marks"
-msgstr "Slechts het inbrengen van onderhoudsmarkeringen"
+msgstr "Iba vloženie údržbových značiek"
 
 #: contests/templates/triage.html:239
 msgctxt "triage-jump"
 msgid "Skip"
-msgstr "Overslaan"
+msgstr "Preskočiť"
 
 #: contests/templates/triage.html:245
 msgctxt "edits"
 msgid "Edits"
-msgstr "Bewerkingen"
+msgstr "Úpravy"
 
 #: contests/templates/triage.html:248
 msgctxt "triage-toeval"
 msgid "Available"
-msgstr "Beschikbaar"
+msgstr "Dostupné"
 
 #: contests/templates/triage.html:252
 msgctxt "triage-towait"
 msgid "Awaiting"
-msgstr "In afwachting"
+msgstr "Čakajúce"
 
 #: contests/templates/triage.html:258
 msgctxt "triage-onhold"
 msgid "On evaluation"
-msgstr "Bij boordeling"
+msgstr "V hodnotení"
 
 #: contests/templates/triage.html:262
 msgctxt "triage-onskip"
 msgid "Skipped"
-msgstr "Overgeslagen"
+msgstr "Preskočené"
 
 #: contests/templates/triage.html:274
 msgctxt "triage-release"
 msgid "Release skipped edits"
-msgstr "Overgeslagen bewerkingen vrijgeven"
+msgstr "Uvoľniť preskočené úpravy"
 
 #: contests/templates/triage.html:287
 msgctxt "triage-unhold"
 msgid "Release edits from all evaluators"
-msgstr "Bewerkingen van alle beoordelaars vrijgeven"
+msgstr "Uvoľniť úpravy od všetkých hodnotiteľov"
 
 #: contests/templates/triage.html:297
 msgctxt "triage-database"
 msgid "Database updating."
-msgstr "Database bijwerken."
+msgstr "Databáza sa aktualizuje."
 
 #: contests/templates/triage.html:298
 msgctxt "triage-databaseabout"
 msgid "Please wait a few minutes and refresh the page."
-msgstr "Wacht een paar minuten en vernieuw de pagina."
+msgstr "Počkajte niekoľko minút a obnovte stránku."
 
 #: contests/templates/triage.html:309
 msgctxt "triage-details"
 msgid "Edit details"
-msgstr "Details bewerken"
+msgstr "Podrobnosti úpravy"
 
 #: contests/templates/triage.html:314
 msgctxt "label-page"
 msgid "Article:"
-msgstr "Artikel:"
+msgstr "Článok"
 
 #: contests/templates/triage.html:318
 msgctxt "triage-authorship"
 msgid "Authorship:"
-msgstr "Auteurschap:"
+msgstr "Autorstvo:"
 
 #: contests/templates/triage.html:320 contests/templates/triage.html:336
 msgctxt "triage-verify"
 msgid "Verify"
-msgstr "Verifiëren"
+msgstr "Overiť"
 
 #: contests/templates/triage.html:327
 msgctxt "label-diff"
 msgid "Difference:"
-msgstr "Verschil:"
+msgstr "Rozdiel:"
 
 #: contests/templates/triage.html:334
 msgctxt "triage-copyvio"
 msgid "Copyvio Detector"
-msgstr "Copyvio-detector"
+msgstr "Copyvio Detector"
 
 #: contests/templates/triage.html:347
 msgctxt "triage-differential"
 msgid "Edit differential"
-msgstr "Verschillen tussen versies"
+msgstr "Rozdiel úpravy"
 
 #: contests/templates/triage.html:375
 msgctxt "triage-recenthistory"
 msgid "Recent history"
-msgstr "Recente geschiedenis"
+msgstr "Nedávna história"
 
 #: contests/templates/triage.html:388
 msgctxt "triage-generalinfo"
 msgid "General information"
-msgstr "Algemene informatie"
+msgstr "Všeobecné informácie"
 
 #: contests/templates/triage.html:390
 msgctxt "triage-contestname"
 msgid "wikicontest name"
-msgstr "naam van de wikiwedstrijd"
+msgstr "názov wikisúťaže"
 
 #: contests/templates/triage.html:395
 msgctxt "triage-loggedname"
 msgid "Current evaluator name"
-msgstr "Huidige naam van de beoordelaar"
+msgstr "Meno aktuálneho hodnotiteľa"
 
 #: contests/templates/triage.html:400
 msgctxt "triage-conteststart"
 msgid "wikicontest start time"
-msgstr "starttijd van de wikiwedstrijd"
+msgstr "čas začiatku wikisúťaže"
 
 #: contests/templates/triage.html:405
 msgctxt "triage-contestend"
 msgid "wikicontest end time"
-msgstr "eindtijd van de wikiwedstrijd"
+msgstr "čas konca wikisúťaže"
 
 #: contests/templates/triage.html:410
 msgctxt "triage-lastupdate"
 msgid "Last database update"
-msgstr "Laatste database-update"
+msgstr "Posledná aktualizácia databázy"
 
 #: contests/templates/triage.html:415
 msgctxt "triage-delay"
 msgid "Delay in registering edits"
-msgstr "Vertraging bij het registreren van bewerkingen"
+msgstr "Oneskorenie pri registrácii úprav"
 
 #: contests/templates/triage.html:417
 #, python-format
 msgctxt "triage-hours"
 msgid "%(1)s hours"
-msgstr "%(1)s uur"
+msgstr "%(1)s {{PLURAL:%(1)s|hodina|hodiny|hodín}}"
 
 #: contests/templates/triage.html:420
 msgctxt "triage-bpp"
 msgid "Bytes per point"
-msgstr "Bytes per punt"
+msgstr "Bajty za bod"
 
 #: contests/templates/triage.html:425
 msgctxt "triage-maxbytes"
 msgid "Maximum bytes/points per article"
-msgstr "Maximaal aantal bytes/punten per artikel"
+msgstr "Maximálny počet bajtov/bodov na článok"
 
 #: contests/templates/triage.html:429
 #, python-format
 msgctxt "triage-points"
 msgid "%(1)s points"
-msgstr "%(1)s punten"
+msgstr "%(1)s {{PLURAL:%(1)s|bod|body|bodov}}"
 
 #: contests/templates/triage.html:432
 msgctxt "triage-minbytes"
 msgid "Minimum bytes per edit"
-msgstr "Minimale bytes per bewerking"
+msgstr "Minimálny počet bajtov na úpravu"
 
 #: contests/templates/triage.html:437
 msgctxt "triage-includingall"
 msgid "Including edits with negative bytes"
-msgstr "Inclusief bewerkingen met negatieve bytes"
+msgstr "Vrátane úprav so zápornými bajtmi"
 
 #: contests/templates/triage.html:443
 msgctxt "triage-ipp"
 msgid "Images per point"
-msgstr "Afbeeldingen per punt"
+msgstr "Obrázky za bod"
 
 #: contests/templates/triage.html:446
 msgctxt "triage-noimages"
 msgid "Disabled"
-msgstr "Uitgeschakeld"
+msgstr "Zakázané"
 
 #: contests/templates/triage.html:448
 #, python-format
 msgctxt "triage-images"
 msgid "%(1)s image(s)"
-msgstr "%(1)s afbeelding(en)"
+msgstr "%(1)s {{PLURAL:%(1)s|obrázok|obrázky|obrázkov}}"
 
 #: contests/templates/triage.html:452
 msgctxt "triage-imagemode"
 msgid "Image mode"
-msgstr "Afbeeldingsmodus"
+msgstr "Režim obrázkov"
 
 #: contests/templates/triage.html:455
 msgctxt "triage-byimage"
 msgid "Per image"
-msgstr "Per afbeelding"
+msgstr "Za obrázok"
 
 #: contests/templates/triage.html:457
 msgctxt "triage-byedition"
 msgid "Per edit"
-msgstr "Per bewerking"
+msgstr "Za úpravu"
 
 #: contests/templates/triage.html:459
 msgctxt "triage-bypage"
 msgid "Per article"
-msgstr "Per pagina"
+msgstr "Za článok"
 
 #: contests/templates/triage.html:463
 msgctxt "triage-maximages"
 msgid "Maximum images per article"
-msgstr "Maximaal aantal afbeeldingen per artikel"
+msgstr "Maximálny počet obrázkov na článok"
