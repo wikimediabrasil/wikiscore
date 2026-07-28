@@ -8,10 +8,7 @@ from urllib.parse import quote
 from contests.models import Contest, Edit, Participant, ParticipantEnrollment, Qualification, Evaluation
 from django.core.management.base import BaseCommand
 from django.utils import timezone
-
-WIKIMEDIA_API_HEADERS = {
-    "User-Agent": "WikiScore/1.0 (https://github.com/WikiMovimentoBrasil/wikiscore; wikiscore@wmnobrasil.org)"
-}
+from contests.utils import WIKIMEDIA_API_HEADERS
 
 class Command(BaseCommand):
     help = "Carrega usuários inscritos no concurso."
@@ -36,7 +33,7 @@ class Command(BaseCommand):
             while has_more_results:
                 if last_participant_id:
                     params["last_participant_id"] = last_participant_id
-                response = requests.get(api_base, params=params).json()
+                response = requests.get(api_base, params=params, headers=WIKIMEDIA_API_HEADERS).json()
                 if not response:
                     has_more_results = False
                 else:

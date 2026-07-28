@@ -4,6 +4,7 @@ from datetime import datetime
 from django.core.management.base import BaseCommand
 from django.db import connection
 from contests.models import Contest, Article, Edit, Participant
+from contests.utils import WIKIMEDIA_API_HEADERS
 
 class Command(BaseCommand):
     help = "Carrega edições para o concurso."
@@ -29,7 +30,6 @@ class Command(BaseCommand):
 
         # Desativa lista de artigos já existentes
         Article.objects.filter(contest=contest).update(active=False)
-
         # Insere lista de artigos na tabela
         # Se já existir, apenas ativa
         for item in list_:
@@ -46,14 +46,12 @@ class Command(BaseCommand):
 
         # Coleta lista de revisões já inseridas no banco de dados
         existing_revisions = Edit.objects.filter(contest=contest).values_list('diff', flat=True)
-
         # Loop para análise de cada artigo
         for article in Article.objects.filter(contest=contest):
             self.stdout.write(f"CurID: {article.articleID}")
 
             # Coleta revisões do artigo
             revisions = self.get_article_revisions(article, contest)
-
             # Verifica se o artigo possui revisões dentro dos parâmetros escolhidos
             if not revisions:
                 continue
@@ -103,7 +101,7 @@ class Command(BaseCommand):
             "gcmlimit": "max",
 
         }
-        response = requests.get(contest.api_endpoint, params=categorymembers_api_params).json()
+        response = requests.get(contest.api_endpoint, params=categorymembers_api_params, headers=WIKIMEDIA_API_HEADERS).json()
         if 'query' not in response:
             return list_
             
@@ -112,7 +110,7 @@ class Command(BaseCommand):
         # Coleta segunda página da lista, caso exista
         while 'continue' in response:
             categorymembers_api_params['gcmcontinue'] = response['continue']['gcmcontinue']
-            response = requests.get(contest.api_endpoint, params=categorymembers_api_params).json()
+            response = requests.get(contest.api_endpoint, params=categorymembers_api_params, headers=WIKIMEDIA_API_HEADERS).json()
             list_.update(response['query']['pages'])
 
         for page in list_.values():
@@ -136,9 +134,8 @@ class Command(BaseCommand):
             "rvend": contest.start_time.strftime('%Y-%m-%dT%H:%M:%S.000Z'),
             "pageids": article.articleID
         }
-        revisions_api = requests.get(contest.api_endpoint, params=revisions_api_params).json()
+        revisions_api = requests.get(contest.api_endpoint, params=revisions_api_params,headers=WIKIMEDIA_API_HEADERS).json()
         revisions_api = revisions_api.get('query', {}).get('pages', {}).get(str(article.articleID), {})
-
         return revisions_api.get('revisions', [])
 
     def get_revision_compare(self, revision, contest):
@@ -147,11 +144,11 @@ class Command(BaseCommand):
             "action": "compare",
             "format": "json",
             "torelative": "prev",
-            "prop": "diffsize|size|title|user|timestamp",
+            "prop": "diffsize|size|title|user|timestamp|comment|parsedcomment",# se agrego comment y parsedcomment
             "fromrev": revision['revid']
         }
-        compare_api = requests.get(contest.api_endpoint, params=compare_api_params).json()
-
+        compare_api = requests.get(contest.api_endpoint, params=compare_api_params,headers=WIKIMEDIA_API_HEADERS).json()
+        print("resultado de la comparacion de diff ",compare_api)
         if 'compare' not in compare_api:
             return {"timestamp": None, "user_id": None, "bytes": None, "new_page": None}
 

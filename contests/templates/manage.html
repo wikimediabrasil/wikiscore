@@ -89,17 +89,31 @@
                 var controlMethodSelect = form.querySelector('#control_method');
                 var outreachField = form.querySelector('#outreach_field');
                 var campaignField = form.querySelector('#campaign_field');
-
+                var outreachInput = outreachField.querySelector('#outreach_name');
+                var campaignInput = campaignField.querySelector('#campaign_event_id');
                 var selectedOption = controlMethodSelect.options[controlMethodSelect.selectedIndex].value;
 
                 if (selectedOption === "outreach") {
                     outreachField.style.display = "block";
                     campaignField.style.display = "none";
+                    outreachInput.required = true;
+                    campaignInput.required = false;
+                    campaignInput.value = '';
                 } else if (selectedOption === "campaign") {
                     outreachField.style.display = "none";
                     campaignField.style.display = "block";
+                    outreachInput.required = false;
+                    outreachInput.value = '';
+                    campaignInput.required = true;
                 }
             }
+
+            document.addEventListener('DOMContentLoaded', function(){
+                var createForm = document.getElementById('create');
+                if (createForm) {
+                    controlMethodChange('create');
+                }
+            });
 
             const messages = {
                 'do_create': "{% trans 'Contest created successfully!' context 'manage-created' %}",

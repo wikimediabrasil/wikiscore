@@ -5,6 +5,7 @@ from contests.models import Contest, Edit, Evaluation, Participant, ParticipantE
 from django.utils import timezone
 from django.db import transaction
 from django.db.models import Sum, Case, When, Value, IntegerField, Q, OuterRef, Subquery, Count
+from contests.utils import WIKIMEDIA_API_HEADERS
 
 
 class TriageHandler:
@@ -244,10 +245,10 @@ class TriageHandler:
             'fromrev': diff,
             'torelative': 'prev',
         }
-        compare = requests.get(api_endpoint, params=compare_params).json().get('compare', {})
+        compare = requests.get(api_endpoint, params=compare_params, headers=WIKIMEDIA_API_HEADERS).json().get('compare', {})
         
         compare_params['difftype'] = 'inline'
-        compare_mobile = requests.get(api_endpoint, params=compare_params).json().get('compare', {})
+        compare_mobile = requests.get(api_endpoint, params=compare_params, headers=WIKIMEDIA_API_HEADERS).json().get('compare', {})
         
         return compare, compare_mobile
 
@@ -267,7 +268,7 @@ class TriageHandler:
             'rvlimit': 'max',
             'rvend': start_time.strftime('%Y-%m-%dT%H:%M:%S.000Z'),
         }
-        return requests.get(api_endpoint, params=history_params).json().get('query', {}).get('pages', {}).get(str(article_id), {}).get('revisions', [])
+        return requests.get(api_endpoint, params=history_params,headers=WIKIMEDIA_API_HEADERS).json().get('query', {}).get('pages', {}).get(str(article_id), {}).get('revisions', [])
 
     # Function to validate the parent ID of the last revision
     def is_valid_parentid(self, parentid):
@@ -283,7 +284,7 @@ class TriageHandler:
                 'torelative': 'prev',
                 'prop': 'size',
             }
-            previous_revision = requests.get(api_endpoint, params=previous_revision_params).json().get('compare', {})
+            previous_revision = requests.get(api_endpoint, params=previous_revision_params, headers=WIKIMEDIA_API_HEADERS).json().get('compare', {})
             revision_history.append({
                 'size': previous_revision.get('fromsize', 0),
                 'timestamp': '1970-01-01T00:00:00',

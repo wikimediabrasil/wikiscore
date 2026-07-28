@@ -3,6 +3,7 @@ from django.utils import timezone
 from datetime import timedelta
 import requests
 from contests.models import Contest, Edit, Qualification, Evaluator, Article
+from contests.utils import WIKIMEDIA_API_HEADERS
 
 class CompareHandler:    
     def __init__(self, contest):
@@ -79,7 +80,7 @@ class CompareHandler:
             'gplnamespace': '0',
             'gpllimit': 'max',
         }
-        response = requests.get(contest.api_endpoint, params=list_api_params).json()
+        response = requests.get(contest.api_endpoint, params=list_api_params, headers = WIKIMEDIA_API_HEADERS).json()
         if 'query' not in response:
             return list_
 
@@ -87,7 +88,7 @@ class CompareHandler:
 
         while 'continue' in response:
             list_api_params['gplcontinue'] = response['continue']['gplcontinue']
-            response = requests.get(contest.api_endpoint, params=list_api_params).json()
+            response = requests.get(contest.api_endpoint, params=list_api_params, headers=WIKIMEDIA_API_HEADERS).json()
             list_.update(response['query']['pages'])
 
         return list_
@@ -108,7 +109,7 @@ class CompareHandler:
             "gcmlimit": "max",
 
         }
-        response = requests.get(contest.api_endpoint, params=categorymembers_api_params).json()
+        response = requests.get(contest.api_endpoint, params=categorymembers_api_params,headers=WIKIMEDIA_API_HEADERS).json()
         if 'query' not in response:
             return list_
             
@@ -117,7 +118,7 @@ class CompareHandler:
         # Coleta segunda página da lista, caso exista
         while 'continue' in response:
             categorymembers_api_params['gcmcontinue'] = response['continue']['gcmcontinue']
-            response = requests.get(contest.api_endpoint, params=categorymembers_api_params).json()
+            response = requests.get(contest.api_endpoint, params=categorymembers_api_params,headers=WIKIMEDIA_API_HEADERS).json()
             list_.update(response['query']['pages'])
 
         for page in list_.values():
@@ -139,7 +140,7 @@ class CompareHandler:
                 "ppprop": "wikibase_item",
                 "pageids": pageids,
             }
-            response = requests.get(contest.api_endpoint, params=category_api_params).json()
+            response = requests.get(contest.api_endpoint, params=category_api_params,headers=WIKIMEDIA_API_HEADERS).json()
             list_category.update(response['query']['pages'])
 
         return list_category
@@ -157,7 +158,7 @@ class CompareHandler:
             'cmlimit': 'max',
             'cmprop': 'title',
         }
-        response = requests.get(contest.api_endpoint, params=deletion_api_params).json()
+        response = requests.get(contest.api_endpoint, params=deletion_api_params,headers=WIKIMEDIA_API_HEADERS).json()
         if 'query' not in response:
             return list_
             
@@ -165,7 +166,7 @@ class CompareHandler:
 
         while 'continue' in response:
             deletion_api_params['cmcontinue'] = response['continue']['cmcontinue']
-            response = requests.get(contest.api_endpoint, params=deletion_api_params).json()
+            response = requests.get(contest.api_endpoint, params=deletion_api_params,headers=WIKIMEDIA_API_HEADERS).json()
             list_.extend(response['query']['categorymembers'])
 
         articles = [page['title'][32:] for page in list_]
@@ -182,12 +183,12 @@ class CompareHandler:
                 'cmlimit': 'max',
                 'cmprop': 'title',
             }
-            response = requests.get(contest.api_endpoint, params=cats_api_params).json()
+            response = requests.get(contest.api_endpoint, params=cats_api_params,headers=WIKIMEDIA_API_HEADERS).json()
             cats_.extend(response['query']['categorymembers'])
 
             while 'continue' in response:
                 deletion_api_params['cmcontinue'] = response['continue']['cmcontinue']
-                response = requests.get(contest.api_endpoint, params=deletion_api_params).json()
+                response = requests.get(contest.api_endpoint, params=deletion_api_params,headers=WIKIMEDIA_API_HEADERS).json()
                 cats_.extend(response['query']['categorymembers'])
 
             articles.extend([page['title'] for page in cats_])

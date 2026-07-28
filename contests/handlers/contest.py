@@ -3,7 +3,7 @@ from datetime import timedelta, datetime, timezone
 from django.db.models import Count, Sum, Subquery, OuterRef, Case, When, Q
 from django.db.models.functions import TruncDay
 from contests.models import Evaluator, Edit, Participant, Qualification, Article
-
+from contests.utils import WIKIMEDIA_API_HEADERS
 
 class ContestHandler():
     def __init__(self, contest):
@@ -107,14 +107,14 @@ class ContestHandler():
             'gpllimit': 'max',
             'format': 'json'
         }
-        response = requests.get(contest.api_endpoint, params=api_params).json()
+        response = requests.get(contest.api_endpoint, params=api_params, headers=WIKIMEDIA_API_HEADERS).json()
         if 'query' not in response:
             return list_
 
         list_.extend(response['query']['pages'])
         while 'continue' in response:
             api_params['gplcontinue'] = response['continue']['gplcontinue']
-            response = requests.get(contest.api_endpoint, params=api_params).json()
+            response = requests.get(contest.api_endpoint, params=api_params, headers=WIKIMEDIA_API_HEADERS).json()
             list_.extend(response['query']['pages'])
 
         return len(list_)

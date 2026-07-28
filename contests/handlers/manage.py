@@ -2,6 +2,7 @@ import requests
 from contests.models import Contest, Evaluator, Edit, Participant, Article
 from credentials.models import Profile
 from django.core.exceptions import PermissionDenied
+#from contests.utils import WIKIMEDIA_API_HEADERS
 
 class ManageHandler():
     def execute(self, request):
