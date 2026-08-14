@@ -5,6 +5,7 @@ from django.core.management.base import BaseCommand
 from django.db import connection
 from contests.models import Contest, Article, Edit, Qualification
 from django.db.models import OuterRef, Subquery
+from contests.utils import WIKIMEDIA_API_HEADERS
 
 class Command(BaseCommand):
     help = 'Update reverts'
@@ -30,7 +31,7 @@ class Command(BaseCommand):
                 "rvprop": "sha1|tags",
                 "revids": diff,
             }
-            revisions_api = requests.get(contest.api_endpoint, params=revisions_api_params).json()
+            revisions_api = requests.get(contest.api_endpoint, params=revisions_api_params, headers=WIKIMEDIA_API_HEADERS).json()
             revisions_api_query = revisions_api.get('query', {})
             revision = None
 

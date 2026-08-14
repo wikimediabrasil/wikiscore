@@ -9,6 +9,11 @@ class CounterHandler:
         self.contest = contest
 
     def get_points(self, time_round):
+        if self.contest.is_wikidata:
+            return self.get_points_wikidata(time_round)
+        return self.get_points_non_wikidata(time_round)
+
+    def get_points_non_wikidata(self, time_round):
         query = f"""
         SELECT 
             `user_table`.`user_id` AS `id`, 
@@ -117,6 +122,138 @@ class CounterHandler:
         ORDER BY 
             `points`.`total points` DESC, 
             `points`.`sum` DESC, 
+            `user_table`.`user` ASC;
+        """
+
+        counter = Edit.objects.raw(query)
+        return counter
+
+    def get_points_wikidata(self, time_round):
+        query=f"""
+        SELECT
+            `user_table`.`user_id` AS `id`,
+            `user_table`.`user`,
+            IFNULL(`points`.`total edits`, 0) AS `total_edits`,
+            IFNULL(`points`.`total bytes`, 0) AS `total_bytes`,
+            IFNULL(`points`.`statements points`, 0) AS `statements_points`,
+            IFNULL(`points`.`references points`, 0) AS `references_points`,
+            IFNULL(`points`.`qualifiers points`, 0) AS `qualifiers_points`,
+            IFNULL(`points`.`total points`, 0) AS `total_points`
+        FROM (
+            SELECT
+                DISTINCT `contests_edit`.`user_id`,
+                `contests_participant`.`user`
+            FROM
+                `contests_edit`
+            INNER JOIN `contests_participant` ON `contests_participant`.`local_id` = `contests_edit`.`user_id`
+            WHERE
+                `contests_edit`.`contest_id` = '{self.contest.id}'
+                AND `contests_participant`.`contest_id` = '{self.contest.id}'
+        ) AS `user_table`
+        LEFT JOIN (
+            SELECT
+                t1.`user_id`,
+                t1.`total edits`,
+                t1.`total bytes`,
+                t1.`statements points`,
+                t2.`references points`,
+                t3.`qualifiers points`,
+                (
+                    IFNULL(t1.`statements points`, 0) +
+                    IFNULL(t2.`references points`, 0) +
+                    IFNULL(t3.`qualifiers points`, 0)
+                ) AS `total points`
+            FROM (
+                SELECT
+                    edits_ruled.`user_id`,
+                    SUM(edits_ruled.`valid_edits`) AS `total edits`,
+                    SUM(edits_ruled.`bytes`) AS `total bytes`,
+                    FLOOR(SUM(edits_ruled.`statements`) / edits_ruled.`statements_per_points`) AS `statements points`
+                FROM (
+                    SELECT
+                        `contests_edit`.`article_id`,
+                        `contests_edit`.`user_id`,
+                        SUM(IFNULL(`contests_evaluation`.`real_bytes`, 0)) AS `bytes`,
+                        SUM(
+                            IFNULL(`contests_evaluation`.`real_statements_created`, 0) +
+                            IFNULL(`contests_evaluation`.`real_statements_modified`, 0)
+                        ) AS `statements`,
+                        COUNT(`contests_evaluation`.`valid_edit`) AS `valid_edits`,
+                        `contests_contest`.`statements_per_points` AS `statements_per_points`
+                    FROM
+                        `contests_edit`
+                        LEFT JOIN `contests_evaluation` ON `contests_edit`.`last_evaluation_id` = `contests_evaluation`.`id`
+                        LEFT JOIN `contests_contest` ON `contests_edit`.`contest_id` = `contests_contest`.`id`
+                    WHERE
+                        `contests_edit`.`contest_id` = '{self.contest.id}'
+                        AND `contests_evaluation`.`valid_edit` = '1'
+                        AND `contests_edit`.`timestamp` < '{time_round}'
+                    GROUP BY
+                        `contests_edit`.`user_id`,
+                        `contests_edit`.`article_id`
+                ) AS edits_ruled
+                GROUP BY
+                    edits_ruled.`user_id`
+            ) AS `t1`
+            LEFT JOIN (
+                SELECT
+                    edits_ruled.`user_id`,
+                    FLOOR(SUM(edits_ruled.`references`) / edits_ruled.`references_per_points`) AS `references points`
+                FROM (
+                    SELECT
+                        `contests_edit`.`article_id`,
+                        `contests_edit`.`user_id`,
+                        SUM(
+                            IFNULL(`contests_evaluation`.`real_references_created`, 0) +
+                            IFNULL(`contests_evaluation`.`real_references_modified`, 0)
+                        ) AS `references`,
+                        `contests_contest`.`references_per_points` AS `references_per_points`
+                    FROM
+                        `contests_edit`
+                        LEFT JOIN `contests_evaluation` ON `contests_edit`.`last_evaluation_id` = `contests_evaluation`.`id`
+                        LEFT JOIN `contests_contest` ON `contests_edit`.`contest_id` = `contests_contest`.`id`
+                    WHERE
+                        `contests_edit`.`contest_id` = '{self.contest.id}'
+                        AND `contests_evaluation`.`valid_edit` = '1'
+                        AND `contests_edit`.`timestamp` < '{time_round}'
+                    GROUP BY
+                        `contests_edit`.`user_id`,
+                        `contests_edit`.`article_id`
+                ) AS edits_ruled
+                GROUP BY
+                    edits_ruled.`user_id`
+            ) AS `t2` ON t1.`user_id` = t2.`user_id`
+            LEFT JOIN (
+                SELECT
+                    edits_ruled.`user_id`,
+                    FLOOR(SUM(edits_ruled.`qualifiers`) / edits_ruled.`qualifiers_per_points`) AS `qualifiers points`
+                FROM (
+                    SELECT
+                        `contests_edit`.`article_id`,
+                        `contests_edit`.`user_id`,
+                        SUM(
+                            IFNULL(`contests_evaluation`.`real_qualifiers_created`, 0) +
+                            IFNULL(`contests_evaluation`.`real_qualifiers_modified`, 0)
+                        ) AS `qualifiers`,
+                        `contests_contest`.`qualifiers_per_points` AS `qualifiers_per_points`
+                    FROM
+                        `contests_edit`
+                        LEFT JOIN `contests_evaluation` ON `contests_edit`.`last_evaluation_id` = `contests_evaluation`.`id`
+                        LEFT JOIN `contests_contest` ON `contests_edit`.`contest_id` = `contests_contest`.`id`
+                    WHERE
+                        `contests_edit`.`contest_id` = '{self.contest.id}'
+                        AND `contests_evaluation`.`valid_edit` = '1'
+                        AND `contests_edit`.`timestamp` < '{time_round}'
+                    GROUP BY
+                        `contests_edit`.`user_id`,
+                        `contests_edit`.`article_id`
+                ) AS edits_ruled
+                GROUP BY
+                    edits_ruled.`user_id`
+            ) AS `t3` ON t1.`user_id` = t3.`user_id`
+        ) AS `points` ON `user_table`.`user_id` = `points`.`user_id`
+        ORDER BY
+            `points`.`total points` DESC,
             `user_table`.`user` ASC;
         """
 

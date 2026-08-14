@@ -108,10 +108,34 @@
                 }
             }
 
+            function endpointChange(id){
+                var form = document.getElementById(id);
+                var endpointInput = form.querySelector('#endpoint');
+                var not_wikidata_fields = form.querySelector('#not_wikidata_fields');
+                var isWikidata = endpointInput.value.toLowerCase().includes('wikidata');
+                var requiredInputs = not_wikidata_fields.querySelectorAll('input[type="number"]');
+
+                if(isWikidata){
+                    not_wikidata_fields.style.display='none';
+                    requiredInputs.forEach(function(input){
+                        input.dataset.wasRequired = input.required ? 'true' : 'false';
+                        input.required = false;
+                    });
+                }else{
+                    not_wikidata_fields.style.display = 'block';
+                    requiredInputs.forEach(function(input){
+                        if(input.dataset.wasRequired === 'true'){
+                            input.required = true;
+                        }
+                    });
+                }
+            }
+
             document.addEventListener('DOMContentLoaded', function(){
                 var createForm = document.getElementById('create');
                 if (createForm) {
                     controlMethodChange('create');
+                    endpointChange('create');
                 }
             });
 
@@ -245,6 +269,8 @@
                                 id="api"
                                 type="url"
                                 placeholder="https://.../w/api.php"
+                                onkeyup="endpointChange('{% if contest.pk %}{{ contest.name_id}}{% else %}create{% endif %}')"
+                                oninput="endpointChange('{% if contest.pk %}{{ contest.name_id}}{% else %}create{% endif %}')"
                                 name="api_endpoint"
                                 value="{% if contest.pk %}{{ contest.api_endpoint }}{% endif %}"
                                 {% if contest.pk %}disabled{% else %}required{% endif %}>
@@ -360,7 +386,7 @@
                                     </div>
                                 </div>
 
-                                <div class="w3-row">
+                                <div class="w3-row" id="not_wikidata_fields">
                                     <div class="w3-half" style="padding-{{ right }}: 8px;">
 
                                         <label for="bpp">

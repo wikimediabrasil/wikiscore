@@ -149,7 +149,7 @@ class TriageHandler:
         overwrite_value = request.POST.get('overwrite')
         real_bytes = int(overwrite_value) if overwrite_value and overwrite_value.isnumeric() else Edit.objects.get(contest=self.contest, diff=diff).orig_bytes
 
-        evaluation = Evaluation.objects.create(
+        evaluation_properties = dict(
             contest=self.contest,
             evaluator=Evaluator.objects.get(contest=self.contest, profile=self.user.profile),
             diff=Edit.objects.get(contest=self.contest, diff=diff),
@@ -159,19 +159,39 @@ class TriageHandler:
             status='1',
             obs=request.POST.get('obs') or None
         )
+
+        if self.contest.is_wikidata:
+            def parsed_or_default(field_name, default_value):
+                value = request.POST.get(field_name)
+                return int(value) if value and value.isnumeric() else default_value
+
+            evaluation_properties.update(
+                real_statements_created = parsed_or_default('real_statements_created', Edit.objects.get(contest=self.contest, diff=diff).statements_created),
+                real_statements_modified = parsed_or_default('real_statements_modified',Edit.objects.get(contest=self.contest, diff=diff).statements_modified),
+                real_qualifiers_created = parsed_or_default('real_qualifiers_created', Edit.objects.get(contest=self.contest, diff=diff).qualifiers_created),
+                real_qualifiers_modified = parsed_or_default('real_qualifiers_modified',Edit.objects.get(contest=self.contest, diff=diff).qualifiers_modified),
+                real_references_created = parsed_or_default('real_references_created',Edit.objects.get(contest=self.contest, diff=diff).references_created),
+                real_references_modified = parsed_or_default('real_references_modified',Edit.objects.get(contest=self.contest, diff=diff).references_modified)
+            )
+
+        
+        evaluation = Evaluation.objects.create(**evaluation_properties)
         Edit.objects.filter(contest=self.contest, diff=diff).update(last_evaluation=evaluation)
 
         return evaluation.__dict__
 
     def get_next_edit(self, contest):
 
-        edit = Edit.objects.filter(
-            contest=contest,
-            orig_bytes__gte=contest.minimum_bytes or 1,
-            timestamp__lte=timezone.now() - timedelta(hours=contest.revert_time),
-            participant__isnull=False,
-            last_qualification__status=1
-        ).filter(
+        minimun_filters = {
+            "contest": contest,
+            "timestamp__lte": timezone.now() - timedelta(hours=contest.revert_time),
+            "participant__isnull":False,
+            "last_qualification__status":1,
+        }
+        if not contest.is_wikidata:
+            minimun_filters["orig_bytes__gte"]=contest.minimum_bytes or 1
+
+        edit = Edit.objects.filter(**minimun_filters).filter(
             Q(last_evaluation=None) |
             Q(last_evaluation__status='0') |
             (Q(last_evaluation__status='2') & Q(last_evaluation__evaluator=Evaluator.objects.get(contest=contest, profile=self.user.profile)))
@@ -323,20 +343,22 @@ class TriageHandler:
 
     # Function to calculate edit statistics (e.g., on queue, on hold)
     def calculate_edit_stats(self, contest):
+        minimum_conditions = dict(
+            last_qualification__status='1',
+            participant__isnull=False,
+        )
+        if not contest.is_wikidata:
+            minimum_conditions['orig_bytes__gte'] = contest.minimum_bytes or 1
 
         # Annotations for different statuses
         stats = Edit.objects.filter(contest=contest).aggregate(
             onqueue=Count('pk', filter=Q(
-                last_qualification__status='1',
-                orig_bytes__gte=contest.minimum_bytes or 1,
                 timestamp__lte=timezone.now() - timedelta(hours=contest.revert_time),
-                participant__isnull=False
+                **minimum_conditions
             ) & ~Q(last_evaluation__status__in=['1', '2', '3'])),
             onwait=Count('pk', filter=Q(
-                last_qualification__status='1',
-                orig_bytes__gte=contest.minimum_bytes or 1,
                 timestamp__gte=timezone.now() - timedelta(hours=contest.revert_time),
-                participant__isnull=False
+                **minimum_conditions
             ) & ~Q(last_evaluation__status__in=['1', '2', '3'])),
             onhold=Count('pk', filter=Q(last_evaluation__status='2')),
             onskip=Count('pk', filter=Q(last_evaluation__status='3'))
