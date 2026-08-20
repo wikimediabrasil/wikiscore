@@ -149,29 +149,32 @@ class TriageHandler:
         overwrite_value = request.POST.get('overwrite')
         real_bytes = int(overwrite_value) if overwrite_value and overwrite_value.isnumeric() else Edit.objects.get(contest=self.contest, diff=diff).orig_bytes
 
-        evaluation_properties = dict(
-            contest=self.contest,
-            evaluator=Evaluator.objects.get(contest=self.contest, profile=self.user.profile),
-            diff=Edit.objects.get(contest=self.contest, diff=diff),
-            valid_edit=True if request.POST.get('valid') == 'sim' else False,
-            pictures=picture,
-            real_bytes=real_bytes,
-            status='1',
-            obs=request.POST.get('obs') or None
-        )
+        evaluation_properties = {
+            'contest': self.contest,
+            'evaluator': Evaluator.objects.get(contest=self.contest, profile=self.user.profile),
+            'diff': Edit.objects.get(contest=self.contest, diff=diff),
+            'valid_edit': request.POST.get('valid') == 'sim',
+            'pictures': picture,
+            'real_bytes': real_bytes,
+            'status': '1',
+            'obs': request.POST.get('obs') or None
+        }
 
         if self.contest.is_wikidata:
+            edit_obj = Edit.objects.get(contest=self.contest, diff=diff)
+            edit_wd = getattr(edit_obj, 'editwikidata', None)
+
             def parsed_or_default(field_name, default_value):
                 value = request.POST.get(field_name)
                 return int(value) if value and value.isnumeric() else default_value
 
             evaluation_properties.update(
-                real_statements_created = parsed_or_default('real_statements_created', Edit.objects.get(contest=self.contest, diff=diff).statements_created),
-                real_statements_modified = parsed_or_default('real_statements_modified',Edit.objects.get(contest=self.contest, diff=diff).statements_modified),
-                real_qualifiers_created = parsed_or_default('real_qualifiers_created', Edit.objects.get(contest=self.contest, diff=diff).qualifiers_created),
-                real_qualifiers_modified = parsed_or_default('real_qualifiers_modified',Edit.objects.get(contest=self.contest, diff=diff).qualifiers_modified),
-                real_references_created = parsed_or_default('real_references_created',Edit.objects.get(contest=self.contest, diff=diff).references_created),
-                real_references_modified = parsed_or_default('real_references_modified',Edit.objects.get(contest=self.contest, diff=diff).references_modified)
+                real_statements_created = parsed_or_default('real_statements_created', getattr(edit_wd, 'statements_created', 0)),
+                real_statements_modified = parsed_or_default('real_statements_modified', getattr(edit_wd, 'statements_modified', 0)),
+                real_qualifiers_created = parsed_or_default('real_qualifiers_created', getattr(edit_wd, 'qualifiers_created', 0)),
+                real_qualifiers_modified = parsed_or_default('real_qualifiers_modified', getattr(edit_wd, 'qualifiers_modified', 0)),
+                real_references_created = parsed_or_default('real_references_created', getattr(edit_wd, 'references_created', 0)),
+                real_references_modified = parsed_or_default('real_references_modified', getattr(edit_wd, 'references_modified', 0))
             )
 
         

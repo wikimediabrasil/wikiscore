@@ -3,7 +3,7 @@ import time
 from datetime import datetime
 from django.core.management.base import BaseCommand
 from django.db import connection
-from contests.models import Contest, Article, Edit, Participant
+from contests.models import Contest, Article, Edit, EditWikidata, Participant
 from contests.utils import WIKIMEDIA_API_HEADERS, flatten_statements, diff_snaks
 
 class Command(BaseCommand):
@@ -68,21 +68,25 @@ class Command(BaseCommand):
 
                 # Executa inserção no banco de dados
                 try:
-                    Edit.objects.create(
+                    edit = Edit.objects.create(
                         diff=revision['revid'],
                         article=article,
                         timestamp=compare_data.get('timestamp'),
                         user_id=compare_data.get('user_id'),
                         orig_bytes=compare_data.get('bytes'),
                         new_page=compare_data.get('new_page'),
-                        statements_created=compare_data.get('statements_created', 0),
-                        statements_modified=compare_data.get('statements_modified', 0),
-                        references_created=compare_data.get('references_created', 0),
-                        references_modified = compare_data.get('references_modified',0),
-                        qualifiers_created=compare_data.get('qualifiers_created', 0),
-                        qualifiers_modified = compare_data.get('qualifiers_modified',0),
                         contest=contest
                     )
+                    if contest.is_wikidata:
+                        EditWikidata.objects.create(
+                            edit=edit,
+                            statements_created=compare_data.get('statements_created', 0),
+                            statements_modified=compare_data.get('statements_modified', 0),
+                            references_created=compare_data.get('references_created', 0),
+                            references_modified=compare_data.get('references_modified', 0),
+                            qualifiers_created=compare_data.get('qualifiers_created', 0),
+                            qualifiers_modified=compare_data.get('qualifiers_modified', 0),
+                        )
                 except Exception as e:
                     self.stdout.write(f" -> erro ao inserir: {e}")
                     continue

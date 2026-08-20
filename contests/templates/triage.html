@@ -326,13 +326,13 @@
                     <div class="w3-col l6">
                         {% if contest.is_wikidata %}
                             <strong><i class="fa-solid fa-arrow-up-9-1"></i>{% trans 'Statements created/modified:' context 'label-statements' %}</strong>
-                            {{ edit.statements_created }} / {{ edit.statements_modified }}
+                            {{ edit.editwikidata.statements_created }} / {{ edit.editwikidata.statements_modified }}
                             <br>
                             <strong><i class="fa-solid fa-arrow-up-9-1"></i>{% trans 'References created/modified:' context 'label-references' %}</strong>
-                            {{ edit.references_created }} / {{ edit.references_modified }}
+                            {{ edit.editwikidata.references_created }} / {{ edit.editwikidata.references_modified }}
                             <br>
                             <strong><i class="fa-solid fa-arrow-up-9-1"></i>{% trans 'Qualifiers created/modified:' context 'label-qualifiers' %}</strong>
-                            {{ edit.qualifiers_created }} / {{ edit.qualifiers_modified }}
+                            {{ edit.editwikidata.qualifiers_created }} / {{ edit.editwikidata.qualifiers_modified }}
                             <br>
                         {% else %}
                             <strong><i class="fa-solid fa-arrow-up-9-1"></i>{% trans 'Difference:' context 'label-diff' %}</strong>

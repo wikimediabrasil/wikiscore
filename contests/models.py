@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Group(models.Model):
     name = models.CharField(max_length=100, unique=True)
     manager = models.ManyToManyField('credentials.Profile')
@@ -94,6 +95,22 @@ class ParticipantEnrollment(models.Model):
         return (f"{self.contest.name_id} - {self.user.user}")
 
 
+class EditWikidata(models.Model):
+    edit = models.OneToOneField('Edit', on_delete=models.CASCADE, related_name='editwikidata')
+    statements_created = models.IntegerField(default=0)
+    statements_modified = models.IntegerField(default=0)
+    references_created = models.IntegerField(default=0)
+    references_modified = models.IntegerField(default=0)
+    qualifiers_created = models.IntegerField(default=0)
+    qualifiers_modified = models.IntegerField(default=0)
+
+    def __str__(self):
+        return (f"{self.edit.contest.name_id} - {self.edit.diff}")
+
+    class Meta:
+        verbose_name_plural = 'EditsWikidata'
+
+
 class Edit(models.Model):
     contest = models.ForeignKey('Contest', on_delete=models.CASCADE)
     diff = models.IntegerField()
@@ -105,12 +122,6 @@ class Edit(models.Model):
     new_page = models.BooleanField(default=False)
     last_qualification = models.ForeignKey('Qualification', on_delete=models.SET_NULL, null=True)
     last_evaluation = models.ForeignKey('Evaluation', on_delete=models.SET_NULL, null=True)
-    statements_created = models.IntegerField(default=0)
-    statements_modified = models.IntegerField(default=0)
-    references_created = models.IntegerField(default=0)
-    references_modified = models.IntegerField(default=0)
-    qualifiers_created = models.IntegerField(default=0)
-    qualifiers_modified = models.IntegerField(default=0)
     tags = models.JSONField(default=list, blank=True)
 
     def __str__(self):
