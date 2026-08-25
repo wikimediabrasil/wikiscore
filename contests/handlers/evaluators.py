@@ -2,6 +2,7 @@ import requests
 from credentials.models import Profile
 from django.db.models import Count, Q
 from contests.models import Evaluator, Edit
+from contests.utils import WIKIMEDIA_API_HEADERS
 
 class EvaluatorsHandler:
     def __init__(self, contest):
@@ -46,7 +47,7 @@ class EvaluatorsHandler:
             'guiuser': username,
             'format': 'json',
         }
-        response = requests.get(self.contest.api_endpoint, params=api_params)
+        response = requests.get(self.contest.api_endpoint, params=api_params, headers=WIKIMEDIA_API_HEADERS)
         data = response.json()
 
         if 'query' in data and 'globaluserinfo' in data['query'] and 'id' in data['query']['globaluserinfo']:

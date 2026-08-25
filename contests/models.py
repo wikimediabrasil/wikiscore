@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Group(models.Model):
     name = models.CharField(max_length=100, unique=True)
     manager = models.ManyToManyField('credentials.Profile')
@@ -14,6 +15,9 @@ class Contest(models.Model):
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
     name = models.TextField()
+    statements_per_points = models.IntegerField(default=1)
+    references_per_points = models.IntegerField(default=1)
+    qualifiers_per_points = models.IntegerField(default=1)
     group = models.ForeignKey('Group', on_delete=models.SET_NULL, null=True)
     revert_time = models.SmallIntegerField(default=24)
     official_list_pageid = models.IntegerField()
@@ -34,6 +38,10 @@ class Contest(models.Model):
     started_update = models.DateTimeField(blank=True, null=True)
     finished_update = models.DateTimeField(blank=True, null=True)
     next_update = models.DateTimeField(blank=True, null=True)
+
+    @property
+    def is_wikidata(self):
+        return 'wikidata' in (self.api_endpoint or '')
 
     def __str__(self):
         return self.name_id
@@ -87,6 +95,22 @@ class ParticipantEnrollment(models.Model):
         return (f"{self.contest.name_id} - {self.user.user}")
 
 
+class EditWikidata(models.Model):
+    edit = models.OneToOneField('Edit', on_delete=models.CASCADE, related_name='editwikidata')
+    statements_created = models.IntegerField(default=0)
+    statements_modified = models.IntegerField(default=0)
+    references_created = models.IntegerField(default=0)
+    references_modified = models.IntegerField(default=0)
+    qualifiers_created = models.IntegerField(default=0)
+    qualifiers_modified = models.IntegerField(default=0)
+
+    def __str__(self):
+        return (f"{self.edit.contest.name_id} - {self.edit.diff}")
+
+    class Meta:
+        verbose_name_plural = 'EditsWikidata'
+
+
 class Edit(models.Model):
     contest = models.ForeignKey('Contest', on_delete=models.CASCADE)
     diff = models.IntegerField()
@@ -98,6 +122,7 @@ class Edit(models.Model):
     new_page = models.BooleanField(default=False)
     last_qualification = models.ForeignKey('Qualification', on_delete=models.SET_NULL, null=True)
     last_evaluation = models.ForeignKey('Evaluation', on_delete=models.SET_NULL, null=True)
+    tags = models.JSONField(default=list, blank=True)
 
     def __str__(self):
         return (f"{self.contest.name_id} - {self.diff}")
@@ -134,6 +159,12 @@ class Evaluation(models.Model):
     valid_edit = models.BooleanField(default=False)
     pictures = models.SmallIntegerField(default=0)
     real_bytes = models.IntegerField(blank=True, default=0)
+    real_statements_created = models.IntegerField(blank=True, default=0)
+    real_statements_modified = models.IntegerField(blank=True, default=0)
+    real_references_created = models.IntegerField(blank=True, default=0)
+    real_references_modified = models.IntegerField(blank=True, default=0)
+    real_qualifiers_created = models.IntegerField(blank=True, default=0)
+    real_qualifiers_modified = models.IntegerField(blank=True, default=0)
     status = models.CharField(max_length=1, choices=STATUS_CHOICE, default='0')
     when = models.DateTimeField(auto_now_add=True)
     obs = models.TextField(blank=True, null=True)

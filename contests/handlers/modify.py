@@ -3,6 +3,7 @@ from django.core.exceptions import PermissionDenied
 from django.shortcuts import render
 from contests.models import Evaluator, Edit, Evaluation, Qualification
 from contests.models import Contest
+from contests.utils import WIKIMEDIA_API_HEADERS
 
 
 class ModifyHandler():
@@ -59,7 +60,7 @@ class ModifyHandler():
             'fromrev': diff,
             'torelative': 'prev',
         }
-        compare = requests.get(self.contest.api_endpoint, params=compare_params).json().get('compare', {})
+        compare = requests.get(self.contest.api_endpoint, params=compare_params, headers=WIKIMEDIA_API_HEADERS).json().get('compare', {})
         return compare.get('*', ''), compare.get('touser', ''), compare.get('tocomment', '')
 
     def get_history_qualifications(self, edit):

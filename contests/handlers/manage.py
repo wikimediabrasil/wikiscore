@@ -30,8 +30,8 @@ class ManageHandler():
                         api_endpoint=request.POST.get('api_endpoint'),
                         outreach_name=request.POST.get('outreach_name') if control_method == 'outreach' else None,
                         campaign_event_id=request.POST.get('campaign_event_id') if control_method == 'campaign' else None,
-                        bytes_per_points=request.POST.get('bytes_per_points'),
-                        max_bytes_per_article=request.POST.get('max_bytes_per_article'),
+                        bytes_per_points=request.POST.get('bytes_per_points') or 1,
+                        max_bytes_per_article=request.POST.get('max_bytes_per_article') or 1,
                         minimum_bytes=request.POST.get('minimum_bytes') or None,
                         pictures_per_points=request.POST.get('pictures_per_points') or 5,
                         pictures_mode=request.POST.get('pictures_mode') or 0,
@@ -62,8 +62,8 @@ class ManageHandler():
                     contest.api_endpoint = request.POST.get('api_endpoint')
                     contest.outreach_name = request.POST.get('outreach_name') if control_method == 'outreach' else None
                     contest.campaign_event_id = request.POST.get('campaign_event_id') if control_method == 'campaign' else None
-                    contest.bytes_per_points = request.POST.get('bytes_per_points')
-                    contest.max_bytes_per_article = request.POST.get('max_bytes_per_article')
+                    contest.bytes_per_points = request.POST.get('bytes_per_points') or contest.bytes_per_points
+                    contest.max_bytes_per_article = request.POST.get('max_bytes_per_article') or contest.max_bytes_per_article
                     contest.minimum_bytes = request.POST.get('minimum_bytes') or None
                     contest.pictures_per_points = request.POST.get('pictures_per_points') or 5
                     contest.pictures_mode = request.POST.get('pictures_mode') or 0

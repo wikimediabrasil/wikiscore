@@ -5,6 +5,7 @@ from contests.models import Contest, Edit, Evaluation, Participant, ParticipantE
 from django.utils import timezone
 from django.db import transaction
 from django.db.models import Sum, Case, When, Value, IntegerField, Q, OuterRef, Subquery, Count
+from contests.utils import WIKIMEDIA_API_HEADERS
 
 
 class TriageHandler:
@@ -148,29 +149,52 @@ class TriageHandler:
         overwrite_value = request.POST.get('overwrite')
         real_bytes = int(overwrite_value) if overwrite_value and overwrite_value.isnumeric() else Edit.objects.get(contest=self.contest, diff=diff).orig_bytes
 
-        evaluation = Evaluation.objects.create(
-            contest=self.contest,
-            evaluator=Evaluator.objects.get(contest=self.contest, profile=self.user.profile),
-            diff=Edit.objects.get(contest=self.contest, diff=diff),
-            valid_edit=True if request.POST.get('valid') == 'sim' else False,
-            pictures=picture,
-            real_bytes=real_bytes,
-            status='1',
-            obs=request.POST.get('obs') or None
-        )
+        evaluation_properties = {
+            'contest': self.contest,
+            'evaluator': Evaluator.objects.get(contest=self.contest, profile=self.user.profile),
+            'diff': Edit.objects.get(contest=self.contest, diff=diff),
+            'valid_edit': request.POST.get('valid') == 'sim',
+            'pictures': picture,
+            'real_bytes': real_bytes,
+            'status': '1',
+            'obs': request.POST.get('obs') or None
+        }
+
+        if self.contest.is_wikidata:
+            edit_obj = Edit.objects.get(contest=self.contest, diff=diff)
+            edit_wd = getattr(edit_obj, 'editwikidata', None)
+
+            def parsed_or_default(field_name, default_value):
+                value = request.POST.get(field_name)
+                return int(value) if value and value.isnumeric() else default_value
+
+            evaluation_properties.update(
+                real_statements_created = parsed_or_default('real_statements_created', getattr(edit_wd, 'statements_created', 0)),
+                real_statements_modified = parsed_or_default('real_statements_modified', getattr(edit_wd, 'statements_modified', 0)),
+                real_qualifiers_created = parsed_or_default('real_qualifiers_created', getattr(edit_wd, 'qualifiers_created', 0)),
+                real_qualifiers_modified = parsed_or_default('real_qualifiers_modified', getattr(edit_wd, 'qualifiers_modified', 0)),
+                real_references_created = parsed_or_default('real_references_created', getattr(edit_wd, 'references_created', 0)),
+                real_references_modified = parsed_or_default('real_references_modified', getattr(edit_wd, 'references_modified', 0))
+            )
+
+        
+        evaluation = Evaluation.objects.create(**evaluation_properties)
         Edit.objects.filter(contest=self.contest, diff=diff).update(last_evaluation=evaluation)
 
         return evaluation.__dict__
 
     def get_next_edit(self, contest):
 
-        edit = Edit.objects.filter(
-            contest=contest,
-            orig_bytes__gte=contest.minimum_bytes or 1,
-            timestamp__lte=timezone.now() - timedelta(hours=contest.revert_time),
-            participant__isnull=False,
-            last_qualification__status=1
-        ).filter(
+        minimun_filters = {
+            "contest": contest,
+            "timestamp__lte": timezone.now() - timedelta(hours=contest.revert_time),
+            "participant__isnull":False,
+            "last_qualification__status":1,
+        }
+        if not contest.is_wikidata:
+            minimun_filters["orig_bytes__gte"]=contest.minimum_bytes or 1
+
+        edit = Edit.objects.filter(**minimun_filters).filter(
             Q(last_evaluation=None) |
             Q(last_evaluation__status='0') |
             (Q(last_evaluation__status='2') & Q(last_evaluation__evaluator=Evaluator.objects.get(contest=contest, profile=self.user.profile)))
@@ -244,10 +268,10 @@ class TriageHandler:
             'fromrev': diff,
             'torelative': 'prev',
         }
-        compare = requests.get(api_endpoint, params=compare_params).json().get('compare', {})
+        compare = requests.get(api_endpoint, params=compare_params, headers=WIKIMEDIA_API_HEADERS).json().get('compare', {})
         
         compare_params['difftype'] = 'inline'
-        compare_mobile = requests.get(api_endpoint, params=compare_params).json().get('compare', {})
+        compare_mobile = requests.get(api_endpoint, params=compare_params, headers=WIKIMEDIA_API_HEADERS).json().get('compare', {})
         
         return compare, compare_mobile
 
@@ -267,7 +291,7 @@ class TriageHandler:
             'rvlimit': 'max',
             'rvend': start_time.strftime('%Y-%m-%dT%H:%M:%S.000Z'),
         }
-        return requests.get(api_endpoint, params=history_params).json().get('query', {}).get('pages', {}).get(str(article_id), {}).get('revisions', [])
+        return requests.get(api_endpoint, params=history_params,headers=WIKIMEDIA_API_HEADERS).json().get('query', {}).get('pages', {}).get(str(article_id), {}).get('revisions', [])
 
     # Function to validate the parent ID of the last revision
     def is_valid_parentid(self, parentid):
@@ -283,7 +307,7 @@ class TriageHandler:
                 'torelative': 'prev',
                 'prop': 'size',
             }
-            previous_revision = requests.get(api_endpoint, params=previous_revision_params).json().get('compare', {})
+            previous_revision = requests.get(api_endpoint, params=previous_revision_params, headers=WIKIMEDIA_API_HEADERS).json().get('compare', {})
             revision_history.append({
                 'size': previous_revision.get('fromsize', 0),
                 'timestamp': '1970-01-01T00:00:00',
@@ -322,20 +346,22 @@ class TriageHandler:
 
     # Function to calculate edit statistics (e.g., on queue, on hold)
     def calculate_edit_stats(self, contest):
+        minimum_conditions = dict(
+            last_qualification__status='1',
+            participant__isnull=False,
+        )
+        if not contest.is_wikidata:
+            minimum_conditions['orig_bytes__gte'] = contest.minimum_bytes or 1
 
         # Annotations for different statuses
         stats = Edit.objects.filter(contest=contest).aggregate(
             onqueue=Count('pk', filter=Q(
-                last_qualification__status='1',
-                orig_bytes__gte=contest.minimum_bytes or 1,
                 timestamp__lte=timezone.now() - timedelta(hours=contest.revert_time),
-                participant__isnull=False
+                **minimum_conditions
             ) & ~Q(last_evaluation__status__in=['1', '2', '3'])),
             onwait=Count('pk', filter=Q(
-                last_qualification__status='1',
-                orig_bytes__gte=contest.minimum_bytes or 1,
                 timestamp__gte=timezone.now() - timedelta(hours=contest.revert_time),
-                participant__isnull=False
+                **minimum_conditions
             ) & ~Q(last_evaluation__status__in=['1', '2', '3'])),
             onhold=Count('pk', filter=Q(last_evaluation__status='2')),
             onskip=Count('pk', filter=Q(last_evaluation__status='3'))

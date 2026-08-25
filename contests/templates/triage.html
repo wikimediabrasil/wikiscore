@@ -324,9 +324,21 @@
                         {{ edit.timestamp }} (UTC)
                     </div>
                     <div class="w3-col l6">
-                        <strong><i class="fa-solid fa-arrow-up-9-1"></i>{% trans 'Difference:' context 'label-diff' %}</strong>
-                        {{ edit.orig_bytes }} bytes
-                        <br>
+                        {% if contest.is_wikidata %}
+                            <strong><i class="fa-solid fa-arrow-up-9-1"></i>{% trans 'Statements created/modified:' context 'label-statements' %}</strong>
+                            {{ edit.editwikidata.statements_created }} / {{ edit.editwikidata.statements_modified }}
+                            <br>
+                            <strong><i class="fa-solid fa-arrow-up-9-1"></i>{% trans 'References created/modified:' context 'label-references' %}</strong>
+                            {{ edit.editwikidata.references_created }} / {{ edit.editwikidata.references_modified }}
+                            <br>
+                            <strong><i class="fa-solid fa-arrow-up-9-1"></i>{% trans 'Qualifiers created/modified:' context 'label-qualifiers' %}</strong>
+                            {{ edit.editwikidata.qualifiers_created }} / {{ edit.editwikidata.qualifiers_modified }}
+                            <br>
+                        {% else %}
+                            <strong><i class="fa-solid fa-arrow-up-9-1"></i>{% trans 'Difference:' context 'label-diff' %}</strong>
+                            {{ edit.orig_bytes }} bytes
+                            <br>
+                        {% endif %}
                         <strong><i class="fa-solid fa-thumbtack"></i>{% trans 'Diff' context 'triage-diff' %}:</strong>
                         <a href="{{ contest.endpoint }}?diff={{ edit.diff }}"
                         target="_blank" rel="noopener">{{ edit.diff }}</a>
@@ -338,6 +350,13 @@
                         <br>
                         <strong><i class="fa-solid fa-comment"></i>{% trans 'Summary:' context 'label-summary' %}</strong>
                         {{ compare.tocomment }}
+                        <br>
+                        <strong><i class="fa-solid fa-tag"></i>{% trans 'Tags:' context 'label-tags' %}</strong>
+                        {% if edit.tags %}
+                            {{edit.tags|join:", "}}
+                        {% else %}
+                            {% trans 'None' context 'label-none' %}
+                        {% endif %}
                     </div>
                 </div>
                 <div class="tooltip w3-button w3-orange" style="visibility: hidden;">

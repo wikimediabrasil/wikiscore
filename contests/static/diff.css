@@ -286,3 +286,16 @@ body {
         opacity:1;
     }
 }
+
+@media (min-width: 601px) {
+    .w3-row-padding.w3-content.w3-main {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+    .w3-row-padding.w3-content.w3-main > #first_column,
+    .w3-row-padding.w3-content.w3-main > #second_column,
+    .w3-row-padding.w3-content.w3-main > #third_column {
+        float:none;
+    }
+}

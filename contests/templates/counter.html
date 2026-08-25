@@ -37,11 +37,18 @@
             <table aria-label="Lista de participantes" class="w3-table-all w3-hoverable w3-card">
                 <tr>
                     <th>{% trans 'User' context 'counter-user' %}</th>
-                    <th>{% trans 'Sum of bytes' context 'counter-bytes' %}</th>
                     <th>{% trans 'Total edits' context 'counter-edits' %}</th>
-                    <th>{% trans 'Points per byte' context 'counter-ppb' %}</th>
-                    <th>{% trans 'Articles with images' context 'counter-images' %}</th>
-                    <th>{% trans 'Points per image' context 'counter-ppi' %}</th>
+                    {% if contest.is_wikidata %}
+                        <th>{% trans 'Sum of bytes' context 'counter-bytes' %}</th>
+                        <th>{% trans 'Total Statements' context 'counter-statementscount' %}</th>
+                        <th>{% trans 'Total References' context 'counter-referencescount' %}</th>
+                        <th>{% trans 'Total Qualifiers' context 'counter-qualifierscount' %}</th>
+                    {% else %}
+                        <th>{% trans 'Sum of bytes' context 'counter-bytes' %}</th>
+                        <th>{% trans 'Points per byte' context 'counter-ppb' %}</th>
+                        <th>{% trans 'Articles with images' context 'counter-images' %}</th>
+                        <th>{% trans 'Points per image' context 'counter-ppi' %}</th>
+                    {% endif %}
                     <th>{% trans 'Total points' context 'counter-points' %}</th>
                     {% if manager %}
                         <th>{% trans 'Reset' context 'counter-redefine' %}</th>
@@ -50,11 +57,18 @@
                 {% for row in counter %}
                     <tr>
                         <td>{{ row.user }}</td>
-                        <td>{{ row.sum }}</td>
                         <td>{{ row.total_edits }}</td>
+                        {% if contest.is_wikidata %}
+                            <td>{{ row.total_bytes }}</td>
+                            <td>{{ row.statements_points }}</td>
+                            <td>{{ row.references_points }}</td>
+                            <td>{{ row.qualifiers_points }}</td>
+                        {% else %}
+                        <td>{{ row.sum }}</td>
                         <td>{{ row.bytes_points }}</td>
                         <td>{{ row.total_pictures }}</td>
                         <td>{{ row.pictures_points }}</td>
+                        {% endif %}
                         <td>{{ row.total_points }}</td>
                         {% if manager %}
                             <td>
