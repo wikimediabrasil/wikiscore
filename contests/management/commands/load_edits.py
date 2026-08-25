@@ -19,7 +19,7 @@ class Command(BaseCommand):
         # Coleta lista de artigos na categoria ou via PetScan
         if contest.category_petscan:
             # Recupera lista do PetScan
-            petscan_list = requests.get(f"https://petscan.wmflabs.org/?format=json&psid={contest.category_petscan}").json()
+            petscan_list = requests.get(f"https://petscan.wmcloud.org/?format=json&psid={contest.category_petscan}").json()
             list_ = [
                 {"pageid": item['id'], "title": item['title']} 
                 for item in petscan_list['*'][0]['a']['*']
@@ -75,6 +75,7 @@ class Command(BaseCommand):
                         user_id=compare_data.get('user_id'),
                         orig_bytes=compare_data.get('bytes'),
                         new_page=compare_data.get('new_page'),
+                        tags = revision.get('tags',[]),
                         contest=contest
                     )
                     if contest.is_wikidata:
