@@ -143,7 +143,7 @@ class CounterHandler:
             profile=request.user.profile
         ).user_status == 'G' else False
 
-        if request.method == 'POST':
+        if manager and request.method == 'POST' and request.POST.get('user_id'):
             success = self.reset_participant(request)
         else:
             success = False
@@ -165,5 +165,5 @@ class CounterHandler:
             contest=self.contest, 
             participant=Participant.objects.get(contest=self.contest, local_id=participant_id)
         ).update(last_evaluation=None)
-        return True if participant.count() > 0 else False
+        return True if participant > 0 else False
     

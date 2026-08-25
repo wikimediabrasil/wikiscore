@@ -44,9 +44,3 @@ class Profile(models.Model):
 
     def __str__(self):
         return self.username if self.username else "No username"
-
-
-@receiver(post_save, sender=CustomUser)
-def create_user_profile(sender, instance, created, **kwargs):
-    if created:
-        Profile.objects.create(account=instance)

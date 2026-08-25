@@ -95,29 +95,55 @@ class CompareHandler:
     def get_category_articles(self, contest):
         """Coleta lista de artigos na categoria."""
         list_ = {}
+        pages = []
         categorymembers_api_params = {
             "action": "query",
             "format": "json",
-            "prop": "pageprops",
+            "prop": "info",
             "generator": "categorymembers",
-            "ppprop": "wikibase_item",
-            "cmnamespace": "0",
+            "inprop": "associatedpage|subjectid",
+            "gcmnamespace": "1",
             "gcmpageid": contest.category_pageid,
-            "gcmprop": "title",
+            "gcmprop": "ids|title",
             "gcmlimit": "max",
+
         }
         response = requests.get(contest.api_endpoint, params=categorymembers_api_params).json()
         if 'query' not in response:
             return list_
-
+            
         list_.update(response['query']['pages'])
 
+        # Coleta segunda página da lista, caso exista
         while 'continue' in response:
             categorymembers_api_params['gcmcontinue'] = response['continue']['gcmcontinue']
             response = requests.get(contest.api_endpoint, params=categorymembers_api_params).json()
             list_.update(response['query']['pages'])
 
-        return list_
+        for page in list_.values():
+            if page.get('subjectid'):
+                pages.append({
+                    "pageid": page.get('subjectid'),
+                    "title": page.get('associatedpage'),
+                })
+
+        # Divide "pages" em grupos de, no máximo, 50 itens. Depois, processa a coleta de itens do Wikidata para cada grupo.
+        # Isso é necessário porque a API do Wikidata não aceita mais de 50 itens por requisição.
+        list_category = {}
+        for i in range(0, len(pages), 50):
+            pageids = '|'.join([str(page['pageid']) for page in pages[i:i+50]])
+            category_api_params = {
+                "action": "query",
+                "format": "json",
+                "prop": "pageprops",
+                "ppprop": "wikibase_item",
+                "pageids": pageids,
+            }
+            response = requests.get(contest.api_endpoint, params=category_api_params).json()
+            list_category.update(response['query']['pages'])
+
+        return list_category
+
 
     def get_deletion_pages(self, contest):
         """Coleta páginas marcadas para eliminação."""

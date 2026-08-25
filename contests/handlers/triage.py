@@ -27,7 +27,7 @@ class TriageHandler:
                 return {'action': 'release'}
 
         elif request.POST.get('unhold'):
-            if Evaluator.objects.get(contest=contest, profile=self.user.profile).user_status != 'G':
+            if Evaluator.objects.get(contest=self.contest, profile=self.user.profile).user_status != 'G':
                 raise PermissionError('User is not a group member')
             else:
                 if self.unhold_edit():
@@ -188,7 +188,7 @@ class TriageHandler:
         for locked in lockeds:
             evaluation = Evaluation.objects.create(
                 contest=self.contest,
-                diff=locked.diff,
+                diff=Edit.objects.get(contest=self.contest, diff=locked.diff),
                 status='0' # Status '0' indicates the edit is pending
             )
             Edit.objects.filter(contest=self.contest, diff=locked.diff).update(last_evaluation=evaluation)

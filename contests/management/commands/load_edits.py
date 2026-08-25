@@ -20,7 +20,7 @@ class Command(BaseCommand):
             # Recupera lista do PetScan
             petscan_list = requests.get(f"https://petscan.wmflabs.org/?format=json&psid={contest.category_petscan}").json()
             list_ = [
-                {"id": item['id'], "title": item['title']} 
+                {"pageid": item['id'], "title": item['title']} 
                 for item in petscan_list['*'][0]['a']['*']
             ]
         else:
@@ -69,15 +69,19 @@ class Command(BaseCommand):
                 compare_data = self.get_revision_compare(revision, contest)
 
                 # Executa inserção no banco de dados
-                Edit.objects.create(
-                    diff=revision['revid'],
-                    article=article,
-                    timestamp=compare_data.get('timestamp'),
-                    user_id=compare_data.get('user_id'),
-                    orig_bytes=compare_data.get('bytes'),
-                    new_page=compare_data.get('new_page'),
-                    contest=contest
-                )
+                try:
+                    Edit.objects.create(
+                        diff=revision['revid'],
+                        article=article,
+                        timestamp=compare_data.get('timestamp'),
+                        user_id=compare_data.get('user_id'),
+                        orig_bytes=compare_data.get('bytes'),
+                        new_page=compare_data.get('new_page'),
+                        contest=contest
+                    )
+                except Exception as e:
+                    self.stdout.write(f" -> erro ao inserir: {e}")
+                    continue
 
                 self.stdout.write(" -> feito!")
 
@@ -85,29 +89,40 @@ class Command(BaseCommand):
 
     def get_category_articles(self, contest):
         """Coleta lista de artigos na categoria."""
-        list_ = []
+        list_ = {}
+        pages = []
         categorymembers_api_params = {
             "action": "query",
             "format": "json",
-            "list": "categorymembers",
-            "cmnamespace": "0",
-            "cmpageid": contest.category_pageid,
-            "cmprop": "ids|title",
-            "cmlimit": "max"
+            "prop": "info",
+            "generator": "categorymembers",
+            "inprop": "associatedpage|subjectid",
+            "gcmnamespace": "1",
+            "gcmpageid": contest.category_pageid,
+            "gcmprop": "ids|title",
+            "gcmlimit": "max",
+
         }
         response = requests.get(contest.api_endpoint, params=categorymembers_api_params).json()
         if 'query' not in response:
             return list_
             
-        list_.extend(response['query']['categorymembers'])
+        list_.update(response['query']['pages'])
 
         # Coleta segunda página da lista, caso exista
         while 'continue' in response:
-            categorymembers_api_params['cmcontinue'] = response['continue']['cmcontinue']
+            categorymembers_api_params['gcmcontinue'] = response['continue']['gcmcontinue']
             response = requests.get(contest.api_endpoint, params=categorymembers_api_params).json()
-            list_.extend(response['query']['categorymembers'])
+            list_.update(response['query']['pages'])
 
-        return list_
+        for page in list_.values():
+            if page.get('subjectid'):
+                pages.append({
+                    "pageid": page.get('subjectid'),
+                    "title": page.get('associatedpage'),
+                })
+
+        return pages
 
     def get_article_revisions(self, article, contest):
         """Coleta revisões do artigo."""

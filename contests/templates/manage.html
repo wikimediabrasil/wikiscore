@@ -84,6 +84,23 @@
                 parent.parentNode.scrollIntoView(true);
             }
 
+            function controlMethodChange(id) {
+                var form = document.getElementById(id);
+                var controlMethodSelect = form.querySelector('#control_method');
+                var outreachField = form.querySelector('#outreach_field');
+                var campaignField = form.querySelector('#campaign_field');
+
+                var selectedOption = controlMethodSelect.options[controlMethodSelect.selectedIndex].value;
+
+                if (selectedOption === "outreach") {
+                    outreachField.style.display = "block";
+                    campaignField.style.display = "none";
+                } else if (selectedOption === "campaign") {
+                    outreachField.style.display = "none";
+                    campaignField.style.display = "block";
+                }
+            }
+
             const messages = {
                 'do_create': "{% trans 'Contest created successfully!' context 'manage-created' %}",
                 'do_manager': "{% trans 'New manager successfully defined!' context 'manage-remanaged' %}",
@@ -265,7 +282,7 @@
                                         type="number"
                                         maxlenght="10"
                                         name="official_list_pageid"
-                                        value="{% if contest.pk %}{{ contest.official_list_pageid }}{% endif %}"
+                                        value="{% if contest.pk and contest.official_list_pageid %}{{ contest.official_list_pageid }}{% endif %}"
                                         {% if contest.pk %}disabled{% else %}required{% endif %}>
 
                                         <label for="sourceid">
@@ -284,17 +301,50 @@
                                     </div>
                                 </div>
 
-                                <label for="outreach">
-                                    <strong>{% trans 'Contest name in Outreach Dashboard' context 'manage-outreach' %}</strong>
-                                </label>
-                                <input
-                                class="w3-input w3-border w3-margin-bottom"
-                                id="outreach"
-                                type="text"
-                                placeholder="{% trans 'Campaign_Name/Program_Name' context 'manage-outreachplacehold' %}"
-                                name="outreach_name"
-                                value="{% if contest.pk %}{{ contest.outreach_name }}{% endif %}"
-                                {% if contest.pk %}disabled{% else %}required{% endif %}>
+                                <div class="w3-row">
+                                    <div class="w3-half" style="padding-{{ right }}: 8px;">
+                                        <label for="control_method">
+                                            <strong>{% trans 'Participant enrollment method' context 'manage-controlmethod' %}</strong>
+                                        </label>
+                                        <select
+                                        id="control_method"
+                                        name="control_method"
+                                        class="w3-select w3-border w3-margin-bottom"
+                                        onchange="controlMethodChange('{% if contest.pk %}{{ contest.name_id }}{% else %}create{% endif %}')"
+                                        {% if contest.pk %}disabled{% else %}required{% endif %}>
+                                            <option value="outreach" {% if contest.outreach_name %}selected{% endif %}>{% trans 'Outreach Dashboard' context 'manage-outreachdashboard' %}</option>
+                                            <option value="campaign" {% if contest.campaign_event_id %}selected{% endif %}>{% trans 'Campaign Event' context 'manage-campaign' %}</option>
+                                        </select>
+                                    </div>
+                                    <div class="w3-half" style="padding-{{ left }}: 8px;">
+                                        <div id="outreach_field" style="{% if contest.campaign_event_id %}display: none;{% endif %}">
+                                            <label for="outreach_name">
+                                                <strong>{% trans 'Contest name in Outreach Dashboard' context 'manage-outreach' %}</strong>
+                                            </label>
+                                            <input
+                                            class="w3-input w3-border w3-margin-bottom"
+                                            id="outreach_name"
+                                            type="text"
+                                            placeholder="{% trans 'Campaign_Name/Program_Name' context 'manage-outreachplacehold' %}"
+                                            name="outreach_name"
+                                            value="{% if contest.pk and contest.outreach_name %}{{ contest.outreach_name }}{% endif %}"
+                                            {% if contest.pk %}disabled{% else %}required{% endif %}>
+                                        </div>
+                                        <div id="campaign_field" style="{% if contest.outreach_name %}display: none;{% endif %}">
+                                            <label for="campaign_event_id">
+                                                <strong>{% trans 'Campaign Event ID' context 'manage-campaigneventid' %}</strong>
+                                            </label>
+                                            <input
+                                            class="w3-input w3-border w3-margin-bottom"
+                                            id="campaign_event_id"
+                                            type="text"
+                                            placeholder="{% trans 'Enter the Campaign Event ID' context 'manage-campaigneventidplacehold' %}"
+                                            name="campaign_event_id"
+                                            value="{% if contest.pk and contest.campaign_event_id %}{{ contest.campaign_event_id }}{% endif %}"
+                                            {% if contest.pk %}disabled{% else %}required{% endif %}>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div class="w3-row">
                                     <div class="w3-half" style="padding-{{ right }}: 8px;">
@@ -490,7 +540,7 @@
                                     </div>
                                 {% else %}
                                     <label for="managemail">
-                                        <strong>{% trans "Manager's email" context 'manage-managemail' %}</strong>
+                                        <strong>{% trans "Manager's Wikimedia account" context 'manage-managemail' %}</strong>
                                     </label>
                                     <input
                                     class="w3-input w3-border w3-margin-bottom"

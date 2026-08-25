@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-28 12:23+0000\n"
+"POT-Creation-Date: 2021-01-01 00:00+0000"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,10 +31,7 @@ msgid ""
 "necessary, click on the button to accept the edit. After acceptance, the "
 "edit will be available in the evaluation queue."
 msgstr ""
-"This page lists the edits participats did in the context of the wikicontest "
-"but were made before their registration in the Outreach Dashboard. If "
-"necessary, click on the button to accept the edit. After acceptance, the "
-"edit will be available in the evaluation queue."
+"本页列出了参与者在wikicontest中所做的编辑，这些编辑是在他们在Outreach控制面板注册之前进行的。如有必要，请单击按钮接受编辑。接受后，编辑将在评估队列中可用。"
 
 #: contests/templates/backtrack.html:36
 #, python-format
@@ -85,7 +82,7 @@ msgctxt "counter"
 msgid "Counter"
 msgstr "计分器"
 
-#: contests/templates/base.html:84 contests/templates/manage.html:458
+#: contests/templates/base.html:84 contests/templates/manage.html:508
 #: contests/templates/modify.html:7 contests/templates/modify.html:133
 msgctxt "modify"
 msgid "Review"
@@ -94,7 +91,7 @@ msgstr "复核"
 #: contests/templates/base.html:88 contests/templates/compare.html:6
 msgctxt "compare"
 msgid "Comparator"
-msgstr "Comparator"
+msgstr "比较器"
 
 #: contests/templates/base.html:92 contests/templates/edits.html:8
 msgctxt "triage-evaluated"
@@ -110,7 +107,7 @@ msgstr "评估者"
 #: contests/templates/base.html:104
 msgctxt "triage-list"
 msgid "Official list"
-msgstr "Official list"
+msgstr "官方名单"
 
 #: contests/templates/base.html:109
 msgctxt "triage-cat"
@@ -193,9 +190,7 @@ msgctxt "compare-deletion-about"
 msgid ""
 "The articles below are included in the category and are marked for some form"
 " of deletion (fast, semi-fast, by consensus, or by application)."
-msgstr ""
-"The articles below are included in the category and are marked for some form"
-" of deletion (fast, semi-fast, by consensus, or by application)."
+msgstr "以下文章包含在该类别中，并标记为某种形式的删除（快速、半快速、按共识或按应用程序）。"
 
 #: contests/templates/compare.html:167
 msgctxt "compare-nowikidata"
@@ -207,9 +202,7 @@ msgctxt "compare-nowikidata-about"
 msgid ""
 "The articles below are included in the category but have no connection to "
 "Wikidata."
-msgstr ""
-"The articles below are included in the category but have no connection to "
-"Wikidata."
+msgstr "以下文章包含在该类别中，但与维基数据没有任何关联。"
 
 #: contests/templates/compare.html:189
 msgctxt "compare-inconsistency"
@@ -222,10 +215,7 @@ msgid ""
 "The listed edits below belong to articles that were listed in the category "
 "but were removed. If they are marked in red, the edit was validated and "
 "awarded points to the participant."
-msgstr ""
-"The listed edits below belong to articles that were listed in the category "
-"but were removed. If they are marked in red, the edit was validated and "
-"awarded points to the participant."
+msgstr "下面列出的编辑属于类别中列出但已被删除的文章。如果它们标记为红色，则表示编辑已通过验证，并向参与者授予积分。"
 
 #: contests/templates/compare.html:203 contests/templates/compare.html:235
 msgctxt "compare-seediff"
@@ -271,7 +261,7 @@ msgstr "图形记分板"
 #: contests/templates/contest.html:33
 msgctxt "login-manage"
 msgid "Manage contest"
-msgstr "竞赛管理"
+msgstr "管理竞赛"
 
 #: contests/templates/contest.html:39 contests/templates/home.html:7
 msgctxt "main-title"
@@ -350,7 +340,7 @@ msgstr "每日验证编辑数"
 #: contests/templates/contest.html:191
 msgctxt "login-newevents"
 msgid "Created articles and enrolled participants per day"
-msgstr "Created articles and enrolled participants per day"
+msgstr "每日创建条目和招募参与者"
 
 #: contests/templates/contest.html:202
 msgctxt "login-newpages"
@@ -360,7 +350,7 @@ msgstr "每日新条目数"
 #: contests/templates/contest.html:209
 msgctxt "login-newparticipants"
 msgid "Enrolled participants per day"
-msgstr "Enrolled participants per day"
+msgstr "每日报名人数"
 
 #: contests/templates/contest.html:229 contests/templates/contest.html:240
 msgctxt "login-newbytes"
@@ -378,9 +368,7 @@ msgctxt "counter-about"
 msgid ""
 "This count refers to the wikicontest %(1)s and was generated on %(2)s at "
 "%(3)s UTC time."
-msgstr ""
-"This count refers to the wikicontest %(1)s and was generated on %(2)s at "
-"%(3)s UTC time."
+msgstr "此计数指的是wikicontest%(1)s ，并于UTC时间%(2)s%(3)s生成。"
 
 #: contests/templates/counter.html:15
 msgctxt "counter-description"
@@ -391,20 +379,14 @@ msgid ""
 "registered users who have edited any of the articles in the list of this "
 "wikicontest are listed below, even if they have no valid edits."
 msgstr ""
-"The ranking order is determined according to the total points, calculated "
-"with the score rounded down, using the total sum of added bytes as a "
-"tiebreaker, and if there is still a tie, in alphabetical order. All "
-"registered users who have edited any of the articles in the list of this "
-"wikicontest are listed below, even if they have no valid edits."
+"排名顺序根据总分确定，分数四舍五入后计算，以添加字节的总和作为决胜局，如果仍然有平局，则按字母顺序排列。所有编辑过此wikicontest列表中任何文章的注册用户都列在下面，即使他们没有进行有效编辑。"
 
 #: contests/templates/counter.html:22
 msgctxt "counter-uptotime"
 msgid ""
 "If you want to get a score up to a specific time, please specify it in the "
 "form below."
-msgstr ""
-"If you want to get a score up to a specific time, please specify it in the "
-"form below."
+msgstr "如果您想获得截至特定时间的分数，请在下面的表格中指定。"
 
 #: contests/templates/counter.html:39
 msgctxt "counter-user"
@@ -454,9 +436,7 @@ msgctxt "counter-confirm"
 msgid ""
 "All evaluations on this participant's edits will be undone. Do you want to "
 "proceed?"
-msgstr ""
-"All evaluations on this participant's edits will be undone. Do you want to "
-"proceed?"
+msgstr "针对此参与者的编辑所做的所有评估都将被撤消。是否继续？"
 
 #: contests/templates/counter.html:83 contests/templates/triage.html:304
 msgctxt "triage-noedit"
@@ -467,8 +447,7 @@ msgstr "现在没有可显示的编辑内容。"
 msgctxt "counter-success"
 msgid ""
 "Edits successfully reset! A new database update will be performed shortly."
-msgstr ""
-"Edits successfully reset! A new database update will be performed shortly."
+msgstr "编辑已成功重置！新的数据库更新将很快执行。"
 
 #: contests/templates/edits.html:61
 msgctxt "edits-about"
@@ -559,17 +538,15 @@ msgctxt "evaluators-about"
 msgid ""
 "This page lists the managers and evaluators of this wikicontest. The contest"
 " manager also has options to enable or disable evaluators."
-msgstr ""
-"This page lists the managers and evaluators of this wikicontest. The contest"
-" manager also has options to enable or disable evaluators."
+msgstr "本页列出了本次wikicontest的管理员和评估员。竞赛管理员还可以选择启用或禁用评估员。"
 
 #: contests/templates/evaluators.html:20
 msgctxt "evaluators-neweval"
 msgid "Add new evaluator"
 msgstr "添加新评估者"
 
-#: contests/templates/evaluators.html:28 contests/templates/manage.html:499
-#: contests/templates/manage.html:524
+#: contests/templates/evaluators.html:28 contests/templates/manage.html:549
+#: contests/templates/manage.html:574
 msgctxt "password-username"
 msgid "Username"
 msgstr "用户名"
@@ -630,13 +607,7 @@ msgid ""
 "inserted by the organizers of the wikicontest on their official page should "
 "be considered."
 msgstr ""
-"The graph below displays the evolution of scores received by the top 9 "
-"participants during the wikicontest. This graph is generated automatically "
-"and does not constitute a final or official ranking. Please note that "
-"organizers may reevaluate previous edits, and the displayed points may be "
-"recalculated without prior notice. In case of discrepancy, only the table "
-"inserted by the organizers of the wikicontest on their official page should "
-"be considered."
+"下图显示了wikicontest期间前9名参与者的得分变化。此图表是自动生成的，不构成最终或官方排名。请注意，组织者可能会重新评估之前的编辑，并且显示的分数可能会重新计算，恕不另行通知。如有差异，仅应考虑wikicontest组织者在其官方页面上插入的表格。"
 
 #: contests/templates/graph.html:49
 msgctxt "graph-axis"
@@ -705,254 +676,270 @@ msgid ""
 "not) and potential contests. We may request additional information later for"
 " final adjustments to the tool."
 msgstr ""
-"Send an email to wikiscore@wmnobrasil.org and provide basic information "
-"about your group (chapter, thematic organization or user group, official or "
-"not) and potential contests. We may request additional information later for"
-" final adjustments to the tool."
+"发送电子邮件至wikiscore@wmnobrasil.org，提供有关您的小组（分会、主题组织或用户组，官方或非官方）和潜在竞赛的基本信息。我们可能会在稍后要求提供更多信息，以便对该工具进行最终调整。"
 
-#: contests/templates/manage.html:8 contests/templates/manage.html:101
+#: contests/templates/manage.html:8 contests/templates/manage.html:118
 msgctxt "manage-title"
 msgid "Contest management"
 msgstr "竞赛管理"
 
-#: contests/templates/manage.html:21 contests/templates/manage.html:248
-#: contests/templates/manage.html:251 contests/templates/manage.html:272
+#: contests/templates/manage.html:21 contests/templates/manage.html:265
+#: contests/templates/manage.html:268 contests/templates/manage.html:289
 msgctxt "manage-catid"
 msgid "Category ID of articles"
 msgstr "条目的分类ID"
 
-#: contests/templates/manage.html:23 contests/templates/manage.html:249
-#: contests/templates/manage.html:252 contests/templates/manage.html:272
+#: contests/templates/manage.html:23 contests/templates/manage.html:266
+#: contests/templates/manage.html:269 contests/templates/manage.html:289
 msgctxt "manage-petscan"
 msgid "PetScan ID of the pages"
 msgstr "页面的PetScan ID"
 
-#: contests/templates/manage.html:88
+#: contests/templates/manage.html:105
 msgctxt "manage-created"
 msgid "Contest created successfully!"
 msgstr "成功创建竞赛！"
 
-#: contests/templates/manage.html:89
+#: contests/templates/manage.html:106
 msgctxt "manage-remanaged"
 msgid "New manager successfully defined!"
 msgstr "成功定义新管理者！"
 
-#: contests/templates/manage.html:90
+#: contests/templates/manage.html:107
 msgctxt "manage-restarted"
 msgid "Contest restarted successfully! Perform the database update."
 msgstr "成功重启竞赛！执行数据库更新。"
 
-#: contests/templates/manage.html:91
+#: contests/templates/manage.html:108
 msgctxt "manage-deleted"
 msgid "Contest deleted successfully!"
 msgstr "成功删除竞赛！"
 
-#: contests/templates/manage.html:107
+#: contests/templates/manage.html:124
 msgctxt "manage-about"
 msgid ""
 "This page lists the contests registered in the system and allows the "
 "creation of new contests."
 msgstr "本页面列出了在系统中注册的各个竞赛，并允许创建新竞赛。"
 
-#: contests/templates/manage.html:116
+#: contests/templates/manage.html:133
 msgctxt "manage-newcontest"
 msgid "Create new contest"
 msgstr "创建新竞赛"
 
-#: contests/templates/manage.html:124
+#: contests/templates/manage.html:141
 msgctxt "manage-contestname"
 msgid "Contest name"
 msgstr "竞赛名称"
 
-#: contests/templates/manage.html:130
+#: contests/templates/manage.html:147
 msgctxt "manage-contestnameabout"
 msgid "Enter the full contest name"
 msgstr "输入完整的比赛名称"
 
-#: contests/templates/manage.html:140
+#: contests/templates/manage.html:157
 msgctxt "manage-internalcode"
 msgid "Internal code"
 msgstr "内部代码"
 
-#: contests/templates/manage.html:146
+#: contests/templates/manage.html:163
 msgctxt "manage-internalcodeabout"
 msgid "Use only lower case letters and underscores"
 msgstr "仅使用小写字母和下划线"
 
-#: contests/templates/manage.html:157
+#: contests/templates/manage.html:174
 msgctxt "manage-group"
 msgid "Group"
 msgstr "组"
 
-#: contests/templates/manage.html:173
+#: contests/templates/manage.html:190
 msgctxt "manage-starttime"
 msgid "Start time"
 msgstr "开始时间"
 
-#: contests/templates/manage.html:185
+#: contests/templates/manage.html:202
 msgctxt "manage-endtime"
 msgid "End time"
 msgstr "结束时间"
 
-#: contests/templates/manage.html:198
+#: contests/templates/manage.html:215
 msgctxt "manage-endpoint"
 msgid "Endpoint address"
-msgstr "Endpoint address"
+msgstr "端点地址"
 
-#: contests/templates/manage.html:210
+#: contests/templates/manage.html:227
 msgctxt "manage-api"
 msgid "API address"
 msgstr "API地址"
 
-#: contests/templates/manage.html:225
+#: contests/templates/manage.html:242
 msgctxt "manage-reverttime"
 msgid "Rollback period (hours)"
-msgstr "Rollback period (hours)"
+msgstr "回退周期（小时）"
 
-#: contests/templates/manage.html:239
+#: contests/templates/manage.html:256
 msgctxt "manage-source"
 msgid "Monitoring method"
 msgstr "监测方法"
 
-#: contests/templates/manage.html:260
+#: contests/templates/manage.html:277
 msgctxt "manage-listid"
 msgid "Page ID with list of articles"
 msgstr "包含条目列表的页面ID"
 
-#: contests/templates/manage.html:288
+#: contests/templates/manage.html:307
+msgctxt "manage-controlmethod"
+msgid "Participant enrollment method"
+msgstr "参与者登记方式"
+
+#: contests/templates/manage.html:315
+msgctxt "manage-outreachdashboard"
+msgid "Outreach Dashboard"
+msgstr "Outreach控制面板"
+
+#: contests/templates/manage.html:316
+msgctxt "manage-campaign"
+msgid "Campaign Event"
+msgstr "活动事件"
+
+#: contests/templates/manage.html:322
 msgctxt "manage-outreach"
 msgid "Contest name in Outreach Dashboard"
 msgstr "Outreach控制面板上的竞赛名称"
 
-#: contests/templates/manage.html:294
+#: contests/templates/manage.html:328
 msgctxt "manage-outreachplacehold"
 msgid "Campaign_Name/Program_Name"
-msgstr "Campaign_Name/Program_Name"
+msgstr "活动_名称/计划_名称"
 
-#: contests/templates/manage.html:303
+#: contests/templates/manage.html:335
+msgctxt "manage-campaigneventid"
+msgid "Campaign Event ID"
+msgstr "活动事件ID"
+
+#: contests/templates/manage.html:341
+msgctxt "manage-campaigneventidplacehold"
+msgid "Enter the Campaign Event ID"
+msgstr "输入活动事件ID"
+
+#: contests/templates/manage.html:353
 msgctxt "manage-bpp"
 msgid "Bytes per point"
 msgstr "每点数字节数"
 
-#: contests/templates/manage.html:316
+#: contests/templates/manage.html:366
 msgctxt "manage-maxbytes"
 msgid "Maximum bytes per article-participant"
 msgstr "每个条目每个参与者的最大字节数"
 
-#: contests/templates/manage.html:330
+#: contests/templates/manage.html:380
 msgctxt "manage-minbytes"
 msgid "Minimum bytes per edit"
 msgstr "每次编辑的最小字节数"
 
-#: contests/templates/manage.html:347
+#: contests/templates/manage.html:397
 msgctxt "manage-ipp"
 msgid "Images per point"
 msgstr "每点数图片数"
 
-#: contests/templates/manage.html:360
+#: contests/templates/manage.html:410
 msgctxt "manage-maximages"
 msgid "Maximum images per article-participant"
 msgstr "每个条目每个参与者的最大图片数量"
 
-#: contests/templates/manage.html:369 contests/templates/triage.html:435
+#: contests/templates/manage.html:419 contests/templates/triage.html:435
 #: contests/templates/triage.html:468
 msgctxt "triage-indef"
 msgid "Undefined"
 msgstr "未定义"
 
-#: contests/templates/manage.html:374
+#: contests/templates/manage.html:424
 msgctxt "manage-imagemode"
 msgid "Image evaluation mode"
 msgstr "图片评估模式"
 
-#: contests/templates/manage.html:381
+#: contests/templates/manage.html:431
 msgctxt "manage-perarticle"
 msgid "Per article"
 msgstr "每篇条目"
 
-#: contests/templates/manage.html:382
+#: contests/templates/manage.html:432
 msgctxt "manage-peredit"
 msgid "Per edit"
 msgstr "每次编辑"
 
-#: contests/templates/manage.html:383
+#: contests/templates/manage.html:433
 msgctxt "manage-perimage"
 msgid "Per image"
 msgstr "每张图片"
 
-#: contests/templates/manage.html:392
+#: contests/templates/manage.html:442
 msgctxt "manage-palette"
 msgid "Color palette"
 msgstr "调色板"
 
-#: contests/templates/manage.html:429
+#: contests/templates/manage.html:479
 msgctxt "manage-custom"
 msgid "custom"
 msgstr "自定义"
 
-#: contests/templates/manage.html:434
+#: contests/templates/manage.html:484
 msgctxt "manage-hexcolor"
 msgid "Custom color (hex)"
 msgstr "自定义颜色（十六进制）"
 
-#: contests/templates/manage.html:465 contests/templates/triage.html:228
+#: contests/templates/manage.html:515 contests/templates/triage.html:228
 msgctxt "triage-save"
 msgid "Save"
 msgstr "保存"
 
-#: contests/templates/manage.html:472 contests/templates/manage.html:532
+#: contests/templates/manage.html:522 contests/templates/manage.html:582
 msgctxt "manage-newmanager"
 msgid "Set new manager"
 msgstr "设置新管理者"
 
-#: contests/templates/manage.html:480
+#: contests/templates/manage.html:530
 msgctxt "manage-confirmrestart"
 msgid ""
 "By restarting the contest, all evaluations already made will be deleted. Do "
 "you want to proceed?"
-msgstr ""
-"By restarting the contest, all evaluations already made will be deleted. Do "
-"you want to proceed?"
+msgstr "重新开始比赛后，所有已做出的评价将被删除。是否继续？"
 
-#: contests/templates/manage.html:481
+#: contests/templates/manage.html:531
 msgctxt "manage-restart"
 msgid "Restart"
 msgstr "重新开始"
 
-#: contests/templates/manage.html:487
+#: contests/templates/manage.html:537
 msgctxt "manage-confirmdelete"
 msgid ""
 "By deleting the contest, all records related to this contest will be "
 "deleted. Do you want to proceed?"
-msgstr ""
-"By deleting the contest, all records related to this contest will be "
-"deleted. Do you want to proceed?"
+msgstr "删除比赛后，与该比赛相关的所有记录都将被删除。是否继续？"
 
-#: contests/templates/manage.html:488
+#: contests/templates/manage.html:538
 msgctxt "manage-delete"
 msgid "Delete"
 msgstr "删除"
 
-#: contests/templates/manage.html:493
+#: contests/templates/manage.html:543
 msgctxt "manage-managemail"
-msgid "Manager's email"
-msgstr "管理者的电子邮件"
+msgid "Manager's Wikimedia account"
+msgstr "管理者的维基媒体账号"
 
-#: contests/templates/manage.html:508
+#: contests/templates/manage.html:558
 msgctxt "manage-create"
 msgid "Create"
 msgstr "创建"
 
-#: contests/templates/manage.html:517
+#: contests/templates/manage.html:567
 msgctxt "manage-confirmmanager"
 msgid ""
 "By defining a new manager, all evaluators and managers already registered "
 "will be deactivated. Do you want to proceed?"
-msgstr ""
-"By defining a new manager, all evaluators and managers already registered "
-"will be deactivated. Do you want to proceed?"
+msgstr "通过定义新的管理员，所有已注册的评估员和经理都将被停用。是否要继续？"
 
-#: contests/templates/manage.html:538
+#: contests/templates/manage.html:588
 msgctxt "login-cancel"
 msgid "Cancel"
 msgstr "取消"
@@ -1102,22 +1089,22 @@ msgstr "编辑差异"
 #: contests/templates/modify.html:193
 msgctxt "modify-qualified"
 msgid "Qualified?"
-msgstr "Qualified?"
+msgstr "是否合格？"
 
 #: contests/templates/modify.html:195 contests/templates/modify.html:212
 msgctxt "modify-timestamp"
 msgid "Timestamp"
-msgstr "Timestamp"
+msgstr "时间戳"
 
 #: contests/templates/modify.html:200
 msgctxt "modify-automatic"
 msgid "Automatic"
-msgstr "Automatic"
+msgstr "自动"
 
 #: contests/templates/modify.html:210 contests/templates/triage.html:204
 msgctxt "triage-observation"
 msgid "Observation"
-msgstr "Observation"
+msgstr "意见"
 
 #: contests/templates/modify.html:227
 msgctxt "modify-notfound"
@@ -1172,7 +1159,7 @@ msgstr "侵犯版权"
 #: contests/templates/triage.html:216
 msgctxt "triage-redirect"
 msgid "Mere redirection"
-msgstr "Mere redirection"
+msgstr "单纯的重定向"
 
 #: contests/templates/triage.html:217
 msgctxt "triage-noref"
@@ -1272,7 +1259,7 @@ msgstr "侵权检测器"
 #: contests/templates/triage.html:347
 msgctxt "triage-differential"
 msgid "Edit differential"
-msgstr "Edit differential"
+msgstr "编辑差别"
 
 #: contests/templates/triage.html:375
 msgctxt "triage-recenthistory"
@@ -1312,7 +1299,7 @@ msgstr "上次数据库更新"
 #: contests/templates/triage.html:415
 msgctxt "triage-delay"
 msgid "Delay in registering edits"
-msgstr "Delay in registering edits"
+msgstr "编辑记录延迟"
 
 #: contests/templates/triage.html:417
 #, python-format

@@ -2,10 +2,16 @@ import csv
 import requests
 from django.db import connection, models
 from django.db.models import OuterRef, Subquery, F
-from datetime import datetime
+from datetime import datetime, timezone as dt_timezone
 from dateutil import parser
+from urllib.parse import quote
 from contests.models import Contest, Edit, Participant, ParticipantEnrollment, Qualification, Evaluation
 from django.core.management.base import BaseCommand
+from django.utils import timezone
+
+WIKIMEDIA_API_HEADERS = {
+    "User-Agent": "WikiScore/1.0 (https://github.com/WikiMovimentoBrasil/wikiscore; wikiscore@wmnobrasil.org)"
+}
 
 class Command(BaseCommand):
     help = "Carrega usuários inscritos no concurso."
@@ -21,13 +27,24 @@ class Command(BaseCommand):
         if contest.campaign_event_id:
             self.stdout.write("Este concurso possui um evento de campanha.")
             event_id = contest.campaign_event_id
-            api = f"https://meta.wikimedia.org/w/rest.php/campaignevents/v0/event_registration/{event_id}/participants?include_private=no&uselang=en"
-            response = requests.get(api).json()
-            enrollments = self.parse_event(response)
+            api_base = f"https://meta.wikimedia.org/w/rest.php/campaignevents/v0/event_registration/{event_id}/participants"
+            params = {"include_private": "no", "uselang": "en"}
+            enrollments = []
+            last_participant_id = None
+            has_more_results = True
+
+            while has_more_results:
+                if last_participant_id:
+                    params["last_participant_id"] = last_participant_id
+                response = requests.get(api_base, params=params).json()
+                if not response:
+                    has_more_results = False
+                else:
+                    enrollments.extend(self.parse_event(response))
+                    last_participant_id = response[-1]['participant_id']  # Get the last participant ID for the next query
         else:
-            csv_content = self.fetch_csv_data(contest)
-            if csv_content:
-                enrollments = self.parse_csv(csv_content)
+            enrollments = self.fetch_csv_data(contest)
+            if enrollments:
                 self.stdout.write(f"Lista de usuários coletada. ({len(enrollments)} usuários encontrados)")
             else:
                 # Get saved enrollments from the database if Outreach is down
@@ -54,18 +71,34 @@ class Command(BaseCommand):
         return Contest.objects.get(name_id=contest_name_id)
 
     def fetch_csv_data(self, contest):
-        """Fetches the CSV data of enrolled users from Outreach."""
+        """Fetches enrolled users from Outreach users.json endpoint."""
         self.stdout.write("Coletando lista de usuários inscritos...")
-        csv_params = {"course": contest.outreach_name}
-        csv_url = 'https://outreachdashboard.wmflabs.org/course_students_csv'
+        course_slug = quote(contest.outreach_name, safe='/')
+        users_url = f'https://outreachdashboard.wmflabs.org/courses/{course_slug}/users.json'
         try:
-            response = requests.get(csv_url, params=csv_params, timeout=15)
-            response.encoding = 'utf-8'
-        except requests.exceptions.Timeout:
+            response = requests.get(users_url, timeout=15)
+            response.raise_for_status()
+        except requests.exceptions.RequestException:
             return None
-        if not response.text:
-            raise ValueError("Não foi possível encontrar a lista de usuários no Outreach.")
-        return response.text
+
+        users = response.json().get('course', {}).get('users', [])
+        enrollments = []
+        for user in users:
+            if user.get('role') != 0:
+                continue
+
+            username = user.get('username')
+            enrollment_timestamp = user.get('enrolled_at')
+            if not all([username, enrollment_timestamp]):
+                continue
+
+            enrollments.append({
+                'global_id': None,
+                'username': username,
+                'enrollment_timestamp': enrollment_timestamp,
+            })
+
+        return enrollments or None
 
     def parse_event(self, response):
         """Parses the event response into a list of enrollments."""
@@ -104,31 +137,42 @@ class Command(BaseCommand):
         """Fetches the wiki ID from the contest API."""
         self.stdout.write("Coletando ID da wiki...")
         params = {"action": "query", "format": "json", "meta": "siteinfo"}
-        response = requests.get(contest.api_endpoint, params=params).json()
+        response = requests.get(
+            contest.api_endpoint,
+            params=params,
+            headers=WIKIMEDIA_API_HEADERS,
+            timeout=15,
+        ).json()
         return response['query']['general']['wikiid']
 
     def process_enrollments(self, enrollments, contest, wiki_id):
         """Processes each enrollment, updating or inserting users."""
-        # Get all participant enrollments for the specific contest
-        already_enrolled = Participant.objects.filter(contest=contest, last_enrollment__enrolled=True).values_list('global_id', flat=True)
+        valid_usernames = [
+            enrollment['username']
+            for enrollment in enrollments
+            if enrollment.get('username')
+        ]
+        already_enrolled_users = Participant.objects.filter(
+            contest=contest,
+            last_enrollment__enrolled=True,
+        ).exclude(user__in=valid_usernames)
 
-        # Extract global IDs from the enrollments
-        enrollments_ids = set(enrollment['global_id'] for enrollment in enrollments)
-
-        for enrollment in already_enrolled:
-            if enrollment != 0 and str(enrollment) not in enrollments_ids:
-                self.stdout.write(f"Usuário {enrollment} não está mais inscrito. Desinscrevendo...")
-                unenroll = ParticipantEnrollment.objects.create(
-                    contest=contest, 
-                    enrolled=False, 
-                    user=Participant.objects.get(global_id=enrollment, contest=contest)
-                )
-                Participant.objects.filter(global_id=enrollment, contest=contest).update(last_enrollment=unenroll)
+        for participant in already_enrolled_users:
+            self.stdout.write(f"Usuário {participant.user} não está mais inscrito. Desinscrevendo...")
+            unenroll = ParticipantEnrollment.objects.create(
+                contest=contest,
+                enrolled=False,
+                user=participant,
+            )
+            Participant.objects.filter(pk=participant.pk).update(last_enrollment=unenroll)
 
         for enrollment in enrollments:
             global_id = enrollment['global_id']
             username = enrollment['username']
-            timestamp = parser.parse(enrollment['enrollment_timestamp'])
+            timestamp = enrollment['enrollment_timestamp']
+            if not isinstance(timestamp, datetime):
+                timestamp = parser.parse(timestamp)
+            timestamp = timezone.make_aware(timestamp, dt_timezone.utc) if timezone.is_naive(timestamp) else timestamp.astimezone(dt_timezone.utc)
             self.stdout.write(f"Coletando informações do usuário {username} ({global_id})...")
 
             self.insert_or_update_user(global_id, username, contest, wiki_id, timestamp)
@@ -149,9 +193,10 @@ class Command(BaseCommand):
             local_id = None
             try:
                 participant = Participant.objects.get(user=username, contest=contest)
+                local_id = participant.local_id
             except Participant.DoesNotExist:
                 self.stdout.write(f"Usuário {username} não encontrado. Inserindo...")
-                self.add_user_contest(global_id, contest, wiki_id, timestamp, username)
+                local_id = self.add_user_contest(global_id, contest, wiki_id, timestamp, username)
                 participant = None
 
         
@@ -163,16 +208,25 @@ class Command(BaseCommand):
             self.stdout.write(f"Usuário {username} não encontrado. Ignorando...")
             return None
         else:
+            self.check_participant_enrollment(local_id, contest, timestamp)
             self.update_user_edits(local_id, contest, timestamp)
 
     def add_user_contest(self, global_id, contest, wiki_id, timestamp, username):
         """Adds a user to the contest."""
-        if global_id:
-            centralauth_response = self.fetch_user_data(global_id, contest)
-            centralauth_merged = centralauth_response['query']['globaluserinfo']['merged']
+        if username:
+            centralauth_response = self.fetch_user_data(username, contest, by_username=True)
+            global_userinfo = centralauth_response.get('query', {}).get('globaluserinfo', {})
+            centralauth_merged = global_userinfo.get('merged', [])
             local_id = next((merged['id'] for merged in centralauth_merged if merged['wiki'] == wiki_id), None)
-            user = centralauth_response['query']['globaluserinfo']['name']
-            attached = centralauth_response['query']['globaluserinfo']['registration']
+            user = global_userinfo.get('name') or username
+            attached = global_userinfo.get('registration')
+            global_id = global_userinfo.get('id') or global_id
+        elif global_id:
+            centralauth_response = self.fetch_user_data(global_id, contest)
+            centralauth_merged = centralauth_response.get('query', {}).get('globaluserinfo', {}).get('merged', [])
+            local_id = next((merged['id'] for merged in centralauth_merged if merged['wiki'] == wiki_id), None)
+            user = centralauth_response.get('query', {}).get('globaluserinfo', {}).get('name')
+            attached = centralauth_response.get('query', {}).get('globaluserinfo', {}).get('registration')
         else:
             local_id = None
             user = None
@@ -180,14 +234,23 @@ class Command(BaseCommand):
             global_id = None
             user=username
 
-        new_participant = Participant.objects.create(
+        new_participant, created = Participant.objects.get_or_create(
             contest=contest,
             user=user,
-            timestamp=timestamp,
-            global_id=global_id,
-            local_id=local_id,
-            attached=attached,
+            defaults={
+                'timestamp': timestamp,
+                'global_id': global_id,
+                'local_id': local_id,
+                'attached': attached
+            }
         )
+        
+        if not created:
+            new_participant.timestamp = timestamp
+            new_participant.global_id = global_id
+            new_participant.local_id = local_id
+            new_participant.attached = attached
+            new_participant.save()
 
         if global_id and local_id:
             new_enrollment = ParticipantEnrollment.objects.create(
@@ -198,7 +261,7 @@ class Command(BaseCommand):
 
         return local_id
 
-    def fetch_user_data(self, global_id, contest):
+    def fetch_user_data(self, user_data, contest, by_username=False):
         """Fetches user data from the contest API."""
         params = {
             "action": "query",
@@ -206,15 +269,47 @@ class Command(BaseCommand):
             "meta": "globaluserinfo",
             "guiprop": "merged",
             "formatversion": "2",
-            "guiid": global_id
         }
-        return requests.get(contest.api_endpoint, params=params).json()
+        if by_username:
+            params["guiuser"] = user_data
+        else:
+            params["guiid"] = user_data
+        return requests.get(
+            contest.api_endpoint,
+            params=params,
+            headers=WIKIMEDIA_API_HEADERS,
+            timeout=15,
+        ).json()
+
+    def check_participant_enrollment(self, local_id, contest, timestamp):
+        """Check if the participant is enrolled in the contest and creates an enrollment if necessary."""
+        try:
+            participant = Participant.objects.get(local_id=local_id, contest=contest)
+        except Participant.DoesNotExist:
+            self.stdout.write(f"Usuário com ID local {local_id} não encontrado. Ignorando...")
+            return None
+
+        last_enrollment = participant.last_enrollment
+        if last_enrollment and last_enrollment.enrolled:
+            self.stdout.write(f"Usuário com ID local {local_id} já está inscrito. Ignorando...")
+            return None
+
+        if last_enrollment and not last_enrollment.enrolled:
+            self.stdout.write(f"Usuário com ID local {local_id} não está mais inscrito. Reinscrevendo...")
+            new_enrollment = ParticipantEnrollment.objects.create(
+                contest=contest,
+                user=participant,
+                enrolled=True
+            )
+            Participant.objects.filter(local_id=local_id, contest=contest).update(last_enrollment=new_enrollment)
 
     def update_user_edits(self, local_id, contest, timestamp):
         """Updates user edits in the Edit table."""
         self.stdout.write(f"Atualizando edições do usuário com ID local {local_id}...")
         participant = Participant.objects.get(local_id=local_id, contest=contest, last_enrollment__enrolled=True)
         
+        timestamp = timezone.make_aware(timestamp, dt_timezone.utc) if timezone.is_naive(timestamp) else timestamp.astimezone(dt_timezone.utc)
+
         Edit.objects.filter(user_id=local_id, contest=contest, participant=None).update(participant=participant)
 
         edits = Edit.objects.filter(user_id=local_id, timestamp__gte=timestamp, contest=contest, last_qualification=None)
