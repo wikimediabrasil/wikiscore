@@ -265,3 +265,4 @@ def manage_view(request):
     if request.user.profile.group_set.exists():
         handler = ManageHandler()
         return render_with_bidi(request, 'manage.html', handler.execute(request))
+    raise PermissionDenied("You are not allowed to access this page.")
