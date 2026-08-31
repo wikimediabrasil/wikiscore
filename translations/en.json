@@ -248,5 +248,13 @@
     "manage-confirmrestart": "By restarting the contest, all evaluations already made will be deleted. Do you want to proceed?",
     "manage-confirmdelete": "By deleting the contest, all records related to this contest will be deleted. Do you want to proceed?",
     "manage-restart": "Restart",
-    "manage-delete": "Delete"
+    "manage-delete": "Delete",
+    "counter-statementscount": "Total Statements",
+    "counter-referencescount": "Total References",
+    "counter-qualifierscount": "Total Qualifiers",
+    "label-statements": "Statements created/modified:",
+    "label-references": "References created/modified:",
+    "label-qualifiers": "Qualifiers created/modified:",
+    "label-tags": "Tags:",
+    "label-none": "None"
 }

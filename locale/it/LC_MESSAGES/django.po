@@ -85,7 +85,7 @@ msgctxt "counter"
 msgid "Counter"
 msgstr "Counter"
 
-#: contests/templates/base.html:84 contests/templates/manage.html:508
+#: contests/templates/base.html:84 contests/templates/manage.html:548
 #: contests/templates/modify.html:7 contests/templates/modify.html:133
 msgctxt "modify"
 msgid "Review"
@@ -331,8 +331,8 @@ msgid "Most expanded article"
 msgstr "Most expanded article"
 
 #: contests/templates/contest.html:101 contests/templates/contest.html:117
-#: contests/templates/triage.html:422 contests/templates/triage.html:427
-#: contests/templates/triage.html:439
+#: contests/templates/triage.html:441 contests/templates/triage.html:446
+#: contests/templates/triage.html:458
 #, python-format
 msgctxt "triage-bytes"
 msgid "%(1)s bytes"
@@ -418,36 +418,51 @@ msgid "User"
 msgstr "Utente"
 
 #: contests/templates/counter.html:40
-msgctxt "counter-bytes"
-msgid "Sum of bytes"
-msgstr "Sum of bytes"
-
-#: contests/templates/counter.html:41
 msgctxt "counter-edits"
 msgid "Total edits"
 msgstr "Total edits"
 
-#: contests/templates/counter.html:42
+#: contests/templates/counter.html:42 contests/templates/counter.html:47
+msgctxt "counter-bytes"
+msgid "Sum of bytes"
+msgstr "Sum of bytes"
+
+#: contests/templates/counter.html:43
+msgctxt "counter-statementscount"
+msgid "Total Statements"
+msgstr "Total Statements"
+
+#: contests/templates/counter.html:44
+msgctxt "counter-referencescount"
+msgid "Total References"
+msgstr "Total References"
+
+#: contests/templates/counter.html:45
+msgctxt "counter-qualifierscount"
+msgid "Total Qualifiers"
+msgstr "Total Qualifiers"
+
+#: contests/templates/counter.html:48
 msgctxt "counter-ppb"
 msgid "Points per byte"
 msgstr "Points per byte"
 
-#: contests/templates/counter.html:43
+#: contests/templates/counter.html:49
 msgctxt "counter-images"
 msgid "Articles with images"
 msgstr "Articles with images"
 
-#: contests/templates/counter.html:44
+#: contests/templates/counter.html:50
 msgctxt "counter-ppi"
 msgid "Points per image"
 msgstr "Points per image"
 
-#: contests/templates/counter.html:45
+#: contests/templates/counter.html:52
 msgctxt "counter-points"
 msgid "Total points"
 msgstr "Total points"
 
-#: contests/templates/counter.html:47 contests/templates/counter.html:72
+#: contests/templates/counter.html:54 contests/templates/counter.html:86
 #: contests/templates/evaluators.html:65
 #: contests/templates/evaluators.html:106
 #: contests/templates/evaluators.html:147
@@ -455,7 +470,7 @@ msgctxt "counter-redefine"
 msgid "Reset"
 msgstr "Reset"
 
-#: contests/templates/counter.html:64
+#: contests/templates/counter.html:78
 msgctxt "counter-confirm"
 msgid ""
 "All evaluations on this participant's edits will be undone. Do you want to "
@@ -464,12 +479,12 @@ msgstr ""
 "All evaluations on this participant's edits will be undone. Do you want to "
 "proceed?"
 
-#: contests/templates/counter.html:83 contests/templates/triage.html:304
+#: contests/templates/counter.html:97 contests/templates/triage.html:304
 msgctxt "triage-noedit"
 msgid "There is no edit to be displayed at this time."
 msgstr "There is no edit to be displayed at this time."
 
-#: contests/templates/counter.html:91
+#: contests/templates/counter.html:105
 msgctxt "counter-success"
 msgid ""
 "Edits successfully reset! A new database update will be performed shortly."
@@ -576,8 +591,8 @@ msgctxt "evaluators-neweval"
 msgid "Add new evaluator"
 msgstr "Add new evaluator"
 
-#: contests/templates/evaluators.html:28 contests/templates/manage.html:549
-#: contests/templates/manage.html:574
+#: contests/templates/evaluators.html:28 contests/templates/manage.html:589
+#: contests/templates/manage.html:614
 msgctxt "password-username"
 msgid "Username"
 msgstr "Username"
@@ -725,44 +740,44 @@ msgstr ""
 "ufficiale o meno) e sui potenziali concorsi. Potremmo richiederti ulteriori "
 "informazioni in seguito per le modifiche finali allo strumento."
 
-#: contests/templates/manage.html:8 contests/templates/manage.html:118
+#: contests/templates/manage.html:8 contests/templates/manage.html:156
 msgctxt "manage-title"
 msgid "Contest management"
 msgstr "Contest management"
 
-#: contests/templates/manage.html:21 contests/templates/manage.html:265
-#: contests/templates/manage.html:268 contests/templates/manage.html:289
+#: contests/templates/manage.html:21 contests/templates/manage.html:305
+#: contests/templates/manage.html:308 contests/templates/manage.html:329
 msgctxt "manage-catid"
 msgid "Category ID of articles"
 msgstr "Category ID of articles"
 
-#: contests/templates/manage.html:23 contests/templates/manage.html:266
-#: contests/templates/manage.html:269 contests/templates/manage.html:289
+#: contests/templates/manage.html:23 contests/templates/manage.html:306
+#: contests/templates/manage.html:309 contests/templates/manage.html:329
 msgctxt "manage-petscan"
 msgid "PetScan ID of the pages"
 msgstr "PetScan ID of the pages"
 
-#: contests/templates/manage.html:105
+#: contests/templates/manage.html:143
 msgctxt "manage-created"
 msgid "Contest created successfully!"
 msgstr "Concorso creato correttamente!"
 
-#: contests/templates/manage.html:106
+#: contests/templates/manage.html:144
 msgctxt "manage-remanaged"
 msgid "New manager successfully defined!"
 msgstr "Nuovo responsabile designato con successo!"
 
-#: contests/templates/manage.html:107
+#: contests/templates/manage.html:145
 msgctxt "manage-restarted"
 msgid "Contest restarted successfully! Perform the database update."
 msgstr "Contest restarted successfully! Perform the database update."
 
-#: contests/templates/manage.html:108
+#: contests/templates/manage.html:146
 msgctxt "manage-deleted"
 msgid "Contest deleted successfully!"
 msgstr "Il concorso è stato cancellato con successo!"
 
-#: contests/templates/manage.html:124
+#: contests/templates/manage.html:162
 msgctxt "manage-about"
 msgid ""
 "This page lists the contests registered in the system and allows the "
@@ -771,183 +786,183 @@ msgstr ""
 "This page lists the contests registered in the system and allows the "
 "creation of new contests."
 
-#: contests/templates/manage.html:133
+#: contests/templates/manage.html:171
 msgctxt "manage-newcontest"
 msgid "Create new contest"
 msgstr "Crea un nuovo concorso"
 
-#: contests/templates/manage.html:141
+#: contests/templates/manage.html:179
 msgctxt "manage-contestname"
 msgid "Contest name"
 msgstr "Nome del concorso"
 
-#: contests/templates/manage.html:147
+#: contests/templates/manage.html:185
 msgctxt "manage-contestnameabout"
 msgid "Enter the full contest name"
 msgstr "Enter the full contest name"
 
-#: contests/templates/manage.html:157
+#: contests/templates/manage.html:195
 msgctxt "manage-internalcode"
 msgid "Internal code"
 msgstr "Internal code"
 
-#: contests/templates/manage.html:163
+#: contests/templates/manage.html:201
 msgctxt "manage-internalcodeabout"
 msgid "Use only lower case letters and underscores"
 msgstr "Utilizza solo lettere minuscole e trattini bassi"
 
-#: contests/templates/manage.html:174
+#: contests/templates/manage.html:212
 msgctxt "manage-group"
 msgid "Group"
 msgstr "Gruppo"
 
-#: contests/templates/manage.html:190
+#: contests/templates/manage.html:228
 msgctxt "manage-starttime"
 msgid "Start time"
 msgstr "Ora di inizio"
 
-#: contests/templates/manage.html:202
+#: contests/templates/manage.html:240
 msgctxt "manage-endtime"
 msgid "End time"
 msgstr "End time"
 
-#: contests/templates/manage.html:215
+#: contests/templates/manage.html:253
 msgctxt "manage-endpoint"
 msgid "Endpoint address"
 msgstr "Endpoint address"
 
-#: contests/templates/manage.html:227
+#: contests/templates/manage.html:265
 msgctxt "manage-api"
 msgid "API address"
 msgstr "API address"
 
-#: contests/templates/manage.html:242
+#: contests/templates/manage.html:282
 msgctxt "manage-reverttime"
 msgid "Rollback period (hours)"
 msgstr "Rollback period (hours)"
 
-#: contests/templates/manage.html:256
+#: contests/templates/manage.html:296
 msgctxt "manage-source"
 msgid "Monitoring method"
 msgstr "Monitoring method"
 
-#: contests/templates/manage.html:277
+#: contests/templates/manage.html:317
 msgctxt "manage-listid"
 msgid "Page ID with list of articles"
 msgstr "Page ID with list of articles"
 
-#: contests/templates/manage.html:307
+#: contests/templates/manage.html:347
 msgctxt "manage-controlmethod"
 msgid "Participant enrollment method"
 msgstr "Participant enrollment method"
 
-#: contests/templates/manage.html:315
+#: contests/templates/manage.html:355
 msgctxt "manage-outreachdashboard"
 msgid "Outreach Dashboard"
 msgstr "Outreach Dashboard"
 
-#: contests/templates/manage.html:316
+#: contests/templates/manage.html:356
 msgctxt "manage-campaign"
 msgid "Campaign Event"
 msgstr "Campaign Event"
 
-#: contests/templates/manage.html:322
+#: contests/templates/manage.html:362
 msgctxt "manage-outreach"
 msgid "Contest name in Outreach Dashboard"
 msgstr "Contest name in Outreach Dashboard"
 
-#: contests/templates/manage.html:328
+#: contests/templates/manage.html:368
 msgctxt "manage-outreachplacehold"
 msgid "Campaign_Name/Program_Name"
 msgstr "Campaign_Name/Program_Name"
 
-#: contests/templates/manage.html:335
+#: contests/templates/manage.html:375
 msgctxt "manage-campaigneventid"
 msgid "Campaign Event ID"
 msgstr "ID evento campagna"
 
-#: contests/templates/manage.html:341
+#: contests/templates/manage.html:381
 msgctxt "manage-campaigneventidplacehold"
 msgid "Enter the Campaign Event ID"
 msgstr "Enter the Campaign Event ID"
 
-#: contests/templates/manage.html:353
+#: contests/templates/manage.html:393
 msgctxt "manage-bpp"
 msgid "Bytes per point"
 msgstr "Byte per ogni punto"
 
-#: contests/templates/manage.html:366
+#: contests/templates/manage.html:406
 msgctxt "manage-maxbytes"
 msgid "Maximum bytes per article-participant"
 msgstr "Numero massimo di byte per articolo per ciascun partecipante"
 
-#: contests/templates/manage.html:380
+#: contests/templates/manage.html:420
 msgctxt "manage-minbytes"
 msgid "Minimum bytes per edit"
 msgstr "Minimum bytes per edit"
 
-#: contests/templates/manage.html:397
+#: contests/templates/manage.html:437
 msgctxt "manage-ipp"
 msgid "Images per point"
 msgstr "Immagini per ciascun punto"
 
-#: contests/templates/manage.html:410
+#: contests/templates/manage.html:450
 msgctxt "manage-maximages"
 msgid "Maximum images per article-participant"
 msgstr "Maximum images per article-participant"
 
-#: contests/templates/manage.html:419 contests/templates/triage.html:435
-#: contests/templates/triage.html:468
+#: contests/templates/manage.html:459 contests/templates/triage.html:454
+#: contests/templates/triage.html:487
 msgctxt "triage-indef"
 msgid "Undefined"
 msgstr "Non definito"
 
-#: contests/templates/manage.html:424
+#: contests/templates/manage.html:464
 msgctxt "manage-imagemode"
 msgid "Image evaluation mode"
 msgstr "Image evaluation mode"
 
-#: contests/templates/manage.html:431
+#: contests/templates/manage.html:471
 msgctxt "manage-perarticle"
 msgid "Per article"
 msgstr "Per article"
 
-#: contests/templates/manage.html:432
+#: contests/templates/manage.html:472
 msgctxt "manage-peredit"
 msgid "Per edit"
 msgstr "Per edit"
 
-#: contests/templates/manage.html:433
+#: contests/templates/manage.html:473
 msgctxt "manage-perimage"
 msgid "Per image"
 msgstr "Per image"
 
-#: contests/templates/manage.html:442
+#: contests/templates/manage.html:482
 msgctxt "manage-palette"
 msgid "Color palette"
 msgstr "Color palette"
 
-#: contests/templates/manage.html:479
+#: contests/templates/manage.html:519
 msgctxt "manage-custom"
 msgid "custom"
 msgstr "custom"
 
-#: contests/templates/manage.html:484
+#: contests/templates/manage.html:524
 msgctxt "manage-hexcolor"
 msgid "Custom color (hex)"
 msgstr "Custom color (hex)"
 
-#: contests/templates/manage.html:515 contests/templates/triage.html:228
+#: contests/templates/manage.html:555 contests/templates/triage.html:228
 msgctxt "triage-save"
 msgid "Save"
 msgstr "Save"
 
-#: contests/templates/manage.html:522 contests/templates/manage.html:582
+#: contests/templates/manage.html:562 contests/templates/manage.html:622
 msgctxt "manage-newmanager"
 msgid "Set new manager"
 msgstr "Set new manager"
 
-#: contests/templates/manage.html:530
+#: contests/templates/manage.html:570
 msgctxt "manage-confirmrestart"
 msgid ""
 "By restarting the contest, all evaluations already made will be deleted. Do "
@@ -956,12 +971,12 @@ msgstr ""
 "Riavviando il concorso tutte le valutazioni già effettuate saranno "
 "cancellate. Vuoi continuare?"
 
-#: contests/templates/manage.html:531
+#: contests/templates/manage.html:571
 msgctxt "manage-restart"
 msgid "Restart"
 msgstr "Riavvia"
 
-#: contests/templates/manage.html:537
+#: contests/templates/manage.html:577
 msgctxt "manage-confirmdelete"
 msgid ""
 "By deleting the contest, all records related to this contest will be "
@@ -970,22 +985,22 @@ msgstr ""
 "La cancellazione del concorso eliminerà tutti i registri relativi al "
 "concorso. Vuoi continuare?"
 
-#: contests/templates/manage.html:538
+#: contests/templates/manage.html:578
 msgctxt "manage-delete"
 msgid "Delete"
 msgstr "Cancella"
 
-#: contests/templates/manage.html:543
+#: contests/templates/manage.html:583
 msgctxt "manage-managemail"
 msgid "Manager's Wikimedia account"
 msgstr "Utenza Wikimedia del gestore"
 
-#: contests/templates/manage.html:558
+#: contests/templates/manage.html:598
 msgctxt "manage-create"
 msgid "Create"
 msgstr "Crea"
 
-#: contests/templates/manage.html:567
+#: contests/templates/manage.html:607
 msgctxt "manage-confirmmanager"
 msgid ""
 "By defining a new manager, all evaluators and managers already registered "
@@ -994,7 +1009,7 @@ msgstr ""
 "Definendo un nuovo responsabile tutti i valutatori e i responsabili già "
 "registrati saranno disattivati. Vuoi continuare?"
 
-#: contests/templates/manage.html:588
+#: contests/templates/manage.html:628
 msgctxt "login-cancel"
 msgid "Cancel"
 msgstr "Cancel"
@@ -1091,7 +1106,7 @@ msgctxt "modify-label-bytes"
 msgid "Bytes:"
 msgstr "Byte:"
 
-#: contests/templates/modify.html:165 contests/templates/triage.html:339
+#: contests/templates/modify.html:165 contests/templates/triage.html:351
 msgctxt "label-summary"
 msgid "Summary:"
 msgstr "Riassunto:"
@@ -1166,7 +1181,7 @@ msgctxt "modify-notfound"
 msgid "Edit not found in the database!"
 msgstr "Edit not found in the database!"
 
-#: contests/templates/triage.html:65 contests/templates/triage.html:344
+#: contests/templates/triage.html:65 contests/templates/triage.html:363
 msgctxt "triage-counter"
 msgid "Bytes in selected text"
 msgstr "Byte nel testo selezionato"
@@ -1176,7 +1191,7 @@ msgctxt "triage-lasteval"
 msgid "Last evaluation"
 msgstr "Ultima valutazione"
 
-#: contests/templates/triage.html:100 contests/templates/triage.html:330
+#: contests/templates/triage.html:100 contests/templates/triage.html:342
 msgctxt "triage-diff"
 msgid "Diff"
 msgstr "Diff"
@@ -1296,135 +1311,160 @@ msgctxt "triage-authorship"
 msgid "Authorship:"
 msgstr "Authorship:"
 
-#: contests/templates/triage.html:320 contests/templates/triage.html:336
+#: contests/templates/triage.html:320 contests/templates/triage.html:348
 msgctxt "triage-verify"
 msgid "Verify"
 msgstr "Verifica"
 
-#: contests/templates/triage.html:327
+#: contests/templates/triage.html:328
+msgctxt "label-statements"
+msgid "Statements created/modified:"
+msgstr "Statements created/modified:"
+
+#: contests/templates/triage.html:331
+msgctxt "label-references"
+msgid "References created/modified:"
+msgstr "References created/modified:"
+
+#: contests/templates/triage.html:334
+msgctxt "label-qualifiers"
+msgid "Qualifiers created/modified:"
+msgstr "Qualifiers created/modified:"
+
+#: contests/templates/triage.html:338
 msgctxt "label-diff"
 msgid "Difference:"
 msgstr "Difference:"
 
-#: contests/templates/triage.html:334
+#: contests/templates/triage.html:346
 msgctxt "triage-copyvio"
 msgid "Copyvio Detector"
 msgstr "Rivelatore di CopyVio"
 
-#: contests/templates/triage.html:347
+#: contests/templates/triage.html:354
+msgctxt "label-tags"
+msgid "Tags:"
+msgstr "Tags:"
+
+#: contests/templates/triage.html:358
+msgctxt "label-none"
+msgid "None"
+msgstr "None"
+
+#: contests/templates/triage.html:366
 msgctxt "triage-differential"
 msgid "Edit differential"
 msgstr "Edit differential"
 
-#: contests/templates/triage.html:375
+#: contests/templates/triage.html:394
 msgctxt "triage-recenthistory"
 msgid "Recent history"
 msgstr "Recent history"
 
-#: contests/templates/triage.html:388
+#: contests/templates/triage.html:407
 msgctxt "triage-generalinfo"
 msgid "General information"
 msgstr "General information"
 
-#: contests/templates/triage.html:390
+#: contests/templates/triage.html:409
 msgctxt "triage-contestname"
 msgid "wikicontest name"
 msgstr "wikicontest name"
 
-#: contests/templates/triage.html:395
+#: contests/templates/triage.html:414
 msgctxt "triage-loggedname"
 msgid "Current evaluator name"
 msgstr "Current evaluator name"
 
-#: contests/templates/triage.html:400
+#: contests/templates/triage.html:419
 msgctxt "triage-conteststart"
 msgid "wikicontest start time"
 msgstr "wikicontest start time"
 
-#: contests/templates/triage.html:405
+#: contests/templates/triage.html:424
 msgctxt "triage-contestend"
 msgid "wikicontest end time"
 msgstr "wikicontest end time"
 
-#: contests/templates/triage.html:410
+#: contests/templates/triage.html:429
 msgctxt "triage-lastupdate"
 msgid "Last database update"
 msgstr "Last database update"
 
-#: contests/templates/triage.html:415
+#: contests/templates/triage.html:434
 msgctxt "triage-delay"
 msgid "Delay in registering edits"
 msgstr "Delay in registering edits"
 
-#: contests/templates/triage.html:417
+#: contests/templates/triage.html:436
 #, python-format
 msgctxt "triage-hours"
 msgid "%(1)s hours"
 msgstr "%(1)s ore"
 
-#: contests/templates/triage.html:420
+#: contests/templates/triage.html:439
 msgctxt "triage-bpp"
 msgid "Bytes per point"
 msgstr "Byte per punto"
 
-#: contests/templates/triage.html:425
+#: contests/templates/triage.html:444
 msgctxt "triage-maxbytes"
 msgid "Maximum bytes/points per article"
 msgstr "Bytes/punti massimi per ciascuna voce"
 
-#: contests/templates/triage.html:429
+#: contests/templates/triage.html:448
 #, python-format
 msgctxt "triage-points"
 msgid "%(1)s points"
 msgstr "%(1)s punti"
 
-#: contests/templates/triage.html:432
+#: contests/templates/triage.html:451
 msgctxt "triage-minbytes"
 msgid "Minimum bytes per edit"
 msgstr "Byte minimi per ciascuna modifica"
 
-#: contests/templates/triage.html:437
+#: contests/templates/triage.html:456
 msgctxt "triage-includingall"
 msgid "Including edits with negative bytes"
 msgstr "Incluse le modifiche con byte negativi"
 
-#: contests/templates/triage.html:443
+#: contests/templates/triage.html:462
 msgctxt "triage-ipp"
 msgid "Images per point"
 msgstr "Immagini per ciascun punto"
 
-#: contests/templates/triage.html:446
+#: contests/templates/triage.html:465
 msgctxt "triage-noimages"
 msgid "Disabled"
 msgstr "Disabled"
 
-#: contests/templates/triage.html:448
+#: contests/templates/triage.html:467
 #, python-format
 msgctxt "triage-images"
 msgid "%(1)s image(s)"
 msgstr "%(1)s image(s)"
 
-#: contests/templates/triage.html:452
+#: contests/templates/triage.html:471
 msgctxt "triage-imagemode"
 msgid "Image mode"
 msgstr "Image mode"
 
-#: contests/templates/triage.html:455
+#: contests/templates/triage.html:474
 msgctxt "triage-byimage"
 msgid "Per image"
 msgstr "Per image"
 
-#: contests/templates/triage.html:457
+#: contests/templates/triage.html:476
 msgctxt "triage-byedition"
 msgid "Per edit"
 msgstr "Per edit"
 
-#: contests/templates/triage.html:459
+#: contests/templates/triage.html:478
 msgctxt "triage-bypage"
 msgid "Per article"
 msgstr "Per article"
 
-#: contests/templates/triage.html:463
+#: contests/templates/triage.html:482
 msgctxt "triage-maximages"
 msgid "Maximum images per article"
 msgstr "Maximum images per article"
