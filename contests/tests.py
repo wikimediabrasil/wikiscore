@@ -9,8 +9,10 @@ from contests.models import (
     Edit,
     EditWikidata,
     Group,
+    Evaluator,
 )
 from credentials.models import CustomUser, Profile
+from contests.handlers.evaluators import EvaluatorsHandler
 
 
 class EditWikidataModelTests(TestCase):
@@ -90,3 +92,19 @@ class EditWikidataModelTests(TestCase):
         self.assertEqual(edit.editwikidata.statements_created, 10)
         self.assertEqual(edit.editwikidata.qualifiers_modified, 15)
         self.assertEqual(wd.edit, edit)
+
+    def test_adding_existing_evaluator_is_idempotent(self):
+        Evaluator.objects.create(
+            contest=self.contest,
+            profile=self.profile,
+            user_status='P',
+        )
+
+        EvaluatorsHandler(self.contest).add_new_evaluator(self.profile.username)
+
+        evaluator = Evaluator.objects.get(
+            contest=self.contest,
+            profile=self.profile,
+        )
+        self.assertEqual(Evaluator.objects.filter(contest=self.contest).count(), 1)
+        self.assertEqual(evaluator.user_status, 'P')

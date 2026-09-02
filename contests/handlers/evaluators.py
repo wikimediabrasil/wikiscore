@@ -32,7 +32,11 @@ class EvaluatorsHandler:
     def add_new_evaluator(self, username):
         profile = self.get_or_create_profile(username)
         if profile:
-            Evaluator.objects.create(contest=self.contest, profile=profile, user_status='A')
+            Evaluator.objects.get_or_create(
+                contest=self.contest,
+                profile=profile,
+                defaults={'user_status': 'A'},
+            )
 
     def get_or_create_profile(self, username):
         try:
