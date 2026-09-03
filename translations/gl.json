@@ -253,5 +253,13 @@
 	"manage-confirmrestart": "Ao reiniciares o concurso, eliminaranse todas as avaliacións que xa estean realizadas. Queres continuar?",
 	"manage-confirmdelete": "Ao eliminares o concurso, eliminaranse todos os rexistros relacionados con este concurso. Queres continuar?",
 	"manage-restart": "Reiniciar",
-	"manage-delete": "Eliminar"
+	"manage-delete": "Eliminar",
+	"counter-statementscount": "Número total de declaracións",
+	"counter-referencescount": "Número total de referencias",
+	"counter-qualifierscount": "Número total de cualificadores",
+	"label-statements": "Declaracións creadas/modificadas:",
+	"label-references": "Referencias creadas/modificadas:",
+	"label-qualifiers": "Cualificadores creados/modificados:",
+	"label-tags": "Etiquetas:",
+	"label-none": "Ningún"
 }

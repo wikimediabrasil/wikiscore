@@ -3,6 +3,7 @@
 		"authors": [
 			"Suleiman the Magnificent Television",
 			"Tensama0415",
+			"YeBoy371",
 			"Ykhwong"
 		]
 	},
@@ -255,5 +256,6 @@
 	"manage-confirmrestart": "대회를 재시작하면 이미 이루어진 모든 평가가 삭제됩니다. 계속하시겠습니까?",
 	"manage-confirmdelete": "대회를 삭제하면 이 대회와 관련된 모든 기록이 삭제됩니다. 계속하시겠습니까?",
 	"manage-restart": "다시 시작",
-	"manage-delete": "삭제"
+	"manage-delete": "삭제",
+	"label-tags": "태그:"
 }

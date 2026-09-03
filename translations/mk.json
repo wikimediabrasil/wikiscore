@@ -253,5 +253,13 @@
 	"manage-confirmrestart": "Отпочнувајќи го овој натпревар одново ќе се избришат сите досега направени оценки. Сакате да продолжите?",
 	"manage-confirmdelete": "Бришејќи го натпреварот ќе биде избришана сета евиденција за него. Сакате да продолжите?",
 	"manage-restart": "Отпочни одново",
-	"manage-delete": "Избриши"
+	"manage-delete": "Избриши",
+	"counter-statementscount": "Вкупно искази",
+	"counter-referencescount": "Вкупно наводи",
+	"counter-qualifierscount": "Вкупно определници",
+	"label-statements": "Создадени/изменети искази:",
+	"label-references": "Создадени/изменети наводи:",
+	"label-qualifiers": "Создадени/изменети определници:",
+	"label-tags": "Ознаки:",
+	"label-none": "Нема"
 }
