@@ -1300,7 +1300,7 @@ msgstr "Copyvio 탐지기"
 #: contests/templates/triage.html:354
 msgctxt "label-tags"
 msgid "Tags:"
-msgstr "Tags:"
+msgstr "태그:"
 
 #: contests/templates/triage.html:358
 msgctxt "label-none"

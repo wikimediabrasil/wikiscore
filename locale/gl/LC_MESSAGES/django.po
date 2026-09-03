@@ -433,17 +433,17 @@ msgstr "Suma de bytes"
 #: contests/templates/counter.html:43
 msgctxt "counter-statementscount"
 msgid "Total Statements"
-msgstr "Total Statements"
+msgstr "Número total de declaracións"
 
 #: contests/templates/counter.html:44
 msgctxt "counter-referencescount"
 msgid "Total References"
-msgstr "Total References"
+msgstr "Número total de referencias"
 
 #: contests/templates/counter.html:45
 msgctxt "counter-qualifierscount"
 msgid "Total Qualifiers"
-msgstr "Total Qualifiers"
+msgstr "Número total de cualificadores"
 
 #: contests/templates/counter.html:48
 msgctxt "counter-ppb"
@@ -1326,17 +1326,17 @@ msgstr "Verificar"
 #: contests/templates/triage.html:328
 msgctxt "label-statements"
 msgid "Statements created/modified:"
-msgstr "Statements created/modified:"
+msgstr "Declaracións creadas/modificadas:"
 
 #: contests/templates/triage.html:331
 msgctxt "label-references"
 msgid "References created/modified:"
-msgstr "References created/modified:"
+msgstr "Referencias creadas/modificadas:"
 
 #: contests/templates/triage.html:334
 msgctxt "label-qualifiers"
 msgid "Qualifiers created/modified:"
-msgstr "Qualifiers created/modified:"
+msgstr "Cualificadores creados/modificados:"
 
 #: contests/templates/triage.html:338
 msgctxt "label-diff"
@@ -1351,12 +1351,12 @@ msgstr "Detector de infraccións dos dereitos de autoría"
 #: contests/templates/triage.html:354
 msgctxt "label-tags"
 msgid "Tags:"
-msgstr "Tags:"
+msgstr "Etiquetas:"
 
 #: contests/templates/triage.html:358
 msgctxt "label-none"
 msgid "None"
-msgstr "None"
+msgstr "Ningún"
 
 #: contests/templates/triage.html:366
 msgctxt "triage-differential"

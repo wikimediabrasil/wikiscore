@@ -141,7 +141,7 @@ msgstr "Volgende update over:"
 #: contests/templates/compare.html:59
 msgctxt "compare-ended"
 msgid "Contest ended. There will be no further updates."
-msgstr "De wedstrijd is voorbij. Er zullen geen verdere updates zijn."
+msgstr "De wedstrijd is voorbij. Er komen geen updates meer."
 
 #: contests/templates/compare.html:68
 msgctxt "compare-force"
@@ -173,7 +173,7 @@ msgid ""
 "The articles below are included in the category but are not listed "
 "officially."
 msgstr ""
-"Onderstaande artikelen zijn opgenomen in de categorie, maar nog niet "
+"Onderstaande pagina's zijn opgenomen in de categorie, maar nog niet "
 "officieel vermeld."
 
 #: contests/templates/compare.html:121
@@ -187,7 +187,7 @@ msgid ""
 "The articles below are listed officially, but are not included in the "
 "category."
 msgstr ""
-"Onderstaande artikelen staan officieel vermeld, maar zijn niet opgenomen in "
+"Onderstaande pagina's staan officieel vermeld, maar zijn niet opgenomen in "
 "de categorie."
 
 #: contests/templates/compare.html:143
@@ -201,7 +201,7 @@ msgid ""
 "The articles below are included in the category and are marked for some form"
 " of deletion (fast, semi-fast, by consensus, or by application)."
 msgstr ""
-"De onderstaande artikelen zijn opgenomen in de categorie en zijn gemarkeerd "
+"De onderstaande pagina's zijn opgenomen in de categorie en zijn gemarkeerd "
 "voor een vorm van verwijdering (snel, semi-snel, bij consensus of op "
 "aanvraag)."
 
@@ -216,7 +216,7 @@ msgid ""
 "The articles below are included in the category but have no connection to "
 "Wikidata."
 msgstr ""
-"De onderstaande artikelen zijn opgenomen in de categorie, maar hebben geen "
+"De onderstaande pagina's zijn opgenomen in de categorie, maar hebben geen "
 "verbinding met Wikidata."
 
 #: contests/templates/compare.html:189
@@ -231,9 +231,9 @@ msgid ""
 "but were removed. If they are marked in red, the edit was validated and "
 "awarded points to the participant."
 msgstr ""
-"De onderstaande bewerkingen behoren tot artikelen die in de categorie "
-"stonden maar zijn verwijderd. Als ze in het rood gemarkeerd zijn, is de "
-"bewerking gevalideerd en zijn er punten toegekend aan de deelnemer."
+"De onderstaande bewerkingen behoren tot pagina's die in de categorie stonden"
+" maar zijn verwijderd. Als ze in het rood gemarkeerd zijn, is de bewerking "
+"gevalideerd en zijn er punten toegekend aan de deelnemer."
 
 #: contests/templates/compare.html:203 contests/templates/compare.html:235
 msgctxt "compare-seediff"
@@ -289,12 +289,12 @@ msgstr "WikiScore"
 #: contests/templates/contest.html:44
 msgctxt "counter-allpages"
 msgid "Listed articles"
-msgstr "Vermelde artikelen"
+msgstr "Vermelde pagina's"
 
 #: contests/templates/contest.html:48
 msgctxt "counter-alledited"
 msgid "Edited articles"
-msgstr "Bewerkte artikelen"
+msgstr "Bewerkte pagina's"
 
 #: contests/templates/contest.html:52
 msgctxt "counter-allcreated"
@@ -319,7 +319,7 @@ msgstr "Bytes toegevoegd"
 #: contests/templates/contest.html:77
 msgctxt "counter-most-edited"
 msgid "Most edited article"
-msgstr "Meest bewerkte artikel"
+msgstr "Meest bewerkte pagina"
 
 #: contests/templates/contest.html:85
 #, python-format
@@ -330,7 +330,7 @@ msgstr "%(1)s bewerkingen"
 #: contests/templates/contest.html:93
 msgctxt "counter-biggest-delta"
 msgid "Most expanded article"
-msgstr "Meest uitgebreide artikel"
+msgstr "Meest uitgebreide pagina"
 
 #: contests/templates/contest.html:101 contests/templates/contest.html:117
 #: contests/templates/triage.html:441 contests/templates/triage.html:446
@@ -358,12 +358,12 @@ msgstr "Gevalideerde bewerkingen per dag"
 #: contests/templates/contest.html:191
 msgctxt "login-newevents"
 msgid "Created articles and enrolled participants per day"
-msgstr "Per dag aangemaakte artikelen en ingeschreven deelnemers"
+msgstr "Per dag aangemaakte pagina's en ingeschreven deelnemers"
 
 #: contests/templates/contest.html:202
 msgctxt "login-newpages"
 msgid "New articles per day"
-msgstr "Nieuwe artikelen per dag"
+msgstr "Nieuwe pagina's per dag"
 
 #: contests/templates/contest.html:209
 msgctxt "login-newparticipants"
@@ -403,9 +403,9 @@ msgstr ""
 "met de score naar beneden afgerond. Daarbij wordt de totale som van de "
 "toegevoegde bytes als ''tiebreak'' gebruikt. Is er dan nog een gelijkspel, "
 "dan wordt gesorteerd op alfabetische volgorde. Alle geregistreerde "
-"gebruikers die een van de artikelen in de lijst van deze wikiwedstrijd "
-"hebben bewerkt, worden hieronder vermeld, ook als ze geen geldige "
-"bewerkingen hebben."
+"gebruikers die een van de pagina's in de lijst van deze wikiwedstrijd hebben"
+" bewerkt, worden hieronder vermeld, ook als ze geen geldige bewerkingen "
+"hebben."
 
 #: contests/templates/counter.html:22
 msgctxt "counter-uptotime"
@@ -434,17 +434,17 @@ msgstr "Som van bytes"
 #: contests/templates/counter.html:43
 msgctxt "counter-statementscount"
 msgid "Total Statements"
-msgstr "Total Statements"
+msgstr "Totaal aantal Beweringen"
 
 #: contests/templates/counter.html:44
 msgctxt "counter-referencescount"
 msgid "Total References"
-msgstr "Total References"
+msgstr "Totaal aantal Referenties"
 
 #: contests/templates/counter.html:45
 msgctxt "counter-qualifierscount"
 msgid "Total Qualifiers"
-msgstr "Total Qualifiers"
+msgstr "Totaal aantal Kwalificaties"
 
 #: contests/templates/counter.html:48
 msgctxt "counter-ppb"
@@ -454,7 +454,7 @@ msgstr "Punten per byte"
 #: contests/templates/counter.html:49
 msgctxt "counter-images"
 msgid "Articles with images"
-msgstr "Artikelen met afbeeldingen"
+msgstr "Pagina's met afbeeldingen"
 
 #: contests/templates/counter.html:50
 msgctxt "counter-ppi"
@@ -540,7 +540,7 @@ msgstr "Bytes"
 #: contests/templates/edits.html:83 contests/templates/edits.txt:1
 msgctxt "edits-newpage"
 msgid "New article"
-msgstr "Nieuw artikel"
+msgstr "Nieuwe pagina"
 
 #: contests/templates/edits.html:84 contests/templates/edits.txt:1
 msgctxt "edits-valid"
@@ -732,9 +732,8 @@ msgid ""
 "To request the registration of a new wikicontest, the initial contact will "
 "be made via the contact email of Wiki Movimento Brasil."
 msgstr ""
-"Om de registratie voor een nieuwe wikiwedstrijd aan te vragen, zal het "
-"eerste contact plaatsvinden via het contact-e-mailadres van Wiki Movimento "
-"Brasil."
+"Om de registratie voor een nieuwe wikiwedstrijd aan te vragen, vindt het "
+"eerste contact plaats via het contact-e-mailadres van Wiki Movimento Brasil."
 
 #: contests/templates/home.html:135
 msgctxt "index-enroll-main"
@@ -758,7 +757,7 @@ msgstr "Wedstrijdmanagement"
 #: contests/templates/manage.html:308 contests/templates/manage.html:329
 msgctxt "manage-catid"
 msgid "Category ID of articles"
-msgstr "Categorie-ID van artikelen"
+msgstr "Categorie-ID van pagina's"
 
 #: contests/templates/manage.html:23 contests/templates/manage.html:306
 #: contests/templates/manage.html:309 contests/templates/manage.html:329
@@ -858,7 +857,7 @@ msgstr "Bewakingsmethode"
 #: contests/templates/manage.html:317
 msgctxt "manage-listid"
 msgid "Page ID with list of articles"
-msgstr "Pagina-ID met lijst van artikelen"
+msgstr "Pagina-ID met lijst van pagina's"
 
 #: contests/templates/manage.html:347
 msgctxt "manage-controlmethod"
@@ -903,7 +902,7 @@ msgstr "Bytes per punt"
 #: contests/templates/manage.html:406
 msgctxt "manage-maxbytes"
 msgid "Maximum bytes per article-participant"
-msgstr "Maximaal aantal bytes per artikeldeelnemer"
+msgstr "Maximaal aantal bytes per paginadeelnemer"
 
 #: contests/templates/manage.html:420
 msgctxt "manage-minbytes"
@@ -918,7 +917,7 @@ msgstr "Afbeeldingen per punt"
 #: contests/templates/manage.html:450
 msgctxt "manage-maximages"
 msgid "Maximum images per article-participant"
-msgstr "Maximaal aantal bytes per artikeldeelnemer"
+msgstr "Maximaal aantal bytes per paginadeelnemer"
 
 #: contests/templates/manage.html:459 contests/templates/triage.html:454
 #: contests/templates/triage.html:487
@@ -1002,7 +1001,7 @@ msgstr "Verwijderen"
 #: contests/templates/manage.html:583
 msgctxt "manage-managemail"
 msgid "Manager's Wikimedia account"
-msgstr "Wikimedia-account van de manager"
+msgstr "Wikimedia-account van de beheerder"
 
 #: contests/templates/manage.html:598
 msgctxt "manage-create"
@@ -1123,7 +1122,7 @@ msgstr "Samenvatting:"
 #: contests/templates/modify.html:166
 msgctxt "modify-label-newpage"
 msgid "New article:"
-msgstr "Nieuw artikel:"
+msgstr "Nieuwe pagina:"
 
 #: contests/templates/modify.html:167
 msgctxt "modify-label-valid"
@@ -1298,7 +1297,7 @@ msgstr "Bewerkingen van alle beoordelaars vrijgeven"
 #: contests/templates/triage.html:297
 msgctxt "triage-database"
 msgid "Database updating."
-msgstr "Database bijwerken."
+msgstr "Database wordt bijgewerkt."
 
 #: contests/templates/triage.html:298
 msgctxt "triage-databaseabout"
@@ -1313,7 +1312,7 @@ msgstr "Details bewerken"
 #: contests/templates/triage.html:314
 msgctxt "label-page"
 msgid "Article:"
-msgstr "Artikel:"
+msgstr "Pagina:"
 
 #: contests/templates/triage.html:318
 msgctxt "triage-authorship"
@@ -1328,17 +1327,17 @@ msgstr "Verifiëren"
 #: contests/templates/triage.html:328
 msgctxt "label-statements"
 msgid "Statements created/modified:"
-msgstr "Statements created/modified:"
+msgstr "Beweringen gemaakt/gewijzigd"
 
 #: contests/templates/triage.html:331
 msgctxt "label-references"
 msgid "References created/modified:"
-msgstr "References created/modified:"
+msgstr "Referenties gemaakt/gewijzigd"
 
 #: contests/templates/triage.html:334
 msgctxt "label-qualifiers"
 msgid "Qualifiers created/modified:"
-msgstr "Qualifiers created/modified:"
+msgstr "Kwalificaties gemaakt/gewijzigd"
 
 #: contests/templates/triage.html:338
 msgctxt "label-diff"
@@ -1353,12 +1352,12 @@ msgstr "Copyvio-detector"
 #: contests/templates/triage.html:354
 msgctxt "label-tags"
 msgid "Tags:"
-msgstr "Tags:"
+msgstr "Labels:"
 
 #: contests/templates/triage.html:358
 msgctxt "label-none"
 msgid "None"
-msgstr "None"
+msgstr "Geen"
 
 #: contests/templates/triage.html:366
 msgctxt "triage-differential"
@@ -1419,7 +1418,7 @@ msgstr "Bytes per punt"
 #: contests/templates/triage.html:444
 msgctxt "triage-maxbytes"
 msgid "Maximum bytes/points per article"
-msgstr "Maximaal aantal bytes/punten per artikel"
+msgstr "Maximaal aantal bytes/punten per pagina"
 
 #: contests/templates/triage.html:448
 #, python-format
@@ -1476,4 +1475,4 @@ msgstr "Per pagina"
 #: contests/templates/triage.html:482
 msgctxt "triage-maximages"
 msgid "Maximum images per article"
-msgstr "Maximaal aantal afbeeldingen per artikel"
+msgstr "Maximaal aantal afbeeldingen per pagina"

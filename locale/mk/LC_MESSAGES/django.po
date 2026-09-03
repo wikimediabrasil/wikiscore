@@ -430,17 +430,17 @@ msgstr "Збир на бајти"
 #: contests/templates/counter.html:43
 msgctxt "counter-statementscount"
 msgid "Total Statements"
-msgstr "Total Statements"
+msgstr "Вкупно искази"
 
 #: contests/templates/counter.html:44
 msgctxt "counter-referencescount"
 msgid "Total References"
-msgstr "Total References"
+msgstr "Вкупно наводи"
 
 #: contests/templates/counter.html:45
 msgctxt "counter-qualifierscount"
 msgid "Total Qualifiers"
-msgstr "Total Qualifiers"
+msgstr "Вкупно определници"
 
 #: contests/templates/counter.html:48
 msgctxt "counter-ppb"
@@ -1321,17 +1321,17 @@ msgstr "Потврди"
 #: contests/templates/triage.html:328
 msgctxt "label-statements"
 msgid "Statements created/modified:"
-msgstr "Statements created/modified:"
+msgstr "Создадени/изменети искази:"
 
 #: contests/templates/triage.html:331
 msgctxt "label-references"
 msgid "References created/modified:"
-msgstr "References created/modified:"
+msgstr "Создадени/изменети наводи:"
 
 #: contests/templates/triage.html:334
 msgctxt "label-qualifiers"
 msgid "Qualifiers created/modified:"
-msgstr "Qualifiers created/modified:"
+msgstr "Создадени/изменети определници:"
 
 #: contests/templates/triage.html:338
 msgctxt "label-diff"
@@ -1346,12 +1346,12 @@ msgstr "Пронаоѓач на авторскоправни прекршоци"
 #: contests/templates/triage.html:354
 msgctxt "label-tags"
 msgid "Tags:"
-msgstr "Tags:"
+msgstr "Ознаки:"
 
 #: contests/templates/triage.html:358
 msgctxt "label-none"
 msgid "None"
-msgstr "None"
+msgstr "Нема"
 
 #: contests/templates/triage.html:366
 msgctxt "triage-differential"
