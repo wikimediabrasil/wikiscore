@@ -254,5 +254,8 @@
 	"manage-confirmrestart": "重新開始競賽會刪除所有做過的評估。您要繼續嗎？",
 	"manage-confirmdelete": "刪除競賽會一同刪除所有相關的紀錄。您要繼續嗎？",
 	"manage-restart": "重新開始",
-	"manage-delete": "刪除"
+	"manage-delete": "刪除",
+	"counter-referencescount": "總參考文獻",
+	"label-tags": "標籤：",
+	"label-none": "無"
 }
