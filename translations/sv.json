@@ -254,5 +254,13 @@
 	"manage-confirmrestart": "Genom att starta om tävlingen kommer alla utvärderingar som redan gjorts att raderas. Vill du fortsätta?",
 	"manage-confirmdelete": "Genom att radera tävlingen kommer alla poster relaterade till den att raderas. Vill du fortsätta?",
 	"manage-restart": "Starta om",
-	"manage-delete": "Radera"
+	"manage-delete": "Radera",
+	"counter-statementscount": "Totalt antal uttalanden",
+	"counter-referencescount": "Totalt antal referenser",
+	"counter-qualifierscount": "Totalt antal bestämningar",
+	"label-statements": "Skapade/modifierade uttalanden:",
+	"label-references": "Skapade/modifierare referenser:",
+	"label-qualifiers": "Skapade/modifierare bestämningar:",
+	"label-tags": "Taggar:",
+	"label-none": "Inga"
 }

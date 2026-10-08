@@ -255,5 +255,13 @@
 	"manage-confirmrestart": "بإعادة تشغيل المسابقة، ستُحذف جميع التقييمات التي أجريتها. هل ترغب في المتابعة؟",
 	"manage-confirmdelete": "بحذف المسابقة، سيتم حذف جميع السجلات المتعلقة بها. هل ترغب بالمتابعة؟",
 	"manage-restart": "إعادة تشغيل",
-	"manage-delete": "حذف"
+	"manage-delete": "حذف",
+	"counter-statementscount": "إجمالي البيانات",
+	"counter-referencescount": "إجمالي المراجع",
+	"counter-qualifierscount": "إجمالي المتأهلين",
+	"label-statements": "البيانات التي تم إنشاؤها/تعديلها:",
+	"label-references": "المراجع التي تم إنشاؤها/تعديلها:",
+	"label-qualifiers": "تم إنشاء/تعديل المؤهلات:",
+	"label-tags": "الكلمات المفتاحية:",
+	"label-none": "لا أحد"
 }
