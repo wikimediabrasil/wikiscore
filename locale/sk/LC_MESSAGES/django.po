@@ -429,17 +429,17 @@ msgstr "Súčet bajtov"
 #: contests/templates/counter.html:43
 msgctxt "counter-statementscount"
 msgid "Total Statements"
-msgstr "Total Statements"
+msgstr "Výroky celkom"
 
 #: contests/templates/counter.html:44
 msgctxt "counter-referencescount"
 msgid "Total References"
-msgstr "Total References"
+msgstr "Referencie celkom"
 
 #: contests/templates/counter.html:45
 msgctxt "counter-qualifierscount"
 msgid "Total Qualifiers"
-msgstr "Total Qualifiers"
+msgstr "Kvalifikátory celkom"
 
 #: contests/templates/counter.html:48
 msgctxt "counter-ppb"
@@ -1317,17 +1317,17 @@ msgstr "Overiť"
 #: contests/templates/triage.html:328
 msgctxt "label-statements"
 msgid "Statements created/modified:"
-msgstr "Statements created/modified:"
+msgstr "Vytvorené/upravené výroky:"
 
 #: contests/templates/triage.html:331
 msgctxt "label-references"
 msgid "References created/modified:"
-msgstr "References created/modified:"
+msgstr "Vytvorené/upravené referencie:"
 
 #: contests/templates/triage.html:334
 msgctxt "label-qualifiers"
 msgid "Qualifiers created/modified:"
-msgstr "Qualifiers created/modified:"
+msgstr "Vytvorené/upravené kvalifikátory:"
 
 #: contests/templates/triage.html:338
 msgctxt "label-diff"
@@ -1342,12 +1342,12 @@ msgstr "Copyvio Detector"
 #: contests/templates/triage.html:354
 msgctxt "label-tags"
 msgid "Tags:"
-msgstr "Tags:"
+msgstr "Značky:"
 
 #: contests/templates/triage.html:358
 msgctxt "label-none"
 msgid "None"
-msgstr "None"
+msgstr "Žiadne"
 
 #: contests/templates/triage.html:366
 msgctxt "triage-differential"
