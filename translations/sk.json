@@ -254,5 +254,13 @@
 	"manage-confirmrestart": "Reštartovaním súťaže budú zmazané všetky doposiaľ vykonané hodnotenia. Chcete pokračovať?",
 	"manage-confirmdelete": "Zmazaním súťaže budú zmazané všetky záznamy súvisiace s touto súťažou. Chcete pokračovať?",
 	"manage-restart": "Reštartovať",
-	"manage-delete": "Zmazať"
+	"manage-delete": "Zmazať",
+	"counter-statementscount": "Výroky celkom",
+	"counter-referencescount": "Referencie celkom",
+	"counter-qualifierscount": "Kvalifikátory celkom",
+	"label-statements": "Vytvorené/upravené výroky:",
+	"label-references": "Vytvorené/upravené referencie:",
+	"label-qualifiers": "Vytvorené/upravené kvalifikátory:",
+	"label-tags": "Značky:",
+	"label-none": "Žiadne"
 }
