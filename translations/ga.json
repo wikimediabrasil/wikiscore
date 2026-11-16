@@ -253,5 +253,13 @@
 	"manage-confirmrestart": "Trí an comórtas a atosú, scriosfar na meastóireachtaí go léir atá déanta cheana féin. Ar mhaith leat dul ar aghaidh?",
 	"manage-confirmdelete": "Trí an comórtas a scriosadh, scriosfar gach taifead a bhaineann leis an gcomórtas seo. Ar mhaith leat dul ar aghaidh?",
 	"manage-restart": "Atosaigh",
-	"manage-delete": "Scrios"
+	"manage-delete": "Scrios",
+	"counter-statementscount": "Líon Iomlán na Ráiteas",
+	"counter-referencescount": "Tagairtí Iomlána",
+	"counter-qualifierscount": "Líon Iomlán na gCáilitheoirí",
+	"label-statements": "Ráitis cruthaithe/mionathraithe:",
+	"label-references": "Tagairtí cruthaithe/mionathraithe:",
+	"label-qualifiers": "Cáilitheoirí cruthaithe/mionathraithe:",
+	"label-tags": "Clibeanna:",
+	"label-none": "Dada"
 }
