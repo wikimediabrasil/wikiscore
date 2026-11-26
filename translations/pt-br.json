@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Albertoleoncio",
+			"Felipe L. Ewald",
 			"JPLSilva",
 			"YuriNikolai"
 		]
@@ -28,6 +29,9 @@
 	"modify-diff": "Diff",
 	"modify-load": "Carregar edição",
 	"modify-reavaluate": "Reavaliação",
+	"modify-timestamp": "Data e hora",
+	"modify-qualified": "Qualificado?",
+	"modify-automatic": "Automático",
 	"isvalid": "Edição válida?",
 	"yes": "Sim",
 	"no": "Não",
@@ -225,8 +229,13 @@
 	"manage-source": "Método de monitoramento",
 	"manage-listid": "ID da lista de artigos",
 	"manage-catid": "ID da categoria de artigos",
+	"manage-controlmethod": "Método de inscrição dos participantes",
+	"manage-outreachdashboard": "Outreach Dashboard",
 	"manage-outreach": "Nome do concurso no Outreach Dashboard",
 	"manage-outreachplacehold": "Nome_da_campanha/Nome_do_programa",
+	"manage-campaign": "Evento de campanha",
+	"manage-campaigneventid": "ID do evento da campanha",
+	"manage-campaigneventidplacehold": "Insira o ID do evento da campanha",
 	"manage-bpp": "Bytes por ponto",
 	"manage-maxbytes": "Máximo de bytes por artigo-participante",
 	"manage-minbytes": "Mínimo de bytes por edição",
@@ -239,7 +248,7 @@
 	"manage-palette": "Paleta de cores",
 	"manage-custom": "personalizado",
 	"manage-hexcolor": "Cor personalizada (hex)",
-	"manage-managemail": "E-mail do gestor",
+	"manage-managemail": "Conta do administrador na Wikimedia",
 	"manage-newmanager": "Definir novo gestor",
 	"manage-remanaged": "Novo gestor definido com sucesso!",
 	"manage-create": "Cadastrar",
@@ -247,5 +256,13 @@
 	"manage-confirmrestart": "Ao reiniciar o concurso, todas as avaliações já efetuadas serão eliminadas. Deseja prosseguir?",
 	"manage-confirmdelete": "Ao apagar o concurso, todos os registros relacionados a este concurso serão eliminados. Deseja prosseguir?",
 	"manage-restart": "Reiniciar",
-	"manage-delete": "Apagar"
+	"manage-delete": "Apagar",
+	"counter-statementscount": "Declarações totais",
+	"counter-referencescount": "Total de referências",
+	"counter-qualifierscount": "Total de classificados",
+	"label-statements": "Relatórios criados/modificados:",
+	"label-references": "Referências criadas/modificadas:",
+	"label-qualifiers": "Critérios de qualificação criados/modificados:",
+	"label-tags": "Etiquetas:",
+	"label-none": "Nenhum"
 }
